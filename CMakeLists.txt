@@ -594,9 +594,9 @@ if(BUILD_ANDROID_PACKAGE)
   add_subdirectory(platforms/android/package)
 endif()
 
-if (ANDROID)
-  add_subdirectory(platforms/android/libinfo)
-endif()
+#if (ANDROID)
+#  add_subdirectory(platforms/android/libinfo)
+#endif()
 
 # ----------------------------------------------------------------------------
 # Finalization: generate configuration-based files
