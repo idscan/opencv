@@ -41,6 +41,16 @@ endif(WITH_CUDA)
 
 # --- Eigen ---
 if(WITH_EIGEN AND NOT HAVE_EIGEN)
+  if(HUNTER_ENABLED)
+    hunter_add_package(Eigen)
+    find_package(Eigen3 CONFIG REQUIRED)
+    get_target_property(
+        EIGEN_INCLUDE_PATH
+        Eigen3::Eigen
+        INTERFACE_INCLUDE_DIRECTORIES
+    )
+  else()
+
   find_package(Eigen3 QUIET)
 
   if(Eigen3_FOUND)
@@ -68,6 +78,8 @@ if(WITH_EIGEN AND NOT HAVE_EIGEN)
         set(EIGEN_MINOR_VERSION ${EIGEN3_VERSION_PATCH})
       endif()
     endif()
+  endif()
+
   endif()
 
   if(NOT HAVE_EIGEN)
