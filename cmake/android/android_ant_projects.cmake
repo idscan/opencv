@@ -110,10 +110,16 @@ macro(add_android_project target path)
   endforeach()
 
   # get compatible SDK target
-  android_get_compatible_target(android_proj_sdk_target ${ANDROID_NATIVE_API_LEVEL} ${android_proj_SDK_TARGET})
+  string(COMPARE EQUAL "${ANDROID_NATIVE_API_LEVEL}" "" __empty_ANDROID_NATIVE_API_LEVEL)
+  if(NOT __empty_ANDROID_NATIVE_API_LEVEL)
+    set(__api_level ${ANDROID_NATIVE_API_LEVEL})
+  else()
+    set(__api_level ${CMAKE_SYSTEM_VERSION})
+  endif()
+  android_get_compatible_target(android_proj_sdk_target ${__api_level} ${android_proj_SDK_TARGET})
 
   if(NOT android_proj_sdk_target)
-    message(WARNING "Can not find any SDK target compatible with: ${ANDROID_NATIVE_API_LEVEL} ${android_proj_SDK_TARGET}
+    message(WARNING "Can not find any SDK target compatible with: ${__api_level} ${android_proj_SDK_TARGET}
                      The project ${target} will not be build")
   endif()
 
@@ -128,8 +134,16 @@ macro(add_android_project target path)
     # find if native_app_glue is used
     file(STRINGS "${path}/jni/Android.mk" NATIVE_APP_GLUE REGEX ".*(call import-module,android/native_app_glue)" )
     if(NATIVE_APP_GLUE)
+      if(ANDROID_NATIVE_API_LEVEL)
+
       if(ANDROID_NATIVE_API_LEVEL LESS 9 OR NOT EXISTS "${ANDROID_NDK}/sources/android/native_app_glue")
         set(OCV_DEPENDENCIES_FOUND FALSE)
+      endif()
+
+      else()
+        if(CMAKE_SYSTEM_VERSION LESS 9 OR NOT EXISTS "${CMAKE_ANDROID_NDK}/sources/android/native_app_glue")
+          set(OCV_DEPENDENCIES_FOUND FALSE)
+        endif()
       endif()
     endif()
   endif()
@@ -185,8 +199,15 @@ macro(add_android_project target path)
 
       if(JNI_LIB_NAME)
         if(NATIVE_APP_GLUE)
+          if(ANDROID_NDK)
+
           include_directories(${ANDROID_NDK}/sources/android/native_app_glue)
           list(APPEND android_proj_jni_files ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)
+
+          else()
+            include_directories(${CMAKE_ANDROID_NDK}/sources/android/native_app_glue)
+            list(APPEND android_proj_jni_files ${CMAKE_ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c)
+          endif()
           ocv_warnings_disable(CMAKE_C_FLAGS -Wstrict-prototypes -Wunused-parameter -Wmissing-prototypes)
           set(android_proj_NATIVE_DEPS ${android_proj_NATIVE_DEPS} android)
         endif()
@@ -196,9 +217,19 @@ macro(add_android_project target path)
         ocv_target_include_directories(${JNI_LIB_NAME} "${path}/jni")
         ocv_target_link_libraries(${JNI_LIB_NAME} PRIVATE ${OPENCV_LINKER_LIBS} ${android_proj_NATIVE_DEPS})
 
+        string(COMPARE EQUAL "${ANDROID_NDK_ABI_NAME}" "" __empty_ANDROID_NDK_ABI_NAME)
+        string(COMPARE EQUAL "${CMAKE_ANDROID_ARCH_ABI}" "" __empty_CMAKE_ANDROID_ARCH_ABI)
+        if(NOT __empty_ANDROID_NDK_ABI_NAME)
+          set(__ndk_abi_name ${ANDROID_NDK_ABI_NAME})
+        elseif(NOT ____empty_CMAKE_ANDROID_ARCH_ABI)
+          set(__ndk_abi_name ${CMAKE_ANDROID_ARCH_ABI})
+        else()
+          message(FATAL_ERROR "Unknown Android ABI name")
+        endif()
+
         set_target_properties(${JNI_LIB_NAME} PROPERTIES
             OUTPUT_NAME "${JNI_LIB_NAME}"
-            LIBRARY_OUTPUT_DIRECTORY "${android_proj_bin_dir}/libs/${ANDROID_NDK_ABI_NAME}"
+            LIBRARY_OUTPUT_DIRECTORY "${android_proj_bin_dir}/libs/${__ndk_abi_name}"
             )
 
         if(NOT BUILD_WITH_DEBUG_INFO AND NOT CMAKE_BUILD_TYPE MATCHES "Debug")

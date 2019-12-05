@@ -127,9 +127,17 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)  # https://cmake.org/cmake/help/
   endif()
 endif()
 
-enable_testing()
+include("cmake/HunterGate.cmake")
+HunterGate(
+    URL "https://github.com/ruslo/hunter/archive/v0.19.68.tar.gz"
+    SHA1 "ad0d042d8ec56a3c6a4bda1e657f1f65b494ab12"
+)
 
 project(OpenCV CXX C)
+
+if(IOS)
+  set(CMAKE_CXX_FLAGS_RELEASE "-DNDEBUG -O3 -fomit-frame-pointer -ffast-math")
+endif()
 
 if(MSVC)
   set(CMAKE_USE_RELATIVE_PATHS ON CACHE INTERNAL "" FORCE)
@@ -523,15 +531,27 @@ endif()
 set(EXECUTABLE_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin" CACHE PATH "Output directory for applications")
 
 if(ANDROID)
-  set(LIBRARY_OUTPUT_PATH                "${OpenCV_BINARY_DIR}/lib/${ANDROID_NDK_ABI_NAME}")
-  ocv_update(3P_LIBRARY_OUTPUT_PATH      "${OpenCV_BINARY_DIR}/3rdparty/lib/${ANDROID_NDK_ABI_NAME}")
+  string(COMPARE EQUAL "${ANDROID_NDK_ABI_NAME}" "" __empty_ANDROID_NDK_ABI_NAME)
+  string(COMPARE EQUAL "${CMAKE_ANDROID_ARCH_ABI}" "" __empty_CMAKE_ANDROID_ARCH_ABI)
+  if(NOT __empty_ANDROID_NDK_ABI_NAME)
+    set(__ndk_abi_name ${ANDROID_NDK_ABI_NAME})
+  elseif(NOT ____empty_CMAKE_ANDROID_ARCH_ABI)
+    set(__ndk_abi_name ${CMAKE_ANDROID_ARCH_ABI})
+  else()
+    message(FATAL_ERROR "Unknown Android ABI name")
+  endif()
+endif(ANDROID)
+
+if(ANDROID)
+  set(LIBRARY_OUTPUT_PATH                "${OpenCV_BINARY_DIR}/lib/${__ndk_abi_name}")
+  ocv_update(3P_LIBRARY_OUTPUT_PATH      "${OpenCV_BINARY_DIR}/3rdparty/lib/${__ndk_abi_name}")
 else()
   set(LIBRARY_OUTPUT_PATH                "${OpenCV_BINARY_DIR}/lib")
   ocv_update(3P_LIBRARY_OUTPUT_PATH      "${OpenCV_BINARY_DIR}/3rdparty/lib")
 endif()
 
 if(ANDROID)
-  if(ANDROID_ABI MATCHES "NEON")
+  if(ANDROID_ABI MATCHES "NEON" OR ANDROID_ARM_NEON OR CMAKE_ANDROID_ARM_NEON)
     set(ENABLE_NEON ON)
   endif()
   if(ANDROID_ABI MATCHES "VFPV3")
@@ -569,6 +589,10 @@ ocv_include_directories(${OPENCV_CONFIG_FILE_INCLUDE_DIR})
 #  Path for additional modules
 # ----------------------------------------------------------------------------
 set(OPENCV_EXTRA_MODULES_PATH "" CACHE PATH "Where to look for additional OpenCV modules (can be ;-separated list of paths)")
+if(OPENCV_WITH_EXTRA_MODULES)
+  hunter_add_package(OpenCV-Extra)
+  set(OPENCV_EXTRA_MODULES_PATH "${OPENCV-EXTRA_ROOT}/modules")
+endif()
 
 # ----------------------------------------------------------------------------
 #  Autodetect if we are in a GIT repository
