@@ -4,7 +4,7 @@ if(ANDROID)
   #  Part 1/2: ${BIN_DIR}/OpenCV.mk              -> For use *without* "make install"
   #  Part 2/2: ${BIN_DIR}/unix-install/OpenCV.mk -> For use with "make install"
   # -------------------------------------------------------------------------------------------
-  
+
   string(COMPARE EQUAL "${ANDROID_NDK_ABI_NAME}" "" __empty_ANDROID_NDK_ABI_NAME)
   string(COMPARE EQUAL "${CMAKE_ANDROID_ARCH_ABI}" "" __empty_CMAKE_ANDROID_ARCH_ABI)
   if(NOT __empty_ANDROID_NDK_ABI_NAME)

@@ -50,9 +50,9 @@ if(WITH_EIGEN AND NOT HAVE_EIGEN)
         INTERFACE_INCLUDE_DIRECTORIES
     )
   else()
-  
+
   find_package(Eigen3 QUIET)
-  
+
   endif()
 
   if(Eigen3_FOUND)
