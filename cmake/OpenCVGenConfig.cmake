@@ -120,7 +120,17 @@ if((CMAKE_HOST_SYSTEM_NAME MATCHES "Linux" OR UNIX) AND NOT ANDROID)
 endif()
 
 if(ANDROID)
-  ocv_gen_config("${CMAKE_BINARY_DIR}/unix-install" "abi-${ANDROID_NDK_ABI_NAME}" "OpenCVConfig.root-ANDROID.cmake.in")
+  string(COMPARE EQUAL "${ANDROID_NDK_ABI_NAME}" "" __empty_ANDROID_NDK_ABI_NAME)
+  string(COMPARE EQUAL "${CMAKE_ANDROID_ARCH_ABI}" "" __empty_CMAKE_ANDROID_ARCH_ABI)
+  if(NOT __empty_ANDROID_NDK_ABI_NAME)
+    set(__ndk_abi_name ${ANDROID_NDK_ABI_NAME})
+  elseif(NOT ____empty_CMAKE_ANDROID_ARCH_ABI)
+    set(__ndk_abi_name ${CMAKE_ANDROID_ARCH_ABI})
+  else()
+    message(FATAL_ERROR "Unknown Android ABI name")
+  endif()
+
+  ocv_gen_config("${CMAKE_BINARY_DIR}/unix-install" "abi-${__ndk_abi_name}" "OpenCVConfig.root-ANDROID.cmake.in")
   install(FILES "${OpenCV_SOURCE_DIR}/platforms/android/android.toolchain.cmake" DESTINATION "${OPENCV_CONFIG_INSTALL_PATH}" COMPONENT dev)
 endif()
 
