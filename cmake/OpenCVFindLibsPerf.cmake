@@ -53,8 +53,6 @@ if(WITH_EIGEN AND NOT HAVE_EIGEN)
 
   find_package(Eigen3 QUIET)
 
-  endif()
-
   if(Eigen3_FOUND)
     if(TARGET Eigen3::Eigen)
       # Use Eigen3 imported target if possible
@@ -80,6 +78,8 @@ if(WITH_EIGEN AND NOT HAVE_EIGEN)
         set(EIGEN_MINOR_VERSION ${EIGEN3_VERSION_PATCH})
       endif()
     endif()
+  endif()
+
   endif()
 
   if(NOT HAVE_EIGEN)
