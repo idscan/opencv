@@ -12,7 +12,7 @@ if(ANDROID)
   elseif(NOT ____empty_CMAKE_ANDROID_ARCH_ABI)
     set(__ndk_abi_name ${CMAKE_ANDROID_ARCH_ABI})
   else()
-    message(FATAL_ERROR "Unknown Android AVI name")
+    message(FATAL_ERROR "Unknown Android ABI name")
   endif()
 
   # build type
