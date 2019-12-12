@@ -8,6 +8,8 @@ endif()
 
 ocv_option(BUILD_PROTOBUF "Force to build libprotobuf from sources" ON)
 ocv_option(PROTOBUF_UPDATE_FILES "Force rebuilding .proto files (protoc should be available)" OFF)
+ocv_option(USE_HUNTER_PROTOBUF "Use Protobuf from hunter. Ignored if BUILD_PROTOBUF. Implies PROTOBUF_UPDATE_FILES" OFF)
+
 
 function(get_protobuf_version version include)
   file(STRINGS "${include}/google/protobuf/stubs/common.h" ver REGEX "#define GOOGLE_PROTOBUF_VERSION [0-9]+")
@@ -22,6 +24,20 @@ if(BUILD_PROTOBUF)
   add_subdirectory("${OpenCV_SOURCE_DIR}/3rdparty/protobuf")
   set(HAVE_PROTOBUF TRUE)
 else()
+  if (USE_HUNTER_PROTOBUF)
+     hunter_add_package(Protobuf)
+     if(CMAKE_CROSSCOMPILING)
+       # When cross-compiling want protoc tools build with host toolchain
+       include(hunter_experimental_add_host_project)
+       hunter_experimental_add_host_project(host)
+       set(__PROTOC_EXE "${HUNTER_HOST_ROOT}/bin/protoc")
+     else(CMAKE_CROSSCOMPILING)
+       set(__PROTOC_EXE "${PROTOBUF_ROOT}/bin/protoc")
+     endif(CMAKE_CROSSCOMPILING)
+     set(Protobuf_PROTOC_EXECUTABLE ${__PROTOC_EXE} CACHE STRING "protoc to use")
+     set(PROTOBUF_UPDATE_FILES ON) # Assume pb files are stale
+  endif (USE_HUNTER_PROTOBUF)
+
   unset(Protobuf_VERSION CACHE)
   find_package(Protobuf QUIET)
 
