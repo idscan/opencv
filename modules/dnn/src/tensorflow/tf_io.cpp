@@ -34,8 +34,8 @@ namespace dnn {
 using std::string;
 using std::map;
 using namespace tensorflow;
-using namespace ::google::protobuf;
-using namespace ::google::protobuf::io;
+using namespace ::cv::protobuf;
+using namespace ::cv::protobuf::io;
 
 void ReadTFNetParamsFromBinaryFileOrDie(const char* param_file,
                                         tensorflow::GraphDef* param) {

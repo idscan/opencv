@@ -22,14 +22,14 @@
 namespace opencv_tensorflow {
 }  // namespace opencv_tensorflow
 namespace protobuf_types_2eproto {
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
-const ::google::protobuf::uint32 TableStruct::offsets[1] = {};
-static const ::google::protobuf::internal::MigrationSchema* schemas = NULL;
-static const ::google::protobuf::Message* const* file_default_instances = NULL;
+const ::cv::protobuf::EnumDescriptor* file_level_enum_descriptors[1];
+const ::cv::protobuf::uint32 TableStruct::offsets[1] = {};
+static const ::cv::protobuf::internal::MigrationSchema* schemas = NULL;
+static const ::cv::protobuf::Message* const* file_default_instances = NULL;
 
 void protobuf_AssignDescriptors() {
   AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
+  ::cv::protobuf::MessageFactory* factory = NULL;
   AssignDescriptors(
       "types.proto", schemas, file_default_instances, TableStruct::offsets, factory,
       NULL, file_level_enum_descriptors, NULL);
@@ -37,7 +37,7 @@ void protobuf_AssignDescriptors() {
 
 void protobuf_AssignDescriptorsOnce() {
   static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
+  ::cv::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
 }
 
 void protobuf_RegisterTypes(const ::std::string&) GOOGLE_PROTOBUF_ATTRIBUTE_COLD;
@@ -68,15 +68,15 @@ void AddDescriptorsImpl() {
       "_REF\020v\022\017\n\013DT_HALF_REF\020wB,\n\030org.tensorflo"
       "w.frameworkB\013TypesProtosP\001\370\001\001b\006proto3"
   };
-  ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
+  ::cv::protobuf::DescriptorPool::InternalAddGeneratedFile(
       descriptor, 757);
-  ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
+  ::cv::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "types.proto", &protobuf_RegisterTypes);
 }
 
 void AddDescriptors() {
   static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
+  ::cv::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
 }
 // Force AddDescriptors() to be called at dynamic initialization time.
 struct StaticDescriptorInitializer {
@@ -86,7 +86,7 @@ struct StaticDescriptorInitializer {
 } static_descriptor_initializer;
 }  // namespace protobuf_types_2eproto
 namespace opencv_tensorflow {
-const ::google::protobuf::EnumDescriptor* DataType_descriptor() {
+const ::cv::protobuf::EnumDescriptor* DataType_descriptor() {
   protobuf_types_2eproto::protobuf_AssignDescriptorsOnce();
   return protobuf_types_2eproto::file_level_enum_descriptors[0];
 }

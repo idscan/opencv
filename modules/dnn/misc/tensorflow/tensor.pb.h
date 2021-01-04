@@ -36,12 +36,12 @@
 namespace protobuf_tensor_2eproto {
 // Internal implementation detail -- do not use these members.
 struct TableStruct {
-  static const ::google::protobuf::internal::ParseTableField entries[];
-  static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[1];
-  static const ::google::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::google::protobuf::internal::SerializationTable serialization_table[];
-  static const ::google::protobuf::uint32 offsets[];
+  static const ::cv::protobuf::internal::ParseTableField entries[];
+  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
+  static const ::cv::protobuf::internal::ParseTable schema[1];
+  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
+  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
+  static const ::cv::protobuf::uint32 offsets[];
 };
 void AddDescriptors();
 void InitDefaultsTensorProtoImpl();
@@ -59,7 +59,7 @@ namespace opencv_tensorflow {
 
 // ===================================================================
 
-class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.TensorProto) */ {
+class TensorProto : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.TensorProto) */ {
  public:
   TensorProto();
   virtual ~TensorProto();
@@ -85,13 +85,13 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
     return *this;
   }
   #endif
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const TensorProto& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -112,9 +112,9 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   inline TensorProto* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  TensorProto* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TensorProto* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const TensorProto& from);
   void MergeFrom(const TensorProto& from);
   void Clear() PROTOBUF_FINAL;
@@ -122,11 +122,11 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -134,12 +134,12 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(TensorProto* other);
   protected:
-  explicit TensorProto(::google::protobuf::Arena* arena);
+  explicit TensorProto(::cv::protobuf::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -147,7 +147,7 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -160,9 +160,9 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   float float_val(int index) const;
   void set_float_val(int index, float value);
   void add_float_val(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       float_val() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_float_val();
 
   // repeated double double_val = 6 [packed = true];
@@ -172,21 +172,21 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   double double_val(int index) const;
   void set_double_val(int index, double value);
   void add_double_val(double value);
-  const ::google::protobuf::RepeatedField< double >&
+  const ::cv::protobuf::RepeatedField< double >&
       double_val() const;
-  ::google::protobuf::RepeatedField< double >*
+  ::cv::protobuf::RepeatedField< double >*
       mutable_double_val();
 
   // repeated int32 int_val = 7 [packed = true];
   int int_val_size() const;
   void clear_int_val();
   static const int kIntValFieldNumber = 7;
-  ::google::protobuf::int32 int_val(int index) const;
-  void set_int_val(int index, ::google::protobuf::int32 value);
-  void add_int_val(::google::protobuf::int32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+  ::cv::protobuf::int32 int_val(int index) const;
+  void set_int_val(int index, ::cv::protobuf::int32 value);
+  void add_int_val(::cv::protobuf::int32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
       int_val() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
       mutable_int_val();
 
   // repeated bytes string_val = 8;
@@ -208,8 +208,8 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   #endif
   void add_string_val(const char* value);
   void add_string_val(const void* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& string_val() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_string_val();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& string_val() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_string_val();
 
   // repeated float scomplex_val = 9 [packed = true];
   int scomplex_val_size() const;
@@ -218,21 +218,21 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   float scomplex_val(int index) const;
   void set_scomplex_val(int index, float value);
   void add_scomplex_val(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       scomplex_val() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_scomplex_val();
 
   // repeated int64 int64_val = 10 [packed = true];
   int int64_val_size() const;
   void clear_int64_val();
   static const int kInt64ValFieldNumber = 10;
-  ::google::protobuf::int64 int64_val(int index) const;
-  void set_int64_val(int index, ::google::protobuf::int64 value);
-  void add_int64_val(::google::protobuf::int64 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+  ::cv::protobuf::int64 int64_val(int index) const;
+  void set_int64_val(int index, ::cv::protobuf::int64 value);
+  void add_int64_val(::cv::protobuf::int64 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >&
       int64_val() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >*
       mutable_int64_val();
 
   // repeated bool bool_val = 11 [packed = true];
@@ -242,9 +242,9 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   bool bool_val(int index) const;
   void set_bool_val(int index, bool value);
   void add_bool_val(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
+  const ::cv::protobuf::RepeatedField< bool >&
       bool_val() const;
-  ::google::protobuf::RepeatedField< bool >*
+  ::cv::protobuf::RepeatedField< bool >*
       mutable_bool_val();
 
   // repeated double dcomplex_val = 12 [packed = true];
@@ -254,21 +254,21 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   double dcomplex_val(int index) const;
   void set_dcomplex_val(int index, double value);
   void add_dcomplex_val(double value);
-  const ::google::protobuf::RepeatedField< double >&
+  const ::cv::protobuf::RepeatedField< double >&
       dcomplex_val() const;
-  ::google::protobuf::RepeatedField< double >*
+  ::cv::protobuf::RepeatedField< double >*
       mutable_dcomplex_val();
 
   // repeated int32 half_val = 13 [packed = true];
   int half_val_size() const;
   void clear_half_val();
   static const int kHalfValFieldNumber = 13;
-  ::google::protobuf::int32 half_val(int index) const;
-  void set_half_val(int index, ::google::protobuf::int32 value);
-  void add_half_val(::google::protobuf::int32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+  ::cv::protobuf::int32 half_val(int index) const;
+  void set_half_val(int index, ::cv::protobuf::int32 value);
+  void add_half_val(::cv::protobuf::int32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
       half_val() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
       mutable_half_val();
 
   // bytes tensor_content = 4;
@@ -318,37 +318,37 @@ class TensorProto : public ::google::protobuf::Message /* @@protoc_insertion_poi
   // int32 version_number = 3;
   void clear_version_number();
   static const int kVersionNumberFieldNumber = 3;
-  ::google::protobuf::int32 version_number() const;
-  void set_version_number(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 version_number() const;
+  void set_version_number(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.TensorProto)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::RepeatedField< float > float_val_;
+  ::cv::protobuf::RepeatedField< float > float_val_;
   mutable int _float_val_cached_byte_size_;
-  ::google::protobuf::RepeatedField< double > double_val_;
+  ::cv::protobuf::RepeatedField< double > double_val_;
   mutable int _double_val_cached_byte_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > int_val_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 > int_val_;
   mutable int _int_val_cached_byte_size_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> string_val_;
-  ::google::protobuf::RepeatedField< float > scomplex_val_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> string_val_;
+  ::cv::protobuf::RepeatedField< float > scomplex_val_;
   mutable int _scomplex_val_cached_byte_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > int64_val_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 > int64_val_;
   mutable int _int64_val_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > bool_val_;
+  ::cv::protobuf::RepeatedField< bool > bool_val_;
   mutable int _bool_val_cached_byte_size_;
-  ::google::protobuf::RepeatedField< double > dcomplex_val_;
+  ::cv::protobuf::RepeatedField< double > dcomplex_val_;
   mutable int _dcomplex_val_cached_byte_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > half_val_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 > half_val_;
   mutable int _half_val_cached_byte_size_;
-  ::google::protobuf::internal::ArenaStringPtr tensor_content_;
+  ::cv::protobuf::internal::ArenaStringPtr tensor_content_;
   ::opencv_tensorflow::TensorShapeProto* tensor_shape_;
   int dtype_;
-  ::google::protobuf::int32 version_number_;
+  ::cv::protobuf::int32 version_number_;
   mutable int _cached_size_;
   friend struct ::protobuf_tensor_2eproto::TableStruct;
   friend void ::protobuf_tensor_2eproto::InitDefaultsTensorProtoImpl();
@@ -393,7 +393,7 @@ inline ::opencv_tensorflow::TensorShapeProto* TensorProto::release_tensor_shape(
 
   ::opencv_tensorflow::TensorShapeProto* temp = tensor_shape_;
   if (GetArenaNoVirtual() != NULL) {
-    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp, NULL);
+    temp = ::cv::protobuf::internal::DuplicateIfNonNull(temp, NULL);
   }
   tensor_shape_ = NULL;
   return temp;
@@ -414,15 +414,15 @@ inline ::opencv_tensorflow::TensorShapeProto* TensorProto::mutable_tensor_shape(
   return tensor_shape_;
 }
 inline void TensorProto::set_allocated_tensor_shape(::opencv_tensorflow::TensorShapeProto* tensor_shape) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
-    delete reinterpret_cast< ::google::protobuf::MessageLite*>(tensor_shape_);
+    delete reinterpret_cast< ::cv::protobuf::MessageLite*>(tensor_shape_);
   }
   if (tensor_shape) {
-    ::google::protobuf::Arena* submessage_arena =
-      reinterpret_cast< ::google::protobuf::MessageLite*>(tensor_shape)->GetArena();
+    ::cv::protobuf::Arena* submessage_arena =
+      reinterpret_cast< ::cv::protobuf::MessageLite*>(tensor_shape)->GetArena();
     if (message_arena != submessage_arena) {
-      tensor_shape = ::google::protobuf::internal::GetOwnedMessage(
+      tensor_shape = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, tensor_shape, submessage_arena);
     }
 
@@ -437,11 +437,11 @@ inline void TensorProto::set_allocated_tensor_shape(::opencv_tensorflow::TensorS
 inline void TensorProto::clear_version_number() {
   version_number_ = 0;
 }
-inline ::google::protobuf::int32 TensorProto::version_number() const {
+inline ::cv::protobuf::int32 TensorProto::version_number() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.TensorProto.version_number)
   return version_number_;
 }
-inline void TensorProto::set_version_number(::google::protobuf::int32 value) {
+inline void TensorProto::set_version_number(::cv::protobuf::int32 value) {
 
   version_number_ = value;
   // @@protoc_insertion_point(field_set:opencv_tensorflow.TensorProto.version_number)
@@ -449,7 +449,7 @@ inline void TensorProto::set_version_number(::google::protobuf::int32 value) {
 
 // bytes tensor_content = 4;
 inline void TensorProto::clear_tensor_content() {
-  tensor_content_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  tensor_content_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& TensorProto::tensor_content() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.TensorProto.tensor_content)
@@ -457,40 +457,40 @@ inline const ::std::string& TensorProto::tensor_content() const {
 }
 inline void TensorProto::set_tensor_content(const ::std::string& value) {
 
-  tensor_content_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  tensor_content_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.TensorProto.tensor_content)
 }
 #if LANG_CXX11
 inline void TensorProto::set_tensor_content(::std::string&& value) {
 
   tensor_content_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.TensorProto.tensor_content)
 }
 #endif
 inline void TensorProto::set_tensor_content(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  tensor_content_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  tensor_content_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.TensorProto.tensor_content)
 }
 inline void TensorProto::set_tensor_content(const void* value,
     size_t size) {
 
-  tensor_content_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  tensor_content_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.TensorProto.tensor_content)
 }
 inline ::std::string* TensorProto::mutable_tensor_content() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.TensorProto.tensor_content)
-  return tensor_content_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return tensor_content_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* TensorProto::release_tensor_content() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.TensorProto.tensor_content)
 
-  return tensor_content_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return tensor_content_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void TensorProto::set_allocated_tensor_content(::std::string* tensor_content) {
   if (tensor_content != NULL) {
@@ -498,7 +498,7 @@ inline void TensorProto::set_allocated_tensor_content(::std::string* tensor_cont
   } else {
 
   }
-  tensor_content_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), tensor_content,
+  tensor_content_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), tensor_content,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.TensorProto.tensor_content)
 }
@@ -506,7 +506,7 @@ inline ::std::string* TensorProto::unsafe_arena_release_tensor_content() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.TensorProto.tensor_content)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return tensor_content_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return tensor_content_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void TensorProto::unsafe_arena_set_allocated_tensor_content(
@@ -517,7 +517,7 @@ inline void TensorProto::unsafe_arena_set_allocated_tensor_content(
   } else {
 
   }
-  tensor_content_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  tensor_content_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       tensor_content, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.TensorProto.tensor_content)
 }
@@ -529,24 +529,24 @@ inline int TensorProto::half_val_size() const {
 inline void TensorProto::clear_half_val() {
   half_val_.Clear();
 }
-inline ::google::protobuf::int32 TensorProto::half_val(int index) const {
+inline ::cv::protobuf::int32 TensorProto::half_val(int index) const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.TensorProto.half_val)
   return half_val_.Get(index);
 }
-inline void TensorProto::set_half_val(int index, ::google::protobuf::int32 value) {
+inline void TensorProto::set_half_val(int index, ::cv::protobuf::int32 value) {
   half_val_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_tensorflow.TensorProto.half_val)
 }
-inline void TensorProto::add_half_val(::google::protobuf::int32 value) {
+inline void TensorProto::add_half_val(::cv::protobuf::int32 value) {
   half_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.half_val)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
 TensorProto::half_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.half_val)
   return half_val_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
 TensorProto::mutable_half_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.half_val)
   return &half_val_;
@@ -571,12 +571,12 @@ inline void TensorProto::add_float_val(float value) {
   float_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.float_val)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 TensorProto::float_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.float_val)
   return float_val_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 TensorProto::mutable_float_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.float_val)
   return &float_val_;
@@ -601,12 +601,12 @@ inline void TensorProto::add_double_val(double value) {
   double_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.double_val)
 }
-inline const ::google::protobuf::RepeatedField< double >&
+inline const ::cv::protobuf::RepeatedField< double >&
 TensorProto::double_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.double_val)
   return double_val_;
 }
-inline ::google::protobuf::RepeatedField< double >*
+inline ::cv::protobuf::RepeatedField< double >*
 TensorProto::mutable_double_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.double_val)
   return &double_val_;
@@ -619,24 +619,24 @@ inline int TensorProto::int_val_size() const {
 inline void TensorProto::clear_int_val() {
   int_val_.Clear();
 }
-inline ::google::protobuf::int32 TensorProto::int_val(int index) const {
+inline ::cv::protobuf::int32 TensorProto::int_val(int index) const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.TensorProto.int_val)
   return int_val_.Get(index);
 }
-inline void TensorProto::set_int_val(int index, ::google::protobuf::int32 value) {
+inline void TensorProto::set_int_val(int index, ::cv::protobuf::int32 value) {
   int_val_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_tensorflow.TensorProto.int_val)
 }
-inline void TensorProto::add_int_val(::google::protobuf::int32 value) {
+inline void TensorProto::add_int_val(::cv::protobuf::int32 value) {
   int_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.int_val)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
 TensorProto::int_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.int_val)
   return int_val_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
 TensorProto::mutable_int_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.int_val)
   return &int_val_;
@@ -700,12 +700,12 @@ inline void TensorProto::add_string_val(const void* value, size_t size) {
   string_val_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_tensorflow.TensorProto.string_val)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 TensorProto::string_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.string_val)
   return string_val_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 TensorProto::mutable_string_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.string_val)
   return &string_val_;
@@ -730,12 +730,12 @@ inline void TensorProto::add_scomplex_val(float value) {
   scomplex_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.scomplex_val)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 TensorProto::scomplex_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.scomplex_val)
   return scomplex_val_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 TensorProto::mutable_scomplex_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.scomplex_val)
   return &scomplex_val_;
@@ -748,24 +748,24 @@ inline int TensorProto::int64_val_size() const {
 inline void TensorProto::clear_int64_val() {
   int64_val_.Clear();
 }
-inline ::google::protobuf::int64 TensorProto::int64_val(int index) const {
+inline ::cv::protobuf::int64 TensorProto::int64_val(int index) const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.TensorProto.int64_val)
   return int64_val_.Get(index);
 }
-inline void TensorProto::set_int64_val(int index, ::google::protobuf::int64 value) {
+inline void TensorProto::set_int64_val(int index, ::cv::protobuf::int64 value) {
   int64_val_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_tensorflow.TensorProto.int64_val)
 }
-inline void TensorProto::add_int64_val(::google::protobuf::int64 value) {
+inline void TensorProto::add_int64_val(::cv::protobuf::int64 value) {
   int64_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.int64_val)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >&
 TensorProto::int64_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.int64_val)
   return int64_val_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >*
 TensorProto::mutable_int64_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.int64_val)
   return &int64_val_;
@@ -790,12 +790,12 @@ inline void TensorProto::add_bool_val(bool value) {
   bool_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.bool_val)
 }
-inline const ::google::protobuf::RepeatedField< bool >&
+inline const ::cv::protobuf::RepeatedField< bool >&
 TensorProto::bool_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.bool_val)
   return bool_val_;
 }
-inline ::google::protobuf::RepeatedField< bool >*
+inline ::cv::protobuf::RepeatedField< bool >*
 TensorProto::mutable_bool_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.bool_val)
   return &bool_val_;
@@ -820,12 +820,12 @@ inline void TensorProto::add_dcomplex_val(double value) {
   dcomplex_val_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorProto.dcomplex_val)
 }
-inline const ::google::protobuf::RepeatedField< double >&
+inline const ::cv::protobuf::RepeatedField< double >&
 TensorProto::dcomplex_val() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorProto.dcomplex_val)
   return dcomplex_val_;
 }
-inline ::google::protobuf::RepeatedField< double >*
+inline ::cv::protobuf::RepeatedField< double >*
 TensorProto::mutable_dcomplex_val() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorProto.dcomplex_val)
   return &dcomplex_val_;

@@ -34,12 +34,12 @@
 namespace protobuf_versions_2eproto {
 // Internal implementation detail -- do not use these members.
 struct TableStruct {
-  static const ::google::protobuf::internal::ParseTableField entries[];
-  static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[1];
-  static const ::google::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::google::protobuf::internal::SerializationTable serialization_table[];
-  static const ::google::protobuf::uint32 offsets[];
+  static const ::cv::protobuf::internal::ParseTableField entries[];
+  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
+  static const ::cv::protobuf::internal::ParseTable schema[1];
+  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
+  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
+  static const ::cv::protobuf::uint32 offsets[];
 };
 void AddDescriptors();
 void InitDefaultsVersionDefImpl();
@@ -57,7 +57,7 @@ namespace opencv_tensorflow {
 
 // ===================================================================
 
-class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.VersionDef) */ {
+class VersionDef : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.VersionDef) */ {
  public:
   VersionDef();
   virtual ~VersionDef();
@@ -83,13 +83,13 @@ class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_poin
     return *this;
   }
   #endif
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const VersionDef& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -110,9 +110,9 @@ class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   inline VersionDef* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  VersionDef* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  VersionDef* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const VersionDef& from);
   void MergeFrom(const VersionDef& from);
   void Clear() PROTOBUF_FINAL;
@@ -120,11 +120,11 @@ class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_poin
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -132,12 +132,12 @@ class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_poin
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(VersionDef* other);
   protected:
-  explicit VersionDef(::google::protobuf::Arena* arena);
+  explicit VersionDef(::cv::protobuf::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -145,7 +145,7 @@ class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_poin
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -155,37 +155,37 @@ class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_poin
   int bad_consumers_size() const;
   void clear_bad_consumers();
   static const int kBadConsumersFieldNumber = 3;
-  ::google::protobuf::int32 bad_consumers(int index) const;
-  void set_bad_consumers(int index, ::google::protobuf::int32 value);
-  void add_bad_consumers(::google::protobuf::int32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+  ::cv::protobuf::int32 bad_consumers(int index) const;
+  void set_bad_consumers(int index, ::cv::protobuf::int32 value);
+  void add_bad_consumers(::cv::protobuf::int32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
       bad_consumers() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
       mutable_bad_consumers();
 
   // int32 producer = 1;
   void clear_producer();
   static const int kProducerFieldNumber = 1;
-  ::google::protobuf::int32 producer() const;
-  void set_producer(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 producer() const;
+  void set_producer(::cv::protobuf::int32 value);
 
   // int32 min_consumer = 2;
   void clear_min_consumer();
   static const int kMinConsumerFieldNumber = 2;
-  ::google::protobuf::int32 min_consumer() const;
-  void set_min_consumer(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 min_consumer() const;
+  void set_min_consumer(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.VersionDef)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > bad_consumers_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 > bad_consumers_;
   mutable int _bad_consumers_cached_byte_size_;
-  ::google::protobuf::int32 producer_;
-  ::google::protobuf::int32 min_consumer_;
+  ::cv::protobuf::int32 producer_;
+  ::cv::protobuf::int32 min_consumer_;
   mutable int _cached_size_;
   friend struct ::protobuf_versions_2eproto::TableStruct;
   friend void ::protobuf_versions_2eproto::InitDefaultsVersionDefImpl();
@@ -205,11 +205,11 @@ class VersionDef : public ::google::protobuf::Message /* @@protoc_insertion_poin
 inline void VersionDef::clear_producer() {
   producer_ = 0;
 }
-inline ::google::protobuf::int32 VersionDef::producer() const {
+inline ::cv::protobuf::int32 VersionDef::producer() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.VersionDef.producer)
   return producer_;
 }
-inline void VersionDef::set_producer(::google::protobuf::int32 value) {
+inline void VersionDef::set_producer(::cv::protobuf::int32 value) {
 
   producer_ = value;
   // @@protoc_insertion_point(field_set:opencv_tensorflow.VersionDef.producer)
@@ -219,11 +219,11 @@ inline void VersionDef::set_producer(::google::protobuf::int32 value) {
 inline void VersionDef::clear_min_consumer() {
   min_consumer_ = 0;
 }
-inline ::google::protobuf::int32 VersionDef::min_consumer() const {
+inline ::cv::protobuf::int32 VersionDef::min_consumer() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.VersionDef.min_consumer)
   return min_consumer_;
 }
-inline void VersionDef::set_min_consumer(::google::protobuf::int32 value) {
+inline void VersionDef::set_min_consumer(::cv::protobuf::int32 value) {
 
   min_consumer_ = value;
   // @@protoc_insertion_point(field_set:opencv_tensorflow.VersionDef.min_consumer)
@@ -236,24 +236,24 @@ inline int VersionDef::bad_consumers_size() const {
 inline void VersionDef::clear_bad_consumers() {
   bad_consumers_.Clear();
 }
-inline ::google::protobuf::int32 VersionDef::bad_consumers(int index) const {
+inline ::cv::protobuf::int32 VersionDef::bad_consumers(int index) const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.VersionDef.bad_consumers)
   return bad_consumers_.Get(index);
 }
-inline void VersionDef::set_bad_consumers(int index, ::google::protobuf::int32 value) {
+inline void VersionDef::set_bad_consumers(int index, ::cv::protobuf::int32 value) {
   bad_consumers_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_tensorflow.VersionDef.bad_consumers)
 }
-inline void VersionDef::add_bad_consumers(::google::protobuf::int32 value) {
+inline void VersionDef::add_bad_consumers(::cv::protobuf::int32 value) {
   bad_consumers_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_tensorflow.VersionDef.bad_consumers)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
 VersionDef::bad_consumers() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.VersionDef.bad_consumers)
   return bad_consumers_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
 VersionDef::mutable_bad_consumers() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.VersionDef.bad_consumers)
   return &bad_consumers_;

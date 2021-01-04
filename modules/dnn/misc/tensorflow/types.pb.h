@@ -33,12 +33,12 @@
 namespace protobuf_types_2eproto {
 // Internal implementation detail -- do not use these members.
 struct TableStruct {
-  static const ::google::protobuf::internal::ParseTableField entries[];
-  static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[1];
-  static const ::google::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::google::protobuf::internal::SerializationTable serialization_table[];
-  static const ::google::protobuf::uint32 offsets[];
+  static const ::cv::protobuf::internal::ParseTableField entries[];
+  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
+  static const ::cv::protobuf::internal::ParseTable schema[1];
+  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
+  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
+  static const ::cv::protobuf::uint32 offsets[];
 };
 void AddDescriptors();
 inline void InitDefaults() {
@@ -88,22 +88,22 @@ enum DataType {
   DT_UINT16_REF = 117,
   DT_COMPLEX128_REF = 118,
   DT_HALF_REF = 119,
-  DataType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32min,
-  DataType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::google::protobuf::kint32max
+  DataType_INT_MIN_SENTINEL_DO_NOT_USE_ = ::cv::protobuf::kint32min,
+  DataType_INT_MAX_SENTINEL_DO_NOT_USE_ = ::cv::protobuf::kint32max
 };
 bool DataType_IsValid(int value);
 const DataType DataType_MIN = DT_INVALID;
 const DataType DataType_MAX = DT_HALF_REF;
 const int DataType_ARRAYSIZE = DataType_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* DataType_descriptor();
+const ::cv::protobuf::EnumDescriptor* DataType_descriptor();
 inline const ::std::string& DataType_Name(DataType value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     DataType_descriptor(), value);
 }
 inline bool DataType_Parse(
     const ::std::string& name, DataType* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<DataType>(
+  return ::cv::protobuf::internal::ParseNamedEnum<DataType>(
     DataType_descriptor(), name, value);
 }
 // ===================================================================
@@ -129,7 +129,7 @@ inline bool DataType_Parse(
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::opencv_tensorflow::DataType> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_tensorflow::DataType> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_tensorflow::DataType>() {
   return ::opencv_tensorflow::DataType_descriptor();

@@ -36,12 +36,12 @@
 namespace protobuf_op_5fdef_2eproto {
 // Internal implementation detail -- do not use these members.
 struct TableStruct {
-  static const ::google::protobuf::internal::ParseTableField entries[];
-  static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[5];
-  static const ::google::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::google::protobuf::internal::SerializationTable serialization_table[];
-  static const ::google::protobuf::uint32 offsets[];
+  static const ::cv::protobuf::internal::ParseTableField entries[];
+  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
+  static const ::cv::protobuf::internal::ParseTable schema[5];
+  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
+  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
+  static const ::cv::protobuf::uint32 offsets[];
 };
 void AddDescriptors();
 void InitDefaultsOpDef_ArgDefImpl();
@@ -83,7 +83,7 @@ namespace opencv_tensorflow {
 
 // ===================================================================
 
-class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDef.ArgDef) */ {
+class OpDef_ArgDef : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDef.ArgDef) */ {
  public:
   OpDef_ArgDef();
   virtual ~OpDef_ArgDef();
@@ -109,13 +109,13 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const OpDef_ArgDef& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -136,9 +136,9 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline OpDef_ArgDef* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  OpDef_ArgDef* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OpDef_ArgDef* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const OpDef_ArgDef& from);
   void MergeFrom(const OpDef_ArgDef& from);
   void Clear() PROTOBUF_FINAL;
@@ -146,11 +146,11 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -158,12 +158,12 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(OpDef_ArgDef* other);
   protected:
-  explicit OpDef_ArgDef(::google::protobuf::Arena* arena);
+  explicit OpDef_ArgDef(::cv::protobuf::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -171,7 +171,7 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -307,15 +307,15 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.OpDef.ArgDef)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
-  ::google::protobuf::internal::ArenaStringPtr description_;
-  ::google::protobuf::internal::ArenaStringPtr type_attr_;
-  ::google::protobuf::internal::ArenaStringPtr number_attr_;
-  ::google::protobuf::internal::ArenaStringPtr type_list_attr_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::internal::ArenaStringPtr description_;
+  ::cv::protobuf::internal::ArenaStringPtr type_attr_;
+  ::cv::protobuf::internal::ArenaStringPtr number_attr_;
+  ::cv::protobuf::internal::ArenaStringPtr type_list_attr_;
   int type_;
   bool is_ref_;
   mutable int _cached_size_;
@@ -324,7 +324,7 @@ class OpDef_ArgDef : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDef.AttrDef) */ {
+class OpDef_AttrDef : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDef.AttrDef) */ {
  public:
   OpDef_AttrDef();
   virtual ~OpDef_AttrDef();
@@ -350,13 +350,13 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const OpDef_AttrDef& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -377,9 +377,9 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline OpDef_AttrDef* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  OpDef_AttrDef* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OpDef_AttrDef* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const OpDef_AttrDef& from);
   void MergeFrom(const OpDef_AttrDef& from);
   void Clear() PROTOBUF_FINAL;
@@ -387,11 +387,11 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -399,12 +399,12 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(OpDef_AttrDef* other);
   protected:
-  explicit OpDef_AttrDef(::google::protobuf::Arena* arena);
+  explicit OpDef_AttrDef(::cv::protobuf::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -412,7 +412,7 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -520,8 +520,8 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
   // int64 minimum = 6;
   void clear_minimum();
   static const int kMinimumFieldNumber = 6;
-  ::google::protobuf::int64 minimum() const;
-  void set_minimum(::google::protobuf::int64 value);
+  ::cv::protobuf::int64 minimum() const;
+  void set_minimum(::cv::protobuf::int64 value);
 
   // bool has_minimum = 5;
   void clear_has_minimum();
@@ -532,16 +532,16 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.OpDef.AttrDef)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
-  ::google::protobuf::internal::ArenaStringPtr type_;
-  ::google::protobuf::internal::ArenaStringPtr description_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::internal::ArenaStringPtr type_;
+  ::cv::protobuf::internal::ArenaStringPtr description_;
   ::opencv_tensorflow::AttrValue* default_value_;
   ::opencv_tensorflow::AttrValue* allowed_values_;
-  ::google::protobuf::int64 minimum_;
+  ::cv::protobuf::int64 minimum_;
   bool has_minimum_;
   mutable int _cached_size_;
   friend struct ::protobuf_op_5fdef_2eproto::TableStruct;
@@ -549,7 +549,7 @@ class OpDef_AttrDef : public ::google::protobuf::Message /* @@protoc_insertion_p
 };
 // -------------------------------------------------------------------
 
-class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDef) */ {
+class OpDef : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDef) */ {
  public:
   OpDef();
   virtual ~OpDef();
@@ -575,13 +575,13 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
     return *this;
   }
   #endif
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const OpDef& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -602,9 +602,9 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
 
   inline OpDef* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  OpDef* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OpDef* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const OpDef& from);
   void MergeFrom(const OpDef& from);
   void Clear() PROTOBUF_FINAL;
@@ -612,11 +612,11 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -624,12 +624,12 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(OpDef* other);
   protected:
-  explicit OpDef(::google::protobuf::Arena* arena);
+  explicit OpDef(::cv::protobuf::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -637,7 +637,7 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -653,9 +653,9 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   const ::opencv_tensorflow::OpDef_ArgDef& input_arg(int index) const;
   ::opencv_tensorflow::OpDef_ArgDef* mutable_input_arg(int index);
   ::opencv_tensorflow::OpDef_ArgDef* add_input_arg();
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
       mutable_input_arg();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
       input_arg() const;
 
   // repeated .opencv_tensorflow.OpDef.ArgDef output_arg = 3;
@@ -665,9 +665,9 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   const ::opencv_tensorflow::OpDef_ArgDef& output_arg(int index) const;
   ::opencv_tensorflow::OpDef_ArgDef* mutable_output_arg(int index);
   ::opencv_tensorflow::OpDef_ArgDef* add_output_arg();
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
       mutable_output_arg();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
       output_arg() const;
 
   // repeated .opencv_tensorflow.OpDef.AttrDef attr = 4;
@@ -677,9 +677,9 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   const ::opencv_tensorflow::OpDef_AttrDef& attr(int index) const;
   ::opencv_tensorflow::OpDef_AttrDef* mutable_attr(int index);
   ::opencv_tensorflow::OpDef_AttrDef* add_attr();
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >*
       mutable_attr();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >&
       attr() const;
 
   // string name = 1;
@@ -793,16 +793,16 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.OpDef)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef > input_arg_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef > output_arg_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef > attr_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
-  ::google::protobuf::internal::ArenaStringPtr summary_;
-  ::google::protobuf::internal::ArenaStringPtr description_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef > input_arg_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef > output_arg_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef > attr_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::internal::ArenaStringPtr summary_;
+  ::cv::protobuf::internal::ArenaStringPtr description_;
   ::opencv_tensorflow::OpDeprecation* deprecation_;
   bool is_commutative_;
   bool is_aggregate_;
@@ -814,7 +814,7 @@ class OpDef : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
 };
 // -------------------------------------------------------------------
 
-class OpDeprecation : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDeprecation) */ {
+class OpDeprecation : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpDeprecation) */ {
  public:
   OpDeprecation();
   virtual ~OpDeprecation();
@@ -840,13 +840,13 @@ class OpDeprecation : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const OpDeprecation& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -867,9 +867,9 @@ class OpDeprecation : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline OpDeprecation* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  OpDeprecation* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OpDeprecation* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const OpDeprecation& from);
   void MergeFrom(const OpDeprecation& from);
   void Clear() PROTOBUF_FINAL;
@@ -877,11 +877,11 @@ class OpDeprecation : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -889,12 +889,12 @@ class OpDeprecation : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(OpDeprecation* other);
   protected:
-  explicit OpDeprecation(::google::protobuf::Arena* arena);
+  explicit OpDeprecation(::cv::protobuf::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -902,7 +902,7 @@ class OpDeprecation : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -934,25 +934,25 @@ class OpDeprecation : public ::google::protobuf::Message /* @@protoc_insertion_p
   // int32 version = 1;
   void clear_version();
   static const int kVersionFieldNumber = 1;
-  ::google::protobuf::int32 version() const;
-  void set_version(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 version() const;
+  void set_version(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.OpDeprecation)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::internal::ArenaStringPtr explanation_;
-  ::google::protobuf::int32 version_;
+  ::cv::protobuf::internal::ArenaStringPtr explanation_;
+  ::cv::protobuf::int32 version_;
   mutable int _cached_size_;
   friend struct ::protobuf_op_5fdef_2eproto::TableStruct;
   friend void ::protobuf_op_5fdef_2eproto::InitDefaultsOpDeprecationImpl();
 };
 // -------------------------------------------------------------------
 
-class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpList) */ {
+class OpList : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.OpList) */ {
  public:
   OpList();
   virtual ~OpList();
@@ -978,13 +978,13 @@ class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
     return *this;
   }
   #endif
-  inline ::google::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const OpList& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -1005,9 +1005,9 @@ class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   inline OpList* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  OpList* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  OpList* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const OpList& from);
   void MergeFrom(const OpList& from);
   void Clear() PROTOBUF_FINAL;
@@ -1015,11 +1015,11 @@ class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -1027,12 +1027,12 @@ class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(OpList* other);
   protected:
-  explicit OpList(::google::protobuf::Arena* arena);
+  explicit OpList(::cv::protobuf::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::google::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -1040,7 +1040,7 @@ class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -1053,19 +1053,19 @@ class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
   const ::opencv_tensorflow::OpDef& op(int index) const;
   ::opencv_tensorflow::OpDef* mutable_op(int index);
   ::opencv_tensorflow::OpDef* add_op();
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >*
       mutable_op();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >&
       op() const;
 
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.OpList)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::google::protobuf::Arena::InternalHelper;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef > op_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef > op_;
   mutable int _cached_size_;
   friend struct ::protobuf_op_5fdef_2eproto::TableStruct;
   friend void ::protobuf_op_5fdef_2eproto::InitDefaultsOpListImpl();
@@ -1083,7 +1083,7 @@ class OpList : public ::google::protobuf::Message /* @@protoc_insertion_point(cl
 
 // string name = 1;
 inline void OpDef_ArgDef::clear_name() {
-  name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  name_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_ArgDef::name() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.ArgDef.name)
@@ -1091,40 +1091,40 @@ inline const ::std::string& OpDef_ArgDef::name() const {
 }
 inline void OpDef_ArgDef::set_name(const ::std::string& value) {
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.ArgDef.name)
 }
 #if LANG_CXX11
 inline void OpDef_ArgDef::set_name(::std::string&& value) {
 
   name_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.ArgDef.name)
 }
 #endif
 inline void OpDef_ArgDef::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.ArgDef.name)
 }
 inline void OpDef_ArgDef::set_name(const char* value,
     size_t size) {
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.ArgDef.name)
 }
 inline ::std::string* OpDef_ArgDef::mutable_name() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.ArgDef.name)
-  return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_ArgDef::release_name() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.ArgDef.name)
 
-  return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -1132,7 +1132,7 @@ inline void OpDef_ArgDef::set_allocated_name(::std::string* name) {
   } else {
 
   }
-  name_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name,
+  name_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.ArgDef.name)
 }
@@ -1140,7 +1140,7 @@ inline ::std::string* OpDef_ArgDef::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.ArgDef.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return name_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::unsafe_arena_set_allocated_name(
@@ -1151,14 +1151,14 @@ inline void OpDef_ArgDef::unsafe_arena_set_allocated_name(
   } else {
 
   }
-  name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       name, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.ArgDef.name)
 }
 
 // string description = 2;
 inline void OpDef_ArgDef::clear_description() {
-  description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  description_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_ArgDef::description() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.ArgDef.description)
@@ -1166,40 +1166,40 @@ inline const ::std::string& OpDef_ArgDef::description() const {
 }
 inline void OpDef_ArgDef::set_description(const ::std::string& value) {
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.ArgDef.description)
 }
 #if LANG_CXX11
 inline void OpDef_ArgDef::set_description(::std::string&& value) {
 
   description_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.ArgDef.description)
 }
 #endif
 inline void OpDef_ArgDef::set_description(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.ArgDef.description)
 }
 inline void OpDef_ArgDef::set_description(const char* value,
     size_t size) {
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.ArgDef.description)
 }
 inline ::std::string* OpDef_ArgDef::mutable_description() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.ArgDef.description)
-  return description_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return description_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_ArgDef::release_description() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.ArgDef.description)
 
-  return description_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return description_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::set_allocated_description(::std::string* description) {
   if (description != NULL) {
@@ -1207,7 +1207,7 @@ inline void OpDef_ArgDef::set_allocated_description(::std::string* description) 
   } else {
 
   }
-  description_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), description,
+  description_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), description,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.ArgDef.description)
 }
@@ -1215,7 +1215,7 @@ inline ::std::string* OpDef_ArgDef::unsafe_arena_release_description() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.ArgDef.description)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return description_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return description_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::unsafe_arena_set_allocated_description(
@@ -1226,7 +1226,7 @@ inline void OpDef_ArgDef::unsafe_arena_set_allocated_description(
   } else {
 
   }
-  description_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  description_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       description, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.ArgDef.description)
 }
@@ -1247,7 +1247,7 @@ inline void OpDef_ArgDef::set_type(::opencv_tensorflow::DataType value) {
 
 // string type_attr = 4;
 inline void OpDef_ArgDef::clear_type_attr() {
-  type_attr_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  type_attr_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_ArgDef::type_attr() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.ArgDef.type_attr)
@@ -1255,40 +1255,40 @@ inline const ::std::string& OpDef_ArgDef::type_attr() const {
 }
 inline void OpDef_ArgDef::set_type_attr(const ::std::string& value) {
 
-  type_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  type_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.ArgDef.type_attr)
 }
 #if LANG_CXX11
 inline void OpDef_ArgDef::set_type_attr(::std::string&& value) {
 
   type_attr_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.ArgDef.type_attr)
 }
 #endif
 inline void OpDef_ArgDef::set_type_attr(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  type_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  type_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.ArgDef.type_attr)
 }
 inline void OpDef_ArgDef::set_type_attr(const char* value,
     size_t size) {
 
-  type_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  type_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.ArgDef.type_attr)
 }
 inline ::std::string* OpDef_ArgDef::mutable_type_attr() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.ArgDef.type_attr)
-  return type_attr_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return type_attr_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_ArgDef::release_type_attr() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.ArgDef.type_attr)
 
-  return type_attr_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return type_attr_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::set_allocated_type_attr(::std::string* type_attr) {
   if (type_attr != NULL) {
@@ -1296,7 +1296,7 @@ inline void OpDef_ArgDef::set_allocated_type_attr(::std::string* type_attr) {
   } else {
 
   }
-  type_attr_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type_attr,
+  type_attr_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), type_attr,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.ArgDef.type_attr)
 }
@@ -1304,7 +1304,7 @@ inline ::std::string* OpDef_ArgDef::unsafe_arena_release_type_attr() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.ArgDef.type_attr)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return type_attr_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return type_attr_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::unsafe_arena_set_allocated_type_attr(
@@ -1315,14 +1315,14 @@ inline void OpDef_ArgDef::unsafe_arena_set_allocated_type_attr(
   } else {
 
   }
-  type_attr_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  type_attr_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       type_attr, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.ArgDef.type_attr)
 }
 
 // string number_attr = 5;
 inline void OpDef_ArgDef::clear_number_attr() {
-  number_attr_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  number_attr_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_ArgDef::number_attr() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.ArgDef.number_attr)
@@ -1330,40 +1330,40 @@ inline const ::std::string& OpDef_ArgDef::number_attr() const {
 }
 inline void OpDef_ArgDef::set_number_attr(const ::std::string& value) {
 
-  number_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  number_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.ArgDef.number_attr)
 }
 #if LANG_CXX11
 inline void OpDef_ArgDef::set_number_attr(::std::string&& value) {
 
   number_attr_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.ArgDef.number_attr)
 }
 #endif
 inline void OpDef_ArgDef::set_number_attr(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  number_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  number_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.ArgDef.number_attr)
 }
 inline void OpDef_ArgDef::set_number_attr(const char* value,
     size_t size) {
 
-  number_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  number_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.ArgDef.number_attr)
 }
 inline ::std::string* OpDef_ArgDef::mutable_number_attr() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.ArgDef.number_attr)
-  return number_attr_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return number_attr_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_ArgDef::release_number_attr() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.ArgDef.number_attr)
 
-  return number_attr_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return number_attr_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::set_allocated_number_attr(::std::string* number_attr) {
   if (number_attr != NULL) {
@@ -1371,7 +1371,7 @@ inline void OpDef_ArgDef::set_allocated_number_attr(::std::string* number_attr) 
   } else {
 
   }
-  number_attr_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), number_attr,
+  number_attr_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), number_attr,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.ArgDef.number_attr)
 }
@@ -1379,7 +1379,7 @@ inline ::std::string* OpDef_ArgDef::unsafe_arena_release_number_attr() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.ArgDef.number_attr)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return number_attr_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return number_attr_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::unsafe_arena_set_allocated_number_attr(
@@ -1390,14 +1390,14 @@ inline void OpDef_ArgDef::unsafe_arena_set_allocated_number_attr(
   } else {
 
   }
-  number_attr_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  number_attr_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       number_attr, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.ArgDef.number_attr)
 }
 
 // string type_list_attr = 6;
 inline void OpDef_ArgDef::clear_type_list_attr() {
-  type_list_attr_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  type_list_attr_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_ArgDef::type_list_attr() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
@@ -1405,40 +1405,40 @@ inline const ::std::string& OpDef_ArgDef::type_list_attr() const {
 }
 inline void OpDef_ArgDef::set_type_list_attr(const ::std::string& value) {
 
-  type_list_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  type_list_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
 }
 #if LANG_CXX11
 inline void OpDef_ArgDef::set_type_list_attr(::std::string&& value) {
 
   type_list_attr_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
 }
 #endif
 inline void OpDef_ArgDef::set_type_list_attr(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  type_list_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  type_list_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
 }
 inline void OpDef_ArgDef::set_type_list_attr(const char* value,
     size_t size) {
 
-  type_list_attr_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  type_list_attr_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
 }
 inline ::std::string* OpDef_ArgDef::mutable_type_list_attr() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
-  return type_list_attr_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return type_list_attr_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_ArgDef::release_type_list_attr() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
 
-  return type_list_attr_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return type_list_attr_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::set_allocated_type_list_attr(::std::string* type_list_attr) {
   if (type_list_attr != NULL) {
@@ -1446,7 +1446,7 @@ inline void OpDef_ArgDef::set_allocated_type_list_attr(::std::string* type_list_
   } else {
 
   }
-  type_list_attr_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type_list_attr,
+  type_list_attr_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), type_list_attr,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
 }
@@ -1454,7 +1454,7 @@ inline ::std::string* OpDef_ArgDef::unsafe_arena_release_type_list_attr() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return type_list_attr_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return type_list_attr_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_ArgDef::unsafe_arena_set_allocated_type_list_attr(
@@ -1465,7 +1465,7 @@ inline void OpDef_ArgDef::unsafe_arena_set_allocated_type_list_attr(
   } else {
 
   }
-  type_list_attr_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  type_list_attr_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       type_list_attr, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.ArgDef.type_list_attr)
 }
@@ -1490,7 +1490,7 @@ inline void OpDef_ArgDef::set_is_ref(bool value) {
 
 // string name = 1;
 inline void OpDef_AttrDef::clear_name() {
-  name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  name_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_AttrDef::name() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.AttrDef.name)
@@ -1498,40 +1498,40 @@ inline const ::std::string& OpDef_AttrDef::name() const {
 }
 inline void OpDef_AttrDef::set_name(const ::std::string& value) {
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.AttrDef.name)
 }
 #if LANG_CXX11
 inline void OpDef_AttrDef::set_name(::std::string&& value) {
 
   name_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.AttrDef.name)
 }
 #endif
 inline void OpDef_AttrDef::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.AttrDef.name)
 }
 inline void OpDef_AttrDef::set_name(const char* value,
     size_t size) {
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.AttrDef.name)
 }
 inline ::std::string* OpDef_AttrDef::mutable_name() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.AttrDef.name)
-  return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_AttrDef::release_name() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.AttrDef.name)
 
-  return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_AttrDef::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -1539,7 +1539,7 @@ inline void OpDef_AttrDef::set_allocated_name(::std::string* name) {
   } else {
 
   }
-  name_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name,
+  name_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.AttrDef.name)
 }
@@ -1547,7 +1547,7 @@ inline ::std::string* OpDef_AttrDef::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.AttrDef.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return name_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_AttrDef::unsafe_arena_set_allocated_name(
@@ -1558,14 +1558,14 @@ inline void OpDef_AttrDef::unsafe_arena_set_allocated_name(
   } else {
 
   }
-  name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       name, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.AttrDef.name)
 }
 
 // string type = 2;
 inline void OpDef_AttrDef::clear_type() {
-  type_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  type_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_AttrDef::type() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.AttrDef.type)
@@ -1573,40 +1573,40 @@ inline const ::std::string& OpDef_AttrDef::type() const {
 }
 inline void OpDef_AttrDef::set_type(const ::std::string& value) {
 
-  type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  type_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.AttrDef.type)
 }
 #if LANG_CXX11
 inline void OpDef_AttrDef::set_type(::std::string&& value) {
 
   type_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.AttrDef.type)
 }
 #endif
 inline void OpDef_AttrDef::set_type(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  type_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.AttrDef.type)
 }
 inline void OpDef_AttrDef::set_type(const char* value,
     size_t size) {
 
-  type_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  type_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.AttrDef.type)
 }
 inline ::std::string* OpDef_AttrDef::mutable_type() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.AttrDef.type)
-  return type_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return type_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_AttrDef::release_type() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.AttrDef.type)
 
-  return type_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return type_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_AttrDef::set_allocated_type(::std::string* type) {
   if (type != NULL) {
@@ -1614,7 +1614,7 @@ inline void OpDef_AttrDef::set_allocated_type(::std::string* type) {
   } else {
 
   }
-  type_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type,
+  type_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), type,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.AttrDef.type)
 }
@@ -1622,7 +1622,7 @@ inline ::std::string* OpDef_AttrDef::unsafe_arena_release_type() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.AttrDef.type)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return type_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return type_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_AttrDef::unsafe_arena_set_allocated_type(
@@ -1633,7 +1633,7 @@ inline void OpDef_AttrDef::unsafe_arena_set_allocated_type(
   } else {
 
   }
-  type_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  type_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       type, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.AttrDef.type)
 }
@@ -1653,7 +1653,7 @@ inline ::opencv_tensorflow::AttrValue* OpDef_AttrDef::release_default_value() {
 
   ::opencv_tensorflow::AttrValue* temp = default_value_;
   if (GetArenaNoVirtual() != NULL) {
-    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp, NULL);
+    temp = ::cv::protobuf::internal::DuplicateIfNonNull(temp, NULL);
   }
   default_value_ = NULL;
   return temp;
@@ -1674,15 +1674,15 @@ inline ::opencv_tensorflow::AttrValue* OpDef_AttrDef::mutable_default_value() {
   return default_value_;
 }
 inline void OpDef_AttrDef::set_allocated_default_value(::opencv_tensorflow::AttrValue* default_value) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
-    delete reinterpret_cast< ::google::protobuf::MessageLite*>(default_value_);
+    delete reinterpret_cast< ::cv::protobuf::MessageLite*>(default_value_);
   }
   if (default_value) {
-    ::google::protobuf::Arena* submessage_arena =
-      reinterpret_cast< ::google::protobuf::MessageLite*>(default_value)->GetArena();
+    ::cv::protobuf::Arena* submessage_arena =
+      reinterpret_cast< ::cv::protobuf::MessageLite*>(default_value)->GetArena();
     if (message_arena != submessage_arena) {
-      default_value = ::google::protobuf::internal::GetOwnedMessage(
+      default_value = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, default_value, submessage_arena);
     }
 
@@ -1695,7 +1695,7 @@ inline void OpDef_AttrDef::set_allocated_default_value(::opencv_tensorflow::Attr
 
 // string description = 4;
 inline void OpDef_AttrDef::clear_description() {
-  description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  description_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef_AttrDef::description() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.AttrDef.description)
@@ -1703,40 +1703,40 @@ inline const ::std::string& OpDef_AttrDef::description() const {
 }
 inline void OpDef_AttrDef::set_description(const ::std::string& value) {
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.AttrDef.description)
 }
 #if LANG_CXX11
 inline void OpDef_AttrDef::set_description(::std::string&& value) {
 
   description_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.AttrDef.description)
 }
 #endif
 inline void OpDef_AttrDef::set_description(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.AttrDef.description)
 }
 inline void OpDef_AttrDef::set_description(const char* value,
     size_t size) {
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.AttrDef.description)
 }
 inline ::std::string* OpDef_AttrDef::mutable_description() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.AttrDef.description)
-  return description_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return description_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef_AttrDef::release_description() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.AttrDef.description)
 
-  return description_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return description_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef_AttrDef::set_allocated_description(::std::string* description) {
   if (description != NULL) {
@@ -1744,7 +1744,7 @@ inline void OpDef_AttrDef::set_allocated_description(::std::string* description)
   } else {
 
   }
-  description_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), description,
+  description_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), description,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.AttrDef.description)
 }
@@ -1752,7 +1752,7 @@ inline ::std::string* OpDef_AttrDef::unsafe_arena_release_description() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.AttrDef.description)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return description_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return description_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef_AttrDef::unsafe_arena_set_allocated_description(
@@ -1763,7 +1763,7 @@ inline void OpDef_AttrDef::unsafe_arena_set_allocated_description(
   } else {
 
   }
-  description_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  description_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       description, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.AttrDef.description)
 }
@@ -1786,11 +1786,11 @@ inline void OpDef_AttrDef::set_has_minimum(bool value) {
 inline void OpDef_AttrDef::clear_minimum() {
   minimum_ = GOOGLE_LONGLONG(0);
 }
-inline ::google::protobuf::int64 OpDef_AttrDef::minimum() const {
+inline ::cv::protobuf::int64 OpDef_AttrDef::minimum() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.AttrDef.minimum)
   return minimum_;
 }
-inline void OpDef_AttrDef::set_minimum(::google::protobuf::int64 value) {
+inline void OpDef_AttrDef::set_minimum(::cv::protobuf::int64 value) {
 
   minimum_ = value;
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.AttrDef.minimum)
@@ -1811,7 +1811,7 @@ inline ::opencv_tensorflow::AttrValue* OpDef_AttrDef::release_allowed_values() {
 
   ::opencv_tensorflow::AttrValue* temp = allowed_values_;
   if (GetArenaNoVirtual() != NULL) {
-    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp, NULL);
+    temp = ::cv::protobuf::internal::DuplicateIfNonNull(temp, NULL);
   }
   allowed_values_ = NULL;
   return temp;
@@ -1832,15 +1832,15 @@ inline ::opencv_tensorflow::AttrValue* OpDef_AttrDef::mutable_allowed_values() {
   return allowed_values_;
 }
 inline void OpDef_AttrDef::set_allocated_allowed_values(::opencv_tensorflow::AttrValue* allowed_values) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
-    delete reinterpret_cast< ::google::protobuf::MessageLite*>(allowed_values_);
+    delete reinterpret_cast< ::cv::protobuf::MessageLite*>(allowed_values_);
   }
   if (allowed_values) {
-    ::google::protobuf::Arena* submessage_arena =
-      reinterpret_cast< ::google::protobuf::MessageLite*>(allowed_values)->GetArena();
+    ::cv::protobuf::Arena* submessage_arena =
+      reinterpret_cast< ::cv::protobuf::MessageLite*>(allowed_values)->GetArena();
     if (message_arena != submessage_arena) {
-      allowed_values = ::google::protobuf::internal::GetOwnedMessage(
+      allowed_values = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, allowed_values, submessage_arena);
     }
 
@@ -1857,7 +1857,7 @@ inline void OpDef_AttrDef::set_allocated_allowed_values(::opencv_tensorflow::Att
 
 // string name = 1;
 inline void OpDef::clear_name() {
-  name_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  name_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef::name() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.name)
@@ -1865,40 +1865,40 @@ inline const ::std::string& OpDef::name() const {
 }
 inline void OpDef::set_name(const ::std::string& value) {
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.name)
 }
 #if LANG_CXX11
 inline void OpDef::set_name(::std::string&& value) {
 
   name_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.name)
 }
 #endif
 inline void OpDef::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.name)
 }
 inline void OpDef::set_name(const char* value,
     size_t size) {
 
-  name_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.name)
 }
 inline ::std::string* OpDef::mutable_name() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.name)
-  return name_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef::release_name() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.name)
 
-  return name_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -1906,7 +1906,7 @@ inline void OpDef::set_allocated_name(::std::string* name) {
   } else {
 
   }
-  name_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name,
+  name_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.name)
 }
@@ -1914,7 +1914,7 @@ inline ::std::string* OpDef::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return name_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return name_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef::unsafe_arena_set_allocated_name(
@@ -1925,7 +1925,7 @@ inline void OpDef::unsafe_arena_set_allocated_name(
   } else {
 
   }
-  name_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       name, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.name)
 }
@@ -1949,12 +1949,12 @@ inline ::opencv_tensorflow::OpDef_ArgDef* OpDef::add_input_arg() {
   // @@protoc_insertion_point(field_add:opencv_tensorflow.OpDef.input_arg)
   return input_arg_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
 OpDef::mutable_input_arg() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.OpDef.input_arg)
   return &input_arg_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
 OpDef::input_arg() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.OpDef.input_arg)
   return input_arg_;
@@ -1979,12 +1979,12 @@ inline ::opencv_tensorflow::OpDef_ArgDef* OpDef::add_output_arg() {
   // @@protoc_insertion_point(field_add:opencv_tensorflow.OpDef.output_arg)
   return output_arg_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >*
 OpDef::mutable_output_arg() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.OpDef.output_arg)
   return &output_arg_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_ArgDef >&
 OpDef::output_arg() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.OpDef.output_arg)
   return output_arg_;
@@ -2009,12 +2009,12 @@ inline ::opencv_tensorflow::OpDef_AttrDef* OpDef::add_attr() {
   // @@protoc_insertion_point(field_add:opencv_tensorflow.OpDef.attr)
   return attr_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >*
 OpDef::mutable_attr() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.OpDef.attr)
   return &attr_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef_AttrDef >&
 OpDef::attr() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.OpDef.attr)
   return attr_;
@@ -2041,7 +2041,7 @@ inline ::opencv_tensorflow::OpDeprecation* OpDef::release_deprecation() {
 
   ::opencv_tensorflow::OpDeprecation* temp = deprecation_;
   if (GetArenaNoVirtual() != NULL) {
-    temp = ::google::protobuf::internal::DuplicateIfNonNull(temp, NULL);
+    temp = ::cv::protobuf::internal::DuplicateIfNonNull(temp, NULL);
   }
   deprecation_ = NULL;
   return temp;
@@ -2062,15 +2062,15 @@ inline ::opencv_tensorflow::OpDeprecation* OpDef::mutable_deprecation() {
   return deprecation_;
 }
 inline void OpDef::set_allocated_deprecation(::opencv_tensorflow::OpDeprecation* deprecation) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete deprecation_;
   }
   if (deprecation) {
-    ::google::protobuf::Arena* submessage_arena =
-      ::google::protobuf::Arena::GetArena(deprecation);
+    ::cv::protobuf::Arena* submessage_arena =
+      ::cv::protobuf::Arena::GetArena(deprecation);
     if (message_arena != submessage_arena) {
-      deprecation = ::google::protobuf::internal::GetOwnedMessage(
+      deprecation = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, deprecation, submessage_arena);
     }
 
@@ -2083,7 +2083,7 @@ inline void OpDef::set_allocated_deprecation(::opencv_tensorflow::OpDeprecation*
 
 // string summary = 5;
 inline void OpDef::clear_summary() {
-  summary_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  summary_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef::summary() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.summary)
@@ -2091,40 +2091,40 @@ inline const ::std::string& OpDef::summary() const {
 }
 inline void OpDef::set_summary(const ::std::string& value) {
 
-  summary_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  summary_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.summary)
 }
 #if LANG_CXX11
 inline void OpDef::set_summary(::std::string&& value) {
 
   summary_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.summary)
 }
 #endif
 inline void OpDef::set_summary(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  summary_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  summary_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.summary)
 }
 inline void OpDef::set_summary(const char* value,
     size_t size) {
 
-  summary_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  summary_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.summary)
 }
 inline ::std::string* OpDef::mutable_summary() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.summary)
-  return summary_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return summary_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef::release_summary() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.summary)
 
-  return summary_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return summary_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef::set_allocated_summary(::std::string* summary) {
   if (summary != NULL) {
@@ -2132,7 +2132,7 @@ inline void OpDef::set_allocated_summary(::std::string* summary) {
   } else {
 
   }
-  summary_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), summary,
+  summary_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), summary,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.summary)
 }
@@ -2140,7 +2140,7 @@ inline ::std::string* OpDef::unsafe_arena_release_summary() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.summary)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return summary_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return summary_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef::unsafe_arena_set_allocated_summary(
@@ -2151,14 +2151,14 @@ inline void OpDef::unsafe_arena_set_allocated_summary(
   } else {
 
   }
-  summary_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  summary_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       summary, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.summary)
 }
 
 // string description = 6;
 inline void OpDef::clear_description() {
-  description_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  description_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDef::description() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDef.description)
@@ -2166,40 +2166,40 @@ inline const ::std::string& OpDef::description() const {
 }
 inline void OpDef::set_description(const ::std::string& value) {
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDef.description)
 }
 #if LANG_CXX11
 inline void OpDef::set_description(::std::string&& value) {
 
   description_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDef.description)
 }
 #endif
 inline void OpDef::set_description(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDef.description)
 }
 inline void OpDef::set_description(const char* value,
     size_t size) {
 
-  description_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  description_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDef.description)
 }
 inline ::std::string* OpDef::mutable_description() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDef.description)
-  return description_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return description_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDef::release_description() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDef.description)
 
-  return description_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return description_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDef::set_allocated_description(::std::string* description) {
   if (description != NULL) {
@@ -2207,7 +2207,7 @@ inline void OpDef::set_allocated_description(::std::string* description) {
   } else {
 
   }
-  description_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), description,
+  description_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), description,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDef.description)
 }
@@ -2215,7 +2215,7 @@ inline ::std::string* OpDef::unsafe_arena_release_description() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDef.description)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return description_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return description_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDef::unsafe_arena_set_allocated_description(
@@ -2226,7 +2226,7 @@ inline void OpDef::unsafe_arena_set_allocated_description(
   } else {
 
   }
-  description_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  description_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       description, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDef.description)
 }
@@ -2295,11 +2295,11 @@ inline void OpDef::set_allows_uninitialized_input(bool value) {
 inline void OpDeprecation::clear_version() {
   version_ = 0;
 }
-inline ::google::protobuf::int32 OpDeprecation::version() const {
+inline ::cv::protobuf::int32 OpDeprecation::version() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDeprecation.version)
   return version_;
 }
-inline void OpDeprecation::set_version(::google::protobuf::int32 value) {
+inline void OpDeprecation::set_version(::cv::protobuf::int32 value) {
 
   version_ = value;
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDeprecation.version)
@@ -2307,7 +2307,7 @@ inline void OpDeprecation::set_version(::google::protobuf::int32 value) {
 
 // string explanation = 2;
 inline void OpDeprecation::clear_explanation() {
-  explanation_.ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  explanation_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& OpDeprecation::explanation() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.OpDeprecation.explanation)
@@ -2315,40 +2315,40 @@ inline const ::std::string& OpDeprecation::explanation() const {
 }
 inline void OpDeprecation::set_explanation(const ::std::string& value) {
 
-  explanation_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  explanation_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.OpDeprecation.explanation)
 }
 #if LANG_CXX11
 inline void OpDeprecation::set_explanation(::std::string&& value) {
 
   explanation_.Set(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.OpDeprecation.explanation)
 }
 #endif
 inline void OpDeprecation::set_explanation(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  explanation_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  explanation_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.OpDeprecation.explanation)
 }
 inline void OpDeprecation::set_explanation(const char* value,
     size_t size) {
 
-  explanation_.Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  explanation_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.OpDeprecation.explanation)
 }
 inline ::std::string* OpDeprecation::mutable_explanation() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.OpDeprecation.explanation)
-  return explanation_.Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return explanation_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* OpDeprecation::release_explanation() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.OpDeprecation.explanation)
 
-  return explanation_.Release(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return explanation_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void OpDeprecation::set_allocated_explanation(::std::string* explanation) {
   if (explanation != NULL) {
@@ -2356,7 +2356,7 @@ inline void OpDeprecation::set_allocated_explanation(::std::string* explanation)
   } else {
 
   }
-  explanation_.SetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), explanation,
+  explanation_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), explanation,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.OpDeprecation.explanation)
 }
@@ -2364,7 +2364,7 @@ inline ::std::string* OpDeprecation::unsafe_arena_release_explanation() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.OpDeprecation.explanation)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return explanation_.UnsafeArenaRelease(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return explanation_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void OpDeprecation::unsafe_arena_set_allocated_explanation(
@@ -2375,7 +2375,7 @@ inline void OpDeprecation::unsafe_arena_set_allocated_explanation(
   } else {
 
   }
-  explanation_.UnsafeArenaSetAllocated(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  explanation_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       explanation, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.OpDeprecation.explanation)
 }
@@ -2403,12 +2403,12 @@ inline ::opencv_tensorflow::OpDef* OpList::add_op() {
   // @@protoc_insertion_point(field_add:opencv_tensorflow.OpList.op)
   return op_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >*
 OpList::mutable_op() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.OpList.op)
   return &op_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::OpDef >&
 OpList::op() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.OpList.op)
   return op_;

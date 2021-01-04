@@ -35,12 +35,12 @@
 namespace protobuf_opencv_2dcaffe_2eproto {
 // Internal implementation detail -- do not use these members.
 struct TableStruct {
-  static const ::google::protobuf::internal::ParseTableField entries[];
-  static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[71];
-  static const ::google::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::google::protobuf::internal::SerializationTable serialization_table[];
-  static const ::google::protobuf::uint32 offsets[];
+  static const ::cv::protobuf::internal::ParseTableField entries[];
+  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
+  static const ::cv::protobuf::internal::ParseTable schema[71];
+  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
+  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
+  static const ::cv::protobuf::uint32 offsets[];
 };
 void AddDescriptors();
 void InitDefaultsBlobShapeImpl();
@@ -485,14 +485,14 @@ const PriorBoxParameter_CodeType PriorBoxParameter_CodeType_CodeType_MIN = Prior
 const PriorBoxParameter_CodeType PriorBoxParameter_CodeType_CodeType_MAX = PriorBoxParameter_CodeType_CENTER_SIZE;
 const int PriorBoxParameter_CodeType_CodeType_ARRAYSIZE = PriorBoxParameter_CodeType_CodeType_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* PriorBoxParameter_CodeType_descriptor();
+const ::cv::protobuf::EnumDescriptor* PriorBoxParameter_CodeType_descriptor();
 inline const ::std::string& PriorBoxParameter_CodeType_Name(PriorBoxParameter_CodeType value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     PriorBoxParameter_CodeType_descriptor(), value);
 }
 inline bool PriorBoxParameter_CodeType_Parse(
     const ::std::string& name, PriorBoxParameter_CodeType* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<PriorBoxParameter_CodeType>(
+  return ::cv::protobuf::internal::ParseNamedEnum<PriorBoxParameter_CodeType>(
     PriorBoxParameter_CodeType_descriptor(), name, value);
 }
 enum FillerParameter_VarianceNorm {
@@ -505,14 +505,14 @@ const FillerParameter_VarianceNorm FillerParameter_VarianceNorm_VarianceNorm_MIN
 const FillerParameter_VarianceNorm FillerParameter_VarianceNorm_VarianceNorm_MAX = FillerParameter_VarianceNorm_AVERAGE;
 const int FillerParameter_VarianceNorm_VarianceNorm_ARRAYSIZE = FillerParameter_VarianceNorm_VarianceNorm_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* FillerParameter_VarianceNorm_descriptor();
+const ::cv::protobuf::EnumDescriptor* FillerParameter_VarianceNorm_descriptor();
 inline const ::std::string& FillerParameter_VarianceNorm_Name(FillerParameter_VarianceNorm value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     FillerParameter_VarianceNorm_descriptor(), value);
 }
 inline bool FillerParameter_VarianceNorm_Parse(
     const ::std::string& name, FillerParameter_VarianceNorm* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<FillerParameter_VarianceNorm>(
+  return ::cv::protobuf::internal::ParseNamedEnum<FillerParameter_VarianceNorm>(
     FillerParameter_VarianceNorm_descriptor(), name, value);
 }
 enum SolverParameter_SnapshotFormat {
@@ -524,14 +524,14 @@ const SolverParameter_SnapshotFormat SolverParameter_SnapshotFormat_SnapshotForm
 const SolverParameter_SnapshotFormat SolverParameter_SnapshotFormat_SnapshotFormat_MAX = SolverParameter_SnapshotFormat_BINARYPROTO;
 const int SolverParameter_SnapshotFormat_SnapshotFormat_ARRAYSIZE = SolverParameter_SnapshotFormat_SnapshotFormat_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* SolverParameter_SnapshotFormat_descriptor();
+const ::cv::protobuf::EnumDescriptor* SolverParameter_SnapshotFormat_descriptor();
 inline const ::std::string& SolverParameter_SnapshotFormat_Name(SolverParameter_SnapshotFormat value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     SolverParameter_SnapshotFormat_descriptor(), value);
 }
 inline bool SolverParameter_SnapshotFormat_Parse(
     const ::std::string& name, SolverParameter_SnapshotFormat* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<SolverParameter_SnapshotFormat>(
+  return ::cv::protobuf::internal::ParseNamedEnum<SolverParameter_SnapshotFormat>(
     SolverParameter_SnapshotFormat_descriptor(), name, value);
 }
 enum SolverParameter_SolverMode {
@@ -543,14 +543,14 @@ const SolverParameter_SolverMode SolverParameter_SolverMode_SolverMode_MIN = Sol
 const SolverParameter_SolverMode SolverParameter_SolverMode_SolverMode_MAX = SolverParameter_SolverMode_GPU;
 const int SolverParameter_SolverMode_SolverMode_ARRAYSIZE = SolverParameter_SolverMode_SolverMode_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* SolverParameter_SolverMode_descriptor();
+const ::cv::protobuf::EnumDescriptor* SolverParameter_SolverMode_descriptor();
 inline const ::std::string& SolverParameter_SolverMode_Name(SolverParameter_SolverMode value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     SolverParameter_SolverMode_descriptor(), value);
 }
 inline bool SolverParameter_SolverMode_Parse(
     const ::std::string& name, SolverParameter_SolverMode* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<SolverParameter_SolverMode>(
+  return ::cv::protobuf::internal::ParseNamedEnum<SolverParameter_SolverMode>(
     SolverParameter_SolverMode_descriptor(), name, value);
 }
 enum SolverParameter_SolverType {
@@ -566,14 +566,14 @@ const SolverParameter_SolverType SolverParameter_SolverType_SolverType_MIN = Sol
 const SolverParameter_SolverType SolverParameter_SolverType_SolverType_MAX = SolverParameter_SolverType_ADAM;
 const int SolverParameter_SolverType_SolverType_ARRAYSIZE = SolverParameter_SolverType_SolverType_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* SolverParameter_SolverType_descriptor();
+const ::cv::protobuf::EnumDescriptor* SolverParameter_SolverType_descriptor();
 inline const ::std::string& SolverParameter_SolverType_Name(SolverParameter_SolverType value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     SolverParameter_SolverType_descriptor(), value);
 }
 inline bool SolverParameter_SolverType_Parse(
     const ::std::string& name, SolverParameter_SolverType* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<SolverParameter_SolverType>(
+  return ::cv::protobuf::internal::ParseNamedEnum<SolverParameter_SolverType>(
     SolverParameter_SolverType_descriptor(), name, value);
 }
 enum ParamSpec_DimCheckMode {
@@ -585,14 +585,14 @@ const ParamSpec_DimCheckMode ParamSpec_DimCheckMode_DimCheckMode_MIN = ParamSpec
 const ParamSpec_DimCheckMode ParamSpec_DimCheckMode_DimCheckMode_MAX = ParamSpec_DimCheckMode_PERMISSIVE;
 const int ParamSpec_DimCheckMode_DimCheckMode_ARRAYSIZE = ParamSpec_DimCheckMode_DimCheckMode_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* ParamSpec_DimCheckMode_descriptor();
+const ::cv::protobuf::EnumDescriptor* ParamSpec_DimCheckMode_descriptor();
 inline const ::std::string& ParamSpec_DimCheckMode_Name(ParamSpec_DimCheckMode value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     ParamSpec_DimCheckMode_descriptor(), value);
 }
 inline bool ParamSpec_DimCheckMode_Parse(
     const ::std::string& name, ParamSpec_DimCheckMode* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<ParamSpec_DimCheckMode>(
+  return ::cv::protobuf::internal::ParseNamedEnum<ParamSpec_DimCheckMode>(
     ParamSpec_DimCheckMode_descriptor(), name, value);
 }
 enum LossParameter_NormalizationMode {
@@ -606,14 +606,14 @@ const LossParameter_NormalizationMode LossParameter_NormalizationMode_Normalizat
 const LossParameter_NormalizationMode LossParameter_NormalizationMode_NormalizationMode_MAX = LossParameter_NormalizationMode_NONE;
 const int LossParameter_NormalizationMode_NormalizationMode_ARRAYSIZE = LossParameter_NormalizationMode_NormalizationMode_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* LossParameter_NormalizationMode_descriptor();
+const ::cv::protobuf::EnumDescriptor* LossParameter_NormalizationMode_descriptor();
 inline const ::std::string& LossParameter_NormalizationMode_Name(LossParameter_NormalizationMode value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     LossParameter_NormalizationMode_descriptor(), value);
 }
 inline bool LossParameter_NormalizationMode_Parse(
     const ::std::string& name, LossParameter_NormalizationMode* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<LossParameter_NormalizationMode>(
+  return ::cv::protobuf::internal::ParseNamedEnum<LossParameter_NormalizationMode>(
     LossParameter_NormalizationMode_descriptor(), name, value);
 }
 enum ConvolutionParameter_Engine {
@@ -626,14 +626,14 @@ const ConvolutionParameter_Engine ConvolutionParameter_Engine_Engine_MIN = Convo
 const ConvolutionParameter_Engine ConvolutionParameter_Engine_Engine_MAX = ConvolutionParameter_Engine_CUDNN;
 const int ConvolutionParameter_Engine_Engine_ARRAYSIZE = ConvolutionParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* ConvolutionParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* ConvolutionParameter_Engine_descriptor();
 inline const ::std::string& ConvolutionParameter_Engine_Name(ConvolutionParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     ConvolutionParameter_Engine_descriptor(), value);
 }
 inline bool ConvolutionParameter_Engine_Parse(
     const ::std::string& name, ConvolutionParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<ConvolutionParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<ConvolutionParameter_Engine>(
     ConvolutionParameter_Engine_descriptor(), name, value);
 }
 enum DataParameter_DB {
@@ -645,14 +645,14 @@ const DataParameter_DB DataParameter_DB_DB_MIN = DataParameter_DB_LEVELDB;
 const DataParameter_DB DataParameter_DB_DB_MAX = DataParameter_DB_LMDB;
 const int DataParameter_DB_DB_ARRAYSIZE = DataParameter_DB_DB_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* DataParameter_DB_descriptor();
+const ::cv::protobuf::EnumDescriptor* DataParameter_DB_descriptor();
 inline const ::std::string& DataParameter_DB_Name(DataParameter_DB value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     DataParameter_DB_descriptor(), value);
 }
 inline bool DataParameter_DB_Parse(
     const ::std::string& name, DataParameter_DB* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<DataParameter_DB>(
+  return ::cv::protobuf::internal::ParseNamedEnum<DataParameter_DB>(
     DataParameter_DB_descriptor(), name, value);
 }
 enum EltwiseParameter_EltwiseOp {
@@ -665,14 +665,14 @@ const EltwiseParameter_EltwiseOp EltwiseParameter_EltwiseOp_EltwiseOp_MIN = Eltw
 const EltwiseParameter_EltwiseOp EltwiseParameter_EltwiseOp_EltwiseOp_MAX = EltwiseParameter_EltwiseOp_MAX;
 const int EltwiseParameter_EltwiseOp_EltwiseOp_ARRAYSIZE = EltwiseParameter_EltwiseOp_EltwiseOp_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* EltwiseParameter_EltwiseOp_descriptor();
+const ::cv::protobuf::EnumDescriptor* EltwiseParameter_EltwiseOp_descriptor();
 inline const ::std::string& EltwiseParameter_EltwiseOp_Name(EltwiseParameter_EltwiseOp value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     EltwiseParameter_EltwiseOp_descriptor(), value);
 }
 inline bool EltwiseParameter_EltwiseOp_Parse(
     const ::std::string& name, EltwiseParameter_EltwiseOp* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<EltwiseParameter_EltwiseOp>(
+  return ::cv::protobuf::internal::ParseNamedEnum<EltwiseParameter_EltwiseOp>(
     EltwiseParameter_EltwiseOp_descriptor(), name, value);
 }
 enum HingeLossParameter_Norm {
@@ -684,14 +684,14 @@ const HingeLossParameter_Norm HingeLossParameter_Norm_Norm_MIN = HingeLossParame
 const HingeLossParameter_Norm HingeLossParameter_Norm_Norm_MAX = HingeLossParameter_Norm_L2;
 const int HingeLossParameter_Norm_Norm_ARRAYSIZE = HingeLossParameter_Norm_Norm_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* HingeLossParameter_Norm_descriptor();
+const ::cv::protobuf::EnumDescriptor* HingeLossParameter_Norm_descriptor();
 inline const ::std::string& HingeLossParameter_Norm_Name(HingeLossParameter_Norm value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     HingeLossParameter_Norm_descriptor(), value);
 }
 inline bool HingeLossParameter_Norm_Parse(
     const ::std::string& name, HingeLossParameter_Norm* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<HingeLossParameter_Norm>(
+  return ::cv::protobuf::internal::ParseNamedEnum<HingeLossParameter_Norm>(
     HingeLossParameter_Norm_descriptor(), name, value);
 }
 enum LRNParameter_NormRegion {
@@ -703,14 +703,14 @@ const LRNParameter_NormRegion LRNParameter_NormRegion_NormRegion_MIN = LRNParame
 const LRNParameter_NormRegion LRNParameter_NormRegion_NormRegion_MAX = LRNParameter_NormRegion_WITHIN_CHANNEL;
 const int LRNParameter_NormRegion_NormRegion_ARRAYSIZE = LRNParameter_NormRegion_NormRegion_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* LRNParameter_NormRegion_descriptor();
+const ::cv::protobuf::EnumDescriptor* LRNParameter_NormRegion_descriptor();
 inline const ::std::string& LRNParameter_NormRegion_Name(LRNParameter_NormRegion value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     LRNParameter_NormRegion_descriptor(), value);
 }
 inline bool LRNParameter_NormRegion_Parse(
     const ::std::string& name, LRNParameter_NormRegion* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<LRNParameter_NormRegion>(
+  return ::cv::protobuf::internal::ParseNamedEnum<LRNParameter_NormRegion>(
     LRNParameter_NormRegion_descriptor(), name, value);
 }
 enum LRNParameter_Engine {
@@ -723,14 +723,14 @@ const LRNParameter_Engine LRNParameter_Engine_Engine_MIN = LRNParameter_Engine_D
 const LRNParameter_Engine LRNParameter_Engine_Engine_MAX = LRNParameter_Engine_CUDNN;
 const int LRNParameter_Engine_Engine_ARRAYSIZE = LRNParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* LRNParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* LRNParameter_Engine_descriptor();
 inline const ::std::string& LRNParameter_Engine_Name(LRNParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     LRNParameter_Engine_descriptor(), value);
 }
 inline bool LRNParameter_Engine_Parse(
     const ::std::string& name, LRNParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<LRNParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<LRNParameter_Engine>(
     LRNParameter_Engine_descriptor(), name, value);
 }
 enum PoolingParameter_PoolMethod {
@@ -743,14 +743,14 @@ const PoolingParameter_PoolMethod PoolingParameter_PoolMethod_PoolMethod_MIN = P
 const PoolingParameter_PoolMethod PoolingParameter_PoolMethod_PoolMethod_MAX = PoolingParameter_PoolMethod_STOCHASTIC;
 const int PoolingParameter_PoolMethod_PoolMethod_ARRAYSIZE = PoolingParameter_PoolMethod_PoolMethod_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* PoolingParameter_PoolMethod_descriptor();
+const ::cv::protobuf::EnumDescriptor* PoolingParameter_PoolMethod_descriptor();
 inline const ::std::string& PoolingParameter_PoolMethod_Name(PoolingParameter_PoolMethod value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     PoolingParameter_PoolMethod_descriptor(), value);
 }
 inline bool PoolingParameter_PoolMethod_Parse(
     const ::std::string& name, PoolingParameter_PoolMethod* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<PoolingParameter_PoolMethod>(
+  return ::cv::protobuf::internal::ParseNamedEnum<PoolingParameter_PoolMethod>(
     PoolingParameter_PoolMethod_descriptor(), name, value);
 }
 enum PoolingParameter_Engine {
@@ -763,14 +763,14 @@ const PoolingParameter_Engine PoolingParameter_Engine_Engine_MIN = PoolingParame
 const PoolingParameter_Engine PoolingParameter_Engine_Engine_MAX = PoolingParameter_Engine_CUDNN;
 const int PoolingParameter_Engine_Engine_ARRAYSIZE = PoolingParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* PoolingParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* PoolingParameter_Engine_descriptor();
 inline const ::std::string& PoolingParameter_Engine_Name(PoolingParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     PoolingParameter_Engine_descriptor(), value);
 }
 inline bool PoolingParameter_Engine_Parse(
     const ::std::string& name, PoolingParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<PoolingParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<PoolingParameter_Engine>(
     PoolingParameter_Engine_descriptor(), name, value);
 }
 enum ReductionParameter_ReductionOp {
@@ -784,14 +784,14 @@ const ReductionParameter_ReductionOp ReductionParameter_ReductionOp_ReductionOp_
 const ReductionParameter_ReductionOp ReductionParameter_ReductionOp_ReductionOp_MAX = ReductionParameter_ReductionOp_MEAN;
 const int ReductionParameter_ReductionOp_ReductionOp_ARRAYSIZE = ReductionParameter_ReductionOp_ReductionOp_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* ReductionParameter_ReductionOp_descriptor();
+const ::cv::protobuf::EnumDescriptor* ReductionParameter_ReductionOp_descriptor();
 inline const ::std::string& ReductionParameter_ReductionOp_Name(ReductionParameter_ReductionOp value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     ReductionParameter_ReductionOp_descriptor(), value);
 }
 inline bool ReductionParameter_ReductionOp_Parse(
     const ::std::string& name, ReductionParameter_ReductionOp* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<ReductionParameter_ReductionOp>(
+  return ::cv::protobuf::internal::ParseNamedEnum<ReductionParameter_ReductionOp>(
     ReductionParameter_ReductionOp_descriptor(), name, value);
 }
 enum ReLUParameter_Engine {
@@ -804,14 +804,14 @@ const ReLUParameter_Engine ReLUParameter_Engine_Engine_MIN = ReLUParameter_Engin
 const ReLUParameter_Engine ReLUParameter_Engine_Engine_MAX = ReLUParameter_Engine_CUDNN;
 const int ReLUParameter_Engine_Engine_ARRAYSIZE = ReLUParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* ReLUParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* ReLUParameter_Engine_descriptor();
 inline const ::std::string& ReLUParameter_Engine_Name(ReLUParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     ReLUParameter_Engine_descriptor(), value);
 }
 inline bool ReLUParameter_Engine_Parse(
     const ::std::string& name, ReLUParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<ReLUParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<ReLUParameter_Engine>(
     ReLUParameter_Engine_descriptor(), name, value);
 }
 enum SigmoidParameter_Engine {
@@ -824,14 +824,14 @@ const SigmoidParameter_Engine SigmoidParameter_Engine_Engine_MIN = SigmoidParame
 const SigmoidParameter_Engine SigmoidParameter_Engine_Engine_MAX = SigmoidParameter_Engine_CUDNN;
 const int SigmoidParameter_Engine_Engine_ARRAYSIZE = SigmoidParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* SigmoidParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* SigmoidParameter_Engine_descriptor();
 inline const ::std::string& SigmoidParameter_Engine_Name(SigmoidParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     SigmoidParameter_Engine_descriptor(), value);
 }
 inline bool SigmoidParameter_Engine_Parse(
     const ::std::string& name, SigmoidParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<SigmoidParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<SigmoidParameter_Engine>(
     SigmoidParameter_Engine_descriptor(), name, value);
 }
 enum SoftmaxParameter_Engine {
@@ -844,14 +844,14 @@ const SoftmaxParameter_Engine SoftmaxParameter_Engine_Engine_MIN = SoftmaxParame
 const SoftmaxParameter_Engine SoftmaxParameter_Engine_Engine_MAX = SoftmaxParameter_Engine_CUDNN;
 const int SoftmaxParameter_Engine_Engine_ARRAYSIZE = SoftmaxParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* SoftmaxParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* SoftmaxParameter_Engine_descriptor();
 inline const ::std::string& SoftmaxParameter_Engine_Name(SoftmaxParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     SoftmaxParameter_Engine_descriptor(), value);
 }
 inline bool SoftmaxParameter_Engine_Parse(
     const ::std::string& name, SoftmaxParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<SoftmaxParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<SoftmaxParameter_Engine>(
     SoftmaxParameter_Engine_descriptor(), name, value);
 }
 enum TanHParameter_Engine {
@@ -864,14 +864,14 @@ const TanHParameter_Engine TanHParameter_Engine_Engine_MIN = TanHParameter_Engin
 const TanHParameter_Engine TanHParameter_Engine_Engine_MAX = TanHParameter_Engine_CUDNN;
 const int TanHParameter_Engine_Engine_ARRAYSIZE = TanHParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* TanHParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* TanHParameter_Engine_descriptor();
 inline const ::std::string& TanHParameter_Engine_Name(TanHParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     TanHParameter_Engine_descriptor(), value);
 }
 inline bool TanHParameter_Engine_Parse(
     const ::std::string& name, TanHParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<TanHParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<TanHParameter_Engine>(
     TanHParameter_Engine_descriptor(), name, value);
 }
 enum SPPParameter_PoolMethod {
@@ -884,14 +884,14 @@ const SPPParameter_PoolMethod SPPParameter_PoolMethod_PoolMethod_MIN = SPPParame
 const SPPParameter_PoolMethod SPPParameter_PoolMethod_PoolMethod_MAX = SPPParameter_PoolMethod_STOCHASTIC;
 const int SPPParameter_PoolMethod_PoolMethod_ARRAYSIZE = SPPParameter_PoolMethod_PoolMethod_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* SPPParameter_PoolMethod_descriptor();
+const ::cv::protobuf::EnumDescriptor* SPPParameter_PoolMethod_descriptor();
 inline const ::std::string& SPPParameter_PoolMethod_Name(SPPParameter_PoolMethod value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     SPPParameter_PoolMethod_descriptor(), value);
 }
 inline bool SPPParameter_PoolMethod_Parse(
     const ::std::string& name, SPPParameter_PoolMethod* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<SPPParameter_PoolMethod>(
+  return ::cv::protobuf::internal::ParseNamedEnum<SPPParameter_PoolMethod>(
     SPPParameter_PoolMethod_descriptor(), name, value);
 }
 enum SPPParameter_Engine {
@@ -904,14 +904,14 @@ const SPPParameter_Engine SPPParameter_Engine_Engine_MIN = SPPParameter_Engine_D
 const SPPParameter_Engine SPPParameter_Engine_Engine_MAX = SPPParameter_Engine_CUDNN;
 const int SPPParameter_Engine_Engine_ARRAYSIZE = SPPParameter_Engine_Engine_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* SPPParameter_Engine_descriptor();
+const ::cv::protobuf::EnumDescriptor* SPPParameter_Engine_descriptor();
 inline const ::std::string& SPPParameter_Engine_Name(SPPParameter_Engine value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     SPPParameter_Engine_descriptor(), value);
 }
 inline bool SPPParameter_Engine_Parse(
     const ::std::string& name, SPPParameter_Engine* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<SPPParameter_Engine>(
+  return ::cv::protobuf::internal::ParseNamedEnum<SPPParameter_Engine>(
     SPPParameter_Engine_descriptor(), name, value);
 }
 enum V1LayerParameter_LayerType {
@@ -961,14 +961,14 @@ const V1LayerParameter_LayerType V1LayerParameter_LayerType_LayerType_MIN = V1La
 const V1LayerParameter_LayerType V1LayerParameter_LayerType_LayerType_MAX = V1LayerParameter_LayerType_DECONVOLUTION;
 const int V1LayerParameter_LayerType_LayerType_ARRAYSIZE = V1LayerParameter_LayerType_LayerType_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* V1LayerParameter_LayerType_descriptor();
+const ::cv::protobuf::EnumDescriptor* V1LayerParameter_LayerType_descriptor();
 inline const ::std::string& V1LayerParameter_LayerType_Name(V1LayerParameter_LayerType value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     V1LayerParameter_LayerType_descriptor(), value);
 }
 inline bool V1LayerParameter_LayerType_Parse(
     const ::std::string& name, V1LayerParameter_LayerType* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<V1LayerParameter_LayerType>(
+  return ::cv::protobuf::internal::ParseNamedEnum<V1LayerParameter_LayerType>(
     V1LayerParameter_LayerType_descriptor(), name, value);
 }
 enum V1LayerParameter_DimCheckMode {
@@ -980,14 +980,14 @@ const V1LayerParameter_DimCheckMode V1LayerParameter_DimCheckMode_DimCheckMode_M
 const V1LayerParameter_DimCheckMode V1LayerParameter_DimCheckMode_DimCheckMode_MAX = V1LayerParameter_DimCheckMode_PERMISSIVE;
 const int V1LayerParameter_DimCheckMode_DimCheckMode_ARRAYSIZE = V1LayerParameter_DimCheckMode_DimCheckMode_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* V1LayerParameter_DimCheckMode_descriptor();
+const ::cv::protobuf::EnumDescriptor* V1LayerParameter_DimCheckMode_descriptor();
 inline const ::std::string& V1LayerParameter_DimCheckMode_Name(V1LayerParameter_DimCheckMode value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     V1LayerParameter_DimCheckMode_descriptor(), value);
 }
 inline bool V1LayerParameter_DimCheckMode_Parse(
     const ::std::string& name, V1LayerParameter_DimCheckMode* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<V1LayerParameter_DimCheckMode>(
+  return ::cv::protobuf::internal::ParseNamedEnum<V1LayerParameter_DimCheckMode>(
     V1LayerParameter_DimCheckMode_descriptor(), name, value);
 }
 enum V0LayerParameter_PoolMethod {
@@ -1000,14 +1000,14 @@ const V0LayerParameter_PoolMethod V0LayerParameter_PoolMethod_PoolMethod_MIN = V
 const V0LayerParameter_PoolMethod V0LayerParameter_PoolMethod_PoolMethod_MAX = V0LayerParameter_PoolMethod_STOCHASTIC;
 const int V0LayerParameter_PoolMethod_PoolMethod_ARRAYSIZE = V0LayerParameter_PoolMethod_PoolMethod_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* V0LayerParameter_PoolMethod_descriptor();
+const ::cv::protobuf::EnumDescriptor* V0LayerParameter_PoolMethod_descriptor();
 inline const ::std::string& V0LayerParameter_PoolMethod_Name(V0LayerParameter_PoolMethod value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     V0LayerParameter_PoolMethod_descriptor(), value);
 }
 inline bool V0LayerParameter_PoolMethod_Parse(
     const ::std::string& name, V0LayerParameter_PoolMethod* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<V0LayerParameter_PoolMethod>(
+  return ::cv::protobuf::internal::ParseNamedEnum<V0LayerParameter_PoolMethod>(
     V0LayerParameter_PoolMethod_descriptor(), name, value);
 }
 enum Type {
@@ -1022,14 +1022,14 @@ const Type Type_MIN = DOUBLE;
 const Type Type_MAX = UINT;
 const int Type_ARRAYSIZE = Type_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* Type_descriptor();
+const ::cv::protobuf::EnumDescriptor* Type_descriptor();
 inline const ::std::string& Type_Name(Type value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     Type_descriptor(), value);
 }
 inline bool Type_Parse(
     const ::std::string& name, Type* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<Type>(
+  return ::cv::protobuf::internal::ParseNamedEnum<Type>(
     Type_descriptor(), name, value);
 }
 enum Phase {
@@ -1041,19 +1041,19 @@ const Phase Phase_MIN = TRAIN;
 const Phase Phase_MAX = TEST;
 const int Phase_ARRAYSIZE = Phase_MAX + 1;
 
-const ::google::protobuf::EnumDescriptor* Phase_descriptor();
+const ::cv::protobuf::EnumDescriptor* Phase_descriptor();
 inline const ::std::string& Phase_Name(Phase value) {
-  return ::google::protobuf::internal::NameOfEnum(
+  return ::cv::protobuf::internal::NameOfEnum(
     Phase_descriptor(), value);
 }
 inline bool Phase_Parse(
     const ::std::string& name, Phase* value) {
-  return ::google::protobuf::internal::ParseNamedEnum<Phase>(
+  return ::cv::protobuf::internal::ParseNamedEnum<Phase>(
     Phase_descriptor(), name, value);
 }
 // ===================================================================
 
-class BlobShape : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BlobShape) */ {
+class BlobShape : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BlobShape) */ {
  public:
   BlobShape();
   virtual ~BlobShape();
@@ -1079,14 +1079,14 @@ class BlobShape : public ::google::protobuf::Message /* @@protoc_insertion_point
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const BlobShape& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -1106,9 +1106,9 @@ class BlobShape : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   inline BlobShape* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  BlobShape* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BlobShape* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const BlobShape& from);
   void MergeFrom(const BlobShape& from);
   void Clear() PROTOBUF_FINAL;
@@ -1116,11 +1116,11 @@ class BlobShape : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -1128,7 +1128,7 @@ class BlobShape : public ::google::protobuf::Message /* @@protoc_insertion_point
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(BlobShape* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -1136,7 +1136,7 @@ class BlobShape : public ::google::protobuf::Message /* @@protoc_insertion_point
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -1146,28 +1146,28 @@ class BlobShape : public ::google::protobuf::Message /* @@protoc_insertion_point
   int dim_size() const;
   void clear_dim();
   static const int kDimFieldNumber = 1;
-  ::google::protobuf::int64 dim(int index) const;
-  void set_dim(int index, ::google::protobuf::int64 value);
-  void add_dim(::google::protobuf::int64 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+  ::cv::protobuf::int64 dim(int index) const;
+  void set_dim(int index, ::cv::protobuf::int64 value);
+  void add_dim(::cv::protobuf::int64 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >&
       dim() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >*
       mutable_dim();
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.BlobShape)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > dim_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 > dim_;
   mutable int _dim_cached_byte_size_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsBlobShapeImpl();
 };
 // -------------------------------------------------------------------
 
-class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BlobProto) */ {
+class BlobProto : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BlobProto) */ {
  public:
   BlobProto();
   virtual ~BlobProto();
@@ -1193,14 +1193,14 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const BlobProto& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -1220,9 +1220,9 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   inline BlobProto* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  BlobProto* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BlobProto* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const BlobProto& from);
   void MergeFrom(const BlobProto& from);
   void Clear() PROTOBUF_FINAL;
@@ -1230,11 +1230,11 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -1242,7 +1242,7 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(BlobProto* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -1250,7 +1250,7 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -1263,9 +1263,9 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   float data(int index) const;
   void set_data(int index, float value);
   void add_data(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       data() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_data();
 
   // repeated float diff = 6 [packed = true];
@@ -1275,9 +1275,9 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   float diff(int index) const;
   void set_diff(int index, float value);
   void add_diff(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       diff() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_diff();
 
   // repeated double double_data = 8 [packed = true];
@@ -1287,9 +1287,9 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   double double_data(int index) const;
   void set_double_data(int index, double value);
   void add_double_data(double value);
-  const ::google::protobuf::RepeatedField< double >&
+  const ::cv::protobuf::RepeatedField< double >&
       double_data() const;
-  ::google::protobuf::RepeatedField< double >*
+  ::cv::protobuf::RepeatedField< double >*
       mutable_double_data();
 
   // repeated double double_diff = 9 [packed = true];
@@ -1299,9 +1299,9 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   double double_diff(int index) const;
   void set_double_diff(int index, double value);
   void add_double_diff(double value);
-  const ::google::protobuf::RepeatedField< double >&
+  const ::cv::protobuf::RepeatedField< double >&
       double_diff() const;
-  ::google::protobuf::RepeatedField< double >*
+  ::cv::protobuf::RepeatedField< double >*
       mutable_double_diff();
 
   // optional bytes raw_data = 12 [packed = false];
@@ -1332,29 +1332,29 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   bool has_num() const;
   void clear_num();
   static const int kNumFieldNumber = 1;
-  ::google::protobuf::int32 num() const;
-  void set_num(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 num() const;
+  void set_num(::cv::protobuf::int32 value);
 
   // optional int32 channels = 2 [default = 0];
   bool has_channels() const;
   void clear_channels();
   static const int kChannelsFieldNumber = 2;
-  ::google::protobuf::int32 channels() const;
-  void set_channels(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 channels() const;
+  void set_channels(::cv::protobuf::int32 value);
 
   // optional int32 height = 3 [default = 0];
   bool has_height() const;
   void clear_height();
   static const int kHeightFieldNumber = 3;
-  ::google::protobuf::int32 height() const;
-  void set_height(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 height() const;
+  void set_height(::cv::protobuf::int32 value);
 
   // optional int32 width = 4 [default = 0];
   bool has_width() const;
   void clear_width();
   static const int kWidthFieldNumber = 4;
-  ::google::protobuf::int32 width() const;
-  void set_width(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 width() const;
+  void set_width(::cv::protobuf::int32 value);
 
   // optional .opencv_caffe.Type raw_data_type = 10;
   bool has_raw_data_type() const;
@@ -1380,30 +1380,30 @@ class BlobProto : public ::google::protobuf::Message /* @@protoc_insertion_point
   void set_has_width();
   void clear_has_width();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< float > data_;
+  ::cv::protobuf::RepeatedField< float > data_;
   mutable int _data_cached_byte_size_;
-  ::google::protobuf::RepeatedField< float > diff_;
+  ::cv::protobuf::RepeatedField< float > diff_;
   mutable int _diff_cached_byte_size_;
-  ::google::protobuf::RepeatedField< double > double_data_;
+  ::cv::protobuf::RepeatedField< double > double_data_;
   mutable int _double_data_cached_byte_size_;
-  ::google::protobuf::RepeatedField< double > double_diff_;
+  ::cv::protobuf::RepeatedField< double > double_diff_;
   mutable int _double_diff_cached_byte_size_;
-  ::google::protobuf::internal::ArenaStringPtr raw_data_;
+  ::cv::protobuf::internal::ArenaStringPtr raw_data_;
   ::opencv_caffe::BlobShape* shape_;
-  ::google::protobuf::int32 num_;
-  ::google::protobuf::int32 channels_;
-  ::google::protobuf::int32 height_;
-  ::google::protobuf::int32 width_;
+  ::cv::protobuf::int32 num_;
+  ::cv::protobuf::int32 channels_;
+  ::cv::protobuf::int32 height_;
+  ::cv::protobuf::int32 width_;
   int raw_data_type_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsBlobProtoImpl();
 };
 // -------------------------------------------------------------------
 
-class BlobProtoVector : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BlobProtoVector) */ {
+class BlobProtoVector : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BlobProtoVector) */ {
  public:
   BlobProtoVector();
   virtual ~BlobProtoVector();
@@ -1429,14 +1429,14 @@ class BlobProtoVector : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const BlobProtoVector& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -1456,9 +1456,9 @@ class BlobProtoVector : public ::google::protobuf::Message /* @@protoc_insertion
 
   inline BlobProtoVector* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  BlobProtoVector* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BlobProtoVector* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const BlobProtoVector& from);
   void MergeFrom(const BlobProtoVector& from);
   void Clear() PROTOBUF_FINAL;
@@ -1466,11 +1466,11 @@ class BlobProtoVector : public ::google::protobuf::Message /* @@protoc_insertion
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -1478,7 +1478,7 @@ class BlobProtoVector : public ::google::protobuf::Message /* @@protoc_insertion
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(BlobProtoVector* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -1486,7 +1486,7 @@ class BlobProtoVector : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -1499,24 +1499,24 @@ class BlobProtoVector : public ::google::protobuf::Message /* @@protoc_insertion
   const ::opencv_caffe::BlobProto& blobs(int index) const;
   ::opencv_caffe::BlobProto* mutable_blobs(int index);
   ::opencv_caffe::BlobProto* add_blobs();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
       mutable_blobs();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
       blobs() const;
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.BlobProtoVector)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsBlobProtoVectorImpl();
 };
 // -------------------------------------------------------------------
 
-class PermuteParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PermuteParameter) */ {
+class PermuteParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PermuteParameter) */ {
  public:
   PermuteParameter();
   virtual ~PermuteParameter();
@@ -1542,14 +1542,14 @@ class PermuteParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const PermuteParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -1569,9 +1569,9 @@ class PermuteParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline PermuteParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  PermuteParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PermuteParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const PermuteParameter& from);
   void MergeFrom(const PermuteParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -1579,11 +1579,11 @@ class PermuteParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -1591,7 +1591,7 @@ class PermuteParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(PermuteParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -1599,7 +1599,7 @@ class PermuteParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -1609,27 +1609,27 @@ class PermuteParameter : public ::google::protobuf::Message /* @@protoc_insertio
   int order_size() const;
   void clear_order();
   static const int kOrderFieldNumber = 1;
-  ::google::protobuf::uint32 order(int index) const;
-  void set_order(int index, ::google::protobuf::uint32 value);
-  void add_order(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 order(int index) const;
+  void set_order(int index, ::cv::protobuf::uint32 value);
+  void add_order(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       order() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_order();
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.PermuteParameter)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > order_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > order_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsPermuteParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NormalizeBBoxParameter) */ {
+class NormalizeBBoxParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NormalizeBBoxParameter) */ {
  public:
   NormalizeBBoxParameter();
   virtual ~NormalizeBBoxParameter();
@@ -1655,14 +1655,14 @@ class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const NormalizeBBoxParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -1682,9 +1682,9 @@ class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_in
 
   inline NormalizeBBoxParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  NormalizeBBoxParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  NormalizeBBoxParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const NormalizeBBoxParameter& from);
   void MergeFrom(const NormalizeBBoxParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -1692,11 +1692,11 @@ class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_in
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -1704,7 +1704,7 @@ class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_in
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(NormalizeBBoxParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -1712,7 +1712,7 @@ class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -1759,8 +1759,8 @@ class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_in
   void set_has_eps();
   void clear_has_eps();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::FillerParameter* scale_filler_;
   bool across_spatial_;
@@ -1771,7 +1771,7 @@ class NormalizeBBoxParameter : public ::google::protobuf::Message /* @@protoc_in
 };
 // -------------------------------------------------------------------
 
-class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PriorBoxParameter) */ {
+class PriorBoxParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PriorBoxParameter) */ {
  public:
   PriorBoxParameter();
   virtual ~PriorBoxParameter();
@@ -1797,14 +1797,14 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const PriorBoxParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -1824,9 +1824,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   inline PriorBoxParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  PriorBoxParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PriorBoxParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const PriorBoxParameter& from);
   void MergeFrom(const PriorBoxParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -1834,11 +1834,11 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -1846,7 +1846,7 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(PriorBoxParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -1854,7 +1854,7 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -1872,7 +1872,7 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
     PriorBoxParameter_CodeType_CodeType_MAX;
   static const int CodeType_ARRAYSIZE =
     PriorBoxParameter_CodeType_CodeType_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   CodeType_descriptor() {
     return PriorBoxParameter_CodeType_descriptor();
   }
@@ -1893,9 +1893,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float min_size(int index) const;
   void set_min_size(int index, float value);
   void add_min_size(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       min_size() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_min_size();
 
   // repeated float max_size = 2;
@@ -1905,9 +1905,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float max_size(int index) const;
   void set_max_size(int index, float value);
   void add_max_size(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       max_size() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_max_size();
 
   // repeated float aspect_ratio = 3;
@@ -1917,9 +1917,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float aspect_ratio(int index) const;
   void set_aspect_ratio(int index, float value);
   void add_aspect_ratio(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       aspect_ratio() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_aspect_ratio();
 
   // repeated float variance = 6;
@@ -1929,9 +1929,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float variance(int index) const;
   void set_variance(int index, float value);
   void add_variance(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       variance() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_variance();
 
   // repeated float offset_h = 14;
@@ -1941,9 +1941,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float offset_h(int index) const;
   void set_offset_h(int index, float value);
   void add_offset_h(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       offset_h() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_offset_h();
 
   // repeated float offset_w = 15;
@@ -1953,9 +1953,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float offset_w(int index) const;
   void set_offset_w(int index, float value);
   void add_offset_w(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       offset_w() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_offset_w();
 
   // repeated float width = 16;
@@ -1965,9 +1965,9 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float width(int index) const;
   void set_width(int index, float value);
   void add_width(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       width() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_width();
 
   // repeated float height = 17;
@@ -1977,31 +1977,31 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float height(int index) const;
   void set_height(int index, float value);
   void add_height(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       height() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_height();
 
   // optional uint32 img_size = 7;
   bool has_img_size() const;
   void clear_img_size();
   static const int kImgSizeFieldNumber = 7;
-  ::google::protobuf::uint32 img_size() const;
-  void set_img_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 img_size() const;
+  void set_img_size(::cv::protobuf::uint32 value);
 
   // optional uint32 img_h = 8;
   bool has_img_h() const;
   void clear_img_h();
   static const int kImgHFieldNumber = 8;
-  ::google::protobuf::uint32 img_h() const;
-  void set_img_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 img_h() const;
+  void set_img_h(::cv::protobuf::uint32 value);
 
   // optional uint32 img_w = 9;
   bool has_img_w() const;
   void clear_img_w();
   static const int kImgWFieldNumber = 9;
-  ::google::protobuf::uint32 img_w() const;
-  void set_img_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 img_w() const;
+  void set_img_w(::cv::protobuf::uint32 value);
 
   // optional float step = 10;
   bool has_step() const;
@@ -2066,20 +2066,20 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void set_has_offset();
   void clear_has_offset();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< float > min_size_;
-  ::google::protobuf::RepeatedField< float > max_size_;
-  ::google::protobuf::RepeatedField< float > aspect_ratio_;
-  ::google::protobuf::RepeatedField< float > variance_;
-  ::google::protobuf::RepeatedField< float > offset_h_;
-  ::google::protobuf::RepeatedField< float > offset_w_;
-  ::google::protobuf::RepeatedField< float > width_;
-  ::google::protobuf::RepeatedField< float > height_;
-  ::google::protobuf::uint32 img_size_;
-  ::google::protobuf::uint32 img_h_;
-  ::google::protobuf::uint32 img_w_;
+  ::cv::protobuf::RepeatedField< float > min_size_;
+  ::cv::protobuf::RepeatedField< float > max_size_;
+  ::cv::protobuf::RepeatedField< float > aspect_ratio_;
+  ::cv::protobuf::RepeatedField< float > variance_;
+  ::cv::protobuf::RepeatedField< float > offset_h_;
+  ::cv::protobuf::RepeatedField< float > offset_w_;
+  ::cv::protobuf::RepeatedField< float > width_;
+  ::cv::protobuf::RepeatedField< float > height_;
+  ::cv::protobuf::uint32 img_size_;
+  ::cv::protobuf::uint32 img_h_;
+  ::cv::protobuf::uint32 img_w_;
   float step_;
   float step_h_;
   float step_w_;
@@ -2091,7 +2091,7 @@ class PriorBoxParameter : public ::google::protobuf::Message /* @@protoc_inserti
 };
 // -------------------------------------------------------------------
 
-class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DetectionOutputParameter) */ {
+class DetectionOutputParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DetectionOutputParameter) */ {
  public:
   DetectionOutputParameter();
   virtual ~DetectionOutputParameter();
@@ -2117,14 +2117,14 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const DetectionOutputParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -2144,9 +2144,9 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
 
   inline DetectionOutputParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  DetectionOutputParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DetectionOutputParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const DetectionOutputParameter& from);
   void MergeFrom(const DetectionOutputParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -2154,11 +2154,11 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -2166,7 +2166,7 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(DetectionOutputParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -2174,7 +2174,7 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -2202,15 +2202,15 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
   bool has_num_classes() const;
   void clear_num_classes();
   static const int kNumClassesFieldNumber = 1;
-  ::google::protobuf::uint32 num_classes() const;
-  void set_num_classes(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 num_classes() const;
+  void set_num_classes(::cv::protobuf::uint32 value);
 
   // optional int32 background_label_id = 3 [default = 0];
   bool has_background_label_id() const;
   void clear_background_label_id();
   static const int kBackgroundLabelIdFieldNumber = 3;
-  ::google::protobuf::int32 background_label_id() const;
-  void set_background_label_id(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 background_label_id() const;
+  void set_background_label_id(::cv::protobuf::int32 value);
 
   // optional bool variance_encoded_in_target = 8 [default = false];
   bool has_variance_encoded_in_target() const;
@@ -2230,8 +2230,8 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
   bool has_keep_top_k() const;
   void clear_keep_top_k();
   static const int kKeepTopKFieldNumber = 7;
-  ::google::protobuf::int32 keep_top_k() const;
-  void set_keep_top_k(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 keep_top_k() const;
+  void set_keep_top_k(::cv::protobuf::int32 value);
 
   // optional .opencv_caffe.PriorBoxParameter.CodeType code_type = 6 [default = CORNER];
   bool has_code_type() const;
@@ -2277,16 +2277,16 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
   void set_has_normalized_bbox();
   void clear_has_normalized_bbox();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::NonMaximumSuppressionParameter* nms_param_;
   ::opencv_caffe::SaveOutputParameter* save_output_param_;
-  ::google::protobuf::uint32 num_classes_;
-  ::google::protobuf::int32 background_label_id_;
+  ::cv::protobuf::uint32 num_classes_;
+  ::cv::protobuf::int32 background_label_id_;
   bool variance_encoded_in_target_;
   float confidence_threshold_;
-  ::google::protobuf::int32 keep_top_k_;
+  ::cv::protobuf::int32 keep_top_k_;
   int code_type_;
   bool share_location_;
   bool normalized_bbox_;
@@ -2295,7 +2295,7 @@ class DetectionOutputParameter : public ::google::protobuf::Message /* @@protoc_
 };
 // -------------------------------------------------------------------
 
-class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.Datum) */ {
+class Datum : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.Datum) */ {
  public:
   Datum();
   virtual ~Datum();
@@ -2321,14 +2321,14 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const Datum& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -2348,9 +2348,9 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
 
   inline Datum* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  Datum* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Datum* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const Datum& from);
   void MergeFrom(const Datum& from);
   void Clear() PROTOBUF_FINAL;
@@ -2358,11 +2358,11 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -2370,7 +2370,7 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(Datum* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -2378,7 +2378,7 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -2391,9 +2391,9 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   float float_data(int index) const;
   void set_float_data(int index, float value);
   void add_float_data(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       float_data() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_float_data();
 
   // optional bytes data = 4;
@@ -2415,29 +2415,29 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   bool has_channels() const;
   void clear_channels();
   static const int kChannelsFieldNumber = 1;
-  ::google::protobuf::int32 channels() const;
-  void set_channels(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 channels() const;
+  void set_channels(::cv::protobuf::int32 value);
 
   // optional int32 height = 2;
   bool has_height() const;
   void clear_height();
   static const int kHeightFieldNumber = 2;
-  ::google::protobuf::int32 height() const;
-  void set_height(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 height() const;
+  void set_height(::cv::protobuf::int32 value);
 
   // optional int32 width = 3;
   bool has_width() const;
   void clear_width();
   static const int kWidthFieldNumber = 3;
-  ::google::protobuf::int32 width() const;
-  void set_width(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 width() const;
+  void set_width(::cv::protobuf::int32 value);
 
   // optional int32 label = 5;
   bool has_label() const;
   void clear_label();
   static const int kLabelFieldNumber = 5;
-  ::google::protobuf::int32 label() const;
-  void set_label(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 label() const;
+  void set_label(::cv::protobuf::int32 value);
 
   // optional bool encoded = 7 [default = false];
   bool has_encoded() const;
@@ -2461,22 +2461,22 @@ class Datum : public ::google::protobuf::Message /* @@protoc_insertion_point(cla
   void set_has_encoded();
   void clear_has_encoded();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< float > float_data_;
-  ::google::protobuf::internal::ArenaStringPtr data_;
-  ::google::protobuf::int32 channels_;
-  ::google::protobuf::int32 height_;
-  ::google::protobuf::int32 width_;
-  ::google::protobuf::int32 label_;
+  ::cv::protobuf::RepeatedField< float > float_data_;
+  ::cv::protobuf::internal::ArenaStringPtr data_;
+  ::cv::protobuf::int32 channels_;
+  ::cv::protobuf::int32 height_;
+  ::cv::protobuf::int32 width_;
+  ::cv::protobuf::int32 label_;
   bool encoded_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsDatumImpl();
 };
 // -------------------------------------------------------------------
 
-class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.FillerParameter) */ {
+class FillerParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.FillerParameter) */ {
  public:
   FillerParameter();
   virtual ~FillerParameter();
@@ -2502,14 +2502,14 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const FillerParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -2529,9 +2529,9 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   inline FillerParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  FillerParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  FillerParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const FillerParameter& from);
   void MergeFrom(const FillerParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -2539,11 +2539,11 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -2551,7 +2551,7 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(FillerParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -2559,7 +2559,7 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -2579,7 +2579,7 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
     FillerParameter_VarianceNorm_VarianceNorm_MAX;
   static const int VarianceNorm_ARRAYSIZE =
     FillerParameter_VarianceNorm_VarianceNorm_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   VarianceNorm_descriptor() {
     return FillerParameter_VarianceNorm_descriptor();
   }
@@ -2640,8 +2640,8 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_sparse() const;
   void clear_sparse();
   static const int kSparseFieldNumber = 7;
-  ::google::protobuf::int32 sparse() const;
-  void set_sparse(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 sparse() const;
+  void set_sparse(::cv::protobuf::int32 value);
 
   // optional float max = 4 [default = 1];
   bool has_max() const;
@@ -2676,16 +2676,16 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void set_has_variance_norm();
   void clear_has_variance_norm();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  static ::google::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_type_;
-  ::google::protobuf::internal::ArenaStringPtr type_;
+  static ::cv::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_type_;
+  ::cv::protobuf::internal::ArenaStringPtr type_;
   float value_;
   float min_;
   float mean_;
   int variance_norm_;
-  ::google::protobuf::int32 sparse_;
+  ::cv::protobuf::int32 sparse_;
   float max_;
   float std_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -2693,7 +2693,7 @@ class FillerParameter : public ::google::protobuf::Message /* @@protoc_insertion
 };
 // -------------------------------------------------------------------
 
-class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NetParameter) */ {
+class NetParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NetParameter) */ {
  public:
   NetParameter();
   virtual ~NetParameter();
@@ -2719,14 +2719,14 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const NetParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -2746,9 +2746,9 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline NetParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  NetParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  NetParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const NetParameter& from);
   void MergeFrom(const NetParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -2756,11 +2756,11 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -2768,7 +2768,7 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(NetParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -2776,7 +2776,7 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -2789,9 +2789,9 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   const ::opencv_caffe::V1LayerParameter& layers(int index) const;
   ::opencv_caffe::V1LayerParameter* mutable_layers(int index);
   ::opencv_caffe::V1LayerParameter* add_layers();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >*
       mutable_layers();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >&
       layers() const;
 
   // repeated string input = 3;
@@ -2813,19 +2813,19 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   #endif
   void add_input(const char* value);
   void add_input(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& input() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_input();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& input() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_input();
 
   // repeated int32 input_dim = 4;
   int input_dim_size() const;
   void clear_input_dim();
   static const int kInputDimFieldNumber = 4;
-  ::google::protobuf::int32 input_dim(int index) const;
-  void set_input_dim(int index, ::google::protobuf::int32 value);
-  void add_input_dim(::google::protobuf::int32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+  ::cv::protobuf::int32 input_dim(int index) const;
+  void set_input_dim(int index, ::cv::protobuf::int32 value);
+  void add_input_dim(::cv::protobuf::int32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
       input_dim() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
       mutable_input_dim();
 
   // repeated .opencv_caffe.BlobShape input_shape = 8;
@@ -2835,9 +2835,9 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   const ::opencv_caffe::BlobShape& input_shape(int index) const;
   ::opencv_caffe::BlobShape* mutable_input_shape(int index);
   ::opencv_caffe::BlobShape* add_input_shape();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
       mutable_input_shape();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
       input_shape() const;
 
   // repeated .opencv_caffe.LayerParameter layer = 100;
@@ -2847,9 +2847,9 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   const ::opencv_caffe::LayerParameter& layer(int index) const;
   ::opencv_caffe::LayerParameter* mutable_layer(int index);
   ::opencv_caffe::LayerParameter* add_layer();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >*
       mutable_layer();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >&
       layer() const;
 
   // optional string name = 1;
@@ -2901,15 +2901,15 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_debug_info();
   void clear_has_debug_info();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter > layers_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> input_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > input_dim_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape > input_shape_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter > layer_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter > layers_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> input_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 > input_dim_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape > input_shape_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter > layer_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
   ::opencv_caffe::NetState* state_;
   bool force_backward_;
   bool debug_info_;
@@ -2918,7 +2918,7 @@ class NetParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SolverParameter) */ {
+class SolverParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SolverParameter) */ {
  public:
   SolverParameter();
   virtual ~SolverParameter();
@@ -2944,14 +2944,14 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SolverParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -2971,9 +2971,9 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   inline SolverParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SolverParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SolverParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SolverParameter& from);
   void MergeFrom(const SolverParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -2981,11 +2981,11 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -2993,7 +2993,7 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SolverParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -3001,7 +3001,7 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -3019,7 +3019,7 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
     SolverParameter_SnapshotFormat_SnapshotFormat_MAX;
   static const int SnapshotFormat_ARRAYSIZE =
     SolverParameter_SnapshotFormat_SnapshotFormat_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   SnapshotFormat_descriptor() {
     return SolverParameter_SnapshotFormat_descriptor();
   }
@@ -3045,7 +3045,7 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
     SolverParameter_SolverMode_SolverMode_MAX;
   static const int SolverMode_ARRAYSIZE =
     SolverParameter_SolverMode_SolverMode_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   SolverMode_descriptor() {
     return SolverParameter_SolverMode_descriptor();
   }
@@ -3079,7 +3079,7 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
     SolverParameter_SolverType_SolverType_MAX;
   static const int SolverType_ARRAYSIZE =
     SolverParameter_SolverType_SolverType_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   SolverType_descriptor() {
     return SolverParameter_SolverType_descriptor();
   }
@@ -3112,19 +3112,19 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   #endif
   void add_test_net(const char* value);
   void add_test_net(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& test_net() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_test_net();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& test_net() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_test_net();
 
   // repeated int32 test_iter = 3;
   int test_iter_size() const;
   void clear_test_iter();
   static const int kTestIterFieldNumber = 3;
-  ::google::protobuf::int32 test_iter(int index) const;
-  void set_test_iter(int index, ::google::protobuf::int32 value);
-  void add_test_iter(::google::protobuf::int32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+  ::cv::protobuf::int32 test_iter(int index) const;
+  void set_test_iter(int index, ::cv::protobuf::int32 value);
+  void add_test_iter(::cv::protobuf::int32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
       test_iter() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
       mutable_test_iter();
 
   // repeated .opencv_caffe.NetParameter test_net_param = 22;
@@ -3134,9 +3134,9 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   const ::opencv_caffe::NetParameter& test_net_param(int index) const;
   ::opencv_caffe::NetParameter* mutable_test_net_param(int index);
   ::opencv_caffe::NetParameter* add_test_net_param();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >*
       mutable_test_net_param();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >&
       test_net_param() const;
 
   // repeated .opencv_caffe.NetState test_state = 27;
@@ -3146,21 +3146,21 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   const ::opencv_caffe::NetState& test_state(int index) const;
   ::opencv_caffe::NetState* mutable_test_state(int index);
   ::opencv_caffe::NetState* add_test_state();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >*
       mutable_test_state();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >&
       test_state() const;
 
   // repeated int32 stepvalue = 34;
   int stepvalue_size() const;
   void clear_stepvalue();
   static const int kStepvalueFieldNumber = 34;
-  ::google::protobuf::int32 stepvalue(int index) const;
-  void set_stepvalue(int index, ::google::protobuf::int32 value);
-  void add_stepvalue(::google::protobuf::int32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+  ::cv::protobuf::int32 stepvalue(int index) const;
+  void set_stepvalue(int index, ::cv::protobuf::int32 value);
+  void add_stepvalue(::cv::protobuf::int32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
       stepvalue() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
       mutable_stepvalue();
 
   // optional string train_net = 1;
@@ -3284,8 +3284,8 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_test_interval() const;
   void clear_test_interval();
   static const int kTestIntervalFieldNumber = 4;
-  ::google::protobuf::int32 test_interval() const;
-  void set_test_interval(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 test_interval() const;
+  void set_test_interval(::cv::protobuf::int32 value);
 
   // optional float base_lr = 5;
   bool has_base_lr() const;
@@ -3298,15 +3298,15 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_display() const;
   void clear_display();
   static const int kDisplayFieldNumber = 6;
-  ::google::protobuf::int32 display() const;
-  void set_display(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 display() const;
+  void set_display(::cv::protobuf::int32 value);
 
   // optional int32 max_iter = 7;
   bool has_max_iter() const;
   void clear_max_iter();
   static const int kMaxIterFieldNumber = 7;
-  ::google::protobuf::int32 max_iter() const;
-  void set_max_iter(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 max_iter() const;
+  void set_max_iter(::cv::protobuf::int32 value);
 
   // optional float gamma = 9;
   bool has_gamma() const;
@@ -3340,22 +3340,22 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_stepsize() const;
   void clear_stepsize();
   static const int kStepsizeFieldNumber = 13;
-  ::google::protobuf::int32 stepsize() const;
-  void set_stepsize(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 stepsize() const;
+  void set_stepsize(::cv::protobuf::int32 value);
 
   // optional int32 snapshot = 14 [default = 0];
   bool has_snapshot() const;
   void clear_snapshot();
   static const int kSnapshotFieldNumber = 14;
-  ::google::protobuf::int32 snapshot() const;
-  void set_snapshot(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 snapshot() const;
+  void set_snapshot(::cv::protobuf::int32 value);
 
   // optional int32 device_id = 18 [default = 0];
   bool has_device_id() const;
   void clear_device_id();
   static const int kDeviceIdFieldNumber = 18;
-  ::google::protobuf::int32 device_id() const;
-  void set_device_id(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 device_id() const;
+  void set_device_id(::cv::protobuf::int32 value);
 
   // optional bool test_compute_loss = 19 [default = false];
   bool has_test_compute_loss() const;
@@ -3396,8 +3396,8 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_random_seed() const;
   void clear_random_seed();
   static const int kRandomSeedFieldNumber = 20;
-  ::google::protobuf::int64 random_seed() const;
-  void set_random_seed(::google::protobuf::int64 value);
+  ::cv::protobuf::int64 random_seed() const;
+  void set_random_seed(::cv::protobuf::int64 value);
 
   // optional .opencv_caffe.SolverParameter.SolverMode solver_mode = 17 [default = GPU];
   bool has_solver_mode() const;
@@ -3431,8 +3431,8 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_average_loss() const;
   void clear_average_loss();
   static const int kAverageLossFieldNumber = 33;
-  ::google::protobuf::int32 average_loss() const;
-  void set_average_loss(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 average_loss() const;
+  void set_average_loss(::cv::protobuf::int32 value);
 
   // optional float clip_gradients = 35 [default = -1];
   bool has_clip_gradients() const;
@@ -3445,8 +3445,8 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_iter_size() const;
   void clear_iter_size();
   static const int kIterSizeFieldNumber = 36;
-  ::google::protobuf::int32 iter_size() const;
-  void set_iter_size(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 iter_size() const;
+  void set_iter_size(::cv::protobuf::int32 value);
 
   // optional .opencv_caffe.SolverParameter.SnapshotFormat snapshot_format = 37 [default = BINARYPROTO];
   bool has_snapshot_format() const;
@@ -3535,48 +3535,48 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void set_has_solver_type();
   void clear_has_solver_type();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<2> _has_bits_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> test_net_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > test_iter_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter > test_net_param_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetState > test_state_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::int32 > stepvalue_;
-  ::google::protobuf::internal::ArenaStringPtr train_net_;
-  ::google::protobuf::internal::ArenaStringPtr lr_policy_;
-  ::google::protobuf::internal::ArenaStringPtr snapshot_prefix_;
-  ::google::protobuf::internal::ArenaStringPtr net_;
-  static ::google::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_regularization_type_;
-  ::google::protobuf::internal::ArenaStringPtr regularization_type_;
-  static ::google::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_type_;
-  ::google::protobuf::internal::ArenaStringPtr type_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<2> _has_bits_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> test_net_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 > test_iter_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter > test_net_param_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetState > test_state_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 > stepvalue_;
+  ::cv::protobuf::internal::ArenaStringPtr train_net_;
+  ::cv::protobuf::internal::ArenaStringPtr lr_policy_;
+  ::cv::protobuf::internal::ArenaStringPtr snapshot_prefix_;
+  ::cv::protobuf::internal::ArenaStringPtr net_;
+  static ::cv::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_regularization_type_;
+  ::cv::protobuf::internal::ArenaStringPtr regularization_type_;
+  static ::cv::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_type_;
+  ::cv::protobuf::internal::ArenaStringPtr type_;
   ::opencv_caffe::NetParameter* train_net_param_;
   ::opencv_caffe::NetParameter* net_param_;
   ::opencv_caffe::NetState* train_state_;
-  ::google::protobuf::int32 test_interval_;
+  ::cv::protobuf::int32 test_interval_;
   float base_lr_;
-  ::google::protobuf::int32 display_;
-  ::google::protobuf::int32 max_iter_;
+  ::cv::protobuf::int32 display_;
+  ::cv::protobuf::int32 max_iter_;
   float gamma_;
   float power_;
   float momentum_;
   float weight_decay_;
-  ::google::protobuf::int32 stepsize_;
-  ::google::protobuf::int32 snapshot_;
-  ::google::protobuf::int32 device_id_;
+  ::cv::protobuf::int32 stepsize_;
+  ::cv::protobuf::int32 snapshot_;
+  ::cv::protobuf::int32 device_id_;
   bool test_compute_loss_;
   bool snapshot_diff_;
   bool debug_info_;
   int solver_type_;
   float momentum2_;
-  ::google::protobuf::int64 random_seed_;
+  ::cv::protobuf::int64 random_seed_;
   int solver_mode_;
   bool test_initialization_;
   bool snapshot_after_train_;
   float delta_;
-  ::google::protobuf::int32 average_loss_;
+  ::cv::protobuf::int32 average_loss_;
   float clip_gradients_;
-  ::google::protobuf::int32 iter_size_;
+  ::cv::protobuf::int32 iter_size_;
   int snapshot_format_;
   float rms_decay_;
   mutable int _cached_size_;
@@ -3585,7 +3585,7 @@ class SolverParameter : public ::google::protobuf::Message /* @@protoc_insertion
 };
 // -------------------------------------------------------------------
 
-class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SolverState) */ {
+class SolverState : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SolverState) */ {
  public:
   SolverState();
   virtual ~SolverState();
@@ -3611,14 +3611,14 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SolverState& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -3638,9 +3638,9 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   inline SolverState* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SolverState* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SolverState* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SolverState& from);
   void MergeFrom(const SolverState& from);
   void Clear() PROTOBUF_FINAL;
@@ -3648,11 +3648,11 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -3660,7 +3660,7 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SolverState* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -3668,7 +3668,7 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -3681,9 +3681,9 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
   const ::opencv_caffe::BlobProto& history(int index) const;
   ::opencv_caffe::BlobProto* mutable_history(int index);
   ::opencv_caffe::BlobProto* add_history();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
       mutable_history();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
       history() const;
 
   // optional string learned_net = 2;
@@ -3705,15 +3705,15 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
   bool has_iter() const;
   void clear_iter();
   static const int kIterFieldNumber = 1;
-  ::google::protobuf::int32 iter() const;
-  void set_iter(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 iter() const;
+  void set_iter(::cv::protobuf::int32 value);
 
   // optional int32 current_step = 4 [default = 0];
   bool has_current_step() const;
   void clear_current_step();
   static const int kCurrentStepFieldNumber = 4;
-  ::google::protobuf::int32 current_step() const;
-  void set_current_step(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 current_step() const;
+  void set_current_step(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.SolverState)
  private:
@@ -3724,19 +3724,19 @@ class SolverState : public ::google::protobuf::Message /* @@protoc_insertion_poi
   void set_has_current_step();
   void clear_has_current_step();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > history_;
-  ::google::protobuf::internal::ArenaStringPtr learned_net_;
-  ::google::protobuf::int32 iter_;
-  ::google::protobuf::int32 current_step_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > history_;
+  ::cv::protobuf::internal::ArenaStringPtr learned_net_;
+  ::cv::protobuf::int32 iter_;
+  ::cv::protobuf::int32 current_step_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsSolverStateImpl();
 };
 // -------------------------------------------------------------------
 
-class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NetState) */ {
+class NetState : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NetState) */ {
  public:
   NetState();
   virtual ~NetState();
@@ -3762,14 +3762,14 @@ class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const NetState& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -3789,9 +3789,9 @@ class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   inline NetState* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  NetState* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  NetState* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const NetState& from);
   void MergeFrom(const NetState& from);
   void Clear() PROTOBUF_FINAL;
@@ -3799,11 +3799,11 @@ class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -3811,7 +3811,7 @@ class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(NetState* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -3819,7 +3819,7 @@ class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -3844,15 +3844,15 @@ class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(
   #endif
   void add_stage(const char* value);
   void add_stage(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& stage() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_stage();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& stage() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_stage();
 
   // optional int32 level = 2 [default = 0];
   bool has_level() const;
   void clear_level();
   static const int kLevelFieldNumber = 2;
-  ::google::protobuf::int32 level() const;
-  void set_level(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 level() const;
+  void set_level(::cv::protobuf::int32 value);
 
   // optional .opencv_caffe.Phase phase = 1 [default = TEST];
   bool has_phase() const;
@@ -3868,18 +3868,18 @@ class NetState : public ::google::protobuf::Message /* @@protoc_insertion_point(
   void set_has_level();
   void clear_has_level();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> stage_;
-  ::google::protobuf::int32 level_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> stage_;
+  ::cv::protobuf::int32 level_;
   int phase_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsNetStateImpl();
 };
 // -------------------------------------------------------------------
 
-class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NetStateRule) */ {
+class NetStateRule : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NetStateRule) */ {
  public:
   NetStateRule();
   virtual ~NetStateRule();
@@ -3905,14 +3905,14 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const NetStateRule& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -3932,9 +3932,9 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline NetStateRule* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  NetStateRule* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  NetStateRule* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const NetStateRule& from);
   void MergeFrom(const NetStateRule& from);
   void Clear() PROTOBUF_FINAL;
@@ -3942,11 +3942,11 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -3954,7 +3954,7 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(NetStateRule* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -3962,7 +3962,7 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -3987,8 +3987,8 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
   #endif
   void add_stage(const char* value);
   void add_stage(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& stage() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_stage();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& stage() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_stage();
 
   // repeated string not_stage = 5;
   int not_stage_size() const;
@@ -4009,8 +4009,8 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
   #endif
   void add_not_stage(const char* value);
   void add_not_stage(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& not_stage() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_not_stage();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& not_stage() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_not_stage();
 
   // optional .opencv_caffe.Phase phase = 1;
   bool has_phase() const;
@@ -4023,15 +4023,15 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
   bool has_min_level() const;
   void clear_min_level();
   static const int kMinLevelFieldNumber = 2;
-  ::google::protobuf::int32 min_level() const;
-  void set_min_level(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 min_level() const;
+  void set_min_level(::cv::protobuf::int32 value);
 
   // optional int32 max_level = 3;
   bool has_max_level() const;
   void clear_max_level();
   static const int kMaxLevelFieldNumber = 3;
-  ::google::protobuf::int32 max_level() const;
-  void set_max_level(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 max_level() const;
+  void set_max_level(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.NetStateRule)
  private:
@@ -4042,20 +4042,20 @@ class NetStateRule : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_max_level();
   void clear_has_max_level();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> stage_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> not_stage_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> stage_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> not_stage_;
   int phase_;
-  ::google::protobuf::int32 min_level_;
-  ::google::protobuf::int32 max_level_;
+  ::cv::protobuf::int32 min_level_;
+  ::cv::protobuf::int32 max_level_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsNetStateRuleImpl();
 };
 // -------------------------------------------------------------------
 
-class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ParamSpec) */ {
+class ParamSpec : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ParamSpec) */ {
  public:
   ParamSpec();
   virtual ~ParamSpec();
@@ -4081,14 +4081,14 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ParamSpec& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -4108,9 +4108,9 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   inline ParamSpec* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ParamSpec* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ParamSpec* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ParamSpec& from);
   void MergeFrom(const ParamSpec& from);
   void Clear() PROTOBUF_FINAL;
@@ -4118,11 +4118,11 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -4130,7 +4130,7 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ParamSpec* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -4138,7 +4138,7 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -4156,7 +4156,7 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
     ParamSpec_DimCheckMode_DimCheckMode_MAX;
   static const int DimCheckMode_ARRAYSIZE =
     ParamSpec_DimCheckMode_DimCheckMode_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   DimCheckMode_descriptor() {
     return ParamSpec_DimCheckMode_descriptor();
   }
@@ -4217,10 +4217,10 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
   void set_has_decay_mult();
   void clear_has_decay_mult();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
   int share_mode_;
   float lr_mult_;
   float decay_mult_;
@@ -4229,7 +4229,7 @@ class ParamSpec : public ::google::protobuf::Message /* @@protoc_insertion_point
 };
 // -------------------------------------------------------------------
 
-class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LayerParameter) */ {
+class LayerParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LayerParameter) */ {
  public:
   LayerParameter();
   virtual ~LayerParameter();
@@ -4255,14 +4255,14 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const LayerParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -4282,9 +4282,9 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline LayerParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  LayerParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LayerParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const LayerParameter& from);
   void MergeFrom(const LayerParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -4292,11 +4292,11 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -4304,7 +4304,7 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(LayerParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -4312,7 +4312,7 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -4337,8 +4337,8 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   #endif
   void add_bottom(const char* value);
   void add_bottom(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& bottom() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_bottom();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& bottom() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_bottom();
 
   // repeated string top = 4;
   int top_size() const;
@@ -4359,8 +4359,8 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   #endif
   void add_top(const char* value);
   void add_top(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& top() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_top();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& top() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_top();
 
   // repeated float loss_weight = 5;
   int loss_weight_size() const;
@@ -4369,9 +4369,9 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   float loss_weight(int index) const;
   void set_loss_weight(int index, float value);
   void add_loss_weight(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       loss_weight() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_loss_weight();
 
   // repeated .opencv_caffe.ParamSpec param = 6;
@@ -4381,9 +4381,9 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   const ::opencv_caffe::ParamSpec& param(int index) const;
   ::opencv_caffe::ParamSpec* mutable_param(int index);
   ::opencv_caffe::ParamSpec* add_param();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >*
       mutable_param();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >&
       param() const;
 
   // repeated .opencv_caffe.BlobProto blobs = 7;
@@ -4393,9 +4393,9 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   const ::opencv_caffe::BlobProto& blobs(int index) const;
   ::opencv_caffe::BlobProto* mutable_blobs(int index);
   ::opencv_caffe::BlobProto* add_blobs();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
       mutable_blobs();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
       blobs() const;
 
   // repeated .opencv_caffe.NetStateRule include = 8;
@@ -4405,9 +4405,9 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   const ::opencv_caffe::NetStateRule& include(int index) const;
   ::opencv_caffe::NetStateRule* mutable_include(int index);
   ::opencv_caffe::NetStateRule* add_include();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
       mutable_include();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
       include() const;
 
   // repeated .opencv_caffe.NetStateRule exclude = 9;
@@ -4417,9 +4417,9 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   const ::opencv_caffe::NetStateRule& exclude(int index) const;
   ::opencv_caffe::NetStateRule* mutable_exclude(int index);
   ::opencv_caffe::NetStateRule* add_exclude();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
       mutable_exclude();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
       exclude() const;
 
   // repeated bool propagate_down = 11;
@@ -4429,9 +4429,9 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   bool propagate_down(int index) const;
   void set_propagate_down(int index, bool value);
   void add_propagate_down(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
+  const ::cv::protobuf::RepeatedField< bool >&
       propagate_down() const;
-  ::google::protobuf::RepeatedField< bool >*
+  ::cv::protobuf::RepeatedField< bool >*
       mutable_propagate_down();
 
   // optional string name = 1;
@@ -5074,18 +5074,18 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void set_has_window_data_param();
   void clear_has_window_data_param();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<2> _has_bits_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> bottom_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> top_;
-  ::google::protobuf::RepeatedField< float > loss_weight_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec > param_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > include_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > exclude_;
-  ::google::protobuf::RepeatedField< bool > propagate_down_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
-  ::google::protobuf::internal::ArenaStringPtr type_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<2> _has_bits_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> bottom_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> top_;
+  ::cv::protobuf::RepeatedField< float > loss_weight_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec > param_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > include_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > exclude_;
+  ::cv::protobuf::RepeatedField< bool > propagate_down_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::internal::ArenaStringPtr type_;
   ::opencv_caffe::TransformationParameter* transform_param_;
   ::opencv_caffe::LossParameter* loss_param_;
   ::opencv_caffe::AccuracyParameter* accuracy_param_;
@@ -5147,7 +5147,7 @@ class LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 };
 // -------------------------------------------------------------------
 
-class TransformationParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.TransformationParameter) */ {
+class TransformationParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.TransformationParameter) */ {
  public:
   TransformationParameter();
   virtual ~TransformationParameter();
@@ -5173,14 +5173,14 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const TransformationParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -5200,9 +5200,9 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
 
   inline TransformationParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  TransformationParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TransformationParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const TransformationParameter& from);
   void MergeFrom(const TransformationParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -5210,11 +5210,11 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -5222,7 +5222,7 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(TransformationParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -5230,7 +5230,7 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -5243,9 +5243,9 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
   float mean_value(int index) const;
   void set_mean_value(int index, float value);
   void add_mean_value(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       mean_value() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_mean_value();
 
   // optional string mean_file = 4;
@@ -5267,8 +5267,8 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
   bool has_crop_size() const;
   void clear_crop_size();
   static const int kCropSizeFieldNumber = 3;
-  ::google::protobuf::uint32 crop_size() const;
-  void set_crop_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 crop_size() const;
+  void set_crop_size(::cv::protobuf::uint32 value);
 
   // optional bool mirror = 2 [default = false];
   bool has_mirror() const;
@@ -5313,12 +5313,12 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
   void set_has_force_gray();
   void clear_has_force_gray();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< float > mean_value_;
-  ::google::protobuf::internal::ArenaStringPtr mean_file_;
-  ::google::protobuf::uint32 crop_size_;
+  ::cv::protobuf::RepeatedField< float > mean_value_;
+  ::cv::protobuf::internal::ArenaStringPtr mean_file_;
+  ::cv::protobuf::uint32 crop_size_;
   bool mirror_;
   bool force_color_;
   bool force_gray_;
@@ -5328,7 +5328,7 @@ class TransformationParameter : public ::google::protobuf::Message /* @@protoc_i
 };
 // -------------------------------------------------------------------
 
-class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LossParameter) */ {
+class LossParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LossParameter) */ {
  public:
   LossParameter();
   virtual ~LossParameter();
@@ -5354,14 +5354,14 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const LossParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -5381,9 +5381,9 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline LossParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  LossParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LossParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const LossParameter& from);
   void MergeFrom(const LossParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -5391,11 +5391,11 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -5403,7 +5403,7 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(LossParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -5411,7 +5411,7 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -5433,7 +5433,7 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     LossParameter_NormalizationMode_NormalizationMode_MAX;
   static const int NormalizationMode_ARRAYSIZE =
     LossParameter_NormalizationMode_NormalizationMode_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   NormalizationMode_descriptor() {
     return LossParameter_NormalizationMode_descriptor();
   }
@@ -5451,8 +5451,8 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   bool has_ignore_label() const;
   void clear_ignore_label();
   static const int kIgnoreLabelFieldNumber = 1;
-  ::google::protobuf::int32 ignore_label() const;
-  void set_ignore_label(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 ignore_label() const;
+  void set_ignore_label(::cv::protobuf::int32 value);
 
   // optional bool normalize = 2;
   bool has_normalize() const;
@@ -5477,10 +5477,10 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void set_has_normalize();
   void clear_has_normalize();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::int32 ignore_label_;
+  ::cv::protobuf::int32 ignore_label_;
   bool normalize_;
   int normalization_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -5488,7 +5488,7 @@ class LossParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 };
 // -------------------------------------------------------------------
 
-class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.AccuracyParameter) */ {
+class AccuracyParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.AccuracyParameter) */ {
  public:
   AccuracyParameter();
   virtual ~AccuracyParameter();
@@ -5514,14 +5514,14 @@ class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const AccuracyParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -5541,9 +5541,9 @@ class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   inline AccuracyParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  AccuracyParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  AccuracyParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const AccuracyParameter& from);
   void MergeFrom(const AccuracyParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -5551,11 +5551,11 @@ class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -5563,7 +5563,7 @@ class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(AccuracyParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -5571,7 +5571,7 @@ class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -5581,22 +5581,22 @@ class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_inserti
   bool has_ignore_label() const;
   void clear_ignore_label();
   static const int kIgnoreLabelFieldNumber = 3;
-  ::google::protobuf::int32 ignore_label() const;
-  void set_ignore_label(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 ignore_label() const;
+  void set_ignore_label(::cv::protobuf::int32 value);
 
   // optional uint32 top_k = 1 [default = 1];
   bool has_top_k() const;
   void clear_top_k();
   static const int kTopKFieldNumber = 1;
-  ::google::protobuf::uint32 top_k() const;
-  void set_top_k(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 top_k() const;
+  void set_top_k(::cv::protobuf::uint32 value);
 
   // optional int32 axis = 2 [default = 1];
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 2;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.AccuracyParameter)
  private:
@@ -5607,18 +5607,18 @@ class AccuracyParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void set_has_ignore_label();
   void clear_has_ignore_label();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::int32 ignore_label_;
-  ::google::protobuf::uint32 top_k_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::int32 ignore_label_;
+  ::cv::protobuf::uint32 top_k_;
+  ::cv::protobuf::int32 axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsAccuracyParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ArgMaxParameter) */ {
+class ArgMaxParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ArgMaxParameter) */ {
  public:
   ArgMaxParameter();
   virtual ~ArgMaxParameter();
@@ -5644,14 +5644,14 @@ class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ArgMaxParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -5671,9 +5671,9 @@ class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   inline ArgMaxParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ArgMaxParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ArgMaxParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ArgMaxParameter& from);
   void MergeFrom(const ArgMaxParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -5681,11 +5681,11 @@ class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -5693,7 +5693,7 @@ class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ArgMaxParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -5701,7 +5701,7 @@ class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -5718,15 +5718,15 @@ class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 3;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // optional uint32 top_k = 2 [default = 1];
   bool has_top_k() const;
   void clear_top_k();
   static const int kTopKFieldNumber = 2;
-  ::google::protobuf::uint32 top_k() const;
-  void set_top_k(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 top_k() const;
+  void set_top_k(::cv::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.ArgMaxParameter)
  private:
@@ -5737,18 +5737,18 @@ class ArgMaxParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void set_has_axis();
   void clear_has_axis();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   bool out_max_val_;
-  ::google::protobuf::int32 axis_;
-  ::google::protobuf::uint32 top_k_;
+  ::cv::protobuf::int32 axis_;
+  ::cv::protobuf::uint32 top_k_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsArgMaxParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ConcatParameter) */ {
+class ConcatParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ConcatParameter) */ {
  public:
   ConcatParameter();
   virtual ~ConcatParameter();
@@ -5774,14 +5774,14 @@ class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ConcatParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -5801,9 +5801,9 @@ class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   inline ConcatParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ConcatParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ConcatParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ConcatParameter& from);
   void MergeFrom(const ConcatParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -5811,11 +5811,11 @@ class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -5823,7 +5823,7 @@ class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ConcatParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -5831,7 +5831,7 @@ class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -5841,15 +5841,15 @@ class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion
   bool has_concat_dim() const;
   void clear_concat_dim();
   static const int kConcatDimFieldNumber = 1;
-  ::google::protobuf::uint32 concat_dim() const;
-  void set_concat_dim(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 concat_dim() const;
+  void set_concat_dim(::cv::protobuf::uint32 value);
 
   // optional int32 axis = 2 [default = 1];
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 2;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.ConcatParameter)
  private:
@@ -5858,17 +5858,17 @@ class ConcatParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void set_has_concat_dim();
   void clear_has_concat_dim();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::uint32 concat_dim_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::uint32 concat_dim_;
+  ::cv::protobuf::int32 axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsConcatParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BatchNormParameter) */ {
+class BatchNormParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BatchNormParameter) */ {
  public:
   BatchNormParameter();
   virtual ~BatchNormParameter();
@@ -5894,14 +5894,14 @@ class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const BatchNormParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -5921,9 +5921,9 @@ class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline BatchNormParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  BatchNormParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BatchNormParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const BatchNormParameter& from);
   void MergeFrom(const BatchNormParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -5931,11 +5931,11 @@ class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -5943,7 +5943,7 @@ class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(BatchNormParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -5951,7 +5951,7 @@ class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -5996,8 +5996,8 @@ class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insert
   void set_has_scale_bias();
   void clear_has_scale_bias();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   bool use_global_stats_;
   bool scale_bias_;
@@ -6008,7 +6008,7 @@ class BatchNormParameter : public ::google::protobuf::Message /* @@protoc_insert
 };
 // -------------------------------------------------------------------
 
-class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BiasParameter) */ {
+class BiasParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.BiasParameter) */ {
  public:
   BiasParameter();
   virtual ~BiasParameter();
@@ -6034,14 +6034,14 @@ class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const BiasParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -6061,9 +6061,9 @@ class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline BiasParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  BiasParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  BiasParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const BiasParameter& from);
   void MergeFrom(const BiasParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -6071,11 +6071,11 @@ class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -6083,7 +6083,7 @@ class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(BiasParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -6091,7 +6091,7 @@ class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -6110,15 +6110,15 @@ class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 1;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // optional int32 num_axes = 2 [default = 1];
   bool has_num_axes() const;
   void clear_num_axes();
   static const int kNumAxesFieldNumber = 2;
-  ::google::protobuf::int32 num_axes() const;
-  void set_num_axes(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 num_axes() const;
+  void set_num_axes(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.BiasParameter)
  private:
@@ -6129,18 +6129,18 @@ class BiasParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void set_has_filler();
   void clear_has_filler();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::FillerParameter* filler_;
-  ::google::protobuf::int32 axis_;
-  ::google::protobuf::int32 num_axes_;
+  ::cv::protobuf::int32 axis_;
+  ::cv::protobuf::int32 num_axes_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsBiasParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ContrastiveLossParameter) */ {
+class ContrastiveLossParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ContrastiveLossParameter) */ {
  public:
   ContrastiveLossParameter();
   virtual ~ContrastiveLossParameter();
@@ -6166,14 +6166,14 @@ class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ContrastiveLossParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -6193,9 +6193,9 @@ class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_
 
   inline ContrastiveLossParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ContrastiveLossParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ContrastiveLossParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ContrastiveLossParameter& from);
   void MergeFrom(const ContrastiveLossParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -6203,11 +6203,11 @@ class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -6215,7 +6215,7 @@ class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ContrastiveLossParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -6223,7 +6223,7 @@ class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -6250,8 +6250,8 @@ class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_
   void set_has_legacy_version();
   void clear_has_legacy_version();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   bool legacy_version_;
   float margin_;
@@ -6260,7 +6260,7 @@ class ContrastiveLossParameter : public ::google::protobuf::Message /* @@protoc_
 };
 // -------------------------------------------------------------------
 
-class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ConvolutionParameter) */ {
+class ConvolutionParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ConvolutionParameter) */ {
  public:
   ConvolutionParameter();
   virtual ~ConvolutionParameter();
@@ -6286,14 +6286,14 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ConvolutionParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -6313,9 +6313,9 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
 
   inline ConvolutionParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ConvolutionParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ConvolutionParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ConvolutionParameter& from);
   void MergeFrom(const ConvolutionParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -6323,11 +6323,11 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -6335,7 +6335,7 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ConvolutionParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -6343,7 +6343,7 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -6363,7 +6363,7 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
     ConvolutionParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     ConvolutionParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return ConvolutionParameter_Engine_descriptor();
   }
@@ -6381,48 +6381,48 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
   int pad_size() const;
   void clear_pad();
   static const int kPadFieldNumber = 3;
-  ::google::protobuf::uint32 pad(int index) const;
-  void set_pad(int index, ::google::protobuf::uint32 value);
-  void add_pad(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 pad(int index) const;
+  void set_pad(int index, ::cv::protobuf::uint32 value);
+  void add_pad(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       pad() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_pad();
 
   // repeated uint32 kernel_size = 4;
   int kernel_size_size() const;
   void clear_kernel_size();
   static const int kKernelSizeFieldNumber = 4;
-  ::google::protobuf::uint32 kernel_size(int index) const;
-  void set_kernel_size(int index, ::google::protobuf::uint32 value);
-  void add_kernel_size(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 kernel_size(int index) const;
+  void set_kernel_size(int index, ::cv::protobuf::uint32 value);
+  void add_kernel_size(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       kernel_size() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_kernel_size();
 
   // repeated uint32 stride = 6;
   int stride_size() const;
   void clear_stride();
   static const int kStrideFieldNumber = 6;
-  ::google::protobuf::uint32 stride(int index) const;
-  void set_stride(int index, ::google::protobuf::uint32 value);
-  void add_stride(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 stride(int index) const;
+  void set_stride(int index, ::cv::protobuf::uint32 value);
+  void add_stride(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       stride() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_stride();
 
   // repeated uint32 dilation = 18;
   int dilation_size() const;
   void clear_dilation();
   static const int kDilationFieldNumber = 18;
-  ::google::protobuf::uint32 dilation(int index) const;
-  void set_dilation(int index, ::google::protobuf::uint32 value);
-  void add_dilation(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 dilation(int index) const;
+  void set_dilation(int index, ::cv::protobuf::uint32 value);
+  void add_dilation(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       dilation() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_dilation();
 
   // optional .opencv_caffe.FillerParameter weight_filler = 7;
@@ -6447,50 +6447,50 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
   bool has_num_output() const;
   void clear_num_output();
   static const int kNumOutputFieldNumber = 1;
-  ::google::protobuf::uint32 num_output() const;
-  void set_num_output(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 num_output() const;
+  void set_num_output(::cv::protobuf::uint32 value);
 
   // optional uint32 pad_h = 9 [default = 0];
   bool has_pad_h() const;
   void clear_pad_h();
   static const int kPadHFieldNumber = 9;
-  ::google::protobuf::uint32 pad_h() const;
-  void set_pad_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pad_h() const;
+  void set_pad_h(::cv::protobuf::uint32 value);
 
   // optional uint32 pad_w = 10 [default = 0];
   bool has_pad_w() const;
   void clear_pad_w();
   static const int kPadWFieldNumber = 10;
-  ::google::protobuf::uint32 pad_w() const;
-  void set_pad_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pad_w() const;
+  void set_pad_w(::cv::protobuf::uint32 value);
 
   // optional uint32 kernel_h = 11;
   bool has_kernel_h() const;
   void clear_kernel_h();
   static const int kKernelHFieldNumber = 11;
-  ::google::protobuf::uint32 kernel_h() const;
-  void set_kernel_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 kernel_h() const;
+  void set_kernel_h(::cv::protobuf::uint32 value);
 
   // optional uint32 kernel_w = 12;
   bool has_kernel_w() const;
   void clear_kernel_w();
   static const int kKernelWFieldNumber = 12;
-  ::google::protobuf::uint32 kernel_w() const;
-  void set_kernel_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 kernel_w() const;
+  void set_kernel_w(::cv::protobuf::uint32 value);
 
   // optional uint32 stride_h = 13;
   bool has_stride_h() const;
   void clear_stride_h();
   static const int kStrideHFieldNumber = 13;
-  ::google::protobuf::uint32 stride_h() const;
-  void set_stride_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 stride_h() const;
+  void set_stride_h(::cv::protobuf::uint32 value);
 
   // optional uint32 stride_w = 14;
   bool has_stride_w() const;
   void clear_stride_w();
   static const int kStrideWFieldNumber = 14;
-  ::google::protobuf::uint32 stride_w() const;
-  void set_stride_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 stride_w() const;
+  void set_stride_w(::cv::protobuf::uint32 value);
 
   // optional .opencv_caffe.ConvolutionParameter.Engine engine = 15 [default = DEFAULT];
   bool has_engine() const;
@@ -6510,8 +6510,8 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 16;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // optional bool bias_term = 2 [default = true];
   bool has_bias_term() const;
@@ -6524,8 +6524,8 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
   bool has_group() const;
   void clear_group();
   static const int kGroupFieldNumber = 5;
-  ::google::protobuf::uint32 group() const;
-  void set_group(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 group() const;
+  void set_group(::cv::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.ConvolutionParameter)
  private:
@@ -6558,33 +6558,33 @@ class ConvolutionParameter : public ::google::protobuf::Message /* @@protoc_inse
   void set_has_force_nd_im2col();
   void clear_has_force_nd_im2col();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > pad_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > kernel_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > stride_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > dilation_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > pad_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > kernel_size_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > stride_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > dilation_;
   ::opencv_caffe::FillerParameter* weight_filler_;
   ::opencv_caffe::FillerParameter* bias_filler_;
-  ::google::protobuf::uint32 num_output_;
-  ::google::protobuf::uint32 pad_h_;
-  ::google::protobuf::uint32 pad_w_;
-  ::google::protobuf::uint32 kernel_h_;
-  ::google::protobuf::uint32 kernel_w_;
-  ::google::protobuf::uint32 stride_h_;
-  ::google::protobuf::uint32 stride_w_;
+  ::cv::protobuf::uint32 num_output_;
+  ::cv::protobuf::uint32 pad_h_;
+  ::cv::protobuf::uint32 pad_w_;
+  ::cv::protobuf::uint32 kernel_h_;
+  ::cv::protobuf::uint32 kernel_w_;
+  ::cv::protobuf::uint32 stride_h_;
+  ::cv::protobuf::uint32 stride_w_;
   int engine_;
   bool force_nd_im2col_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::int32 axis_;
   bool bias_term_;
-  ::google::protobuf::uint32 group_;
+  ::cv::protobuf::uint32 group_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsConvolutionParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class CropParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.CropParameter) */ {
+class CropParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.CropParameter) */ {
  public:
   CropParameter();
   virtual ~CropParameter();
@@ -6610,14 +6610,14 @@ class CropParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const CropParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -6637,9 +6637,9 @@ class CropParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline CropParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  CropParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  CropParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const CropParameter& from);
   void MergeFrom(const CropParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -6647,11 +6647,11 @@ class CropParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -6659,7 +6659,7 @@ class CropParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(CropParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -6667,7 +6667,7 @@ class CropParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -6677,37 +6677,37 @@ class CropParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   int offset_size() const;
   void clear_offset();
   static const int kOffsetFieldNumber = 2;
-  ::google::protobuf::uint32 offset(int index) const;
-  void set_offset(int index, ::google::protobuf::uint32 value);
-  void add_offset(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 offset(int index) const;
+  void set_offset(int index, ::cv::protobuf::uint32 value);
+  void add_offset(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       offset() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_offset();
 
   // optional int32 axis = 1 [default = 2];
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 1;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.CropParameter)
  private:
   void set_has_axis();
   void clear_has_axis();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > offset_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > offset_;
+  ::cv::protobuf::int32 axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsCropParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DataParameter) */ {
+class DataParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DataParameter) */ {
  public:
   DataParameter();
   virtual ~DataParameter();
@@ -6733,14 +6733,14 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const DataParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -6760,9 +6760,9 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline DataParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  DataParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DataParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const DataParameter& from);
   void MergeFrom(const DataParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -6770,11 +6770,11 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -6782,7 +6782,7 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(DataParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -6790,7 +6790,7 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -6808,7 +6808,7 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     DataParameter_DB_DB_MAX;
   static const int DB_ARRAYSIZE =
     DataParameter_DB_DB_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   DB_descriptor() {
     return DataParameter_DB_descriptor();
   }
@@ -6856,22 +6856,22 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   bool has_batch_size() const;
   void clear_batch_size();
   static const int kBatchSizeFieldNumber = 4;
-  ::google::protobuf::uint32 batch_size() const;
-  void set_batch_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 batch_size() const;
+  void set_batch_size(::cv::protobuf::uint32 value);
 
   // optional uint32 crop_size = 5 [default = 0];
   bool has_crop_size() const;
   void clear_crop_size();
   static const int kCropSizeFieldNumber = 5;
-  ::google::protobuf::uint32 crop_size() const;
-  void set_crop_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 crop_size() const;
+  void set_crop_size(::cv::protobuf::uint32 value);
 
   // optional uint32 rand_skip = 7 [default = 0];
   bool has_rand_skip() const;
   void clear_rand_skip();
   static const int kRandSkipFieldNumber = 7;
-  ::google::protobuf::uint32 rand_skip() const;
-  void set_rand_skip(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 rand_skip() const;
+  void set_rand_skip(::cv::protobuf::uint32 value);
 
   // optional bool mirror = 6 [default = false];
   bool has_mirror() const;
@@ -6905,8 +6905,8 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   bool has_prefetch() const;
   void clear_prefetch();
   static const int kPrefetchFieldNumber = 10;
-  ::google::protobuf::uint32 prefetch() const;
-  void set_prefetch(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 prefetch() const;
+  void set_prefetch(::cv::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.DataParameter)
  private:
@@ -6931,25 +6931,25 @@ class DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void set_has_prefetch();
   void clear_has_prefetch();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr source_;
-  ::google::protobuf::internal::ArenaStringPtr mean_file_;
-  ::google::protobuf::uint32 batch_size_;
-  ::google::protobuf::uint32 crop_size_;
-  ::google::protobuf::uint32 rand_skip_;
+  ::cv::protobuf::internal::ArenaStringPtr source_;
+  ::cv::protobuf::internal::ArenaStringPtr mean_file_;
+  ::cv::protobuf::uint32 batch_size_;
+  ::cv::protobuf::uint32 crop_size_;
+  ::cv::protobuf::uint32 rand_skip_;
   bool mirror_;
   bool force_encoded_color_;
   int backend_;
   float scale_;
-  ::google::protobuf::uint32 prefetch_;
+  ::cv::protobuf::uint32 prefetch_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsDataParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NonMaximumSuppressionParameter) */ {
+class NonMaximumSuppressionParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NonMaximumSuppressionParameter) */ {
  public:
   NonMaximumSuppressionParameter();
   virtual ~NonMaximumSuppressionParameter();
@@ -6975,14 +6975,14 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const NonMaximumSuppressionParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -7002,9 +7002,9 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
 
   inline NonMaximumSuppressionParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  NonMaximumSuppressionParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  NonMaximumSuppressionParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const NonMaximumSuppressionParameter& from);
   void MergeFrom(const NonMaximumSuppressionParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -7012,11 +7012,11 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -7024,7 +7024,7 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(NonMaximumSuppressionParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -7032,7 +7032,7 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -7042,8 +7042,8 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
   bool has_top_k() const;
   void clear_top_k();
   static const int kTopKFieldNumber = 2;
-  ::google::protobuf::int32 top_k() const;
-  void set_top_k(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 top_k() const;
+  void set_top_k(::cv::protobuf::int32 value);
 
   // optional float nms_threshold = 1 [default = 0.3];
   bool has_nms_threshold() const;
@@ -7068,10 +7068,10 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
   void set_has_eta();
   void clear_has_eta();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::int32 top_k_;
+  ::cv::protobuf::int32 top_k_;
   float nms_threshold_;
   float eta_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -7079,7 +7079,7 @@ class NonMaximumSuppressionParameter : public ::google::protobuf::Message /* @@p
 };
 // -------------------------------------------------------------------
 
-class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SaveOutputParameter) */ {
+class SaveOutputParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SaveOutputParameter) */ {
  public:
   SaveOutputParameter();
   virtual ~SaveOutputParameter();
@@ -7105,14 +7105,14 @@ class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_inser
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SaveOutputParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -7132,9 +7132,9 @@ class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   inline SaveOutputParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SaveOutputParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SaveOutputParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SaveOutputParameter& from);
   void MergeFrom(const SaveOutputParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -7142,11 +7142,11 @@ class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -7154,7 +7154,7 @@ class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_inser
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SaveOutputParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -7162,7 +7162,7 @@ class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_inser
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -7247,8 +7247,8 @@ class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_inser
   bool has_num_test_image() const;
   void clear_num_test_image();
   static const int kNumTestImageFieldNumber = 6;
-  ::google::protobuf::uint32 num_test_image() const;
-  void set_num_test_image(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 num_test_image() const;
+  void set_num_test_image(::cv::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.SaveOutputParameter)
  private:
@@ -7265,21 +7265,21 @@ class SaveOutputParameter : public ::google::protobuf::Message /* @@protoc_inser
   void set_has_num_test_image();
   void clear_has_num_test_image();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr output_directory_;
-  ::google::protobuf::internal::ArenaStringPtr output_name_prefix_;
-  ::google::protobuf::internal::ArenaStringPtr output_format_;
-  ::google::protobuf::internal::ArenaStringPtr label_map_file_;
-  ::google::protobuf::internal::ArenaStringPtr name_size_file_;
-  ::google::protobuf::uint32 num_test_image_;
+  ::cv::protobuf::internal::ArenaStringPtr output_directory_;
+  ::cv::protobuf::internal::ArenaStringPtr output_name_prefix_;
+  ::cv::protobuf::internal::ArenaStringPtr output_format_;
+  ::cv::protobuf::internal::ArenaStringPtr label_map_file_;
+  ::cv::protobuf::internal::ArenaStringPtr name_size_file_;
+  ::cv::protobuf::uint32 num_test_image_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsSaveOutputParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DropoutParameter) */ {
+class DropoutParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DropoutParameter) */ {
  public:
   DropoutParameter();
   virtual ~DropoutParameter();
@@ -7305,14 +7305,14 @@ class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const DropoutParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -7332,9 +7332,9 @@ class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline DropoutParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  DropoutParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DropoutParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const DropoutParameter& from);
   void MergeFrom(const DropoutParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -7342,11 +7342,11 @@ class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -7354,7 +7354,7 @@ class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(DropoutParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -7362,7 +7362,7 @@ class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -7389,8 +7389,8 @@ class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_scale_train();
   void clear_has_scale_train();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float dropout_ratio_;
   bool scale_train_;
@@ -7399,7 +7399,7 @@ class DropoutParameter : public ::google::protobuf::Message /* @@protoc_insertio
 };
 // -------------------------------------------------------------------
 
-class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DummyDataParameter) */ {
+class DummyDataParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.DummyDataParameter) */ {
  public:
   DummyDataParameter();
   virtual ~DummyDataParameter();
@@ -7425,14 +7425,14 @@ class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const DummyDataParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -7452,9 +7452,9 @@ class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline DummyDataParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  DummyDataParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  DummyDataParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const DummyDataParameter& from);
   void MergeFrom(const DummyDataParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -7462,11 +7462,11 @@ class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -7474,7 +7474,7 @@ class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(DummyDataParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -7482,7 +7482,7 @@ class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -7495,57 +7495,57 @@ class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   const ::opencv_caffe::FillerParameter& data_filler(int index) const;
   ::opencv_caffe::FillerParameter* mutable_data_filler(int index);
   ::opencv_caffe::FillerParameter* add_data_filler();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >*
       mutable_data_filler();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >&
       data_filler() const;
 
   // repeated uint32 num = 2;
   int num_size() const;
   void clear_num();
   static const int kNumFieldNumber = 2;
-  ::google::protobuf::uint32 num(int index) const;
-  void set_num(int index, ::google::protobuf::uint32 value);
-  void add_num(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 num(int index) const;
+  void set_num(int index, ::cv::protobuf::uint32 value);
+  void add_num(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       num() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_num();
 
   // repeated uint32 channels = 3;
   int channels_size() const;
   void clear_channels();
   static const int kChannelsFieldNumber = 3;
-  ::google::protobuf::uint32 channels(int index) const;
-  void set_channels(int index, ::google::protobuf::uint32 value);
-  void add_channels(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 channels(int index) const;
+  void set_channels(int index, ::cv::protobuf::uint32 value);
+  void add_channels(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       channels() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_channels();
 
   // repeated uint32 height = 4;
   int height_size() const;
   void clear_height();
   static const int kHeightFieldNumber = 4;
-  ::google::protobuf::uint32 height(int index) const;
-  void set_height(int index, ::google::protobuf::uint32 value);
-  void add_height(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 height(int index) const;
+  void set_height(int index, ::cv::protobuf::uint32 value);
+  void add_height(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       height() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_height();
 
   // repeated uint32 width = 5;
   int width_size() const;
   void clear_width();
   static const int kWidthFieldNumber = 5;
-  ::google::protobuf::uint32 width(int index) const;
-  void set_width(int index, ::google::protobuf::uint32 value);
-  void add_width(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 width(int index) const;
+  void set_width(int index, ::cv::protobuf::uint32 value);
+  void add_width(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       width() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_width();
 
   // repeated .opencv_caffe.BlobShape shape = 6;
@@ -7555,29 +7555,29 @@ class DummyDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   const ::opencv_caffe::BlobShape& shape(int index) const;
   ::opencv_caffe::BlobShape* mutable_shape(int index);
   ::opencv_caffe::BlobShape* add_shape();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
       mutable_shape();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
       shape() const;
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.DummyDataParameter)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter > data_filler_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > num_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > channels_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > height_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > width_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape > shape_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter > data_filler_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > num_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > channels_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > height_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > width_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape > shape_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsDummyDataParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.EltwiseParameter) */ {
+class EltwiseParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.EltwiseParameter) */ {
  public:
   EltwiseParameter();
   virtual ~EltwiseParameter();
@@ -7603,14 +7603,14 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const EltwiseParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -7630,9 +7630,9 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline EltwiseParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  EltwiseParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  EltwiseParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const EltwiseParameter& from);
   void MergeFrom(const EltwiseParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -7640,11 +7640,11 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -7652,7 +7652,7 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(EltwiseParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -7660,7 +7660,7 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -7680,7 +7680,7 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
     EltwiseParameter_EltwiseOp_EltwiseOp_MAX;
   static const int EltwiseOp_ARRAYSIZE =
     EltwiseParameter_EltwiseOp_EltwiseOp_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   EltwiseOp_descriptor() {
     return EltwiseParameter_EltwiseOp_descriptor();
   }
@@ -7701,9 +7701,9 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
   float coeff(int index) const;
   void set_coeff(int index, float value);
   void add_coeff(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       coeff() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_coeff();
 
   // optional .opencv_caffe.EltwiseParameter.EltwiseOp operation = 1 [default = SUM];
@@ -7727,10 +7727,10 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_stable_prod_grad();
   void clear_has_stable_prod_grad();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< float > coeff_;
+  ::cv::protobuf::RepeatedField< float > coeff_;
   int operation_;
   bool stable_prod_grad_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -7738,7 +7738,7 @@ class EltwiseParameter : public ::google::protobuf::Message /* @@protoc_insertio
 };
 // -------------------------------------------------------------------
 
-class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ELUParameter) */ {
+class ELUParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ELUParameter) */ {
  public:
   ELUParameter();
   virtual ~ELUParameter();
@@ -7764,14 +7764,14 @@ class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ELUParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -7791,9 +7791,9 @@ class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline ELUParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ELUParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ELUParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ELUParameter& from);
   void MergeFrom(const ELUParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -7801,11 +7801,11 @@ class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -7813,7 +7813,7 @@ class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ELUParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -7821,7 +7821,7 @@ class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -7839,8 +7839,8 @@ class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_alpha();
   void clear_has_alpha();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float alpha_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -7848,7 +7848,7 @@ class ELUParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.EmbedParameter) */ {
+class EmbedParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.EmbedParameter) */ {
  public:
   EmbedParameter();
   virtual ~EmbedParameter();
@@ -7874,14 +7874,14 @@ class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const EmbedParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -7901,9 +7901,9 @@ class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline EmbedParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  EmbedParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  EmbedParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const EmbedParameter& from);
   void MergeFrom(const EmbedParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -7911,11 +7911,11 @@ class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -7923,7 +7923,7 @@ class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(EmbedParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -7931,7 +7931,7 @@ class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -7959,15 +7959,15 @@ class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   bool has_num_output() const;
   void clear_num_output();
   static const int kNumOutputFieldNumber = 1;
-  ::google::protobuf::uint32 num_output() const;
-  void set_num_output(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 num_output() const;
+  void set_num_output(::cv::protobuf::uint32 value);
 
   // optional uint32 input_dim = 2;
   bool has_input_dim() const;
   void clear_input_dim();
   static const int kInputDimFieldNumber = 2;
-  ::google::protobuf::uint32 input_dim() const;
-  void set_input_dim(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 input_dim() const;
+  void set_input_dim(::cv::protobuf::uint32 value);
 
   // optional bool bias_term = 3 [default = true];
   bool has_bias_term() const;
@@ -7989,20 +7989,20 @@ class EmbedParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void set_has_bias_filler();
   void clear_has_bias_filler();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::FillerParameter* weight_filler_;
   ::opencv_caffe::FillerParameter* bias_filler_;
-  ::google::protobuf::uint32 num_output_;
-  ::google::protobuf::uint32 input_dim_;
+  ::cv::protobuf::uint32 num_output_;
+  ::cv::protobuf::uint32 input_dim_;
   bool bias_term_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsEmbedParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ExpParameter) */ {
+class ExpParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ExpParameter) */ {
  public:
   ExpParameter();
   virtual ~ExpParameter();
@@ -8028,14 +8028,14 @@ class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ExpParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -8055,9 +8055,9 @@ class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline ExpParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ExpParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ExpParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ExpParameter& from);
   void MergeFrom(const ExpParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -8065,11 +8065,11 @@ class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -8077,7 +8077,7 @@ class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ExpParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -8085,7 +8085,7 @@ class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -8121,8 +8121,8 @@ class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_shift();
   void clear_has_shift();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float shift_;
   float base_;
@@ -8132,7 +8132,7 @@ class ExpParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.FlattenParameter) */ {
+class FlattenParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.FlattenParameter) */ {
  public:
   FlattenParameter();
   virtual ~FlattenParameter();
@@ -8158,14 +8158,14 @@ class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const FlattenParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -8185,9 +8185,9 @@ class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline FlattenParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  FlattenParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  FlattenParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const FlattenParameter& from);
   void MergeFrom(const FlattenParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -8195,11 +8195,11 @@ class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -8207,7 +8207,7 @@ class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(FlattenParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -8215,7 +8215,7 @@ class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -8225,15 +8225,15 @@ class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 1;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // optional int32 end_axis = 2 [default = -1];
   bool has_end_axis() const;
   void clear_end_axis();
   static const int kEndAxisFieldNumber = 2;
-  ::google::protobuf::int32 end_axis() const;
-  void set_end_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 end_axis() const;
+  void set_end_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.FlattenParameter)
  private:
@@ -8242,17 +8242,17 @@ class FlattenParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_end_axis();
   void clear_has_end_axis();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::int32 axis_;
-  ::google::protobuf::int32 end_axis_;
+  ::cv::protobuf::int32 axis_;
+  ::cv::protobuf::int32 end_axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsFlattenParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.HDF5DataParameter) */ {
+class HDF5DataParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.HDF5DataParameter) */ {
  public:
   HDF5DataParameter();
   virtual ~HDF5DataParameter();
@@ -8278,14 +8278,14 @@ class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const HDF5DataParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -8305,9 +8305,9 @@ class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   inline HDF5DataParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  HDF5DataParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  HDF5DataParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const HDF5DataParameter& from);
   void MergeFrom(const HDF5DataParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -8315,11 +8315,11 @@ class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -8327,7 +8327,7 @@ class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(HDF5DataParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -8335,7 +8335,7 @@ class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -8360,8 +8360,8 @@ class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_inserti
   bool has_batch_size() const;
   void clear_batch_size();
   static const int kBatchSizeFieldNumber = 2;
-  ::google::protobuf::uint32 batch_size() const;
-  void set_batch_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 batch_size() const;
+  void set_batch_size(::cv::protobuf::uint32 value);
 
   // optional bool shuffle = 3 [default = false];
   bool has_shuffle() const;
@@ -8379,18 +8379,18 @@ class HDF5DataParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void set_has_shuffle();
   void clear_has_shuffle();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr source_;
-  ::google::protobuf::uint32 batch_size_;
+  ::cv::protobuf::internal::ArenaStringPtr source_;
+  ::cv::protobuf::uint32 batch_size_;
   bool shuffle_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsHDF5DataParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class HDF5OutputParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.HDF5OutputParameter) */ {
+class HDF5OutputParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.HDF5OutputParameter) */ {
  public:
   HDF5OutputParameter();
   virtual ~HDF5OutputParameter();
@@ -8416,14 +8416,14 @@ class HDF5OutputParameter : public ::google::protobuf::Message /* @@protoc_inser
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const HDF5OutputParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -8443,9 +8443,9 @@ class HDF5OutputParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   inline HDF5OutputParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  HDF5OutputParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  HDF5OutputParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const HDF5OutputParameter& from);
   void MergeFrom(const HDF5OutputParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -8453,11 +8453,11 @@ class HDF5OutputParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -8465,7 +8465,7 @@ class HDF5OutputParameter : public ::google::protobuf::Message /* @@protoc_inser
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(HDF5OutputParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -8473,7 +8473,7 @@ class HDF5OutputParameter : public ::google::protobuf::Message /* @@protoc_inser
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -8499,16 +8499,16 @@ class HDF5OutputParameter : public ::google::protobuf::Message /* @@protoc_inser
   void set_has_file_name();
   void clear_has_file_name();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr file_name_;
+  ::cv::protobuf::internal::ArenaStringPtr file_name_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsHDF5OutputParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.HingeLossParameter) */ {
+class HingeLossParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.HingeLossParameter) */ {
  public:
   HingeLossParameter();
   virtual ~HingeLossParameter();
@@ -8534,14 +8534,14 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const HingeLossParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -8561,9 +8561,9 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline HingeLossParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  HingeLossParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  HingeLossParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const HingeLossParameter& from);
   void MergeFrom(const HingeLossParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -8571,11 +8571,11 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -8583,7 +8583,7 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(HingeLossParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -8591,7 +8591,7 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -8609,7 +8609,7 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
     HingeLossParameter_Norm_Norm_MAX;
   static const int Norm_ARRAYSIZE =
     HingeLossParameter_Norm_Norm_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Norm_descriptor() {
     return HingeLossParameter_Norm_descriptor();
   }
@@ -8635,8 +8635,8 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
   void set_has_norm();
   void clear_has_norm();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   int norm_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -8644,7 +8644,7 @@ class HingeLossParameter : public ::google::protobuf::Message /* @@protoc_insert
 };
 // -------------------------------------------------------------------
 
-class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ImageDataParameter) */ {
+class ImageDataParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ImageDataParameter) */ {
  public:
   ImageDataParameter();
   virtual ~ImageDataParameter();
@@ -8670,14 +8670,14 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ImageDataParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -8697,9 +8697,9 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline ImageDataParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ImageDataParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ImageDataParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ImageDataParameter& from);
   void MergeFrom(const ImageDataParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -8707,11 +8707,11 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -8719,7 +8719,7 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ImageDataParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -8727,7 +8727,7 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -8782,15 +8782,15 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   bool has_crop_size() const;
   void clear_crop_size();
   static const int kCropSizeFieldNumber = 5;
-  ::google::protobuf::uint32 crop_size() const;
-  void set_crop_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 crop_size() const;
+  void set_crop_size(::cv::protobuf::uint32 value);
 
   // optional uint32 rand_skip = 7 [default = 0];
   bool has_rand_skip() const;
   void clear_rand_skip();
   static const int kRandSkipFieldNumber = 7;
-  ::google::protobuf::uint32 rand_skip() const;
-  void set_rand_skip(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 rand_skip() const;
+  void set_rand_skip(::cv::protobuf::uint32 value);
 
   // optional bool shuffle = 8 [default = false];
   bool has_shuffle() const;
@@ -8810,15 +8810,15 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   bool has_new_height() const;
   void clear_new_height();
   static const int kNewHeightFieldNumber = 9;
-  ::google::protobuf::uint32 new_height() const;
-  void set_new_height(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 new_height() const;
+  void set_new_height(::cv::protobuf::uint32 value);
 
   // optional uint32 new_width = 10 [default = 0];
   bool has_new_width() const;
   void clear_new_width();
   static const int kNewWidthFieldNumber = 10;
-  ::google::protobuf::uint32 new_width() const;
-  void set_new_width(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 new_width() const;
+  void set_new_width(::cv::protobuf::uint32 value);
 
   // optional bool is_color = 11 [default = true];
   bool has_is_color() const;
@@ -8838,8 +8838,8 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   bool has_batch_size() const;
   void clear_batch_size();
   static const int kBatchSizeFieldNumber = 4;
-  ::google::protobuf::uint32 batch_size() const;
-  void set_batch_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 batch_size() const;
+  void set_batch_size(::cv::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.ImageDataParameter)
  private:
@@ -8868,27 +8868,27 @@ class ImageDataParameter : public ::google::protobuf::Message /* @@protoc_insert
   void set_has_root_folder();
   void clear_has_root_folder();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr source_;
-  ::google::protobuf::internal::ArenaStringPtr mean_file_;
-  ::google::protobuf::internal::ArenaStringPtr root_folder_;
-  ::google::protobuf::uint32 crop_size_;
-  ::google::protobuf::uint32 rand_skip_;
+  ::cv::protobuf::internal::ArenaStringPtr source_;
+  ::cv::protobuf::internal::ArenaStringPtr mean_file_;
+  ::cv::protobuf::internal::ArenaStringPtr root_folder_;
+  ::cv::protobuf::uint32 crop_size_;
+  ::cv::protobuf::uint32 rand_skip_;
   bool shuffle_;
   bool mirror_;
-  ::google::protobuf::uint32 new_height_;
-  ::google::protobuf::uint32 new_width_;
+  ::cv::protobuf::uint32 new_height_;
+  ::cv::protobuf::uint32 new_width_;
   bool is_color_;
   float scale_;
-  ::google::protobuf::uint32 batch_size_;
+  ::cv::protobuf::uint32 batch_size_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsImageDataParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class InfogainLossParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.InfogainLossParameter) */ {
+class InfogainLossParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.InfogainLossParameter) */ {
  public:
   InfogainLossParameter();
   virtual ~InfogainLossParameter();
@@ -8914,14 +8914,14 @@ class InfogainLossParameter : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const InfogainLossParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -8941,9 +8941,9 @@ class InfogainLossParameter : public ::google::protobuf::Message /* @@protoc_ins
 
   inline InfogainLossParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  InfogainLossParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  InfogainLossParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const InfogainLossParameter& from);
   void MergeFrom(const InfogainLossParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -8951,11 +8951,11 @@ class InfogainLossParameter : public ::google::protobuf::Message /* @@protoc_ins
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -8963,7 +8963,7 @@ class InfogainLossParameter : public ::google::protobuf::Message /* @@protoc_ins
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(InfogainLossParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -8971,7 +8971,7 @@ class InfogainLossParameter : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -8997,16 +8997,16 @@ class InfogainLossParameter : public ::google::protobuf::Message /* @@protoc_ins
   void set_has_source();
   void clear_has_source();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr source_;
+  ::cv::protobuf::internal::ArenaStringPtr source_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsInfogainLossParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.InnerProductParameter) */ {
+class InnerProductParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.InnerProductParameter) */ {
  public:
   InnerProductParameter();
   virtual ~InnerProductParameter();
@@ -9032,14 +9032,14 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const InnerProductParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -9059,9 +9059,9 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
 
   inline InnerProductParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  InnerProductParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  InnerProductParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const InnerProductParameter& from);
   void MergeFrom(const InnerProductParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -9069,11 +9069,11 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -9081,7 +9081,7 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(InnerProductParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -9089,7 +9089,7 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -9117,8 +9117,8 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
   bool has_num_output() const;
   void clear_num_output();
   static const int kNumOutputFieldNumber = 1;
-  ::google::protobuf::uint32 num_output() const;
-  void set_num_output(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 num_output() const;
+  void set_num_output(::cv::protobuf::uint32 value);
 
   // optional bool transpose = 6 [default = false];
   bool has_transpose() const;
@@ -9138,8 +9138,8 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 5;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.InnerProductParameter)
  private:
@@ -9156,21 +9156,21 @@ class InnerProductParameter : public ::google::protobuf::Message /* @@protoc_ins
   void set_has_transpose();
   void clear_has_transpose();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::FillerParameter* weight_filler_;
   ::opencv_caffe::FillerParameter* bias_filler_;
-  ::google::protobuf::uint32 num_output_;
+  ::cv::protobuf::uint32 num_output_;
   bool transpose_;
   bool bias_term_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::int32 axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsInnerProductParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class InputParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.InputParameter) */ {
+class InputParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.InputParameter) */ {
  public:
   InputParameter();
   virtual ~InputParameter();
@@ -9196,14 +9196,14 @@ class InputParameter : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const InputParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -9223,9 +9223,9 @@ class InputParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline InputParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  InputParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  InputParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const InputParameter& from);
   void MergeFrom(const InputParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -9233,11 +9233,11 @@ class InputParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -9245,7 +9245,7 @@ class InputParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(InputParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -9253,7 +9253,7 @@ class InputParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -9266,24 +9266,24 @@ class InputParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   const ::opencv_caffe::BlobShape& shape(int index) const;
   ::opencv_caffe::BlobShape* mutable_shape(int index);
   ::opencv_caffe::BlobShape* add_shape();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
       mutable_shape();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
       shape() const;
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.InputParameter)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape > shape_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape > shape_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsInputParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LogParameter) */ {
+class LogParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LogParameter) */ {
  public:
   LogParameter();
   virtual ~LogParameter();
@@ -9309,14 +9309,14 @@ class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const LogParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -9336,9 +9336,9 @@ class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline LogParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  LogParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LogParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const LogParameter& from);
   void MergeFrom(const LogParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -9346,11 +9346,11 @@ class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -9358,7 +9358,7 @@ class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(LogParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -9366,7 +9366,7 @@ class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -9402,8 +9402,8 @@ class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_shift();
   void clear_has_shift();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float shift_;
   float base_;
@@ -9413,7 +9413,7 @@ class LogParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LRNParameter) */ {
+class LRNParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.LRNParameter) */ {
  public:
   LRNParameter();
   virtual ~LRNParameter();
@@ -9439,14 +9439,14 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const LRNParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -9466,9 +9466,9 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline LRNParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  LRNParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  LRNParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const LRNParameter& from);
   void MergeFrom(const LRNParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -9476,11 +9476,11 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -9488,7 +9488,7 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(LRNParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -9496,7 +9496,7 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -9514,7 +9514,7 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     LRNParameter_NormRegion_NormRegion_MAX;
   static const int NormRegion_ARRAYSIZE =
     LRNParameter_NormRegion_NormRegion_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   NormRegion_descriptor() {
     return LRNParameter_NormRegion_descriptor();
   }
@@ -9542,7 +9542,7 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     LRNParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     LRNParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return LRNParameter_Engine_descriptor();
   }
@@ -9574,8 +9574,8 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   bool has_local_size() const;
   void clear_local_size();
   static const int kLocalSizeFieldNumber = 1;
-  ::google::protobuf::uint32 local_size() const;
-  void set_local_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 local_size() const;
+  void set_local_size(::cv::protobuf::uint32 value);
 
   // optional float alpha = 2 [default = 1];
   bool has_alpha() const;
@@ -9613,12 +9613,12 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_engine();
   void clear_has_engine();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   int norm_region_;
   int engine_;
-  ::google::protobuf::uint32 local_size_;
+  ::cv::protobuf::uint32 local_size_;
   float alpha_;
   float beta_;
   float k_;
@@ -9627,7 +9627,7 @@ class LRNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.MemoryDataParameter) */ {
+class MemoryDataParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.MemoryDataParameter) */ {
  public:
   MemoryDataParameter();
   virtual ~MemoryDataParameter();
@@ -9653,14 +9653,14 @@ class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_inser
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const MemoryDataParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -9680,9 +9680,9 @@ class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   inline MemoryDataParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  MemoryDataParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MemoryDataParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const MemoryDataParameter& from);
   void MergeFrom(const MemoryDataParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -9690,11 +9690,11 @@ class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -9702,7 +9702,7 @@ class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(MemoryDataParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -9710,7 +9710,7 @@ class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -9720,29 +9720,29 @@ class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   bool has_batch_size() const;
   void clear_batch_size();
   static const int kBatchSizeFieldNumber = 1;
-  ::google::protobuf::uint32 batch_size() const;
-  void set_batch_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 batch_size() const;
+  void set_batch_size(::cv::protobuf::uint32 value);
 
   // optional uint32 channels = 2;
   bool has_channels() const;
   void clear_channels();
   static const int kChannelsFieldNumber = 2;
-  ::google::protobuf::uint32 channels() const;
-  void set_channels(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 channels() const;
+  void set_channels(::cv::protobuf::uint32 value);
 
   // optional uint32 height = 3;
   bool has_height() const;
   void clear_height();
   static const int kHeightFieldNumber = 3;
-  ::google::protobuf::uint32 height() const;
-  void set_height(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 height() const;
+  void set_height(::cv::protobuf::uint32 value);
 
   // optional uint32 width = 4;
   bool has_width() const;
   void clear_width();
   static const int kWidthFieldNumber = 4;
-  ::google::protobuf::uint32 width() const;
-  void set_width(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 width() const;
+  void set_width(::cv::protobuf::uint32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.MemoryDataParameter)
  private:
@@ -9755,19 +9755,19 @@ class MemoryDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   void set_has_width();
   void clear_has_width();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::uint32 batch_size_;
-  ::google::protobuf::uint32 channels_;
-  ::google::protobuf::uint32 height_;
-  ::google::protobuf::uint32 width_;
+  ::cv::protobuf::uint32 batch_size_;
+  ::cv::protobuf::uint32 channels_;
+  ::cv::protobuf::uint32 height_;
+  ::cv::protobuf::uint32 width_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsMemoryDataParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.MVNParameter) */ {
+class MVNParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.MVNParameter) */ {
  public:
   MVNParameter();
   virtual ~MVNParameter();
@@ -9793,14 +9793,14 @@ class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const MVNParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -9820,9 +9820,9 @@ class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline MVNParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  MVNParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  MVNParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const MVNParameter& from);
   void MergeFrom(const MVNParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -9830,11 +9830,11 @@ class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -9842,7 +9842,7 @@ class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(MVNParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -9850,7 +9850,7 @@ class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -9886,8 +9886,8 @@ class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_eps();
   void clear_has_eps();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   bool across_channels_;
   bool normalize_variance_;
@@ -9897,7 +9897,7 @@ class MVNParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ParameterParameter) */ {
+class ParameterParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ParameterParameter) */ {
  public:
   ParameterParameter();
   virtual ~ParameterParameter();
@@ -9923,14 +9923,14 @@ class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ParameterParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -9950,9 +9950,9 @@ class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline ParameterParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ParameterParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ParameterParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ParameterParameter& from);
   void MergeFrom(const ParameterParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -9960,11 +9960,11 @@ class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -9972,7 +9972,7 @@ class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ParameterParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -9980,7 +9980,7 @@ class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -10000,8 +10000,8 @@ class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insert
   void set_has_shape();
   void clear_has_shape();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::BlobShape* shape_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -10009,7 +10009,7 @@ class ParameterParameter : public ::google::protobuf::Message /* @@protoc_insert
 };
 // -------------------------------------------------------------------
 
-class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PoolingParameter) */ {
+class PoolingParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PoolingParameter) */ {
  public:
   PoolingParameter();
   virtual ~PoolingParameter();
@@ -10035,14 +10035,14 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const PoolingParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -10062,9 +10062,9 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline PoolingParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  PoolingParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PoolingParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const PoolingParameter& from);
   void MergeFrom(const PoolingParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -10072,11 +10072,11 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -10084,7 +10084,7 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(PoolingParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -10092,7 +10092,7 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -10112,7 +10112,7 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
     PoolingParameter_PoolMethod_PoolMethod_MAX;
   static const int PoolMethod_ARRAYSIZE =
     PoolingParameter_PoolMethod_PoolMethod_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   PoolMethod_descriptor() {
     return PoolingParameter_PoolMethod_descriptor();
   }
@@ -10140,7 +10140,7 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
     PoolingParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     PoolingParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return PoolingParameter_Engine_descriptor();
   }
@@ -10165,57 +10165,57 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_kernel_size() const;
   void clear_kernel_size();
   static const int kKernelSizeFieldNumber = 2;
-  ::google::protobuf::uint32 kernel_size() const;
-  void set_kernel_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 kernel_size() const;
+  void set_kernel_size(::cv::protobuf::uint32 value);
 
   // optional uint32 pad = 4 [default = 0];
   bool has_pad() const;
   void clear_pad();
   static const int kPadFieldNumber = 4;
-  ::google::protobuf::uint32 pad() const;
-  void set_pad(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pad() const;
+  void set_pad(::cv::protobuf::uint32 value);
 
   // optional uint32 kernel_h = 5;
   bool has_kernel_h() const;
   void clear_kernel_h();
   static const int kKernelHFieldNumber = 5;
-  ::google::protobuf::uint32 kernel_h() const;
-  void set_kernel_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 kernel_h() const;
+  void set_kernel_h(::cv::protobuf::uint32 value);
 
   // optional uint32 kernel_w = 6;
   bool has_kernel_w() const;
   void clear_kernel_w();
   static const int kKernelWFieldNumber = 6;
-  ::google::protobuf::uint32 kernel_w() const;
-  void set_kernel_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 kernel_w() const;
+  void set_kernel_w(::cv::protobuf::uint32 value);
 
   // optional uint32 stride_h = 7;
   bool has_stride_h() const;
   void clear_stride_h();
   static const int kStrideHFieldNumber = 7;
-  ::google::protobuf::uint32 stride_h() const;
-  void set_stride_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 stride_h() const;
+  void set_stride_h(::cv::protobuf::uint32 value);
 
   // optional uint32 stride_w = 8;
   bool has_stride_w() const;
   void clear_stride_w();
   static const int kStrideWFieldNumber = 8;
-  ::google::protobuf::uint32 stride_w() const;
-  void set_stride_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 stride_w() const;
+  void set_stride_w(::cv::protobuf::uint32 value);
 
   // optional uint32 pad_h = 9 [default = 0];
   bool has_pad_h() const;
   void clear_pad_h();
   static const int kPadHFieldNumber = 9;
-  ::google::protobuf::uint32 pad_h() const;
-  void set_pad_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pad_h() const;
+  void set_pad_h(::cv::protobuf::uint32 value);
 
   // optional uint32 pad_w = 10 [default = 0];
   bool has_pad_w() const;
   void clear_pad_w();
   static const int kPadWFieldNumber = 10;
-  ::google::protobuf::uint32 pad_w() const;
-  void set_pad_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pad_w() const;
+  void set_pad_w(::cv::protobuf::uint32 value);
 
   // optional .opencv_caffe.PoolingParameter.Engine engine = 11 [default = DEFAULT];
   bool has_engine() const;
@@ -10235,8 +10235,8 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_stride() const;
   void clear_stride();
   static const int kStrideFieldNumber = 3;
-  ::google::protobuf::uint32 stride() const;
-  void set_stride(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 stride() const;
+  void set_stride(::cv::protobuf::uint32 value);
 
   // optional bool ceil_mode = 13 [default = true];
   bool has_ceil_mode() const;
@@ -10274,28 +10274,28 @@ class PoolingParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_ceil_mode();
   void clear_has_ceil_mode();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   int pool_;
-  ::google::protobuf::uint32 kernel_size_;
-  ::google::protobuf::uint32 pad_;
-  ::google::protobuf::uint32 kernel_h_;
-  ::google::protobuf::uint32 kernel_w_;
-  ::google::protobuf::uint32 stride_h_;
-  ::google::protobuf::uint32 stride_w_;
-  ::google::protobuf::uint32 pad_h_;
-  ::google::protobuf::uint32 pad_w_;
+  ::cv::protobuf::uint32 kernel_size_;
+  ::cv::protobuf::uint32 pad_;
+  ::cv::protobuf::uint32 kernel_h_;
+  ::cv::protobuf::uint32 kernel_w_;
+  ::cv::protobuf::uint32 stride_h_;
+  ::cv::protobuf::uint32 stride_w_;
+  ::cv::protobuf::uint32 pad_h_;
+  ::cv::protobuf::uint32 pad_w_;
   int engine_;
   bool global_pooling_;
-  ::google::protobuf::uint32 stride_;
+  ::cv::protobuf::uint32 stride_;
   bool ceil_mode_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsPoolingParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PowerParameter) */ {
+class PowerParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PowerParameter) */ {
  public:
   PowerParameter();
   virtual ~PowerParameter();
@@ -10321,14 +10321,14 @@ class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const PowerParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -10348,9 +10348,9 @@ class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline PowerParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  PowerParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PowerParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const PowerParameter& from);
   void MergeFrom(const PowerParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -10358,11 +10358,11 @@ class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -10370,7 +10370,7 @@ class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(PowerParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -10378,7 +10378,7 @@ class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -10414,8 +10414,8 @@ class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void set_has_shift();
   void clear_has_shift();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float shift_;
   float power_;
@@ -10425,7 +10425,7 @@ class PowerParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 };
 // -------------------------------------------------------------------
 
-class PythonParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PythonParameter) */ {
+class PythonParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PythonParameter) */ {
  public:
   PythonParameter();
   virtual ~PythonParameter();
@@ -10451,14 +10451,14 @@ class PythonParameter : public ::google::protobuf::Message /* @@protoc_insertion
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const PythonParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -10478,9 +10478,9 @@ class PythonParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   inline PythonParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  PythonParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PythonParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const PythonParameter& from);
   void MergeFrom(const PythonParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -10488,11 +10488,11 @@ class PythonParameter : public ::google::protobuf::Message /* @@protoc_insertion
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -10500,7 +10500,7 @@ class PythonParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(PythonParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -10508,7 +10508,7 @@ class PythonParameter : public ::google::protobuf::Message /* @@protoc_insertion
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -10577,19 +10577,19 @@ class PythonParameter : public ::google::protobuf::Message /* @@protoc_insertion
   void set_has_share_in_parallel();
   void clear_has_share_in_parallel();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr module_;
-  ::google::protobuf::internal::ArenaStringPtr layer_;
-  ::google::protobuf::internal::ArenaStringPtr param_str_;
+  ::cv::protobuf::internal::ArenaStringPtr module_;
+  ::cv::protobuf::internal::ArenaStringPtr layer_;
+  ::cv::protobuf::internal::ArenaStringPtr param_str_;
   bool share_in_parallel_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsPythonParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.RecurrentParameter) */ {
+class RecurrentParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.RecurrentParameter) */ {
  public:
   RecurrentParameter();
   virtual ~RecurrentParameter();
@@ -10615,14 +10615,14 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const RecurrentParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -10642,9 +10642,9 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline RecurrentParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  RecurrentParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  RecurrentParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const RecurrentParameter& from);
   void MergeFrom(const RecurrentParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -10652,11 +10652,11 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -10664,7 +10664,7 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(RecurrentParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -10672,7 +10672,7 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -10700,8 +10700,8 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
   bool has_num_output() const;
   void clear_num_output();
   static const int kNumOutputFieldNumber = 1;
-  ::google::protobuf::uint32 num_output() const;
-  void set_num_output(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 num_output() const;
+  void set_num_output(::cv::protobuf::uint32 value);
 
   // optional bool debug_info = 4 [default = false];
   bool has_debug_info() const;
@@ -10730,12 +10730,12 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
   void set_has_expose_hidden();
   void clear_has_expose_hidden();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::FillerParameter* weight_filler_;
   ::opencv_caffe::FillerParameter* bias_filler_;
-  ::google::protobuf::uint32 num_output_;
+  ::cv::protobuf::uint32 num_output_;
   bool debug_info_;
   bool expose_hidden_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -10743,7 +10743,7 @@ class RecurrentParameter : public ::google::protobuf::Message /* @@protoc_insert
 };
 // -------------------------------------------------------------------
 
-class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ReductionParameter) */ {
+class ReductionParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ReductionParameter) */ {
  public:
   ReductionParameter();
   virtual ~ReductionParameter();
@@ -10769,14 +10769,14 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ReductionParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -10796,9 +10796,9 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline ReductionParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ReductionParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReductionParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ReductionParameter& from);
   void MergeFrom(const ReductionParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -10806,11 +10806,11 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -10818,7 +10818,7 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ReductionParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -10826,7 +10826,7 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -10848,7 +10848,7 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
     ReductionParameter_ReductionOp_ReductionOp_MAX;
   static const int ReductionOp_ARRAYSIZE =
     ReductionParameter_ReductionOp_ReductionOp_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   ReductionOp_descriptor() {
     return ReductionParameter_ReductionOp_descriptor();
   }
@@ -10866,8 +10866,8 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 2;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // optional .opencv_caffe.ReductionParameter.ReductionOp operation = 1 [default = SUM];
   bool has_operation() const;
@@ -10892,10 +10892,10 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
   void set_has_coeff();
   void clear_has_coeff();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::int32 axis_;
   int operation_;
   float coeff_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -10903,7 +10903,7 @@ class ReductionParameter : public ::google::protobuf::Message /* @@protoc_insert
 };
 // -------------------------------------------------------------------
 
-class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ReLUParameter) */ {
+class ReLUParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ReLUParameter) */ {
  public:
   ReLUParameter();
   virtual ~ReLUParameter();
@@ -10929,14 +10929,14 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ReLUParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -10956,9 +10956,9 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline ReLUParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ReLUParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReLUParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ReLUParameter& from);
   void MergeFrom(const ReLUParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -10966,11 +10966,11 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -10978,7 +10978,7 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ReLUParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -10986,7 +10986,7 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11006,7 +11006,7 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     ReLUParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     ReLUParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return ReLUParameter_Engine_descriptor();
   }
@@ -11041,8 +11041,8 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void set_has_engine();
   void clear_has_engine();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float negative_slope_;
   int engine_;
@@ -11051,7 +11051,7 @@ class ReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 };
 // -------------------------------------------------------------------
 
-class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ReshapeParameter) */ {
+class ReshapeParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ReshapeParameter) */ {
  public:
   ReshapeParameter();
   virtual ~ReshapeParameter();
@@ -11077,14 +11077,14 @@ class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ReshapeParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -11104,9 +11104,9 @@ class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline ReshapeParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ReshapeParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ReshapeParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ReshapeParameter& from);
   void MergeFrom(const ReshapeParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -11114,11 +11114,11 @@ class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -11126,7 +11126,7 @@ class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ReshapeParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -11134,7 +11134,7 @@ class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11153,15 +11153,15 @@ class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 2;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // optional int32 num_axes = 3 [default = -1];
   bool has_num_axes() const;
   void clear_num_axes();
   static const int kNumAxesFieldNumber = 3;
-  ::google::protobuf::int32 num_axes() const;
-  void set_num_axes(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 num_axes() const;
+  void set_num_axes(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.ReshapeParameter)
  private:
@@ -11172,18 +11172,18 @@ class ReshapeParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_num_axes();
   void clear_has_num_axes();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::BlobShape* shape_;
-  ::google::protobuf::int32 axis_;
-  ::google::protobuf::int32 num_axes_;
+  ::cv::protobuf::int32 axis_;
+  ::cv::protobuf::int32 num_axes_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsReshapeParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ScaleParameter) */ {
+class ScaleParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ScaleParameter) */ {
  public:
   ScaleParameter();
   virtual ~ScaleParameter();
@@ -11209,14 +11209,14 @@ class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ScaleParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -11236,9 +11236,9 @@ class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline ScaleParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ScaleParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ScaleParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ScaleParameter& from);
   void MergeFrom(const ScaleParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -11246,11 +11246,11 @@ class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -11258,7 +11258,7 @@ class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ScaleParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -11266,7 +11266,7 @@ class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11301,15 +11301,15 @@ class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 1;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // optional int32 num_axes = 2 [default = 1];
   bool has_num_axes() const;
   void clear_num_axes();
   static const int kNumAxesFieldNumber = 2;
-  ::google::protobuf::int32 num_axes() const;
-  void set_num_axes(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 num_axes() const;
+  void set_num_axes(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.ScaleParameter)
  private:
@@ -11324,20 +11324,20 @@ class ScaleParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void set_has_bias_filler();
   void clear_has_bias_filler();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::FillerParameter* filler_;
   ::opencv_caffe::FillerParameter* bias_filler_;
   bool bias_term_;
-  ::google::protobuf::int32 axis_;
-  ::google::protobuf::int32 num_axes_;
+  ::cv::protobuf::int32 axis_;
+  ::cv::protobuf::int32 num_axes_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsScaleParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SigmoidParameter) */ {
+class SigmoidParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SigmoidParameter) */ {
  public:
   SigmoidParameter();
   virtual ~SigmoidParameter();
@@ -11363,14 +11363,14 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SigmoidParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -11390,9 +11390,9 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline SigmoidParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SigmoidParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SigmoidParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SigmoidParameter& from);
   void MergeFrom(const SigmoidParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -11400,11 +11400,11 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -11412,7 +11412,7 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SigmoidParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -11420,7 +11420,7 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11440,7 +11440,7 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
     SigmoidParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     SigmoidParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return SigmoidParameter_Engine_descriptor();
   }
@@ -11466,8 +11466,8 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_engine();
   void clear_has_engine();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   int engine_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -11475,7 +11475,7 @@ class SigmoidParameter : public ::google::protobuf::Message /* @@protoc_insertio
 };
 // -------------------------------------------------------------------
 
-class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SliceParameter) */ {
+class SliceParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SliceParameter) */ {
  public:
   SliceParameter();
   virtual ~SliceParameter();
@@ -11501,14 +11501,14 @@ class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SliceParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -11528,9 +11528,9 @@ class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline SliceParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SliceParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SliceParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SliceParameter& from);
   void MergeFrom(const SliceParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -11538,11 +11538,11 @@ class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -11550,7 +11550,7 @@ class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SliceParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -11558,7 +11558,7 @@ class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11568,27 +11568,27 @@ class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   int slice_point_size() const;
   void clear_slice_point();
   static const int kSlicePointFieldNumber = 2;
-  ::google::protobuf::uint32 slice_point(int index) const;
-  void set_slice_point(int index, ::google::protobuf::uint32 value);
-  void add_slice_point(::google::protobuf::uint32 value);
-  const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+  ::cv::protobuf::uint32 slice_point(int index) const;
+  void set_slice_point(int index, ::cv::protobuf::uint32 value);
+  void add_slice_point(::cv::protobuf::uint32 value);
+  const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
       slice_point() const;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
       mutable_slice_point();
 
   // optional uint32 slice_dim = 1 [default = 1];
   bool has_slice_dim() const;
   void clear_slice_dim();
   static const int kSliceDimFieldNumber = 1;
-  ::google::protobuf::uint32 slice_dim() const;
-  void set_slice_dim(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 slice_dim() const;
+  void set_slice_dim(::cv::protobuf::uint32 value);
 
   // optional int32 axis = 3 [default = 1];
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 3;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.SliceParameter)
  private:
@@ -11597,18 +11597,18 @@ class SliceParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void set_has_slice_dim();
   void clear_has_slice_dim();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< ::google::protobuf::uint32 > slice_point_;
-  ::google::protobuf::uint32 slice_dim_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 > slice_point_;
+  ::cv::protobuf::uint32 slice_dim_;
+  ::cv::protobuf::int32 axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsSliceParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SoftmaxParameter) */ {
+class SoftmaxParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SoftmaxParameter) */ {
  public:
   SoftmaxParameter();
   virtual ~SoftmaxParameter();
@@ -11634,14 +11634,14 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SoftmaxParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -11661,9 +11661,9 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline SoftmaxParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SoftmaxParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SoftmaxParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SoftmaxParameter& from);
   void MergeFrom(const SoftmaxParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -11671,11 +11671,11 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -11683,7 +11683,7 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SoftmaxParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -11691,7 +11691,7 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11711,7 +11711,7 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
     SoftmaxParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     SoftmaxParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return SoftmaxParameter_Engine_descriptor();
   }
@@ -11736,8 +11736,8 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 2;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.SoftmaxParameter)
  private:
@@ -11746,17 +11746,17 @@ class SoftmaxParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_axis();
   void clear_has_axis();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   int engine_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::int32 axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsSoftmaxParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.TanHParameter) */ {
+class TanHParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.TanHParameter) */ {
  public:
   TanHParameter();
   virtual ~TanHParameter();
@@ -11782,14 +11782,14 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const TanHParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -11809,9 +11809,9 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline TanHParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  TanHParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TanHParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const TanHParameter& from);
   void MergeFrom(const TanHParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -11819,11 +11819,11 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -11831,7 +11831,7 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(TanHParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -11839,7 +11839,7 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11859,7 +11859,7 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     TanHParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     TanHParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return TanHParameter_Engine_descriptor();
   }
@@ -11885,8 +11885,8 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void set_has_engine();
   void clear_has_engine();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   int engine_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -11894,7 +11894,7 @@ class TanHParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 };
 // -------------------------------------------------------------------
 
-class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.TileParameter) */ {
+class TileParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.TileParameter) */ {
  public:
   TileParameter();
   virtual ~TileParameter();
@@ -11920,14 +11920,14 @@ class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const TileParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -11947,9 +11947,9 @@ class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   inline TileParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  TileParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  TileParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const TileParameter& from);
   void MergeFrom(const TileParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -11957,11 +11957,11 @@ class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -11969,7 +11969,7 @@ class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(TileParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -11977,7 +11977,7 @@ class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -11987,15 +11987,15 @@ class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   bool has_tiles() const;
   void clear_tiles();
   static const int kTilesFieldNumber = 2;
-  ::google::protobuf::int32 tiles() const;
-  void set_tiles(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 tiles() const;
+  void set_tiles(::cv::protobuf::int32 value);
 
   // optional int32 axis = 1 [default = 1];
   bool has_axis() const;
   void clear_axis();
   static const int kAxisFieldNumber = 1;
-  ::google::protobuf::int32 axis() const;
-  void set_axis(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 axis() const;
+  void set_axis(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.TileParameter)
  private:
@@ -12004,17 +12004,17 @@ class TileParameter : public ::google::protobuf::Message /* @@protoc_insertion_p
   void set_has_tiles();
   void clear_has_tiles();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::int32 tiles_;
-  ::google::protobuf::int32 axis_;
+  ::cv::protobuf::int32 tiles_;
+  ::cv::protobuf::int32 axis_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsTileParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ThresholdParameter) */ {
+class ThresholdParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ThresholdParameter) */ {
  public:
   ThresholdParameter();
   virtual ~ThresholdParameter();
@@ -12040,14 +12040,14 @@ class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insert
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ThresholdParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -12067,9 +12067,9 @@ class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   inline ThresholdParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ThresholdParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ThresholdParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ThresholdParameter& from);
   void MergeFrom(const ThresholdParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -12077,11 +12077,11 @@ class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insert
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -12089,7 +12089,7 @@ class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insert
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ThresholdParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -12097,7 +12097,7 @@ class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insert
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -12115,8 +12115,8 @@ class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insert
   void set_has_threshold();
   void clear_has_threshold();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float threshold_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -12124,7 +12124,7 @@ class ThresholdParameter : public ::google::protobuf::Message /* @@protoc_insert
 };
 // -------------------------------------------------------------------
 
-class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.WindowDataParameter) */ {
+class WindowDataParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.WindowDataParameter) */ {
  public:
   WindowDataParameter();
   virtual ~WindowDataParameter();
@@ -12150,14 +12150,14 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const WindowDataParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -12177,9 +12177,9 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   inline WindowDataParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  WindowDataParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  WindowDataParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const WindowDataParameter& from);
   void MergeFrom(const WindowDataParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -12187,11 +12187,11 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -12199,7 +12199,7 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(WindowDataParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -12207,7 +12207,7 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -12277,15 +12277,15 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   bool has_batch_size() const;
   void clear_batch_size();
   static const int kBatchSizeFieldNumber = 4;
-  ::google::protobuf::uint32 batch_size() const;
-  void set_batch_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 batch_size() const;
+  void set_batch_size(::cv::protobuf::uint32 value);
 
   // optional uint32 crop_size = 5 [default = 0];
   bool has_crop_size() const;
   void clear_crop_size();
   static const int kCropSizeFieldNumber = 5;
-  ::google::protobuf::uint32 crop_size() const;
-  void set_crop_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 crop_size() const;
+  void set_crop_size(::cv::protobuf::uint32 value);
 
   // optional bool mirror = 6 [default = false];
   bool has_mirror() const;
@@ -12305,8 +12305,8 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   bool has_context_pad() const;
   void clear_context_pad();
   static const int kContextPadFieldNumber = 10;
-  ::google::protobuf::uint32 context_pad() const;
-  void set_context_pad(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 context_pad() const;
+  void set_context_pad(::cv::protobuf::uint32 value);
 
   // optional float scale = 2 [default = 1];
   bool has_scale() const;
@@ -12365,19 +12365,19 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
   void set_has_root_folder();
   void clear_has_root_folder();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::ArenaStringPtr source_;
-  ::google::protobuf::internal::ArenaStringPtr mean_file_;
-  static ::google::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_crop_mode_;
-  ::google::protobuf::internal::ArenaStringPtr crop_mode_;
-  ::google::protobuf::internal::ArenaStringPtr root_folder_;
-  ::google::protobuf::uint32 batch_size_;
-  ::google::protobuf::uint32 crop_size_;
+  ::cv::protobuf::internal::ArenaStringPtr source_;
+  ::cv::protobuf::internal::ArenaStringPtr mean_file_;
+  static ::cv::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_crop_mode_;
+  ::cv::protobuf::internal::ArenaStringPtr crop_mode_;
+  ::cv::protobuf::internal::ArenaStringPtr root_folder_;
+  ::cv::protobuf::uint32 batch_size_;
+  ::cv::protobuf::uint32 crop_size_;
   bool mirror_;
   bool cache_images_;
-  ::google::protobuf::uint32 context_pad_;
+  ::cv::protobuf::uint32 context_pad_;
   float scale_;
   float fg_threshold_;
   float bg_threshold_;
@@ -12387,7 +12387,7 @@ class WindowDataParameter : public ::google::protobuf::Message /* @@protoc_inser
 };
 // -------------------------------------------------------------------
 
-class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SPPParameter) */ {
+class SPPParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.SPPParameter) */ {
  public:
   SPPParameter();
   virtual ~SPPParameter();
@@ -12413,14 +12413,14 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SPPParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -12440,9 +12440,9 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   inline SPPParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SPPParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SPPParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SPPParameter& from);
   void MergeFrom(const SPPParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -12450,11 +12450,11 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -12462,7 +12462,7 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SPPParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -12470,7 +12470,7 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -12490,7 +12490,7 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     SPPParameter_PoolMethod_PoolMethod_MAX;
   static const int PoolMethod_ARRAYSIZE =
     SPPParameter_PoolMethod_PoolMethod_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   PoolMethod_descriptor() {
     return SPPParameter_PoolMethod_descriptor();
   }
@@ -12518,7 +12518,7 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
     SPPParameter_Engine_Engine_MAX;
   static const int Engine_ARRAYSIZE =
     SPPParameter_Engine_Engine_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   Engine_descriptor() {
     return SPPParameter_Engine_descriptor();
   }
@@ -12536,8 +12536,8 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   bool has_pyramid_height() const;
   void clear_pyramid_height();
   static const int kPyramidHeightFieldNumber = 1;
-  ::google::protobuf::uint32 pyramid_height() const;
-  void set_pyramid_height(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pyramid_height() const;
+  void set_pyramid_height(::cv::protobuf::uint32 value);
 
   // optional .opencv_caffe.SPPParameter.PoolMethod pool = 2 [default = MAX];
   bool has_pool() const;
@@ -12562,10 +12562,10 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
   void set_has_engine();
   void clear_has_engine();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::uint32 pyramid_height_;
+  ::cv::protobuf::uint32 pyramid_height_;
   int pool_;
   int engine_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
@@ -12573,7 +12573,7 @@ class SPPParameter : public ::google::protobuf::Message /* @@protoc_insertion_po
 };
 // -------------------------------------------------------------------
 
-class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.V1LayerParameter) */ {
+class V1LayerParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.V1LayerParameter) */ {
  public:
   V1LayerParameter();
   virtual ~V1LayerParameter();
@@ -12599,14 +12599,14 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const V1LayerParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -12626,9 +12626,9 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline V1LayerParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  V1LayerParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  V1LayerParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const V1LayerParameter& from);
   void MergeFrom(const V1LayerParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -12636,11 +12636,11 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -12648,7 +12648,7 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(V1LayerParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -12656,7 +12656,7 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -12750,7 +12750,7 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
     V1LayerParameter_LayerType_LayerType_MAX;
   static const int LayerType_ARRAYSIZE =
     V1LayerParameter_LayerType_LayerType_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   LayerType_descriptor() {
     return V1LayerParameter_LayerType_descriptor();
   }
@@ -12776,7 +12776,7 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
     V1LayerParameter_DimCheckMode_DimCheckMode_MAX;
   static const int DimCheckMode_ARRAYSIZE =
     V1LayerParameter_DimCheckMode_DimCheckMode_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   DimCheckMode_descriptor() {
     return V1LayerParameter_DimCheckMode_descriptor();
   }
@@ -12809,8 +12809,8 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   #endif
   void add_bottom(const char* value);
   void add_bottom(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& bottom() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_bottom();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& bottom() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_bottom();
 
   // repeated string top = 3;
   int top_size() const;
@@ -12831,8 +12831,8 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   #endif
   void add_top(const char* value);
   void add_top(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& top() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_top();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& top() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_top();
 
   // repeated .opencv_caffe.BlobProto blobs = 6;
   int blobs_size() const;
@@ -12841,9 +12841,9 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   const ::opencv_caffe::BlobProto& blobs(int index) const;
   ::opencv_caffe::BlobProto* mutable_blobs(int index);
   ::opencv_caffe::BlobProto* add_blobs();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
       mutable_blobs();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
       blobs() const;
 
   // repeated float blobs_lr = 7;
@@ -12853,9 +12853,9 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   float blobs_lr(int index) const;
   void set_blobs_lr(int index, float value);
   void add_blobs_lr(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       blobs_lr() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_blobs_lr();
 
   // repeated float weight_decay = 8;
@@ -12865,9 +12865,9 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   float weight_decay(int index) const;
   void set_weight_decay(int index, float value);
   void add_weight_decay(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       weight_decay() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_weight_decay();
 
   // repeated .opencv_caffe.NetStateRule include = 32;
@@ -12877,9 +12877,9 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   const ::opencv_caffe::NetStateRule& include(int index) const;
   ::opencv_caffe::NetStateRule* mutable_include(int index);
   ::opencv_caffe::NetStateRule* add_include();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
       mutable_include();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
       include() const;
 
   // repeated .opencv_caffe.NetStateRule exclude = 33;
@@ -12889,9 +12889,9 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   const ::opencv_caffe::NetStateRule& exclude(int index) const;
   ::opencv_caffe::NetStateRule* mutable_exclude(int index);
   ::opencv_caffe::NetStateRule* add_exclude();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
       mutable_exclude();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
       exclude() const;
 
   // repeated float loss_weight = 35;
@@ -12901,9 +12901,9 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   float loss_weight(int index) const;
   void set_loss_weight(int index, float value);
   void add_loss_weight(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       loss_weight() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_loss_weight();
 
   // repeated string param = 1001;
@@ -12925,8 +12925,8 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   #endif
   void add_param(const char* value);
   void add_param(const char* value, size_t size);
-  const ::google::protobuf::RepeatedPtrField< ::std::string>& param() const;
-  ::google::protobuf::RepeatedPtrField< ::std::string>* mutable_param();
+  const ::cv::protobuf::RepeatedPtrField< ::std::string>& param() const;
+  ::cv::protobuf::RepeatedPtrField< ::std::string>* mutable_param();
 
   // repeated .opencv_caffe.V1LayerParameter.DimCheckMode blob_share_mode = 1002;
   int blob_share_mode_size() const;
@@ -12935,8 +12935,8 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   ::opencv_caffe::V1LayerParameter_DimCheckMode blob_share_mode(int index) const;
   void set_blob_share_mode(int index, ::opencv_caffe::V1LayerParameter_DimCheckMode value);
   void add_blob_share_mode(::opencv_caffe::V1LayerParameter_DimCheckMode value);
-  const ::google::protobuf::RepeatedField<int>& blob_share_mode() const;
-  ::google::protobuf::RepeatedField<int>* mutable_blob_share_mode();
+  const ::cv::protobuf::RepeatedField<int>& blob_share_mode() const;
+  ::cv::protobuf::RepeatedField<int>* mutable_blob_share_mode();
 
   // optional string name = 4;
   bool has_name() const;
@@ -13308,19 +13308,19 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_layer();
   void clear_has_layer();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<2> _has_bits_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> bottom_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> top_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
-  ::google::protobuf::RepeatedField< float > blobs_lr_;
-  ::google::protobuf::RepeatedField< float > weight_decay_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > include_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > exclude_;
-  ::google::protobuf::RepeatedField< float > loss_weight_;
-  ::google::protobuf::RepeatedPtrField< ::std::string> param_;
-  ::google::protobuf::RepeatedField<int> blob_share_mode_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<2> _has_bits_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> bottom_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> top_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
+  ::cv::protobuf::RepeatedField< float > blobs_lr_;
+  ::cv::protobuf::RepeatedField< float > weight_decay_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > include_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule > exclude_;
+  ::cv::protobuf::RepeatedField< float > loss_weight_;
+  ::cv::protobuf::RepeatedPtrField< ::std::string> param_;
+  ::cv::protobuf::RepeatedField<int> blob_share_mode_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
   ::opencv_caffe::V0LayerParameter* layer_;
   ::opencv_caffe::ConcatParameter* concat_param_;
   ::opencv_caffe::ConvolutionParameter* convolution_param_;
@@ -13359,7 +13359,7 @@ class V1LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
 };
 // -------------------------------------------------------------------
 
-class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.V0LayerParameter) */ {
+class V0LayerParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.V0LayerParameter) */ {
  public:
   V0LayerParameter();
   virtual ~V0LayerParameter();
@@ -13385,14 +13385,14 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const V0LayerParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -13412,9 +13412,9 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   inline V0LayerParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  V0LayerParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  V0LayerParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const V0LayerParameter& from);
   void MergeFrom(const V0LayerParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -13422,11 +13422,11 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -13434,7 +13434,7 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(V0LayerParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -13442,7 +13442,7 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -13462,7 +13462,7 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
     V0LayerParameter_PoolMethod_PoolMethod_MAX;
   static const int PoolMethod_ARRAYSIZE =
     V0LayerParameter_PoolMethod_PoolMethod_ARRAYSIZE;
-  static inline const ::google::protobuf::EnumDescriptor*
+  static inline const ::cv::protobuf::EnumDescriptor*
   PoolMethod_descriptor() {
     return V0LayerParameter_PoolMethod_descriptor();
   }
@@ -13483,9 +13483,9 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   const ::opencv_caffe::BlobProto& blobs(int index) const;
   ::opencv_caffe::BlobProto* mutable_blobs(int index);
   ::opencv_caffe::BlobProto* add_blobs();
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
       mutable_blobs();
-  const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+  const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
       blobs() const;
 
   // repeated float blobs_lr = 51;
@@ -13495,9 +13495,9 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   float blobs_lr(int index) const;
   void set_blobs_lr(int index, float value);
   void add_blobs_lr(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       blobs_lr() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_blobs_lr();
 
   // repeated float weight_decay = 52;
@@ -13507,9 +13507,9 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   float weight_decay(int index) const;
   void set_weight_decay(int index, float value);
   void add_weight_decay(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       weight_decay() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_weight_decay();
 
   // optional string name = 1;
@@ -13618,22 +13618,22 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_num_output() const;
   void clear_num_output();
   static const int kNumOutputFieldNumber = 3;
-  ::google::protobuf::uint32 num_output() const;
-  void set_num_output(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 num_output() const;
+  void set_num_output(::cv::protobuf::uint32 value);
 
   // optional uint32 pad = 7 [default = 0];
   bool has_pad() const;
   void clear_pad();
   static const int kPadFieldNumber = 7;
-  ::google::protobuf::uint32 pad() const;
-  void set_pad(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pad() const;
+  void set_pad(::cv::protobuf::uint32 value);
 
   // optional uint32 kernelsize = 8;
   bool has_kernelsize() const;
   void clear_kernelsize();
   static const int kKernelsizeFieldNumber = 8;
-  ::google::protobuf::uint32 kernelsize() const;
-  void set_kernelsize(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 kernelsize() const;
+  void set_kernelsize(::cv::protobuf::uint32 value);
 
   // optional .opencv_caffe.V0LayerParameter.PoolMethod pool = 11 [default = MAX];
   bool has_pool() const;
@@ -13646,22 +13646,22 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_batchsize() const;
   void clear_batchsize();
   static const int kBatchsizeFieldNumber = 19;
-  ::google::protobuf::uint32 batchsize() const;
-  void set_batchsize(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 batchsize() const;
+  void set_batchsize(::cv::protobuf::uint32 value);
 
   // optional uint32 cropsize = 20 [default = 0];
   bool has_cropsize() const;
   void clear_cropsize();
   static const int kCropsizeFieldNumber = 20;
-  ::google::protobuf::uint32 cropsize() const;
-  void set_cropsize(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 cropsize() const;
+  void set_cropsize(::cv::protobuf::uint32 value);
 
   // optional int32 new_width = 63 [default = 0];
   bool has_new_width() const;
   void clear_new_width();
   static const int kNewWidthFieldNumber = 63;
-  ::google::protobuf::int32 new_width() const;
-  void set_new_width(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 new_width() const;
+  void set_new_width(::cv::protobuf::int32 value);
 
   // optional bool mirror = 21 [default = false];
   bool has_mirror() const;
@@ -13681,43 +13681,43 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_rand_skip() const;
   void clear_rand_skip();
   static const int kRandSkipFieldNumber = 53;
-  ::google::protobuf::uint32 rand_skip() const;
-  void set_rand_skip(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 rand_skip() const;
+  void set_rand_skip(::cv::protobuf::uint32 value);
 
   // optional uint32 det_context_pad = 58 [default = 0];
   bool has_det_context_pad() const;
   void clear_det_context_pad();
   static const int kDetContextPadFieldNumber = 58;
-  ::google::protobuf::uint32 det_context_pad() const;
-  void set_det_context_pad(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 det_context_pad() const;
+  void set_det_context_pad(::cv::protobuf::uint32 value);
 
   // optional int32 new_num = 60 [default = 0];
   bool has_new_num() const;
   void clear_new_num();
   static const int kNewNumFieldNumber = 60;
-  ::google::protobuf::int32 new_num() const;
-  void set_new_num(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 new_num() const;
+  void set_new_num(::cv::protobuf::int32 value);
 
   // optional int32 new_channels = 61 [default = 0];
   bool has_new_channels() const;
   void clear_new_channels();
   static const int kNewChannelsFieldNumber = 61;
-  ::google::protobuf::int32 new_channels() const;
-  void set_new_channels(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 new_channels() const;
+  void set_new_channels(::cv::protobuf::int32 value);
 
   // optional int32 new_height = 62 [default = 0];
   bool has_new_height() const;
   void clear_new_height();
   static const int kNewHeightFieldNumber = 62;
-  ::google::protobuf::int32 new_height() const;
-  void set_new_height(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 new_height() const;
+  void set_new_height(::cv::protobuf::int32 value);
 
   // optional uint32 concat_dim = 65 [default = 1];
   bool has_concat_dim() const;
   void clear_concat_dim();
   static const int kConcatDimFieldNumber = 65;
-  ::google::protobuf::uint32 concat_dim() const;
-  void set_concat_dim(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 concat_dim() const;
+  void set_concat_dim(::cv::protobuf::uint32 value);
 
   // optional bool biasterm = 4 [default = true];
   bool has_biasterm() const;
@@ -13730,15 +13730,15 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_group() const;
   void clear_group();
   static const int kGroupFieldNumber = 9;
-  ::google::protobuf::uint32 group() const;
-  void set_group(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 group() const;
+  void set_group(::cv::protobuf::uint32 value);
 
   // optional uint32 stride = 10 [default = 1];
   bool has_stride() const;
   void clear_stride();
   static const int kStrideFieldNumber = 10;
-  ::google::protobuf::uint32 stride() const;
-  void set_stride(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 stride() const;
+  void set_stride(::cv::protobuf::uint32 value);
 
   // optional float dropout_ratio = 12 [default = 0.5];
   bool has_dropout_ratio() const;
@@ -13751,8 +13751,8 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   bool has_local_size() const;
   void clear_local_size();
   static const int kLocalSizeFieldNumber = 13;
-  ::google::protobuf::uint32 local_size() const;
-  void set_local_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 local_size() const;
+  void set_local_size(::cv::protobuf::uint32 value);
 
   // optional float alpha = 14 [default = 1];
   bool has_alpha() const;
@@ -13876,40 +13876,40 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
   void set_has_hdf5_output_param();
   void clear_has_hdf5_output_param();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<2> _has_bits_;
-  ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
-  ::google::protobuf::RepeatedField< float > blobs_lr_;
-  ::google::protobuf::RepeatedField< float > weight_decay_;
-  ::google::protobuf::internal::ArenaStringPtr name_;
-  ::google::protobuf::internal::ArenaStringPtr type_;
-  ::google::protobuf::internal::ArenaStringPtr source_;
-  ::google::protobuf::internal::ArenaStringPtr meanfile_;
-  static ::google::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_det_crop_mode_;
-  ::google::protobuf::internal::ArenaStringPtr det_crop_mode_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<2> _has_bits_;
+  ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto > blobs_;
+  ::cv::protobuf::RepeatedField< float > blobs_lr_;
+  ::cv::protobuf::RepeatedField< float > weight_decay_;
+  ::cv::protobuf::internal::ArenaStringPtr name_;
+  ::cv::protobuf::internal::ArenaStringPtr type_;
+  ::cv::protobuf::internal::ArenaStringPtr source_;
+  ::cv::protobuf::internal::ArenaStringPtr meanfile_;
+  static ::cv::protobuf::internal::ExplicitlyConstructed< ::std::string> _default_det_crop_mode_;
+  ::cv::protobuf::internal::ArenaStringPtr det_crop_mode_;
   ::opencv_caffe::FillerParameter* weight_filler_;
   ::opencv_caffe::FillerParameter* bias_filler_;
   ::opencv_caffe::HDF5OutputParameter* hdf5_output_param_;
-  ::google::protobuf::uint32 num_output_;
-  ::google::protobuf::uint32 pad_;
-  ::google::protobuf::uint32 kernelsize_;
+  ::cv::protobuf::uint32 num_output_;
+  ::cv::protobuf::uint32 pad_;
+  ::cv::protobuf::uint32 kernelsize_;
   int pool_;
-  ::google::protobuf::uint32 batchsize_;
-  ::google::protobuf::uint32 cropsize_;
-  ::google::protobuf::int32 new_width_;
+  ::cv::protobuf::uint32 batchsize_;
+  ::cv::protobuf::uint32 cropsize_;
+  ::cv::protobuf::int32 new_width_;
   bool mirror_;
   bool shuffle_images_;
-  ::google::protobuf::uint32 rand_skip_;
-  ::google::protobuf::uint32 det_context_pad_;
-  ::google::protobuf::int32 new_num_;
-  ::google::protobuf::int32 new_channels_;
-  ::google::protobuf::int32 new_height_;
-  ::google::protobuf::uint32 concat_dim_;
+  ::cv::protobuf::uint32 rand_skip_;
+  ::cv::protobuf::uint32 det_context_pad_;
+  ::cv::protobuf::int32 new_num_;
+  ::cv::protobuf::int32 new_channels_;
+  ::cv::protobuf::int32 new_height_;
+  ::cv::protobuf::uint32 concat_dim_;
   bool biasterm_;
-  ::google::protobuf::uint32 group_;
-  ::google::protobuf::uint32 stride_;
+  ::cv::protobuf::uint32 group_;
+  ::cv::protobuf::uint32 stride_;
   float dropout_ratio_;
-  ::google::protobuf::uint32 local_size_;
+  ::cv::protobuf::uint32 local_size_;
   float alpha_;
   float beta_;
   float scale_;
@@ -13923,7 +13923,7 @@ class V0LayerParameter : public ::google::protobuf::Message /* @@protoc_insertio
 };
 // -------------------------------------------------------------------
 
-class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PReLUParameter) */ {
+class PReLUParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PReLUParameter) */ {
  public:
   PReLUParameter();
   virtual ~PReLUParameter();
@@ -13949,14 +13949,14 @@ class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const PReLUParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -13976,9 +13976,9 @@ class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline PReLUParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  PReLUParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PReLUParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const PReLUParameter& from);
   void MergeFrom(const PReLUParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -13986,11 +13986,11 @@ class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -13998,7 +13998,7 @@ class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(PReLUParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -14006,7 +14006,7 @@ class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -14035,8 +14035,8 @@ class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_
   void set_has_channel_shared();
   void clear_has_channel_shared();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::opencv_caffe::FillerParameter* filler_;
   bool channel_shared_;
@@ -14045,7 +14045,7 @@ class PReLUParameter : public ::google::protobuf::Message /* @@protoc_insertion_
 };
 // -------------------------------------------------------------------
 
-class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NormalizedBBox) */ {
+class NormalizedBBox : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.NormalizedBBox) */ {
  public:
   NormalizedBBox();
   virtual ~NormalizedBBox();
@@ -14071,14 +14071,14 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const NormalizedBBox& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -14098,9 +14098,9 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
 
   inline NormalizedBBox* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  NormalizedBBox* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  NormalizedBBox* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const NormalizedBBox& from);
   void MergeFrom(const NormalizedBBox& from);
   void Clear() PROTOBUF_FINAL;
@@ -14108,11 +14108,11 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -14120,7 +14120,7 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(NormalizedBBox* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -14128,7 +14128,7 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -14166,8 +14166,8 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
   bool has_label() const;
   void clear_label();
   static const int kLabelFieldNumber = 5;
-  ::google::protobuf::int32 label() const;
-  void set_label(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 label() const;
+  void set_label(::cv::protobuf::int32 value);
 
   // optional bool difficult = 6;
   bool has_difficult() const;
@@ -14209,14 +14209,14 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
   void set_has_size();
   void clear_has_size();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float xmin_;
   float ymin_;
   float xmax_;
   float ymax_;
-  ::google::protobuf::int32 label_;
+  ::cv::protobuf::int32 label_;
   bool difficult_;
   float score_;
   float size_;
@@ -14225,7 +14225,7 @@ class NormalizedBBox : public ::google::protobuf::Message /* @@protoc_insertion_
 };
 // -------------------------------------------------------------------
 
-class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ROIPoolingParameter) */ {
+class ROIPoolingParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ROIPoolingParameter) */ {
  public:
   ROIPoolingParameter();
   virtual ~ROIPoolingParameter();
@@ -14251,14 +14251,14 @@ class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_inser
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ROIPoolingParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -14278,9 +14278,9 @@ class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   inline ROIPoolingParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ROIPoolingParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ROIPoolingParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ROIPoolingParameter& from);
   void MergeFrom(const ROIPoolingParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -14288,11 +14288,11 @@ class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_inser
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -14300,7 +14300,7 @@ class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_inser
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ROIPoolingParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -14308,7 +14308,7 @@ class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_inser
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -14318,15 +14318,15 @@ class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_inser
   bool has_pooled_h() const;
   void clear_pooled_h();
   static const int kPooledHFieldNumber = 1;
-  ::google::protobuf::uint32 pooled_h() const;
-  void set_pooled_h(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pooled_h() const;
+  void set_pooled_h(::cv::protobuf::uint32 value);
 
   // optional uint32 pooled_w = 2 [default = 0];
   bool has_pooled_w() const;
   void clear_pooled_w();
   static const int kPooledWFieldNumber = 2;
-  ::google::protobuf::uint32 pooled_w() const;
-  void set_pooled_w(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pooled_w() const;
+  void set_pooled_w(::cv::protobuf::uint32 value);
 
   // optional float spatial_scale = 3 [default = 1];
   bool has_spatial_scale() const;
@@ -14344,18 +14344,18 @@ class ROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_inser
   void set_has_spatial_scale();
   void clear_has_spatial_scale();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::uint32 pooled_h_;
-  ::google::protobuf::uint32 pooled_w_;
+  ::cv::protobuf::uint32 pooled_h_;
+  ::cv::protobuf::uint32 pooled_w_;
   float spatial_scale_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsROIPoolingParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class ProposalParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ProposalParameter) */ {
+class ProposalParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.ProposalParameter) */ {
  public:
   ProposalParameter();
   virtual ~ProposalParameter();
@@ -14381,14 +14381,14 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const ProposalParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -14408,9 +14408,9 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   inline ProposalParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  ProposalParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  ProposalParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const ProposalParameter& from);
   void MergeFrom(const ProposalParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -14418,11 +14418,11 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -14430,7 +14430,7 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(ProposalParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -14438,7 +14438,7 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -14451,9 +14451,9 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float ratio(int index) const;
   void set_ratio(int index, float value);
   void add_ratio(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       ratio() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_ratio();
 
   // repeated float scale = 5;
@@ -14463,45 +14463,45 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
   float scale(int index) const;
   void set_scale(int index, float value);
   void add_scale(float value);
-  const ::google::protobuf::RepeatedField< float >&
+  const ::cv::protobuf::RepeatedField< float >&
       scale() const;
-  ::google::protobuf::RepeatedField< float >*
+  ::cv::protobuf::RepeatedField< float >*
       mutable_scale();
 
   // optional uint32 feat_stride = 1 [default = 16];
   bool has_feat_stride() const;
   void clear_feat_stride();
   static const int kFeatStrideFieldNumber = 1;
-  ::google::protobuf::uint32 feat_stride() const;
-  void set_feat_stride(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 feat_stride() const;
+  void set_feat_stride(::cv::protobuf::uint32 value);
 
   // optional uint32 base_size = 2 [default = 16];
   bool has_base_size() const;
   void clear_base_size();
   static const int kBaseSizeFieldNumber = 2;
-  ::google::protobuf::uint32 base_size() const;
-  void set_base_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 base_size() const;
+  void set_base_size(::cv::protobuf::uint32 value);
 
   // optional uint32 min_size = 3 [default = 16];
   bool has_min_size() const;
   void clear_min_size();
   static const int kMinSizeFieldNumber = 3;
-  ::google::protobuf::uint32 min_size() const;
-  void set_min_size(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 min_size() const;
+  void set_min_size(::cv::protobuf::uint32 value);
 
   // optional uint32 pre_nms_topn = 6 [default = 6000];
   bool has_pre_nms_topn() const;
   void clear_pre_nms_topn();
   static const int kPreNmsTopnFieldNumber = 6;
-  ::google::protobuf::uint32 pre_nms_topn() const;
-  void set_pre_nms_topn(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 pre_nms_topn() const;
+  void set_pre_nms_topn(::cv::protobuf::uint32 value);
 
   // optional uint32 post_nms_topn = 7 [default = 300];
   bool has_post_nms_topn() const;
   void clear_post_nms_topn();
   static const int kPostNmsTopnFieldNumber = 7;
-  ::google::protobuf::uint32 post_nms_topn() const;
-  void set_post_nms_topn(::google::protobuf::uint32 value);
+  ::cv::protobuf::uint32 post_nms_topn() const;
+  void set_post_nms_topn(::cv::protobuf::uint32 value);
 
   // optional float nms_thresh = 8 [default = 0.7];
   bool has_nms_thresh() const;
@@ -14525,23 +14525,23 @@ class ProposalParameter : public ::google::protobuf::Message /* @@protoc_inserti
   void set_has_nms_thresh();
   void clear_has_nms_thresh();
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
-  ::google::protobuf::RepeatedField< float > ratio_;
-  ::google::protobuf::RepeatedField< float > scale_;
-  ::google::protobuf::uint32 feat_stride_;
-  ::google::protobuf::uint32 base_size_;
-  ::google::protobuf::uint32 min_size_;
-  ::google::protobuf::uint32 pre_nms_topn_;
-  ::google::protobuf::uint32 post_nms_topn_;
+  ::cv::protobuf::RepeatedField< float > ratio_;
+  ::cv::protobuf::RepeatedField< float > scale_;
+  ::cv::protobuf::uint32 feat_stride_;
+  ::cv::protobuf::uint32 base_size_;
+  ::cv::protobuf::uint32 min_size_;
+  ::cv::protobuf::uint32 pre_nms_topn_;
+  ::cv::protobuf::uint32 post_nms_topn_;
   float nms_thresh_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsProposalParameterImpl();
 };
 // -------------------------------------------------------------------
 
-class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PSROIPoolingParameter) */ {
+class PSROIPoolingParameter : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_caffe.PSROIPoolingParameter) */ {
  public:
   PSROIPoolingParameter();
   virtual ~PSROIPoolingParameter();
@@ -14567,14 +14567,14 @@ class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_ins
     return *this;
   }
   #endif
-  inline const ::google::protobuf::UnknownFieldSet& unknown_fields() const {
+  inline const ::cv::protobuf::UnknownFieldSet& unknown_fields() const {
     return _internal_metadata_.unknown_fields();
   }
-  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields() {
+  inline ::cv::protobuf::UnknownFieldSet* mutable_unknown_fields() {
     return _internal_metadata_.mutable_unknown_fields();
   }
 
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const PSROIPoolingParameter& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -14594,9 +14594,9 @@ class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_ins
 
   inline PSROIPoolingParameter* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  PSROIPoolingParameter* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  PSROIPoolingParameter* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const PSROIPoolingParameter& from);
   void MergeFrom(const PSROIPoolingParameter& from);
   void Clear() PROTOBUF_FINAL;
@@ -14604,11 +14604,11 @@ class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_ins
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -14616,7 +14616,7 @@ class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_ins
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(PSROIPoolingParameter* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -14624,7 +14624,7 @@ class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_ins
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -14641,15 +14641,15 @@ class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_ins
   bool has_output_dim() const;
   void clear_output_dim();
   static const int kOutputDimFieldNumber = 2;
-  ::google::protobuf::int32 output_dim() const;
-  void set_output_dim(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 output_dim() const;
+  void set_output_dim(::cv::protobuf::int32 value);
 
   // required int32 group_size = 3;
   bool has_group_size() const;
   void clear_group_size();
   static const int kGroupSizeFieldNumber = 3;
-  ::google::protobuf::int32 group_size() const;
-  void set_group_size(::google::protobuf::int32 value);
+  ::cv::protobuf::int32 group_size() const;
+  void set_group_size(::cv::protobuf::int32 value);
 
   // @@protoc_insertion_point(class_scope:opencv_caffe.PSROIPoolingParameter)
  private:
@@ -14663,12 +14663,12 @@ class PSROIPoolingParameter : public ::google::protobuf::Message /* @@protoc_ins
   // helper for ByteSizeLong()
   size_t RequiredFieldsByteSizeFallback() const;
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::HasBits<1> _has_bits_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   float spatial_scale_;
-  ::google::protobuf::int32 output_dim_;
-  ::google::protobuf::int32 group_size_;
+  ::cv::protobuf::int32 output_dim_;
+  ::cv::protobuf::int32 group_size_;
   friend struct ::protobuf_opencv_2dcaffe_2eproto::TableStruct;
   friend void ::protobuf_opencv_2dcaffe_2eproto::InitDefaultsPSROIPoolingParameterImpl();
 };
@@ -14690,24 +14690,24 @@ inline int BlobShape::dim_size() const {
 inline void BlobShape::clear_dim() {
   dim_.Clear();
 }
-inline ::google::protobuf::int64 BlobShape::dim(int index) const {
+inline ::cv::protobuf::int64 BlobShape::dim(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.BlobShape.dim)
   return dim_.Get(index);
 }
-inline void BlobShape::set_dim(int index, ::google::protobuf::int64 value) {
+inline void BlobShape::set_dim(int index, ::cv::protobuf::int64 value) {
   dim_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.BlobShape.dim)
 }
-inline void BlobShape::add_dim(::google::protobuf::int64 value) {
+inline void BlobShape::add_dim(::cv::protobuf::int64 value) {
   dim_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.BlobShape.dim)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int64 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >&
 BlobShape::dim() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.BlobShape.dim)
   return dim_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int64 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int64 >*
 BlobShape::mutable_dim() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.BlobShape.dim)
   return &dim_;
@@ -14753,14 +14753,14 @@ inline ::opencv_caffe::BlobShape* BlobProto::mutable_shape() {
   return shape_;
 }
 inline void BlobProto::set_allocated_shape(::opencv_caffe::BlobShape* shape) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete shape_;
   }
   if (shape) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      shape = ::google::protobuf::internal::GetOwnedMessage(
+      shape = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, shape, submessage_arena);
     }
     set_has_shape();
@@ -14790,12 +14790,12 @@ inline void BlobProto::add_data(float value) {
   data_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.BlobProto.data)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 BlobProto::data() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.BlobProto.data)
   return data_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 BlobProto::mutable_data() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.BlobProto.data)
   return &data_;
@@ -14820,12 +14820,12 @@ inline void BlobProto::add_diff(float value) {
   diff_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.BlobProto.diff)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 BlobProto::diff() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.BlobProto.diff)
   return diff_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 BlobProto::mutable_diff() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.BlobProto.diff)
   return &diff_;
@@ -14850,12 +14850,12 @@ inline void BlobProto::add_double_data(double value) {
   double_data_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.BlobProto.double_data)
 }
-inline const ::google::protobuf::RepeatedField< double >&
+inline const ::cv::protobuf::RepeatedField< double >&
 BlobProto::double_data() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.BlobProto.double_data)
   return double_data_;
 }
-inline ::google::protobuf::RepeatedField< double >*
+inline ::cv::protobuf::RepeatedField< double >*
 BlobProto::mutable_double_data() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.BlobProto.double_data)
   return &double_data_;
@@ -14880,12 +14880,12 @@ inline void BlobProto::add_double_diff(double value) {
   double_diff_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.BlobProto.double_diff)
 }
-inline const ::google::protobuf::RepeatedField< double >&
+inline const ::cv::protobuf::RepeatedField< double >&
 BlobProto::double_diff() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.BlobProto.double_diff)
   return double_diff_;
 }
-inline ::google::protobuf::RepeatedField< double >*
+inline ::cv::protobuf::RepeatedField< double >*
 BlobProto::mutable_double_diff() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.BlobProto.double_diff)
   return &double_diff_;
@@ -14927,7 +14927,7 @@ inline void BlobProto::clear_has_raw_data() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void BlobProto::clear_raw_data() {
-  raw_data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  raw_data_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_raw_data();
 }
 inline const ::std::string& BlobProto::raw_data() const {
@@ -14936,38 +14936,38 @@ inline const ::std::string& BlobProto::raw_data() const {
 }
 inline void BlobProto::set_raw_data(const ::std::string& value) {
   set_has_raw_data();
-  raw_data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  raw_data_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.BlobProto.raw_data)
 }
 #if LANG_CXX11
 inline void BlobProto::set_raw_data(::std::string&& value) {
   set_has_raw_data();
   raw_data_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.BlobProto.raw_data)
 }
 #endif
 inline void BlobProto::set_raw_data(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_raw_data();
-  raw_data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  raw_data_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.BlobProto.raw_data)
 }
 inline void BlobProto::set_raw_data(const void* value, size_t size) {
   set_has_raw_data();
-  raw_data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  raw_data_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.BlobProto.raw_data)
 }
 inline ::std::string* BlobProto::mutable_raw_data() {
   set_has_raw_data();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.BlobProto.raw_data)
-  return raw_data_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return raw_data_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* BlobProto::release_raw_data() {
   // @@protoc_insertion_point(field_release:opencv_caffe.BlobProto.raw_data)
   clear_has_raw_data();
-  return raw_data_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return raw_data_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void BlobProto::set_allocated_raw_data(::std::string* raw_data) {
   if (raw_data != NULL) {
@@ -14975,7 +14975,7 @@ inline void BlobProto::set_allocated_raw_data(::std::string* raw_data) {
   } else {
     clear_has_raw_data();
   }
-  raw_data_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), raw_data);
+  raw_data_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), raw_data);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.BlobProto.raw_data)
 }
 
@@ -14993,11 +14993,11 @@ inline void BlobProto::clear_num() {
   num_ = 0;
   clear_has_num();
 }
-inline ::google::protobuf::int32 BlobProto::num() const {
+inline ::cv::protobuf::int32 BlobProto::num() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.BlobProto.num)
   return num_;
 }
-inline void BlobProto::set_num(::google::protobuf::int32 value) {
+inline void BlobProto::set_num(::cv::protobuf::int32 value) {
   set_has_num();
   num_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.BlobProto.num)
@@ -15017,11 +15017,11 @@ inline void BlobProto::clear_channels() {
   channels_ = 0;
   clear_has_channels();
 }
-inline ::google::protobuf::int32 BlobProto::channels() const {
+inline ::cv::protobuf::int32 BlobProto::channels() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.BlobProto.channels)
   return channels_;
 }
-inline void BlobProto::set_channels(::google::protobuf::int32 value) {
+inline void BlobProto::set_channels(::cv::protobuf::int32 value) {
   set_has_channels();
   channels_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.BlobProto.channels)
@@ -15041,11 +15041,11 @@ inline void BlobProto::clear_height() {
   height_ = 0;
   clear_has_height();
 }
-inline ::google::protobuf::int32 BlobProto::height() const {
+inline ::cv::protobuf::int32 BlobProto::height() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.BlobProto.height)
   return height_;
 }
-inline void BlobProto::set_height(::google::protobuf::int32 value) {
+inline void BlobProto::set_height(::cv::protobuf::int32 value) {
   set_has_height();
   height_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.BlobProto.height)
@@ -15065,11 +15065,11 @@ inline void BlobProto::clear_width() {
   width_ = 0;
   clear_has_width();
 }
-inline ::google::protobuf::int32 BlobProto::width() const {
+inline ::cv::protobuf::int32 BlobProto::width() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.BlobProto.width)
   return width_;
 }
-inline void BlobProto::set_width(::google::protobuf::int32 value) {
+inline void BlobProto::set_width(::cv::protobuf::int32 value) {
   set_has_width();
   width_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.BlobProto.width)
@@ -15098,12 +15098,12 @@ inline ::opencv_caffe::BlobProto* BlobProtoVector::add_blobs() {
   // @@protoc_insertion_point(field_add:opencv_caffe.BlobProtoVector.blobs)
   return blobs_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
 BlobProtoVector::mutable_blobs() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.BlobProtoVector.blobs)
   return &blobs_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
 BlobProtoVector::blobs() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.BlobProtoVector.blobs)
   return blobs_;
@@ -15120,24 +15120,24 @@ inline int PermuteParameter::order_size() const {
 inline void PermuteParameter::clear_order() {
   order_.Clear();
 }
-inline ::google::protobuf::uint32 PermuteParameter::order(int index) const {
+inline ::cv::protobuf::uint32 PermuteParameter::order(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PermuteParameter.order)
   return order_.Get(index);
 }
-inline void PermuteParameter::set_order(int index, ::google::protobuf::uint32 value) {
+inline void PermuteParameter::set_order(int index, ::cv::protobuf::uint32 value) {
   order_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.PermuteParameter.order)
 }
-inline void PermuteParameter::add_order(::google::protobuf::uint32 value) {
+inline void PermuteParameter::add_order(::cv::protobuf::uint32 value) {
   order_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PermuteParameter.order)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 PermuteParameter::order() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PermuteParameter.order)
   return order_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 PermuteParameter::mutable_order() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PermuteParameter.order)
   return &order_;
@@ -15207,14 +15207,14 @@ inline ::opencv_caffe::FillerParameter* NormalizeBBoxParameter::mutable_scale_fi
   return scale_filler_;
 }
 inline void NormalizeBBoxParameter::set_allocated_scale_filler(::opencv_caffe::FillerParameter* scale_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete scale_filler_;
   }
   if (scale_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      scale_filler = ::google::protobuf::internal::GetOwnedMessage(
+      scale_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, scale_filler, submessage_arena);
     }
     set_has_scale_filler();
@@ -15296,12 +15296,12 @@ inline void PriorBoxParameter::add_min_size(float value) {
   min_size_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.min_size)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::min_size() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.min_size)
   return min_size_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_min_size() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.min_size)
   return &min_size_;
@@ -15326,12 +15326,12 @@ inline void PriorBoxParameter::add_max_size(float value) {
   max_size_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.max_size)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::max_size() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.max_size)
   return max_size_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_max_size() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.max_size)
   return &max_size_;
@@ -15356,12 +15356,12 @@ inline void PriorBoxParameter::add_aspect_ratio(float value) {
   aspect_ratio_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.aspect_ratio)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::aspect_ratio() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.aspect_ratio)
   return aspect_ratio_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_aspect_ratio() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.aspect_ratio)
   return &aspect_ratio_;
@@ -15434,12 +15434,12 @@ inline void PriorBoxParameter::add_variance(float value) {
   variance_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.variance)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::variance() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.variance)
   return variance_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_variance() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.variance)
   return &variance_;
@@ -15459,11 +15459,11 @@ inline void PriorBoxParameter::clear_img_size() {
   img_size_ = 0u;
   clear_has_img_size();
 }
-inline ::google::protobuf::uint32 PriorBoxParameter::img_size() const {
+inline ::cv::protobuf::uint32 PriorBoxParameter::img_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PriorBoxParameter.img_size)
   return img_size_;
 }
-inline void PriorBoxParameter::set_img_size(::google::protobuf::uint32 value) {
+inline void PriorBoxParameter::set_img_size(::cv::protobuf::uint32 value) {
   set_has_img_size();
   img_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PriorBoxParameter.img_size)
@@ -15483,11 +15483,11 @@ inline void PriorBoxParameter::clear_img_h() {
   img_h_ = 0u;
   clear_has_img_h();
 }
-inline ::google::protobuf::uint32 PriorBoxParameter::img_h() const {
+inline ::cv::protobuf::uint32 PriorBoxParameter::img_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PriorBoxParameter.img_h)
   return img_h_;
 }
-inline void PriorBoxParameter::set_img_h(::google::protobuf::uint32 value) {
+inline void PriorBoxParameter::set_img_h(::cv::protobuf::uint32 value) {
   set_has_img_h();
   img_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PriorBoxParameter.img_h)
@@ -15507,11 +15507,11 @@ inline void PriorBoxParameter::clear_img_w() {
   img_w_ = 0u;
   clear_has_img_w();
 }
-inline ::google::protobuf::uint32 PriorBoxParameter::img_w() const {
+inline ::cv::protobuf::uint32 PriorBoxParameter::img_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PriorBoxParameter.img_w)
   return img_w_;
 }
-inline void PriorBoxParameter::set_img_w(::google::protobuf::uint32 value) {
+inline void PriorBoxParameter::set_img_w(::cv::protobuf::uint32 value) {
   set_has_img_w();
   img_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PriorBoxParameter.img_w)
@@ -15632,12 +15632,12 @@ inline void PriorBoxParameter::add_offset_h(float value) {
   offset_h_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.offset_h)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::offset_h() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.offset_h)
   return offset_h_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_offset_h() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.offset_h)
   return &offset_h_;
@@ -15662,12 +15662,12 @@ inline void PriorBoxParameter::add_offset_w(float value) {
   offset_w_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.offset_w)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::offset_w() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.offset_w)
   return offset_w_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_offset_w() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.offset_w)
   return &offset_w_;
@@ -15692,12 +15692,12 @@ inline void PriorBoxParameter::add_width(float value) {
   width_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.width)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::width() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.width)
   return width_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_width() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.width)
   return &width_;
@@ -15722,12 +15722,12 @@ inline void PriorBoxParameter::add_height(float value) {
   height_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.PriorBoxParameter.height)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 PriorBoxParameter::height() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.PriorBoxParameter.height)
   return height_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 PriorBoxParameter::mutable_height() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.PriorBoxParameter.height)
   return &height_;
@@ -15751,11 +15751,11 @@ inline void DetectionOutputParameter::clear_num_classes() {
   num_classes_ = 0u;
   clear_has_num_classes();
 }
-inline ::google::protobuf::uint32 DetectionOutputParameter::num_classes() const {
+inline ::cv::protobuf::uint32 DetectionOutputParameter::num_classes() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DetectionOutputParameter.num_classes)
   return num_classes_;
 }
-inline void DetectionOutputParameter::set_num_classes(::google::protobuf::uint32 value) {
+inline void DetectionOutputParameter::set_num_classes(::cv::protobuf::uint32 value) {
   set_has_num_classes();
   num_classes_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.DetectionOutputParameter.num_classes)
@@ -15799,11 +15799,11 @@ inline void DetectionOutputParameter::clear_background_label_id() {
   background_label_id_ = 0;
   clear_has_background_label_id();
 }
-inline ::google::protobuf::int32 DetectionOutputParameter::background_label_id() const {
+inline ::cv::protobuf::int32 DetectionOutputParameter::background_label_id() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DetectionOutputParameter.background_label_id)
   return background_label_id_;
 }
-inline void DetectionOutputParameter::set_background_label_id(::google::protobuf::int32 value) {
+inline void DetectionOutputParameter::set_background_label_id(::cv::protobuf::int32 value) {
   set_has_background_label_id();
   background_label_id_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.DetectionOutputParameter.background_label_id)
@@ -15845,14 +15845,14 @@ inline ::opencv_caffe::NonMaximumSuppressionParameter* DetectionOutputParameter:
   return nms_param_;
 }
 inline void DetectionOutputParameter::set_allocated_nms_param(::opencv_caffe::NonMaximumSuppressionParameter* nms_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete nms_param_;
   }
   if (nms_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      nms_param = ::google::protobuf::internal::GetOwnedMessage(
+      nms_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, nms_param, submessage_arena);
     }
     set_has_nms_param();
@@ -15899,14 +15899,14 @@ inline ::opencv_caffe::SaveOutputParameter* DetectionOutputParameter::mutable_sa
   return save_output_param_;
 }
 inline void DetectionOutputParameter::set_allocated_save_output_param(::opencv_caffe::SaveOutputParameter* save_output_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete save_output_param_;
   }
   if (save_output_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      save_output_param = ::google::protobuf::internal::GetOwnedMessage(
+      save_output_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, save_output_param, submessage_arena);
     }
     set_has_save_output_param();
@@ -15980,11 +15980,11 @@ inline void DetectionOutputParameter::clear_keep_top_k() {
   keep_top_k_ = -1;
   clear_has_keep_top_k();
 }
-inline ::google::protobuf::int32 DetectionOutputParameter::keep_top_k() const {
+inline ::cv::protobuf::int32 DetectionOutputParameter::keep_top_k() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DetectionOutputParameter.keep_top_k)
   return keep_top_k_;
 }
-inline void DetectionOutputParameter::set_keep_top_k(::google::protobuf::int32 value) {
+inline void DetectionOutputParameter::set_keep_top_k(::cv::protobuf::int32 value) {
   set_has_keep_top_k();
   keep_top_k_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.DetectionOutputParameter.keep_top_k)
@@ -16056,11 +16056,11 @@ inline void Datum::clear_channels() {
   channels_ = 0;
   clear_has_channels();
 }
-inline ::google::protobuf::int32 Datum::channels() const {
+inline ::cv::protobuf::int32 Datum::channels() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.Datum.channels)
   return channels_;
 }
-inline void Datum::set_channels(::google::protobuf::int32 value) {
+inline void Datum::set_channels(::cv::protobuf::int32 value) {
   set_has_channels();
   channels_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.Datum.channels)
@@ -16080,11 +16080,11 @@ inline void Datum::clear_height() {
   height_ = 0;
   clear_has_height();
 }
-inline ::google::protobuf::int32 Datum::height() const {
+inline ::cv::protobuf::int32 Datum::height() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.Datum.height)
   return height_;
 }
-inline void Datum::set_height(::google::protobuf::int32 value) {
+inline void Datum::set_height(::cv::protobuf::int32 value) {
   set_has_height();
   height_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.Datum.height)
@@ -16104,11 +16104,11 @@ inline void Datum::clear_width() {
   width_ = 0;
   clear_has_width();
 }
-inline ::google::protobuf::int32 Datum::width() const {
+inline ::cv::protobuf::int32 Datum::width() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.Datum.width)
   return width_;
 }
-inline void Datum::set_width(::google::protobuf::int32 value) {
+inline void Datum::set_width(::cv::protobuf::int32 value) {
   set_has_width();
   width_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.Datum.width)
@@ -16125,7 +16125,7 @@ inline void Datum::clear_has_data() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void Datum::clear_data() {
-  data_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  data_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_data();
 }
 inline const ::std::string& Datum::data() const {
@@ -16134,38 +16134,38 @@ inline const ::std::string& Datum::data() const {
 }
 inline void Datum::set_data(const ::std::string& value) {
   set_has_data();
-  data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  data_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.Datum.data)
 }
 #if LANG_CXX11
 inline void Datum::set_data(::std::string&& value) {
   set_has_data();
   data_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.Datum.data)
 }
 #endif
 inline void Datum::set_data(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_data();
-  data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  data_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.Datum.data)
 }
 inline void Datum::set_data(const void* value, size_t size) {
   set_has_data();
-  data_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  data_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.Datum.data)
 }
 inline ::std::string* Datum::mutable_data() {
   set_has_data();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.Datum.data)
-  return data_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return data_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Datum::release_data() {
   // @@protoc_insertion_point(field_release:opencv_caffe.Datum.data)
   clear_has_data();
-  return data_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return data_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Datum::set_allocated_data(::std::string* data) {
   if (data != NULL) {
@@ -16173,7 +16173,7 @@ inline void Datum::set_allocated_data(::std::string* data) {
   } else {
     clear_has_data();
   }
-  data_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), data);
+  data_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), data);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.Datum.data)
 }
 
@@ -16191,11 +16191,11 @@ inline void Datum::clear_label() {
   label_ = 0;
   clear_has_label();
 }
-inline ::google::protobuf::int32 Datum::label() const {
+inline ::cv::protobuf::int32 Datum::label() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.Datum.label)
   return label_;
 }
-inline void Datum::set_label(::google::protobuf::int32 value) {
+inline void Datum::set_label(::cv::protobuf::int32 value) {
   set_has_label();
   label_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.Datum.label)
@@ -16220,12 +16220,12 @@ inline void Datum::add_float_data(float value) {
   float_data_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.Datum.float_data)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 Datum::float_data() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.Datum.float_data)
   return float_data_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 Datum::mutable_float_data() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.Datum.float_data)
   return &float_data_;
@@ -16456,11 +16456,11 @@ inline void FillerParameter::clear_sparse() {
   sparse_ = -1;
   clear_has_sparse();
 }
-inline ::google::protobuf::int32 FillerParameter::sparse() const {
+inline ::cv::protobuf::int32 FillerParameter::sparse() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.FillerParameter.sparse)
   return sparse_;
 }
-inline void FillerParameter::set_sparse(::google::protobuf::int32 value) {
+inline void FillerParameter::set_sparse(::cv::protobuf::int32 value) {
   set_has_sparse();
   sparse_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.FillerParameter.sparse)
@@ -16506,7 +16506,7 @@ inline void NetParameter::clear_has_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void NetParameter::clear_name() {
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_name();
 }
 inline const ::std::string& NetParameter::name() const {
@@ -16515,38 +16515,38 @@ inline const ::std::string& NetParameter::name() const {
 }
 inline void NetParameter::set_name(const ::std::string& value) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.NetParameter.name)
 }
 #if LANG_CXX11
 inline void NetParameter::set_name(::std::string&& value) {
   set_has_name();
   name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.NetParameter.name)
 }
 #endif
 inline void NetParameter::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.NetParameter.name)
 }
 inline void NetParameter::set_name(const char* value, size_t size) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.NetParameter.name)
 }
 inline ::std::string* NetParameter::mutable_name() {
   set_has_name();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.NetParameter.name)
-  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* NetParameter::release_name() {
   // @@protoc_insertion_point(field_release:opencv_caffe.NetParameter.name)
   clear_has_name();
-  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void NetParameter::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -16554,7 +16554,7 @@ inline void NetParameter::set_allocated_name(::std::string* name) {
   } else {
     clear_has_name();
   }
-  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  name_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.NetParameter.name)
 }
 
@@ -16616,12 +16616,12 @@ inline void NetParameter::add_input(const char* value, size_t size) {
   input_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.NetParameter.input)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 NetParameter::input() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetParameter.input)
   return input_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 NetParameter::mutable_input() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetParameter.input)
   return &input_;
@@ -16646,12 +16646,12 @@ inline ::opencv_caffe::BlobShape* NetParameter::add_input_shape() {
   // @@protoc_insertion_point(field_add:opencv_caffe.NetParameter.input_shape)
   return input_shape_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
 NetParameter::mutable_input_shape() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetParameter.input_shape)
   return &input_shape_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
 NetParameter::input_shape() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetParameter.input_shape)
   return input_shape_;
@@ -16664,24 +16664,24 @@ inline int NetParameter::input_dim_size() const {
 inline void NetParameter::clear_input_dim() {
   input_dim_.Clear();
 }
-inline ::google::protobuf::int32 NetParameter::input_dim(int index) const {
+inline ::cv::protobuf::int32 NetParameter::input_dim(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.NetParameter.input_dim)
   return input_dim_.Get(index);
 }
-inline void NetParameter::set_input_dim(int index, ::google::protobuf::int32 value) {
+inline void NetParameter::set_input_dim(int index, ::cv::protobuf::int32 value) {
   input_dim_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.NetParameter.input_dim)
 }
-inline void NetParameter::add_input_dim(::google::protobuf::int32 value) {
+inline void NetParameter::add_input_dim(::cv::protobuf::int32 value) {
   input_dim_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.NetParameter.input_dim)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
 NetParameter::input_dim() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetParameter.input_dim)
   return input_dim_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
 NetParameter::mutable_input_dim() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetParameter.input_dim)
   return &input_dim_;
@@ -16747,14 +16747,14 @@ inline ::opencv_caffe::NetState* NetParameter::mutable_state() {
   return state_;
 }
 inline void NetParameter::set_allocated_state(::opencv_caffe::NetState* state) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete state_;
   }
   if (state) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      state = ::google::protobuf::internal::GetOwnedMessage(
+      state = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, state, submessage_arena);
     }
     set_has_state();
@@ -16808,12 +16808,12 @@ inline ::opencv_caffe::LayerParameter* NetParameter::add_layer() {
   // @@protoc_insertion_point(field_add:opencv_caffe.NetParameter.layer)
   return layer_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >*
 NetParameter::mutable_layer() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetParameter.layer)
   return &layer_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::LayerParameter >&
 NetParameter::layer() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetParameter.layer)
   return layer_;
@@ -16838,12 +16838,12 @@ inline ::opencv_caffe::V1LayerParameter* NetParameter::add_layers() {
   // @@protoc_insertion_point(field_add:opencv_caffe.NetParameter.layers)
   return layers_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >*
 NetParameter::mutable_layers() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetParameter.layers)
   return &layers_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::V1LayerParameter >&
 NetParameter::layers() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetParameter.layers)
   return layers_;
@@ -16864,7 +16864,7 @@ inline void SolverParameter::clear_has_net() {
   _has_bits_[0] &= ~0x00000008u;
 }
 inline void SolverParameter::clear_net() {
-  net_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  net_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_net();
 }
 inline const ::std::string& SolverParameter::net() const {
@@ -16873,38 +16873,38 @@ inline const ::std::string& SolverParameter::net() const {
 }
 inline void SolverParameter::set_net(const ::std::string& value) {
   set_has_net();
-  net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.net)
 }
 #if LANG_CXX11
 inline void SolverParameter::set_net(::std::string&& value) {
   set_has_net();
   net_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SolverParameter.net)
 }
 #endif
 inline void SolverParameter::set_net(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_net();
-  net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SolverParameter.net)
 }
 inline void SolverParameter::set_net(const char* value, size_t size) {
   set_has_net();
-  net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SolverParameter.net)
 }
 inline ::std::string* SolverParameter::mutable_net() {
   set_has_net();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SolverParameter.net)
-  return net_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return net_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SolverParameter::release_net() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SolverParameter.net)
   clear_has_net();
-  return net_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return net_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SolverParameter::set_allocated_net(::std::string* net) {
   if (net != NULL) {
@@ -16912,7 +16912,7 @@ inline void SolverParameter::set_allocated_net(::std::string* net) {
   } else {
     clear_has_net();
   }
-  net_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), net);
+  net_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), net);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SolverParameter.net)
 }
 
@@ -16952,14 +16952,14 @@ inline ::opencv_caffe::NetParameter* SolverParameter::mutable_net_param() {
   return net_param_;
 }
 inline void SolverParameter::set_allocated_net_param(::opencv_caffe::NetParameter* net_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete net_param_;
   }
   if (net_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      net_param = ::google::protobuf::internal::GetOwnedMessage(
+      net_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, net_param, submessage_arena);
     }
     set_has_net_param();
@@ -16981,7 +16981,7 @@ inline void SolverParameter::clear_has_train_net() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void SolverParameter::clear_train_net() {
-  train_net_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  train_net_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_train_net();
 }
 inline const ::std::string& SolverParameter::train_net() const {
@@ -16990,38 +16990,38 @@ inline const ::std::string& SolverParameter::train_net() const {
 }
 inline void SolverParameter::set_train_net(const ::std::string& value) {
   set_has_train_net();
-  train_net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  train_net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.train_net)
 }
 #if LANG_CXX11
 inline void SolverParameter::set_train_net(::std::string&& value) {
   set_has_train_net();
   train_net_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SolverParameter.train_net)
 }
 #endif
 inline void SolverParameter::set_train_net(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_train_net();
-  train_net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  train_net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SolverParameter.train_net)
 }
 inline void SolverParameter::set_train_net(const char* value, size_t size) {
   set_has_train_net();
-  train_net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  train_net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SolverParameter.train_net)
 }
 inline ::std::string* SolverParameter::mutable_train_net() {
   set_has_train_net();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SolverParameter.train_net)
-  return train_net_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return train_net_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SolverParameter::release_train_net() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SolverParameter.train_net)
   clear_has_train_net();
-  return train_net_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return train_net_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SolverParameter::set_allocated_train_net(::std::string* train_net) {
   if (train_net != NULL) {
@@ -17029,7 +17029,7 @@ inline void SolverParameter::set_allocated_train_net(::std::string* train_net) {
   } else {
     clear_has_train_net();
   }
-  train_net_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), train_net);
+  train_net_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), train_net);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SolverParameter.train_net)
 }
 
@@ -17091,12 +17091,12 @@ inline void SolverParameter::add_test_net(const char* value, size_t size) {
   test_net_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.SolverParameter.test_net)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 SolverParameter::test_net() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.SolverParameter.test_net)
   return test_net_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 SolverParameter::mutable_test_net() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.SolverParameter.test_net)
   return &test_net_;
@@ -17138,14 +17138,14 @@ inline ::opencv_caffe::NetParameter* SolverParameter::mutable_train_net_param() 
   return train_net_param_;
 }
 inline void SolverParameter::set_allocated_train_net_param(::opencv_caffe::NetParameter* train_net_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete train_net_param_;
   }
   if (train_net_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      train_net_param = ::google::protobuf::internal::GetOwnedMessage(
+      train_net_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, train_net_param, submessage_arena);
     }
     set_has_train_net_param();
@@ -17175,12 +17175,12 @@ inline ::opencv_caffe::NetParameter* SolverParameter::add_test_net_param() {
   // @@protoc_insertion_point(field_add:opencv_caffe.SolverParameter.test_net_param)
   return test_net_param_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >*
 SolverParameter::mutable_test_net_param() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.SolverParameter.test_net_param)
   return &test_net_param_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetParameter >&
 SolverParameter::test_net_param() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.SolverParameter.test_net_param)
   return test_net_param_;
@@ -17222,14 +17222,14 @@ inline ::opencv_caffe::NetState* SolverParameter::mutable_train_state() {
   return train_state_;
 }
 inline void SolverParameter::set_allocated_train_state(::opencv_caffe::NetState* train_state) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete train_state_;
   }
   if (train_state) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      train_state = ::google::protobuf::internal::GetOwnedMessage(
+      train_state = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, train_state, submessage_arena);
     }
     set_has_train_state();
@@ -17259,12 +17259,12 @@ inline ::opencv_caffe::NetState* SolverParameter::add_test_state() {
   // @@protoc_insertion_point(field_add:opencv_caffe.SolverParameter.test_state)
   return test_state_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >*
 SolverParameter::mutable_test_state() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.SolverParameter.test_state)
   return &test_state_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetState >&
 SolverParameter::test_state() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.SolverParameter.test_state)
   return test_state_;
@@ -17277,24 +17277,24 @@ inline int SolverParameter::test_iter_size() const {
 inline void SolverParameter::clear_test_iter() {
   test_iter_.Clear();
 }
-inline ::google::protobuf::int32 SolverParameter::test_iter(int index) const {
+inline ::cv::protobuf::int32 SolverParameter::test_iter(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.test_iter)
   return test_iter_.Get(index);
 }
-inline void SolverParameter::set_test_iter(int index, ::google::protobuf::int32 value) {
+inline void SolverParameter::set_test_iter(int index, ::cv::protobuf::int32 value) {
   test_iter_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.test_iter)
 }
-inline void SolverParameter::add_test_iter(::google::protobuf::int32 value) {
+inline void SolverParameter::add_test_iter(::cv::protobuf::int32 value) {
   test_iter_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.SolverParameter.test_iter)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
 SolverParameter::test_iter() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.SolverParameter.test_iter)
   return test_iter_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
 SolverParameter::mutable_test_iter() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.SolverParameter.test_iter)
   return &test_iter_;
@@ -17314,11 +17314,11 @@ inline void SolverParameter::clear_test_interval() {
   test_interval_ = 0;
   clear_has_test_interval();
 }
-inline ::google::protobuf::int32 SolverParameter::test_interval() const {
+inline ::cv::protobuf::int32 SolverParameter::test_interval() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.test_interval)
   return test_interval_;
 }
-inline void SolverParameter::set_test_interval(::google::protobuf::int32 value) {
+inline void SolverParameter::set_test_interval(::cv::protobuf::int32 value) {
   set_has_test_interval();
   test_interval_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.test_interval)
@@ -17410,11 +17410,11 @@ inline void SolverParameter::clear_display() {
   display_ = 0;
   clear_has_display();
 }
-inline ::google::protobuf::int32 SolverParameter::display() const {
+inline ::cv::protobuf::int32 SolverParameter::display() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.display)
   return display_;
 }
-inline void SolverParameter::set_display(::google::protobuf::int32 value) {
+inline void SolverParameter::set_display(::cv::protobuf::int32 value) {
   set_has_display();
   display_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.display)
@@ -17434,11 +17434,11 @@ inline void SolverParameter::clear_average_loss() {
   average_loss_ = 1;
   clear_has_average_loss();
 }
-inline ::google::protobuf::int32 SolverParameter::average_loss() const {
+inline ::cv::protobuf::int32 SolverParameter::average_loss() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.average_loss)
   return average_loss_;
 }
-inline void SolverParameter::set_average_loss(::google::protobuf::int32 value) {
+inline void SolverParameter::set_average_loss(::cv::protobuf::int32 value) {
   set_has_average_loss();
   average_loss_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.average_loss)
@@ -17458,11 +17458,11 @@ inline void SolverParameter::clear_max_iter() {
   max_iter_ = 0;
   clear_has_max_iter();
 }
-inline ::google::protobuf::int32 SolverParameter::max_iter() const {
+inline ::cv::protobuf::int32 SolverParameter::max_iter() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.max_iter)
   return max_iter_;
 }
-inline void SolverParameter::set_max_iter(::google::protobuf::int32 value) {
+inline void SolverParameter::set_max_iter(::cv::protobuf::int32 value) {
   set_has_max_iter();
   max_iter_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.max_iter)
@@ -17482,11 +17482,11 @@ inline void SolverParameter::clear_iter_size() {
   iter_size_ = 1;
   clear_has_iter_size();
 }
-inline ::google::protobuf::int32 SolverParameter::iter_size() const {
+inline ::cv::protobuf::int32 SolverParameter::iter_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.iter_size)
   return iter_size_;
 }
-inline void SolverParameter::set_iter_size(::google::protobuf::int32 value) {
+inline void SolverParameter::set_iter_size(::cv::protobuf::int32 value) {
   set_has_iter_size();
   iter_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.iter_size)
@@ -17503,7 +17503,7 @@ inline void SolverParameter::clear_has_lr_policy() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void SolverParameter::clear_lr_policy() {
-  lr_policy_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  lr_policy_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_lr_policy();
 }
 inline const ::std::string& SolverParameter::lr_policy() const {
@@ -17512,38 +17512,38 @@ inline const ::std::string& SolverParameter::lr_policy() const {
 }
 inline void SolverParameter::set_lr_policy(const ::std::string& value) {
   set_has_lr_policy();
-  lr_policy_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  lr_policy_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.lr_policy)
 }
 #if LANG_CXX11
 inline void SolverParameter::set_lr_policy(::std::string&& value) {
   set_has_lr_policy();
   lr_policy_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SolverParameter.lr_policy)
 }
 #endif
 inline void SolverParameter::set_lr_policy(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_lr_policy();
-  lr_policy_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  lr_policy_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SolverParameter.lr_policy)
 }
 inline void SolverParameter::set_lr_policy(const char* value, size_t size) {
   set_has_lr_policy();
-  lr_policy_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  lr_policy_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SolverParameter.lr_policy)
 }
 inline ::std::string* SolverParameter::mutable_lr_policy() {
   set_has_lr_policy();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SolverParameter.lr_policy)
-  return lr_policy_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return lr_policy_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SolverParameter::release_lr_policy() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SolverParameter.lr_policy)
   clear_has_lr_policy();
-  return lr_policy_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return lr_policy_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SolverParameter::set_allocated_lr_policy(::std::string* lr_policy) {
   if (lr_policy != NULL) {
@@ -17551,7 +17551,7 @@ inline void SolverParameter::set_allocated_lr_policy(::std::string* lr_policy) {
   } else {
     clear_has_lr_policy();
   }
-  lr_policy_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), lr_policy);
+  lr_policy_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), lr_policy);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SolverParameter.lr_policy)
 }
 
@@ -17728,11 +17728,11 @@ inline void SolverParameter::clear_stepsize() {
   stepsize_ = 0;
   clear_has_stepsize();
 }
-inline ::google::protobuf::int32 SolverParameter::stepsize() const {
+inline ::cv::protobuf::int32 SolverParameter::stepsize() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.stepsize)
   return stepsize_;
 }
-inline void SolverParameter::set_stepsize(::google::protobuf::int32 value) {
+inline void SolverParameter::set_stepsize(::cv::protobuf::int32 value) {
   set_has_stepsize();
   stepsize_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.stepsize)
@@ -17745,24 +17745,24 @@ inline int SolverParameter::stepvalue_size() const {
 inline void SolverParameter::clear_stepvalue() {
   stepvalue_.Clear();
 }
-inline ::google::protobuf::int32 SolverParameter::stepvalue(int index) const {
+inline ::cv::protobuf::int32 SolverParameter::stepvalue(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.stepvalue)
   return stepvalue_.Get(index);
 }
-inline void SolverParameter::set_stepvalue(int index, ::google::protobuf::int32 value) {
+inline void SolverParameter::set_stepvalue(int index, ::cv::protobuf::int32 value) {
   stepvalue_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.stepvalue)
 }
-inline void SolverParameter::add_stepvalue(::google::protobuf::int32 value) {
+inline void SolverParameter::add_stepvalue(::cv::protobuf::int32 value) {
   stepvalue_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.SolverParameter.stepvalue)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::int32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >&
 SolverParameter::stepvalue() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.SolverParameter.stepvalue)
   return stepvalue_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::int32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::int32 >*
 SolverParameter::mutable_stepvalue() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.SolverParameter.stepvalue)
   return &stepvalue_;
@@ -17806,11 +17806,11 @@ inline void SolverParameter::clear_snapshot() {
   snapshot_ = 0;
   clear_has_snapshot();
 }
-inline ::google::protobuf::int32 SolverParameter::snapshot() const {
+inline ::cv::protobuf::int32 SolverParameter::snapshot() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.snapshot)
   return snapshot_;
 }
-inline void SolverParameter::set_snapshot(::google::protobuf::int32 value) {
+inline void SolverParameter::set_snapshot(::cv::protobuf::int32 value) {
   set_has_snapshot();
   snapshot_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.snapshot)
@@ -17827,7 +17827,7 @@ inline void SolverParameter::clear_has_snapshot_prefix() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void SolverParameter::clear_snapshot_prefix() {
-  snapshot_prefix_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  snapshot_prefix_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_snapshot_prefix();
 }
 inline const ::std::string& SolverParameter::snapshot_prefix() const {
@@ -17836,38 +17836,38 @@ inline const ::std::string& SolverParameter::snapshot_prefix() const {
 }
 inline void SolverParameter::set_snapshot_prefix(const ::std::string& value) {
   set_has_snapshot_prefix();
-  snapshot_prefix_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  snapshot_prefix_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.snapshot_prefix)
 }
 #if LANG_CXX11
 inline void SolverParameter::set_snapshot_prefix(::std::string&& value) {
   set_has_snapshot_prefix();
   snapshot_prefix_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SolverParameter.snapshot_prefix)
 }
 #endif
 inline void SolverParameter::set_snapshot_prefix(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_snapshot_prefix();
-  snapshot_prefix_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  snapshot_prefix_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SolverParameter.snapshot_prefix)
 }
 inline void SolverParameter::set_snapshot_prefix(const char* value, size_t size) {
   set_has_snapshot_prefix();
-  snapshot_prefix_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  snapshot_prefix_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SolverParameter.snapshot_prefix)
 }
 inline ::std::string* SolverParameter::mutable_snapshot_prefix() {
   set_has_snapshot_prefix();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SolverParameter.snapshot_prefix)
-  return snapshot_prefix_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return snapshot_prefix_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SolverParameter::release_snapshot_prefix() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SolverParameter.snapshot_prefix)
   clear_has_snapshot_prefix();
-  return snapshot_prefix_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return snapshot_prefix_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SolverParameter::set_allocated_snapshot_prefix(::std::string* snapshot_prefix) {
   if (snapshot_prefix != NULL) {
@@ -17875,7 +17875,7 @@ inline void SolverParameter::set_allocated_snapshot_prefix(::std::string* snapsh
   } else {
     clear_has_snapshot_prefix();
   }
-  snapshot_prefix_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), snapshot_prefix);
+  snapshot_prefix_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), snapshot_prefix);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SolverParameter.snapshot_prefix)
 }
 
@@ -17967,11 +17967,11 @@ inline void SolverParameter::clear_device_id() {
   device_id_ = 0;
   clear_has_device_id();
 }
-inline ::google::protobuf::int32 SolverParameter::device_id() const {
+inline ::cv::protobuf::int32 SolverParameter::device_id() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.device_id)
   return device_id_;
 }
-inline void SolverParameter::set_device_id(::google::protobuf::int32 value) {
+inline void SolverParameter::set_device_id(::cv::protobuf::int32 value) {
   set_has_device_id();
   device_id_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.device_id)
@@ -17991,11 +17991,11 @@ inline void SolverParameter::clear_random_seed() {
   random_seed_ = GOOGLE_LONGLONG(-1);
   clear_has_random_seed();
 }
-inline ::google::protobuf::int64 SolverParameter::random_seed() const {
+inline ::cv::protobuf::int64 SolverParameter::random_seed() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverParameter.random_seed)
   return random_seed_;
 }
-inline void SolverParameter::set_random_seed(::google::protobuf::int64 value) {
+inline void SolverParameter::set_random_seed(::cv::protobuf::int64 value) {
   set_has_random_seed();
   random_seed_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverParameter.random_seed)
@@ -18227,11 +18227,11 @@ inline void SolverState::clear_iter() {
   iter_ = 0;
   clear_has_iter();
 }
-inline ::google::protobuf::int32 SolverState::iter() const {
+inline ::cv::protobuf::int32 SolverState::iter() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverState.iter)
   return iter_;
 }
-inline void SolverState::set_iter(::google::protobuf::int32 value) {
+inline void SolverState::set_iter(::cv::protobuf::int32 value) {
   set_has_iter();
   iter_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverState.iter)
@@ -18248,7 +18248,7 @@ inline void SolverState::clear_has_learned_net() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void SolverState::clear_learned_net() {
-  learned_net_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  learned_net_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_learned_net();
 }
 inline const ::std::string& SolverState::learned_net() const {
@@ -18257,38 +18257,38 @@ inline const ::std::string& SolverState::learned_net() const {
 }
 inline void SolverState::set_learned_net(const ::std::string& value) {
   set_has_learned_net();
-  learned_net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  learned_net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverState.learned_net)
 }
 #if LANG_CXX11
 inline void SolverState::set_learned_net(::std::string&& value) {
   set_has_learned_net();
   learned_net_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SolverState.learned_net)
 }
 #endif
 inline void SolverState::set_learned_net(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_learned_net();
-  learned_net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  learned_net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SolverState.learned_net)
 }
 inline void SolverState::set_learned_net(const char* value, size_t size) {
   set_has_learned_net();
-  learned_net_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  learned_net_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SolverState.learned_net)
 }
 inline ::std::string* SolverState::mutable_learned_net() {
   set_has_learned_net();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SolverState.learned_net)
-  return learned_net_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return learned_net_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SolverState::release_learned_net() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SolverState.learned_net)
   clear_has_learned_net();
-  return learned_net_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return learned_net_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SolverState::set_allocated_learned_net(::std::string* learned_net) {
   if (learned_net != NULL) {
@@ -18296,7 +18296,7 @@ inline void SolverState::set_allocated_learned_net(::std::string* learned_net) {
   } else {
     clear_has_learned_net();
   }
-  learned_net_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), learned_net);
+  learned_net_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), learned_net);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SolverState.learned_net)
 }
 
@@ -18319,12 +18319,12 @@ inline ::opencv_caffe::BlobProto* SolverState::add_history() {
   // @@protoc_insertion_point(field_add:opencv_caffe.SolverState.history)
   return history_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
 SolverState::mutable_history() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.SolverState.history)
   return &history_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
 SolverState::history() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.SolverState.history)
   return history_;
@@ -18344,11 +18344,11 @@ inline void SolverState::clear_current_step() {
   current_step_ = 0;
   clear_has_current_step();
 }
-inline ::google::protobuf::int32 SolverState::current_step() const {
+inline ::cv::protobuf::int32 SolverState::current_step() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SolverState.current_step)
   return current_step_;
 }
-inline void SolverState::set_current_step(::google::protobuf::int32 value) {
+inline void SolverState::set_current_step(::cv::protobuf::int32 value) {
   set_has_current_step();
   current_step_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SolverState.current_step)
@@ -18397,11 +18397,11 @@ inline void NetState::clear_level() {
   level_ = 0;
   clear_has_level();
 }
-inline ::google::protobuf::int32 NetState::level() const {
+inline ::cv::protobuf::int32 NetState::level() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.NetState.level)
   return level_;
 }
-inline void NetState::set_level(::google::protobuf::int32 value) {
+inline void NetState::set_level(::cv::protobuf::int32 value) {
   set_has_level();
   level_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.NetState.level)
@@ -18465,12 +18465,12 @@ inline void NetState::add_stage(const char* value, size_t size) {
   stage_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.NetState.stage)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 NetState::stage() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetState.stage)
   return stage_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 NetState::mutable_stage() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetState.stage)
   return &stage_;
@@ -18519,11 +18519,11 @@ inline void NetStateRule::clear_min_level() {
   min_level_ = 0;
   clear_has_min_level();
 }
-inline ::google::protobuf::int32 NetStateRule::min_level() const {
+inline ::cv::protobuf::int32 NetStateRule::min_level() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.NetStateRule.min_level)
   return min_level_;
 }
-inline void NetStateRule::set_min_level(::google::protobuf::int32 value) {
+inline void NetStateRule::set_min_level(::cv::protobuf::int32 value) {
   set_has_min_level();
   min_level_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.NetStateRule.min_level)
@@ -18543,11 +18543,11 @@ inline void NetStateRule::clear_max_level() {
   max_level_ = 0;
   clear_has_max_level();
 }
-inline ::google::protobuf::int32 NetStateRule::max_level() const {
+inline ::cv::protobuf::int32 NetStateRule::max_level() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.NetStateRule.max_level)
   return max_level_;
 }
-inline void NetStateRule::set_max_level(::google::protobuf::int32 value) {
+inline void NetStateRule::set_max_level(::cv::protobuf::int32 value) {
   set_has_max_level();
   max_level_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.NetStateRule.max_level)
@@ -18611,12 +18611,12 @@ inline void NetStateRule::add_stage(const char* value, size_t size) {
   stage_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.NetStateRule.stage)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 NetStateRule::stage() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetStateRule.stage)
   return stage_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 NetStateRule::mutable_stage() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetStateRule.stage)
   return &stage_;
@@ -18680,12 +18680,12 @@ inline void NetStateRule::add_not_stage(const char* value, size_t size) {
   not_stage_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.NetStateRule.not_stage)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 NetStateRule::not_stage() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.NetStateRule.not_stage)
   return not_stage_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 NetStateRule::mutable_not_stage() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.NetStateRule.not_stage)
   return &not_stage_;
@@ -18706,7 +18706,7 @@ inline void ParamSpec::clear_has_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void ParamSpec::clear_name() {
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_name();
 }
 inline const ::std::string& ParamSpec::name() const {
@@ -18715,38 +18715,38 @@ inline const ::std::string& ParamSpec::name() const {
 }
 inline void ParamSpec::set_name(const ::std::string& value) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ParamSpec.name)
 }
 #if LANG_CXX11
 inline void ParamSpec::set_name(::std::string&& value) {
   set_has_name();
   name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.ParamSpec.name)
 }
 #endif
 inline void ParamSpec::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.ParamSpec.name)
 }
 inline void ParamSpec::set_name(const char* value, size_t size) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.ParamSpec.name)
 }
 inline ::std::string* ParamSpec::mutable_name() {
   set_has_name();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.ParamSpec.name)
-  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* ParamSpec::release_name() {
   // @@protoc_insertion_point(field_release:opencv_caffe.ParamSpec.name)
   clear_has_name();
-  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ParamSpec::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -18754,7 +18754,7 @@ inline void ParamSpec::set_allocated_name(::std::string* name) {
   } else {
     clear_has_name();
   }
-  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  name_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.ParamSpec.name)
 }
 
@@ -18846,7 +18846,7 @@ inline void LayerParameter::clear_has_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void LayerParameter::clear_name() {
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_name();
 }
 inline const ::std::string& LayerParameter::name() const {
@@ -18855,38 +18855,38 @@ inline const ::std::string& LayerParameter::name() const {
 }
 inline void LayerParameter::set_name(const ::std::string& value) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.LayerParameter.name)
 }
 #if LANG_CXX11
 inline void LayerParameter::set_name(::std::string&& value) {
   set_has_name();
   name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.LayerParameter.name)
 }
 #endif
 inline void LayerParameter::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.LayerParameter.name)
 }
 inline void LayerParameter::set_name(const char* value, size_t size) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.LayerParameter.name)
 }
 inline ::std::string* LayerParameter::mutable_name() {
   set_has_name();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.LayerParameter.name)
-  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* LayerParameter::release_name() {
   // @@protoc_insertion_point(field_release:opencv_caffe.LayerParameter.name)
   clear_has_name();
-  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LayerParameter::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -18894,7 +18894,7 @@ inline void LayerParameter::set_allocated_name(::std::string* name) {
   } else {
     clear_has_name();
   }
-  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  name_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.LayerParameter.name)
 }
 
@@ -18909,7 +18909,7 @@ inline void LayerParameter::clear_has_type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void LayerParameter::clear_type() {
-  type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  type_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_type();
 }
 inline const ::std::string& LayerParameter::type() const {
@@ -18918,38 +18918,38 @@ inline const ::std::string& LayerParameter::type() const {
 }
 inline void LayerParameter::set_type(const ::std::string& value) {
   set_has_type();
-  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  type_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.LayerParameter.type)
 }
 #if LANG_CXX11
 inline void LayerParameter::set_type(::std::string&& value) {
   set_has_type();
   type_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.LayerParameter.type)
 }
 #endif
 inline void LayerParameter::set_type(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_type();
-  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  type_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.LayerParameter.type)
 }
 inline void LayerParameter::set_type(const char* value, size_t size) {
   set_has_type();
-  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  type_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.LayerParameter.type)
 }
 inline ::std::string* LayerParameter::mutable_type() {
   set_has_type();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.LayerParameter.type)
-  return type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return type_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* LayerParameter::release_type() {
   // @@protoc_insertion_point(field_release:opencv_caffe.LayerParameter.type)
   clear_has_type();
-  return type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return type_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void LayerParameter::set_allocated_type(::std::string* type) {
   if (type != NULL) {
@@ -18957,7 +18957,7 @@ inline void LayerParameter::set_allocated_type(::std::string* type) {
   } else {
     clear_has_type();
   }
-  type_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type);
+  type_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), type);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.LayerParameter.type)
 }
 
@@ -19019,12 +19019,12 @@ inline void LayerParameter::add_bottom(const char* value, size_t size) {
   bottom_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.LayerParameter.bottom)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 LayerParameter::bottom() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.bottom)
   return bottom_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 LayerParameter::mutable_bottom() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.bottom)
   return &bottom_;
@@ -19088,12 +19088,12 @@ inline void LayerParameter::add_top(const char* value, size_t size) {
   top_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.LayerParameter.top)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 LayerParameter::top() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.top)
   return top_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 LayerParameter::mutable_top() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.top)
   return &top_;
@@ -19143,12 +19143,12 @@ inline void LayerParameter::add_loss_weight(float value) {
   loss_weight_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.LayerParameter.loss_weight)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 LayerParameter::loss_weight() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.loss_weight)
   return loss_weight_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 LayerParameter::mutable_loss_weight() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.loss_weight)
   return &loss_weight_;
@@ -19173,12 +19173,12 @@ inline ::opencv_caffe::ParamSpec* LayerParameter::add_param() {
   // @@protoc_insertion_point(field_add:opencv_caffe.LayerParameter.param)
   return param_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >*
 LayerParameter::mutable_param() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.param)
   return &param_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::ParamSpec >&
 LayerParameter::param() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.param)
   return param_;
@@ -19203,12 +19203,12 @@ inline ::opencv_caffe::BlobProto* LayerParameter::add_blobs() {
   // @@protoc_insertion_point(field_add:opencv_caffe.LayerParameter.blobs)
   return blobs_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
 LayerParameter::mutable_blobs() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.blobs)
   return &blobs_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
 LayerParameter::blobs() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.blobs)
   return blobs_;
@@ -19233,12 +19233,12 @@ inline void LayerParameter::add_propagate_down(bool value) {
   propagate_down_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.LayerParameter.propagate_down)
 }
-inline const ::google::protobuf::RepeatedField< bool >&
+inline const ::cv::protobuf::RepeatedField< bool >&
 LayerParameter::propagate_down() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.propagate_down)
   return propagate_down_;
 }
-inline ::google::protobuf::RepeatedField< bool >*
+inline ::cv::protobuf::RepeatedField< bool >*
 LayerParameter::mutable_propagate_down() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.propagate_down)
   return &propagate_down_;
@@ -19263,12 +19263,12 @@ inline ::opencv_caffe::NetStateRule* LayerParameter::add_include() {
   // @@protoc_insertion_point(field_add:opencv_caffe.LayerParameter.include)
   return include_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
 LayerParameter::mutable_include() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.include)
   return &include_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
 LayerParameter::include() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.include)
   return include_;
@@ -19293,12 +19293,12 @@ inline ::opencv_caffe::NetStateRule* LayerParameter::add_exclude() {
   // @@protoc_insertion_point(field_add:opencv_caffe.LayerParameter.exclude)
   return exclude_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
 LayerParameter::mutable_exclude() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.LayerParameter.exclude)
   return &exclude_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
 LayerParameter::exclude() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.LayerParameter.exclude)
   return exclude_;
@@ -19340,14 +19340,14 @@ inline ::opencv_caffe::TransformationParameter* LayerParameter::mutable_transfor
   return transform_param_;
 }
 inline void LayerParameter::set_allocated_transform_param(::opencv_caffe::TransformationParameter* transform_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete transform_param_;
   }
   if (transform_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      transform_param = ::google::protobuf::internal::GetOwnedMessage(
+      transform_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, transform_param, submessage_arena);
     }
     set_has_transform_param();
@@ -19394,14 +19394,14 @@ inline ::opencv_caffe::LossParameter* LayerParameter::mutable_loss_param() {
   return loss_param_;
 }
 inline void LayerParameter::set_allocated_loss_param(::opencv_caffe::LossParameter* loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete loss_param_;
   }
   if (loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, loss_param, submessage_arena);
     }
     set_has_loss_param();
@@ -19448,14 +19448,14 @@ inline ::opencv_caffe::AccuracyParameter* LayerParameter::mutable_accuracy_param
   return accuracy_param_;
 }
 inline void LayerParameter::set_allocated_accuracy_param(::opencv_caffe::AccuracyParameter* accuracy_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete accuracy_param_;
   }
   if (accuracy_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      accuracy_param = ::google::protobuf::internal::GetOwnedMessage(
+      accuracy_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, accuracy_param, submessage_arena);
     }
     set_has_accuracy_param();
@@ -19502,14 +19502,14 @@ inline ::opencv_caffe::ArgMaxParameter* LayerParameter::mutable_argmax_param() {
   return argmax_param_;
 }
 inline void LayerParameter::set_allocated_argmax_param(::opencv_caffe::ArgMaxParameter* argmax_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete argmax_param_;
   }
   if (argmax_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      argmax_param = ::google::protobuf::internal::GetOwnedMessage(
+      argmax_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, argmax_param, submessage_arena);
     }
     set_has_argmax_param();
@@ -19556,14 +19556,14 @@ inline ::opencv_caffe::BatchNormParameter* LayerParameter::mutable_batch_norm_pa
   return batch_norm_param_;
 }
 inline void LayerParameter::set_allocated_batch_norm_param(::opencv_caffe::BatchNormParameter* batch_norm_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete batch_norm_param_;
   }
   if (batch_norm_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      batch_norm_param = ::google::protobuf::internal::GetOwnedMessage(
+      batch_norm_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, batch_norm_param, submessage_arena);
     }
     set_has_batch_norm_param();
@@ -19610,14 +19610,14 @@ inline ::opencv_caffe::BiasParameter* LayerParameter::mutable_bias_param() {
   return bias_param_;
 }
 inline void LayerParameter::set_allocated_bias_param(::opencv_caffe::BiasParameter* bias_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete bias_param_;
   }
   if (bias_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      bias_param = ::google::protobuf::internal::GetOwnedMessage(
+      bias_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, bias_param, submessage_arena);
     }
     set_has_bias_param();
@@ -19664,14 +19664,14 @@ inline ::opencv_caffe::ConcatParameter* LayerParameter::mutable_concat_param() {
   return concat_param_;
 }
 inline void LayerParameter::set_allocated_concat_param(::opencv_caffe::ConcatParameter* concat_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete concat_param_;
   }
   if (concat_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      concat_param = ::google::protobuf::internal::GetOwnedMessage(
+      concat_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, concat_param, submessage_arena);
     }
     set_has_concat_param();
@@ -19718,14 +19718,14 @@ inline ::opencv_caffe::ContrastiveLossParameter* LayerParameter::mutable_contras
   return contrastive_loss_param_;
 }
 inline void LayerParameter::set_allocated_contrastive_loss_param(::opencv_caffe::ContrastiveLossParameter* contrastive_loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete contrastive_loss_param_;
   }
   if (contrastive_loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      contrastive_loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      contrastive_loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, contrastive_loss_param, submessage_arena);
     }
     set_has_contrastive_loss_param();
@@ -19772,14 +19772,14 @@ inline ::opencv_caffe::ConvolutionParameter* LayerParameter::mutable_convolution
   return convolution_param_;
 }
 inline void LayerParameter::set_allocated_convolution_param(::opencv_caffe::ConvolutionParameter* convolution_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete convolution_param_;
   }
   if (convolution_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      convolution_param = ::google::protobuf::internal::GetOwnedMessage(
+      convolution_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, convolution_param, submessage_arena);
     }
     set_has_convolution_param();
@@ -19826,14 +19826,14 @@ inline ::opencv_caffe::CropParameter* LayerParameter::mutable_crop_param() {
   return crop_param_;
 }
 inline void LayerParameter::set_allocated_crop_param(::opencv_caffe::CropParameter* crop_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete crop_param_;
   }
   if (crop_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      crop_param = ::google::protobuf::internal::GetOwnedMessage(
+      crop_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, crop_param, submessage_arena);
     }
     set_has_crop_param();
@@ -19880,14 +19880,14 @@ inline ::opencv_caffe::DataParameter* LayerParameter::mutable_data_param() {
   return data_param_;
 }
 inline void LayerParameter::set_allocated_data_param(::opencv_caffe::DataParameter* data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete data_param_;
   }
   if (data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      data_param = ::google::protobuf::internal::GetOwnedMessage(
+      data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, data_param, submessage_arena);
     }
     set_has_data_param();
@@ -19934,14 +19934,14 @@ inline ::opencv_caffe::DetectionOutputParameter* LayerParameter::mutable_detecti
   return detection_output_param_;
 }
 inline void LayerParameter::set_allocated_detection_output_param(::opencv_caffe::DetectionOutputParameter* detection_output_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete detection_output_param_;
   }
   if (detection_output_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      detection_output_param = ::google::protobuf::internal::GetOwnedMessage(
+      detection_output_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, detection_output_param, submessage_arena);
     }
     set_has_detection_output_param();
@@ -19988,14 +19988,14 @@ inline ::opencv_caffe::DropoutParameter* LayerParameter::mutable_dropout_param()
   return dropout_param_;
 }
 inline void LayerParameter::set_allocated_dropout_param(::opencv_caffe::DropoutParameter* dropout_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete dropout_param_;
   }
   if (dropout_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      dropout_param = ::google::protobuf::internal::GetOwnedMessage(
+      dropout_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, dropout_param, submessage_arena);
     }
     set_has_dropout_param();
@@ -20042,14 +20042,14 @@ inline ::opencv_caffe::DummyDataParameter* LayerParameter::mutable_dummy_data_pa
   return dummy_data_param_;
 }
 inline void LayerParameter::set_allocated_dummy_data_param(::opencv_caffe::DummyDataParameter* dummy_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete dummy_data_param_;
   }
   if (dummy_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      dummy_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      dummy_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, dummy_data_param, submessage_arena);
     }
     set_has_dummy_data_param();
@@ -20096,14 +20096,14 @@ inline ::opencv_caffe::EltwiseParameter* LayerParameter::mutable_eltwise_param()
   return eltwise_param_;
 }
 inline void LayerParameter::set_allocated_eltwise_param(::opencv_caffe::EltwiseParameter* eltwise_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete eltwise_param_;
   }
   if (eltwise_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      eltwise_param = ::google::protobuf::internal::GetOwnedMessage(
+      eltwise_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, eltwise_param, submessage_arena);
     }
     set_has_eltwise_param();
@@ -20150,14 +20150,14 @@ inline ::opencv_caffe::ELUParameter* LayerParameter::mutable_elu_param() {
   return elu_param_;
 }
 inline void LayerParameter::set_allocated_elu_param(::opencv_caffe::ELUParameter* elu_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete elu_param_;
   }
   if (elu_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      elu_param = ::google::protobuf::internal::GetOwnedMessage(
+      elu_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, elu_param, submessage_arena);
     }
     set_has_elu_param();
@@ -20204,14 +20204,14 @@ inline ::opencv_caffe::EmbedParameter* LayerParameter::mutable_embed_param() {
   return embed_param_;
 }
 inline void LayerParameter::set_allocated_embed_param(::opencv_caffe::EmbedParameter* embed_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete embed_param_;
   }
   if (embed_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      embed_param = ::google::protobuf::internal::GetOwnedMessage(
+      embed_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, embed_param, submessage_arena);
     }
     set_has_embed_param();
@@ -20258,14 +20258,14 @@ inline ::opencv_caffe::ExpParameter* LayerParameter::mutable_exp_param() {
   return exp_param_;
 }
 inline void LayerParameter::set_allocated_exp_param(::opencv_caffe::ExpParameter* exp_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete exp_param_;
   }
   if (exp_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      exp_param = ::google::protobuf::internal::GetOwnedMessage(
+      exp_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, exp_param, submessage_arena);
     }
     set_has_exp_param();
@@ -20312,14 +20312,14 @@ inline ::opencv_caffe::FlattenParameter* LayerParameter::mutable_flatten_param()
   return flatten_param_;
 }
 inline void LayerParameter::set_allocated_flatten_param(::opencv_caffe::FlattenParameter* flatten_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete flatten_param_;
   }
   if (flatten_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      flatten_param = ::google::protobuf::internal::GetOwnedMessage(
+      flatten_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, flatten_param, submessage_arena);
     }
     set_has_flatten_param();
@@ -20366,14 +20366,14 @@ inline ::opencv_caffe::HDF5DataParameter* LayerParameter::mutable_hdf5_data_para
   return hdf5_data_param_;
 }
 inline void LayerParameter::set_allocated_hdf5_data_param(::opencv_caffe::HDF5DataParameter* hdf5_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete hdf5_data_param_;
   }
   if (hdf5_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      hdf5_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      hdf5_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, hdf5_data_param, submessage_arena);
     }
     set_has_hdf5_data_param();
@@ -20420,14 +20420,14 @@ inline ::opencv_caffe::HDF5OutputParameter* LayerParameter::mutable_hdf5_output_
   return hdf5_output_param_;
 }
 inline void LayerParameter::set_allocated_hdf5_output_param(::opencv_caffe::HDF5OutputParameter* hdf5_output_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete hdf5_output_param_;
   }
   if (hdf5_output_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      hdf5_output_param = ::google::protobuf::internal::GetOwnedMessage(
+      hdf5_output_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, hdf5_output_param, submessage_arena);
     }
     set_has_hdf5_output_param();
@@ -20474,14 +20474,14 @@ inline ::opencv_caffe::HingeLossParameter* LayerParameter::mutable_hinge_loss_pa
   return hinge_loss_param_;
 }
 inline void LayerParameter::set_allocated_hinge_loss_param(::opencv_caffe::HingeLossParameter* hinge_loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete hinge_loss_param_;
   }
   if (hinge_loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      hinge_loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      hinge_loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, hinge_loss_param, submessage_arena);
     }
     set_has_hinge_loss_param();
@@ -20528,14 +20528,14 @@ inline ::opencv_caffe::ImageDataParameter* LayerParameter::mutable_image_data_pa
   return image_data_param_;
 }
 inline void LayerParameter::set_allocated_image_data_param(::opencv_caffe::ImageDataParameter* image_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete image_data_param_;
   }
   if (image_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      image_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      image_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, image_data_param, submessage_arena);
     }
     set_has_image_data_param();
@@ -20582,14 +20582,14 @@ inline ::opencv_caffe::InfogainLossParameter* LayerParameter::mutable_infogain_l
   return infogain_loss_param_;
 }
 inline void LayerParameter::set_allocated_infogain_loss_param(::opencv_caffe::InfogainLossParameter* infogain_loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete infogain_loss_param_;
   }
   if (infogain_loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      infogain_loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      infogain_loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, infogain_loss_param, submessage_arena);
     }
     set_has_infogain_loss_param();
@@ -20636,14 +20636,14 @@ inline ::opencv_caffe::InnerProductParameter* LayerParameter::mutable_inner_prod
   return inner_product_param_;
 }
 inline void LayerParameter::set_allocated_inner_product_param(::opencv_caffe::InnerProductParameter* inner_product_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete inner_product_param_;
   }
   if (inner_product_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      inner_product_param = ::google::protobuf::internal::GetOwnedMessage(
+      inner_product_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, inner_product_param, submessage_arena);
     }
     set_has_inner_product_param();
@@ -20690,14 +20690,14 @@ inline ::opencv_caffe::InputParameter* LayerParameter::mutable_input_param() {
   return input_param_;
 }
 inline void LayerParameter::set_allocated_input_param(::opencv_caffe::InputParameter* input_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete input_param_;
   }
   if (input_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      input_param = ::google::protobuf::internal::GetOwnedMessage(
+      input_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, input_param, submessage_arena);
     }
     set_has_input_param();
@@ -20744,14 +20744,14 @@ inline ::opencv_caffe::LogParameter* LayerParameter::mutable_log_param() {
   return log_param_;
 }
 inline void LayerParameter::set_allocated_log_param(::opencv_caffe::LogParameter* log_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete log_param_;
   }
   if (log_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      log_param = ::google::protobuf::internal::GetOwnedMessage(
+      log_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, log_param, submessage_arena);
     }
     set_has_log_param();
@@ -20798,14 +20798,14 @@ inline ::opencv_caffe::LRNParameter* LayerParameter::mutable_lrn_param() {
   return lrn_param_;
 }
 inline void LayerParameter::set_allocated_lrn_param(::opencv_caffe::LRNParameter* lrn_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete lrn_param_;
   }
   if (lrn_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      lrn_param = ::google::protobuf::internal::GetOwnedMessage(
+      lrn_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, lrn_param, submessage_arena);
     }
     set_has_lrn_param();
@@ -20852,14 +20852,14 @@ inline ::opencv_caffe::MemoryDataParameter* LayerParameter::mutable_memory_data_
   return memory_data_param_;
 }
 inline void LayerParameter::set_allocated_memory_data_param(::opencv_caffe::MemoryDataParameter* memory_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete memory_data_param_;
   }
   if (memory_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      memory_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      memory_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, memory_data_param, submessage_arena);
     }
     set_has_memory_data_param();
@@ -20906,14 +20906,14 @@ inline ::opencv_caffe::MVNParameter* LayerParameter::mutable_mvn_param() {
   return mvn_param_;
 }
 inline void LayerParameter::set_allocated_mvn_param(::opencv_caffe::MVNParameter* mvn_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete mvn_param_;
   }
   if (mvn_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      mvn_param = ::google::protobuf::internal::GetOwnedMessage(
+      mvn_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, mvn_param, submessage_arena);
     }
     set_has_mvn_param();
@@ -20960,14 +20960,14 @@ inline ::opencv_caffe::NormalizeBBoxParameter* LayerParameter::mutable_norm_para
   return norm_param_;
 }
 inline void LayerParameter::set_allocated_norm_param(::opencv_caffe::NormalizeBBoxParameter* norm_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete norm_param_;
   }
   if (norm_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      norm_param = ::google::protobuf::internal::GetOwnedMessage(
+      norm_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, norm_param, submessage_arena);
     }
     set_has_norm_param();
@@ -21014,14 +21014,14 @@ inline ::opencv_caffe::PermuteParameter* LayerParameter::mutable_permute_param()
   return permute_param_;
 }
 inline void LayerParameter::set_allocated_permute_param(::opencv_caffe::PermuteParameter* permute_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete permute_param_;
   }
   if (permute_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      permute_param = ::google::protobuf::internal::GetOwnedMessage(
+      permute_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, permute_param, submessage_arena);
     }
     set_has_permute_param();
@@ -21068,14 +21068,14 @@ inline ::opencv_caffe::ParameterParameter* LayerParameter::mutable_parameter_par
   return parameter_param_;
 }
 inline void LayerParameter::set_allocated_parameter_param(::opencv_caffe::ParameterParameter* parameter_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete parameter_param_;
   }
   if (parameter_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      parameter_param = ::google::protobuf::internal::GetOwnedMessage(
+      parameter_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, parameter_param, submessage_arena);
     }
     set_has_parameter_param();
@@ -21122,14 +21122,14 @@ inline ::opencv_caffe::PoolingParameter* LayerParameter::mutable_pooling_param()
   return pooling_param_;
 }
 inline void LayerParameter::set_allocated_pooling_param(::opencv_caffe::PoolingParameter* pooling_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete pooling_param_;
   }
   if (pooling_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      pooling_param = ::google::protobuf::internal::GetOwnedMessage(
+      pooling_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, pooling_param, submessage_arena);
     }
     set_has_pooling_param();
@@ -21176,14 +21176,14 @@ inline ::opencv_caffe::PowerParameter* LayerParameter::mutable_power_param() {
   return power_param_;
 }
 inline void LayerParameter::set_allocated_power_param(::opencv_caffe::PowerParameter* power_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete power_param_;
   }
   if (power_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      power_param = ::google::protobuf::internal::GetOwnedMessage(
+      power_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, power_param, submessage_arena);
     }
     set_has_power_param();
@@ -21230,14 +21230,14 @@ inline ::opencv_caffe::PReLUParameter* LayerParameter::mutable_prelu_param() {
   return prelu_param_;
 }
 inline void LayerParameter::set_allocated_prelu_param(::opencv_caffe::PReLUParameter* prelu_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete prelu_param_;
   }
   if (prelu_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      prelu_param = ::google::protobuf::internal::GetOwnedMessage(
+      prelu_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, prelu_param, submessage_arena);
     }
     set_has_prelu_param();
@@ -21284,14 +21284,14 @@ inline ::opencv_caffe::PriorBoxParameter* LayerParameter::mutable_prior_box_para
   return prior_box_param_;
 }
 inline void LayerParameter::set_allocated_prior_box_param(::opencv_caffe::PriorBoxParameter* prior_box_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete prior_box_param_;
   }
   if (prior_box_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      prior_box_param = ::google::protobuf::internal::GetOwnedMessage(
+      prior_box_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, prior_box_param, submessage_arena);
     }
     set_has_prior_box_param();
@@ -21338,14 +21338,14 @@ inline ::opencv_caffe::ProposalParameter* LayerParameter::mutable_proposal_param
   return proposal_param_;
 }
 inline void LayerParameter::set_allocated_proposal_param(::opencv_caffe::ProposalParameter* proposal_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete proposal_param_;
   }
   if (proposal_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      proposal_param = ::google::protobuf::internal::GetOwnedMessage(
+      proposal_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, proposal_param, submessage_arena);
     }
     set_has_proposal_param();
@@ -21392,14 +21392,14 @@ inline ::opencv_caffe::PSROIPoolingParameter* LayerParameter::mutable_psroi_pool
   return psroi_pooling_param_;
 }
 inline void LayerParameter::set_allocated_psroi_pooling_param(::opencv_caffe::PSROIPoolingParameter* psroi_pooling_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete psroi_pooling_param_;
   }
   if (psroi_pooling_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      psroi_pooling_param = ::google::protobuf::internal::GetOwnedMessage(
+      psroi_pooling_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, psroi_pooling_param, submessage_arena);
     }
     set_has_psroi_pooling_param();
@@ -21446,14 +21446,14 @@ inline ::opencv_caffe::PythonParameter* LayerParameter::mutable_python_param() {
   return python_param_;
 }
 inline void LayerParameter::set_allocated_python_param(::opencv_caffe::PythonParameter* python_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete python_param_;
   }
   if (python_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      python_param = ::google::protobuf::internal::GetOwnedMessage(
+      python_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, python_param, submessage_arena);
     }
     set_has_python_param();
@@ -21500,14 +21500,14 @@ inline ::opencv_caffe::RecurrentParameter* LayerParameter::mutable_recurrent_par
   return recurrent_param_;
 }
 inline void LayerParameter::set_allocated_recurrent_param(::opencv_caffe::RecurrentParameter* recurrent_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete recurrent_param_;
   }
   if (recurrent_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      recurrent_param = ::google::protobuf::internal::GetOwnedMessage(
+      recurrent_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, recurrent_param, submessage_arena);
     }
     set_has_recurrent_param();
@@ -21554,14 +21554,14 @@ inline ::opencv_caffe::ReductionParameter* LayerParameter::mutable_reduction_par
   return reduction_param_;
 }
 inline void LayerParameter::set_allocated_reduction_param(::opencv_caffe::ReductionParameter* reduction_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete reduction_param_;
   }
   if (reduction_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      reduction_param = ::google::protobuf::internal::GetOwnedMessage(
+      reduction_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, reduction_param, submessage_arena);
     }
     set_has_reduction_param();
@@ -21608,14 +21608,14 @@ inline ::opencv_caffe::ReLUParameter* LayerParameter::mutable_relu_param() {
   return relu_param_;
 }
 inline void LayerParameter::set_allocated_relu_param(::opencv_caffe::ReLUParameter* relu_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete relu_param_;
   }
   if (relu_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      relu_param = ::google::protobuf::internal::GetOwnedMessage(
+      relu_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, relu_param, submessage_arena);
     }
     set_has_relu_param();
@@ -21662,14 +21662,14 @@ inline ::opencv_caffe::ReshapeParameter* LayerParameter::mutable_reshape_param()
   return reshape_param_;
 }
 inline void LayerParameter::set_allocated_reshape_param(::opencv_caffe::ReshapeParameter* reshape_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete reshape_param_;
   }
   if (reshape_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      reshape_param = ::google::protobuf::internal::GetOwnedMessage(
+      reshape_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, reshape_param, submessage_arena);
     }
     set_has_reshape_param();
@@ -21716,14 +21716,14 @@ inline ::opencv_caffe::ROIPoolingParameter* LayerParameter::mutable_roi_pooling_
   return roi_pooling_param_;
 }
 inline void LayerParameter::set_allocated_roi_pooling_param(::opencv_caffe::ROIPoolingParameter* roi_pooling_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete roi_pooling_param_;
   }
   if (roi_pooling_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      roi_pooling_param = ::google::protobuf::internal::GetOwnedMessage(
+      roi_pooling_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, roi_pooling_param, submessage_arena);
     }
     set_has_roi_pooling_param();
@@ -21770,14 +21770,14 @@ inline ::opencv_caffe::ScaleParameter* LayerParameter::mutable_scale_param() {
   return scale_param_;
 }
 inline void LayerParameter::set_allocated_scale_param(::opencv_caffe::ScaleParameter* scale_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete scale_param_;
   }
   if (scale_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      scale_param = ::google::protobuf::internal::GetOwnedMessage(
+      scale_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, scale_param, submessage_arena);
     }
     set_has_scale_param();
@@ -21824,14 +21824,14 @@ inline ::opencv_caffe::SigmoidParameter* LayerParameter::mutable_sigmoid_param()
   return sigmoid_param_;
 }
 inline void LayerParameter::set_allocated_sigmoid_param(::opencv_caffe::SigmoidParameter* sigmoid_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete sigmoid_param_;
   }
   if (sigmoid_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      sigmoid_param = ::google::protobuf::internal::GetOwnedMessage(
+      sigmoid_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, sigmoid_param, submessage_arena);
     }
     set_has_sigmoid_param();
@@ -21878,14 +21878,14 @@ inline ::opencv_caffe::SoftmaxParameter* LayerParameter::mutable_softmax_param()
   return softmax_param_;
 }
 inline void LayerParameter::set_allocated_softmax_param(::opencv_caffe::SoftmaxParameter* softmax_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete softmax_param_;
   }
   if (softmax_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      softmax_param = ::google::protobuf::internal::GetOwnedMessage(
+      softmax_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, softmax_param, submessage_arena);
     }
     set_has_softmax_param();
@@ -21932,14 +21932,14 @@ inline ::opencv_caffe::SPPParameter* LayerParameter::mutable_spp_param() {
   return spp_param_;
 }
 inline void LayerParameter::set_allocated_spp_param(::opencv_caffe::SPPParameter* spp_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete spp_param_;
   }
   if (spp_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      spp_param = ::google::protobuf::internal::GetOwnedMessage(
+      spp_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, spp_param, submessage_arena);
     }
     set_has_spp_param();
@@ -21986,14 +21986,14 @@ inline ::opencv_caffe::SliceParameter* LayerParameter::mutable_slice_param() {
   return slice_param_;
 }
 inline void LayerParameter::set_allocated_slice_param(::opencv_caffe::SliceParameter* slice_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete slice_param_;
   }
   if (slice_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      slice_param = ::google::protobuf::internal::GetOwnedMessage(
+      slice_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, slice_param, submessage_arena);
     }
     set_has_slice_param();
@@ -22040,14 +22040,14 @@ inline ::opencv_caffe::TanHParameter* LayerParameter::mutable_tanh_param() {
   return tanh_param_;
 }
 inline void LayerParameter::set_allocated_tanh_param(::opencv_caffe::TanHParameter* tanh_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete tanh_param_;
   }
   if (tanh_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      tanh_param = ::google::protobuf::internal::GetOwnedMessage(
+      tanh_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, tanh_param, submessage_arena);
     }
     set_has_tanh_param();
@@ -22094,14 +22094,14 @@ inline ::opencv_caffe::ThresholdParameter* LayerParameter::mutable_threshold_par
   return threshold_param_;
 }
 inline void LayerParameter::set_allocated_threshold_param(::opencv_caffe::ThresholdParameter* threshold_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete threshold_param_;
   }
   if (threshold_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      threshold_param = ::google::protobuf::internal::GetOwnedMessage(
+      threshold_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, threshold_param, submessage_arena);
     }
     set_has_threshold_param();
@@ -22148,14 +22148,14 @@ inline ::opencv_caffe::TileParameter* LayerParameter::mutable_tile_param() {
   return tile_param_;
 }
 inline void LayerParameter::set_allocated_tile_param(::opencv_caffe::TileParameter* tile_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete tile_param_;
   }
   if (tile_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      tile_param = ::google::protobuf::internal::GetOwnedMessage(
+      tile_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, tile_param, submessage_arena);
     }
     set_has_tile_param();
@@ -22202,14 +22202,14 @@ inline ::opencv_caffe::WindowDataParameter* LayerParameter::mutable_window_data_
   return window_data_param_;
 }
 inline void LayerParameter::set_allocated_window_data_param(::opencv_caffe::WindowDataParameter* window_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete window_data_param_;
   }
   if (window_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      window_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      window_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, window_data_param, submessage_arena);
     }
     set_has_window_data_param();
@@ -22286,11 +22286,11 @@ inline void TransformationParameter::clear_crop_size() {
   crop_size_ = 0u;
   clear_has_crop_size();
 }
-inline ::google::protobuf::uint32 TransformationParameter::crop_size() const {
+inline ::cv::protobuf::uint32 TransformationParameter::crop_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.TransformationParameter.crop_size)
   return crop_size_;
 }
-inline void TransformationParameter::set_crop_size(::google::protobuf::uint32 value) {
+inline void TransformationParameter::set_crop_size(::cv::protobuf::uint32 value) {
   set_has_crop_size();
   crop_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.TransformationParameter.crop_size)
@@ -22307,7 +22307,7 @@ inline void TransformationParameter::clear_has_mean_file() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void TransformationParameter::clear_mean_file() {
-  mean_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  mean_file_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_mean_file();
 }
 inline const ::std::string& TransformationParameter::mean_file() const {
@@ -22316,38 +22316,38 @@ inline const ::std::string& TransformationParameter::mean_file() const {
 }
 inline void TransformationParameter::set_mean_file(const ::std::string& value) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.TransformationParameter.mean_file)
 }
 #if LANG_CXX11
 inline void TransformationParameter::set_mean_file(::std::string&& value) {
   set_has_mean_file();
   mean_file_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.TransformationParameter.mean_file)
 }
 #endif
 inline void TransformationParameter::set_mean_file(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.TransformationParameter.mean_file)
 }
 inline void TransformationParameter::set_mean_file(const char* value, size_t size) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.TransformationParameter.mean_file)
 }
 inline ::std::string* TransformationParameter::mutable_mean_file() {
   set_has_mean_file();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.TransformationParameter.mean_file)
-  return mean_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* TransformationParameter::release_mean_file() {
   // @@protoc_insertion_point(field_release:opencv_caffe.TransformationParameter.mean_file)
   clear_has_mean_file();
-  return mean_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void TransformationParameter::set_allocated_mean_file(::std::string* mean_file) {
   if (mean_file != NULL) {
@@ -22355,7 +22355,7 @@ inline void TransformationParameter::set_allocated_mean_file(::std::string* mean
   } else {
     clear_has_mean_file();
   }
-  mean_file_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
+  mean_file_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.TransformationParameter.mean_file)
 }
 
@@ -22378,12 +22378,12 @@ inline void TransformationParameter::add_mean_value(float value) {
   mean_value_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.TransformationParameter.mean_value)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 TransformationParameter::mean_value() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.TransformationParameter.mean_value)
   return mean_value_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 TransformationParameter::mutable_mean_value() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.TransformationParameter.mean_value)
   return &mean_value_;
@@ -22455,11 +22455,11 @@ inline void LossParameter::clear_ignore_label() {
   ignore_label_ = 0;
   clear_has_ignore_label();
 }
-inline ::google::protobuf::int32 LossParameter::ignore_label() const {
+inline ::cv::protobuf::int32 LossParameter::ignore_label() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.LossParameter.ignore_label)
   return ignore_label_;
 }
-inline void LossParameter::set_ignore_label(::google::protobuf::int32 value) {
+inline void LossParameter::set_ignore_label(::cv::protobuf::int32 value) {
   set_has_ignore_label();
   ignore_label_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.LossParameter.ignore_label)
@@ -22532,11 +22532,11 @@ inline void AccuracyParameter::clear_top_k() {
   top_k_ = 1u;
   clear_has_top_k();
 }
-inline ::google::protobuf::uint32 AccuracyParameter::top_k() const {
+inline ::cv::protobuf::uint32 AccuracyParameter::top_k() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.AccuracyParameter.top_k)
   return top_k_;
 }
-inline void AccuracyParameter::set_top_k(::google::protobuf::uint32 value) {
+inline void AccuracyParameter::set_top_k(::cv::protobuf::uint32 value) {
   set_has_top_k();
   top_k_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.AccuracyParameter.top_k)
@@ -22556,11 +22556,11 @@ inline void AccuracyParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 AccuracyParameter::axis() const {
+inline ::cv::protobuf::int32 AccuracyParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.AccuracyParameter.axis)
   return axis_;
 }
-inline void AccuracyParameter::set_axis(::google::protobuf::int32 value) {
+inline void AccuracyParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.AccuracyParameter.axis)
@@ -22580,11 +22580,11 @@ inline void AccuracyParameter::clear_ignore_label() {
   ignore_label_ = 0;
   clear_has_ignore_label();
 }
-inline ::google::protobuf::int32 AccuracyParameter::ignore_label() const {
+inline ::cv::protobuf::int32 AccuracyParameter::ignore_label() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.AccuracyParameter.ignore_label)
   return ignore_label_;
 }
-inline void AccuracyParameter::set_ignore_label(::google::protobuf::int32 value) {
+inline void AccuracyParameter::set_ignore_label(::cv::protobuf::int32 value) {
   set_has_ignore_label();
   ignore_label_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.AccuracyParameter.ignore_label)
@@ -22632,11 +22632,11 @@ inline void ArgMaxParameter::clear_top_k() {
   top_k_ = 1u;
   clear_has_top_k();
 }
-inline ::google::protobuf::uint32 ArgMaxParameter::top_k() const {
+inline ::cv::protobuf::uint32 ArgMaxParameter::top_k() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ArgMaxParameter.top_k)
   return top_k_;
 }
-inline void ArgMaxParameter::set_top_k(::google::protobuf::uint32 value) {
+inline void ArgMaxParameter::set_top_k(::cv::protobuf::uint32 value) {
   set_has_top_k();
   top_k_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ArgMaxParameter.top_k)
@@ -22656,11 +22656,11 @@ inline void ArgMaxParameter::clear_axis() {
   axis_ = 0;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 ArgMaxParameter::axis() const {
+inline ::cv::protobuf::int32 ArgMaxParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ArgMaxParameter.axis)
   return axis_;
 }
-inline void ArgMaxParameter::set_axis(::google::protobuf::int32 value) {
+inline void ArgMaxParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ArgMaxParameter.axis)
@@ -22684,11 +22684,11 @@ inline void ConcatParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 ConcatParameter::axis() const {
+inline ::cv::protobuf::int32 ConcatParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConcatParameter.axis)
   return axis_;
 }
-inline void ConcatParameter::set_axis(::google::protobuf::int32 value) {
+inline void ConcatParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConcatParameter.axis)
@@ -22708,11 +22708,11 @@ inline void ConcatParameter::clear_concat_dim() {
   concat_dim_ = 1u;
   clear_has_concat_dim();
 }
-inline ::google::protobuf::uint32 ConcatParameter::concat_dim() const {
+inline ::cv::protobuf::uint32 ConcatParameter::concat_dim() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConcatParameter.concat_dim)
   return concat_dim_;
 }
-inline void ConcatParameter::set_concat_dim(::google::protobuf::uint32 value) {
+inline void ConcatParameter::set_concat_dim(::cv::protobuf::uint32 value) {
   set_has_concat_dim();
   concat_dim_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConcatParameter.concat_dim)
@@ -22836,11 +22836,11 @@ inline void BiasParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 BiasParameter::axis() const {
+inline ::cv::protobuf::int32 BiasParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.BiasParameter.axis)
   return axis_;
 }
-inline void BiasParameter::set_axis(::google::protobuf::int32 value) {
+inline void BiasParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.BiasParameter.axis)
@@ -22860,11 +22860,11 @@ inline void BiasParameter::clear_num_axes() {
   num_axes_ = 1;
   clear_has_num_axes();
 }
-inline ::google::protobuf::int32 BiasParameter::num_axes() const {
+inline ::cv::protobuf::int32 BiasParameter::num_axes() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.BiasParameter.num_axes)
   return num_axes_;
 }
-inline void BiasParameter::set_num_axes(::google::protobuf::int32 value) {
+inline void BiasParameter::set_num_axes(::cv::protobuf::int32 value) {
   set_has_num_axes();
   num_axes_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.BiasParameter.num_axes)
@@ -22906,14 +22906,14 @@ inline ::opencv_caffe::FillerParameter* BiasParameter::mutable_filler() {
   return filler_;
 }
 inline void BiasParameter::set_allocated_filler(::opencv_caffe::FillerParameter* filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete filler_;
   }
   if (filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      filler = ::google::protobuf::internal::GetOwnedMessage(
+      filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, filler, submessage_arena);
     }
     set_has_filler();
@@ -22994,11 +22994,11 @@ inline void ConvolutionParameter::clear_num_output() {
   num_output_ = 0u;
   clear_has_num_output();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::num_output() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::num_output() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.num_output)
   return num_output_;
 }
-inline void ConvolutionParameter::set_num_output(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_num_output(::cv::protobuf::uint32 value) {
   set_has_num_output();
   num_output_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.num_output)
@@ -23035,24 +23035,24 @@ inline int ConvolutionParameter::pad_size() const {
 inline void ConvolutionParameter::clear_pad() {
   pad_.Clear();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::pad(int index) const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::pad(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.pad)
   return pad_.Get(index);
 }
-inline void ConvolutionParameter::set_pad(int index, ::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_pad(int index, ::cv::protobuf::uint32 value) {
   pad_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.pad)
 }
-inline void ConvolutionParameter::add_pad(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::add_pad(::cv::protobuf::uint32 value) {
   pad_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.ConvolutionParameter.pad)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 ConvolutionParameter::pad() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.ConvolutionParameter.pad)
   return pad_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 ConvolutionParameter::mutable_pad() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.ConvolutionParameter.pad)
   return &pad_;
@@ -23065,24 +23065,24 @@ inline int ConvolutionParameter::kernel_size_size() const {
 inline void ConvolutionParameter::clear_kernel_size() {
   kernel_size_.Clear();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::kernel_size(int index) const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::kernel_size(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.kernel_size)
   return kernel_size_.Get(index);
 }
-inline void ConvolutionParameter::set_kernel_size(int index, ::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_kernel_size(int index, ::cv::protobuf::uint32 value) {
   kernel_size_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.kernel_size)
 }
-inline void ConvolutionParameter::add_kernel_size(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::add_kernel_size(::cv::protobuf::uint32 value) {
   kernel_size_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.ConvolutionParameter.kernel_size)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 ConvolutionParameter::kernel_size() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.ConvolutionParameter.kernel_size)
   return kernel_size_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 ConvolutionParameter::mutable_kernel_size() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.ConvolutionParameter.kernel_size)
   return &kernel_size_;
@@ -23095,24 +23095,24 @@ inline int ConvolutionParameter::stride_size() const {
 inline void ConvolutionParameter::clear_stride() {
   stride_.Clear();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::stride(int index) const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::stride(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.stride)
   return stride_.Get(index);
 }
-inline void ConvolutionParameter::set_stride(int index, ::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_stride(int index, ::cv::protobuf::uint32 value) {
   stride_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.stride)
 }
-inline void ConvolutionParameter::add_stride(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::add_stride(::cv::protobuf::uint32 value) {
   stride_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.ConvolutionParameter.stride)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 ConvolutionParameter::stride() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.ConvolutionParameter.stride)
   return stride_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 ConvolutionParameter::mutable_stride() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.ConvolutionParameter.stride)
   return &stride_;
@@ -23125,24 +23125,24 @@ inline int ConvolutionParameter::dilation_size() const {
 inline void ConvolutionParameter::clear_dilation() {
   dilation_.Clear();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::dilation(int index) const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::dilation(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.dilation)
   return dilation_.Get(index);
 }
-inline void ConvolutionParameter::set_dilation(int index, ::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_dilation(int index, ::cv::protobuf::uint32 value) {
   dilation_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.dilation)
 }
-inline void ConvolutionParameter::add_dilation(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::add_dilation(::cv::protobuf::uint32 value) {
   dilation_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.ConvolutionParameter.dilation)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 ConvolutionParameter::dilation() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.ConvolutionParameter.dilation)
   return dilation_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 ConvolutionParameter::mutable_dilation() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.ConvolutionParameter.dilation)
   return &dilation_;
@@ -23162,11 +23162,11 @@ inline void ConvolutionParameter::clear_pad_h() {
   pad_h_ = 0u;
   clear_has_pad_h();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::pad_h() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::pad_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.pad_h)
   return pad_h_;
 }
-inline void ConvolutionParameter::set_pad_h(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_pad_h(::cv::protobuf::uint32 value) {
   set_has_pad_h();
   pad_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.pad_h)
@@ -23186,11 +23186,11 @@ inline void ConvolutionParameter::clear_pad_w() {
   pad_w_ = 0u;
   clear_has_pad_w();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::pad_w() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::pad_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.pad_w)
   return pad_w_;
 }
-inline void ConvolutionParameter::set_pad_w(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_pad_w(::cv::protobuf::uint32 value) {
   set_has_pad_w();
   pad_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.pad_w)
@@ -23210,11 +23210,11 @@ inline void ConvolutionParameter::clear_kernel_h() {
   kernel_h_ = 0u;
   clear_has_kernel_h();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::kernel_h() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::kernel_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.kernel_h)
   return kernel_h_;
 }
-inline void ConvolutionParameter::set_kernel_h(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_kernel_h(::cv::protobuf::uint32 value) {
   set_has_kernel_h();
   kernel_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.kernel_h)
@@ -23234,11 +23234,11 @@ inline void ConvolutionParameter::clear_kernel_w() {
   kernel_w_ = 0u;
   clear_has_kernel_w();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::kernel_w() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::kernel_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.kernel_w)
   return kernel_w_;
 }
-inline void ConvolutionParameter::set_kernel_w(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_kernel_w(::cv::protobuf::uint32 value) {
   set_has_kernel_w();
   kernel_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.kernel_w)
@@ -23258,11 +23258,11 @@ inline void ConvolutionParameter::clear_stride_h() {
   stride_h_ = 0u;
   clear_has_stride_h();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::stride_h() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::stride_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.stride_h)
   return stride_h_;
 }
-inline void ConvolutionParameter::set_stride_h(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_stride_h(::cv::protobuf::uint32 value) {
   set_has_stride_h();
   stride_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.stride_h)
@@ -23282,11 +23282,11 @@ inline void ConvolutionParameter::clear_stride_w() {
   stride_w_ = 0u;
   clear_has_stride_w();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::stride_w() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::stride_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.stride_w)
   return stride_w_;
 }
-inline void ConvolutionParameter::set_stride_w(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_stride_w(::cv::protobuf::uint32 value) {
   set_has_stride_w();
   stride_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.stride_w)
@@ -23306,11 +23306,11 @@ inline void ConvolutionParameter::clear_group() {
   group_ = 1u;
   clear_has_group();
 }
-inline ::google::protobuf::uint32 ConvolutionParameter::group() const {
+inline ::cv::protobuf::uint32 ConvolutionParameter::group() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.group)
   return group_;
 }
-inline void ConvolutionParameter::set_group(::google::protobuf::uint32 value) {
+inline void ConvolutionParameter::set_group(::cv::protobuf::uint32 value) {
   set_has_group();
   group_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.group)
@@ -23352,14 +23352,14 @@ inline ::opencv_caffe::FillerParameter* ConvolutionParameter::mutable_weight_fil
   return weight_filler_;
 }
 inline void ConvolutionParameter::set_allocated_weight_filler(::opencv_caffe::FillerParameter* weight_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete weight_filler_;
   }
   if (weight_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      weight_filler = ::google::protobuf::internal::GetOwnedMessage(
+      weight_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, weight_filler, submessage_arena);
     }
     set_has_weight_filler();
@@ -23406,14 +23406,14 @@ inline ::opencv_caffe::FillerParameter* ConvolutionParameter::mutable_bias_fille
   return bias_filler_;
 }
 inline void ConvolutionParameter::set_allocated_bias_filler(::opencv_caffe::FillerParameter* bias_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete bias_filler_;
   }
   if (bias_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      bias_filler = ::google::protobuf::internal::GetOwnedMessage(
+      bias_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, bias_filler, submessage_arena);
     }
     set_has_bias_filler();
@@ -23463,11 +23463,11 @@ inline void ConvolutionParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 ConvolutionParameter::axis() const {
+inline ::cv::protobuf::int32 ConvolutionParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ConvolutionParameter.axis)
   return axis_;
 }
-inline void ConvolutionParameter::set_axis(::google::protobuf::int32 value) {
+inline void ConvolutionParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ConvolutionParameter.axis)
@@ -23515,11 +23515,11 @@ inline void CropParameter::clear_axis() {
   axis_ = 2;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 CropParameter::axis() const {
+inline ::cv::protobuf::int32 CropParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.CropParameter.axis)
   return axis_;
 }
-inline void CropParameter::set_axis(::google::protobuf::int32 value) {
+inline void CropParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.CropParameter.axis)
@@ -23532,24 +23532,24 @@ inline int CropParameter::offset_size() const {
 inline void CropParameter::clear_offset() {
   offset_.Clear();
 }
-inline ::google::protobuf::uint32 CropParameter::offset(int index) const {
+inline ::cv::protobuf::uint32 CropParameter::offset(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.CropParameter.offset)
   return offset_.Get(index);
 }
-inline void CropParameter::set_offset(int index, ::google::protobuf::uint32 value) {
+inline void CropParameter::set_offset(int index, ::cv::protobuf::uint32 value) {
   offset_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.CropParameter.offset)
 }
-inline void CropParameter::add_offset(::google::protobuf::uint32 value) {
+inline void CropParameter::add_offset(::cv::protobuf::uint32 value) {
   offset_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.CropParameter.offset)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 CropParameter::offset() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.CropParameter.offset)
   return offset_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 CropParameter::mutable_offset() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.CropParameter.offset)
   return &offset_;
@@ -23570,7 +23570,7 @@ inline void DataParameter::clear_has_source() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void DataParameter::clear_source() {
-  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  source_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_source();
 }
 inline const ::std::string& DataParameter::source() const {
@@ -23579,38 +23579,38 @@ inline const ::std::string& DataParameter::source() const {
 }
 inline void DataParameter::set_source(const ::std::string& value) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.DataParameter.source)
 }
 #if LANG_CXX11
 inline void DataParameter::set_source(::std::string&& value) {
   set_has_source();
   source_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.DataParameter.source)
 }
 #endif
 inline void DataParameter::set_source(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.DataParameter.source)
 }
 inline void DataParameter::set_source(const char* value, size_t size) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.DataParameter.source)
 }
 inline ::std::string* DataParameter::mutable_source() {
   set_has_source();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.DataParameter.source)
-  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* DataParameter::release_source() {
   // @@protoc_insertion_point(field_release:opencv_caffe.DataParameter.source)
   clear_has_source();
-  return source_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DataParameter::set_allocated_source(::std::string* source) {
   if (source != NULL) {
@@ -23618,7 +23618,7 @@ inline void DataParameter::set_allocated_source(::std::string* source) {
   } else {
     clear_has_source();
   }
-  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
+  source_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.DataParameter.source)
 }
 
@@ -23636,11 +23636,11 @@ inline void DataParameter::clear_batch_size() {
   batch_size_ = 0u;
   clear_has_batch_size();
 }
-inline ::google::protobuf::uint32 DataParameter::batch_size() const {
+inline ::cv::protobuf::uint32 DataParameter::batch_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DataParameter.batch_size)
   return batch_size_;
 }
-inline void DataParameter::set_batch_size(::google::protobuf::uint32 value) {
+inline void DataParameter::set_batch_size(::cv::protobuf::uint32 value) {
   set_has_batch_size();
   batch_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.DataParameter.batch_size)
@@ -23660,11 +23660,11 @@ inline void DataParameter::clear_rand_skip() {
   rand_skip_ = 0u;
   clear_has_rand_skip();
 }
-inline ::google::protobuf::uint32 DataParameter::rand_skip() const {
+inline ::cv::protobuf::uint32 DataParameter::rand_skip() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DataParameter.rand_skip)
   return rand_skip_;
 }
-inline void DataParameter::set_rand_skip(::google::protobuf::uint32 value) {
+inline void DataParameter::set_rand_skip(::cv::protobuf::uint32 value) {
   set_has_rand_skip();
   rand_skip_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.DataParameter.rand_skip)
@@ -23730,7 +23730,7 @@ inline void DataParameter::clear_has_mean_file() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void DataParameter::clear_mean_file() {
-  mean_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  mean_file_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_mean_file();
 }
 inline const ::std::string& DataParameter::mean_file() const {
@@ -23739,38 +23739,38 @@ inline const ::std::string& DataParameter::mean_file() const {
 }
 inline void DataParameter::set_mean_file(const ::std::string& value) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.DataParameter.mean_file)
 }
 #if LANG_CXX11
 inline void DataParameter::set_mean_file(::std::string&& value) {
   set_has_mean_file();
   mean_file_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.DataParameter.mean_file)
 }
 #endif
 inline void DataParameter::set_mean_file(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.DataParameter.mean_file)
 }
 inline void DataParameter::set_mean_file(const char* value, size_t size) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.DataParameter.mean_file)
 }
 inline ::std::string* DataParameter::mutable_mean_file() {
   set_has_mean_file();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.DataParameter.mean_file)
-  return mean_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* DataParameter::release_mean_file() {
   // @@protoc_insertion_point(field_release:opencv_caffe.DataParameter.mean_file)
   clear_has_mean_file();
-  return mean_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void DataParameter::set_allocated_mean_file(::std::string* mean_file) {
   if (mean_file != NULL) {
@@ -23778,7 +23778,7 @@ inline void DataParameter::set_allocated_mean_file(::std::string* mean_file) {
   } else {
     clear_has_mean_file();
   }
-  mean_file_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
+  mean_file_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.DataParameter.mean_file)
 }
 
@@ -23796,11 +23796,11 @@ inline void DataParameter::clear_crop_size() {
   crop_size_ = 0u;
   clear_has_crop_size();
 }
-inline ::google::protobuf::uint32 DataParameter::crop_size() const {
+inline ::cv::protobuf::uint32 DataParameter::crop_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DataParameter.crop_size)
   return crop_size_;
 }
-inline void DataParameter::set_crop_size(::google::protobuf::uint32 value) {
+inline void DataParameter::set_crop_size(::cv::protobuf::uint32 value) {
   set_has_crop_size();
   crop_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.DataParameter.crop_size)
@@ -23868,11 +23868,11 @@ inline void DataParameter::clear_prefetch() {
   prefetch_ = 4u;
   clear_has_prefetch();
 }
-inline ::google::protobuf::uint32 DataParameter::prefetch() const {
+inline ::cv::protobuf::uint32 DataParameter::prefetch() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DataParameter.prefetch)
   return prefetch_;
 }
-inline void DataParameter::set_prefetch(::google::protobuf::uint32 value) {
+inline void DataParameter::set_prefetch(::cv::protobuf::uint32 value) {
   set_has_prefetch();
   prefetch_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.DataParameter.prefetch)
@@ -23920,11 +23920,11 @@ inline void NonMaximumSuppressionParameter::clear_top_k() {
   top_k_ = 0;
   clear_has_top_k();
 }
-inline ::google::protobuf::int32 NonMaximumSuppressionParameter::top_k() const {
+inline ::cv::protobuf::int32 NonMaximumSuppressionParameter::top_k() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.NonMaximumSuppressionParameter.top_k)
   return top_k_;
 }
-inline void NonMaximumSuppressionParameter::set_top_k(::google::protobuf::int32 value) {
+inline void NonMaximumSuppressionParameter::set_top_k(::cv::protobuf::int32 value) {
   set_has_top_k();
   top_k_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.NonMaximumSuppressionParameter.top_k)
@@ -23969,7 +23969,7 @@ inline void SaveOutputParameter::clear_has_output_directory() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void SaveOutputParameter::clear_output_directory() {
-  output_directory_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  output_directory_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_output_directory();
 }
 inline const ::std::string& SaveOutputParameter::output_directory() const {
@@ -23978,38 +23978,38 @@ inline const ::std::string& SaveOutputParameter::output_directory() const {
 }
 inline void SaveOutputParameter::set_output_directory(const ::std::string& value) {
   set_has_output_directory();
-  output_directory_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  output_directory_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SaveOutputParameter.output_directory)
 }
 #if LANG_CXX11
 inline void SaveOutputParameter::set_output_directory(::std::string&& value) {
   set_has_output_directory();
   output_directory_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SaveOutputParameter.output_directory)
 }
 #endif
 inline void SaveOutputParameter::set_output_directory(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_output_directory();
-  output_directory_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  output_directory_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SaveOutputParameter.output_directory)
 }
 inline void SaveOutputParameter::set_output_directory(const char* value, size_t size) {
   set_has_output_directory();
-  output_directory_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  output_directory_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SaveOutputParameter.output_directory)
 }
 inline ::std::string* SaveOutputParameter::mutable_output_directory() {
   set_has_output_directory();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SaveOutputParameter.output_directory)
-  return output_directory_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return output_directory_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SaveOutputParameter::release_output_directory() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SaveOutputParameter.output_directory)
   clear_has_output_directory();
-  return output_directory_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return output_directory_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SaveOutputParameter::set_allocated_output_directory(::std::string* output_directory) {
   if (output_directory != NULL) {
@@ -24017,7 +24017,7 @@ inline void SaveOutputParameter::set_allocated_output_directory(::std::string* o
   } else {
     clear_has_output_directory();
   }
-  output_directory_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), output_directory);
+  output_directory_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), output_directory);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SaveOutputParameter.output_directory)
 }
 
@@ -24032,7 +24032,7 @@ inline void SaveOutputParameter::clear_has_output_name_prefix() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void SaveOutputParameter::clear_output_name_prefix() {
-  output_name_prefix_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  output_name_prefix_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_output_name_prefix();
 }
 inline const ::std::string& SaveOutputParameter::output_name_prefix() const {
@@ -24041,38 +24041,38 @@ inline const ::std::string& SaveOutputParameter::output_name_prefix() const {
 }
 inline void SaveOutputParameter::set_output_name_prefix(const ::std::string& value) {
   set_has_output_name_prefix();
-  output_name_prefix_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  output_name_prefix_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SaveOutputParameter.output_name_prefix)
 }
 #if LANG_CXX11
 inline void SaveOutputParameter::set_output_name_prefix(::std::string&& value) {
   set_has_output_name_prefix();
   output_name_prefix_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SaveOutputParameter.output_name_prefix)
 }
 #endif
 inline void SaveOutputParameter::set_output_name_prefix(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_output_name_prefix();
-  output_name_prefix_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  output_name_prefix_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SaveOutputParameter.output_name_prefix)
 }
 inline void SaveOutputParameter::set_output_name_prefix(const char* value, size_t size) {
   set_has_output_name_prefix();
-  output_name_prefix_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  output_name_prefix_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SaveOutputParameter.output_name_prefix)
 }
 inline ::std::string* SaveOutputParameter::mutable_output_name_prefix() {
   set_has_output_name_prefix();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SaveOutputParameter.output_name_prefix)
-  return output_name_prefix_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return output_name_prefix_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SaveOutputParameter::release_output_name_prefix() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SaveOutputParameter.output_name_prefix)
   clear_has_output_name_prefix();
-  return output_name_prefix_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return output_name_prefix_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SaveOutputParameter::set_allocated_output_name_prefix(::std::string* output_name_prefix) {
   if (output_name_prefix != NULL) {
@@ -24080,7 +24080,7 @@ inline void SaveOutputParameter::set_allocated_output_name_prefix(::std::string*
   } else {
     clear_has_output_name_prefix();
   }
-  output_name_prefix_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), output_name_prefix);
+  output_name_prefix_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), output_name_prefix);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SaveOutputParameter.output_name_prefix)
 }
 
@@ -24095,7 +24095,7 @@ inline void SaveOutputParameter::clear_has_output_format() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void SaveOutputParameter::clear_output_format() {
-  output_format_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  output_format_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_output_format();
 }
 inline const ::std::string& SaveOutputParameter::output_format() const {
@@ -24104,38 +24104,38 @@ inline const ::std::string& SaveOutputParameter::output_format() const {
 }
 inline void SaveOutputParameter::set_output_format(const ::std::string& value) {
   set_has_output_format();
-  output_format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  output_format_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SaveOutputParameter.output_format)
 }
 #if LANG_CXX11
 inline void SaveOutputParameter::set_output_format(::std::string&& value) {
   set_has_output_format();
   output_format_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SaveOutputParameter.output_format)
 }
 #endif
 inline void SaveOutputParameter::set_output_format(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_output_format();
-  output_format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  output_format_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SaveOutputParameter.output_format)
 }
 inline void SaveOutputParameter::set_output_format(const char* value, size_t size) {
   set_has_output_format();
-  output_format_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  output_format_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SaveOutputParameter.output_format)
 }
 inline ::std::string* SaveOutputParameter::mutable_output_format() {
   set_has_output_format();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SaveOutputParameter.output_format)
-  return output_format_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return output_format_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SaveOutputParameter::release_output_format() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SaveOutputParameter.output_format)
   clear_has_output_format();
-  return output_format_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return output_format_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SaveOutputParameter::set_allocated_output_format(::std::string* output_format) {
   if (output_format != NULL) {
@@ -24143,7 +24143,7 @@ inline void SaveOutputParameter::set_allocated_output_format(::std::string* outp
   } else {
     clear_has_output_format();
   }
-  output_format_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), output_format);
+  output_format_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), output_format);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SaveOutputParameter.output_format)
 }
 
@@ -24158,7 +24158,7 @@ inline void SaveOutputParameter::clear_has_label_map_file() {
   _has_bits_[0] &= ~0x00000008u;
 }
 inline void SaveOutputParameter::clear_label_map_file() {
-  label_map_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  label_map_file_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_label_map_file();
 }
 inline const ::std::string& SaveOutputParameter::label_map_file() const {
@@ -24167,38 +24167,38 @@ inline const ::std::string& SaveOutputParameter::label_map_file() const {
 }
 inline void SaveOutputParameter::set_label_map_file(const ::std::string& value) {
   set_has_label_map_file();
-  label_map_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  label_map_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SaveOutputParameter.label_map_file)
 }
 #if LANG_CXX11
 inline void SaveOutputParameter::set_label_map_file(::std::string&& value) {
   set_has_label_map_file();
   label_map_file_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SaveOutputParameter.label_map_file)
 }
 #endif
 inline void SaveOutputParameter::set_label_map_file(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_label_map_file();
-  label_map_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  label_map_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SaveOutputParameter.label_map_file)
 }
 inline void SaveOutputParameter::set_label_map_file(const char* value, size_t size) {
   set_has_label_map_file();
-  label_map_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  label_map_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SaveOutputParameter.label_map_file)
 }
 inline ::std::string* SaveOutputParameter::mutable_label_map_file() {
   set_has_label_map_file();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SaveOutputParameter.label_map_file)
-  return label_map_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return label_map_file_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SaveOutputParameter::release_label_map_file() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SaveOutputParameter.label_map_file)
   clear_has_label_map_file();
-  return label_map_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return label_map_file_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SaveOutputParameter::set_allocated_label_map_file(::std::string* label_map_file) {
   if (label_map_file != NULL) {
@@ -24206,7 +24206,7 @@ inline void SaveOutputParameter::set_allocated_label_map_file(::std::string* lab
   } else {
     clear_has_label_map_file();
   }
-  label_map_file_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), label_map_file);
+  label_map_file_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), label_map_file);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SaveOutputParameter.label_map_file)
 }
 
@@ -24221,7 +24221,7 @@ inline void SaveOutputParameter::clear_has_name_size_file() {
   _has_bits_[0] &= ~0x00000010u;
 }
 inline void SaveOutputParameter::clear_name_size_file() {
-  name_size_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_size_file_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_name_size_file();
 }
 inline const ::std::string& SaveOutputParameter::name_size_file() const {
@@ -24230,38 +24230,38 @@ inline const ::std::string& SaveOutputParameter::name_size_file() const {
 }
 inline void SaveOutputParameter::set_name_size_file(const ::std::string& value) {
   set_has_name_size_file();
-  name_size_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  name_size_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SaveOutputParameter.name_size_file)
 }
 #if LANG_CXX11
 inline void SaveOutputParameter::set_name_size_file(::std::string&& value) {
   set_has_name_size_file();
   name_size_file_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.SaveOutputParameter.name_size_file)
 }
 #endif
 inline void SaveOutputParameter::set_name_size_file(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_name_size_file();
-  name_size_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  name_size_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.SaveOutputParameter.name_size_file)
 }
 inline void SaveOutputParameter::set_name_size_file(const char* value, size_t size) {
   set_has_name_size_file();
-  name_size_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_size_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.SaveOutputParameter.name_size_file)
 }
 inline ::std::string* SaveOutputParameter::mutable_name_size_file() {
   set_has_name_size_file();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.SaveOutputParameter.name_size_file)
-  return name_size_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_size_file_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SaveOutputParameter::release_name_size_file() {
   // @@protoc_insertion_point(field_release:opencv_caffe.SaveOutputParameter.name_size_file)
   clear_has_name_size_file();
-  return name_size_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_size_file_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SaveOutputParameter::set_allocated_name_size_file(::std::string* name_size_file) {
   if (name_size_file != NULL) {
@@ -24269,7 +24269,7 @@ inline void SaveOutputParameter::set_allocated_name_size_file(::std::string* nam
   } else {
     clear_has_name_size_file();
   }
-  name_size_file_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name_size_file);
+  name_size_file_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name_size_file);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.SaveOutputParameter.name_size_file)
 }
 
@@ -24287,11 +24287,11 @@ inline void SaveOutputParameter::clear_num_test_image() {
   num_test_image_ = 0u;
   clear_has_num_test_image();
 }
-inline ::google::protobuf::uint32 SaveOutputParameter::num_test_image() const {
+inline ::cv::protobuf::uint32 SaveOutputParameter::num_test_image() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SaveOutputParameter.num_test_image)
   return num_test_image_;
 }
-inline void SaveOutputParameter::set_num_test_image(::google::protobuf::uint32 value) {
+inline void SaveOutputParameter::set_num_test_image(::cv::protobuf::uint32 value) {
   set_has_num_test_image();
   num_test_image_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SaveOutputParameter.num_test_image)
@@ -24372,12 +24372,12 @@ inline ::opencv_caffe::FillerParameter* DummyDataParameter::add_data_filler() {
   // @@protoc_insertion_point(field_add:opencv_caffe.DummyDataParameter.data_filler)
   return data_filler_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >*
 DummyDataParameter::mutable_data_filler() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.DummyDataParameter.data_filler)
   return &data_filler_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::FillerParameter >&
 DummyDataParameter::data_filler() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.DummyDataParameter.data_filler)
   return data_filler_;
@@ -24402,12 +24402,12 @@ inline ::opencv_caffe::BlobShape* DummyDataParameter::add_shape() {
   // @@protoc_insertion_point(field_add:opencv_caffe.DummyDataParameter.shape)
   return shape_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
 DummyDataParameter::mutable_shape() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.DummyDataParameter.shape)
   return &shape_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
 DummyDataParameter::shape() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.DummyDataParameter.shape)
   return shape_;
@@ -24420,24 +24420,24 @@ inline int DummyDataParameter::num_size() const {
 inline void DummyDataParameter::clear_num() {
   num_.Clear();
 }
-inline ::google::protobuf::uint32 DummyDataParameter::num(int index) const {
+inline ::cv::protobuf::uint32 DummyDataParameter::num(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DummyDataParameter.num)
   return num_.Get(index);
 }
-inline void DummyDataParameter::set_num(int index, ::google::protobuf::uint32 value) {
+inline void DummyDataParameter::set_num(int index, ::cv::protobuf::uint32 value) {
   num_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.DummyDataParameter.num)
 }
-inline void DummyDataParameter::add_num(::google::protobuf::uint32 value) {
+inline void DummyDataParameter::add_num(::cv::protobuf::uint32 value) {
   num_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.DummyDataParameter.num)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 DummyDataParameter::num() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.DummyDataParameter.num)
   return num_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 DummyDataParameter::mutable_num() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.DummyDataParameter.num)
   return &num_;
@@ -24450,24 +24450,24 @@ inline int DummyDataParameter::channels_size() const {
 inline void DummyDataParameter::clear_channels() {
   channels_.Clear();
 }
-inline ::google::protobuf::uint32 DummyDataParameter::channels(int index) const {
+inline ::cv::protobuf::uint32 DummyDataParameter::channels(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DummyDataParameter.channels)
   return channels_.Get(index);
 }
-inline void DummyDataParameter::set_channels(int index, ::google::protobuf::uint32 value) {
+inline void DummyDataParameter::set_channels(int index, ::cv::protobuf::uint32 value) {
   channels_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.DummyDataParameter.channels)
 }
-inline void DummyDataParameter::add_channels(::google::protobuf::uint32 value) {
+inline void DummyDataParameter::add_channels(::cv::protobuf::uint32 value) {
   channels_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.DummyDataParameter.channels)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 DummyDataParameter::channels() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.DummyDataParameter.channels)
   return channels_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 DummyDataParameter::mutable_channels() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.DummyDataParameter.channels)
   return &channels_;
@@ -24480,24 +24480,24 @@ inline int DummyDataParameter::height_size() const {
 inline void DummyDataParameter::clear_height() {
   height_.Clear();
 }
-inline ::google::protobuf::uint32 DummyDataParameter::height(int index) const {
+inline ::cv::protobuf::uint32 DummyDataParameter::height(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DummyDataParameter.height)
   return height_.Get(index);
 }
-inline void DummyDataParameter::set_height(int index, ::google::protobuf::uint32 value) {
+inline void DummyDataParameter::set_height(int index, ::cv::protobuf::uint32 value) {
   height_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.DummyDataParameter.height)
 }
-inline void DummyDataParameter::add_height(::google::protobuf::uint32 value) {
+inline void DummyDataParameter::add_height(::cv::protobuf::uint32 value) {
   height_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.DummyDataParameter.height)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 DummyDataParameter::height() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.DummyDataParameter.height)
   return height_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 DummyDataParameter::mutable_height() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.DummyDataParameter.height)
   return &height_;
@@ -24510,24 +24510,24 @@ inline int DummyDataParameter::width_size() const {
 inline void DummyDataParameter::clear_width() {
   width_.Clear();
 }
-inline ::google::protobuf::uint32 DummyDataParameter::width(int index) const {
+inline ::cv::protobuf::uint32 DummyDataParameter::width(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.DummyDataParameter.width)
   return width_.Get(index);
 }
-inline void DummyDataParameter::set_width(int index, ::google::protobuf::uint32 value) {
+inline void DummyDataParameter::set_width(int index, ::cv::protobuf::uint32 value) {
   width_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.DummyDataParameter.width)
 }
-inline void DummyDataParameter::add_width(::google::protobuf::uint32 value) {
+inline void DummyDataParameter::add_width(::cv::protobuf::uint32 value) {
   width_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.DummyDataParameter.width)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 DummyDataParameter::width() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.DummyDataParameter.width)
   return width_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 DummyDataParameter::mutable_width() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.DummyDataParameter.width)
   return &width_;
@@ -24581,12 +24581,12 @@ inline void EltwiseParameter::add_coeff(float value) {
   coeff_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.EltwiseParameter.coeff)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 EltwiseParameter::coeff() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.EltwiseParameter.coeff)
   return coeff_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 EltwiseParameter::mutable_coeff() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.EltwiseParameter.coeff)
   return &coeff_;
@@ -24662,11 +24662,11 @@ inline void EmbedParameter::clear_num_output() {
   num_output_ = 0u;
   clear_has_num_output();
 }
-inline ::google::protobuf::uint32 EmbedParameter::num_output() const {
+inline ::cv::protobuf::uint32 EmbedParameter::num_output() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.EmbedParameter.num_output)
   return num_output_;
 }
-inline void EmbedParameter::set_num_output(::google::protobuf::uint32 value) {
+inline void EmbedParameter::set_num_output(::cv::protobuf::uint32 value) {
   set_has_num_output();
   num_output_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.EmbedParameter.num_output)
@@ -24686,11 +24686,11 @@ inline void EmbedParameter::clear_input_dim() {
   input_dim_ = 0u;
   clear_has_input_dim();
 }
-inline ::google::protobuf::uint32 EmbedParameter::input_dim() const {
+inline ::cv::protobuf::uint32 EmbedParameter::input_dim() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.EmbedParameter.input_dim)
   return input_dim_;
 }
-inline void EmbedParameter::set_input_dim(::google::protobuf::uint32 value) {
+inline void EmbedParameter::set_input_dim(::cv::protobuf::uint32 value) {
   set_has_input_dim();
   input_dim_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.EmbedParameter.input_dim)
@@ -24756,14 +24756,14 @@ inline ::opencv_caffe::FillerParameter* EmbedParameter::mutable_weight_filler() 
   return weight_filler_;
 }
 inline void EmbedParameter::set_allocated_weight_filler(::opencv_caffe::FillerParameter* weight_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete weight_filler_;
   }
   if (weight_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      weight_filler = ::google::protobuf::internal::GetOwnedMessage(
+      weight_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, weight_filler, submessage_arena);
     }
     set_has_weight_filler();
@@ -24810,14 +24810,14 @@ inline ::opencv_caffe::FillerParameter* EmbedParameter::mutable_bias_filler() {
   return bias_filler_;
 }
 inline void EmbedParameter::set_allocated_bias_filler(::opencv_caffe::FillerParameter* bias_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete bias_filler_;
   }
   if (bias_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      bias_filler = ::google::protobuf::internal::GetOwnedMessage(
+      bias_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, bias_filler, submessage_arena);
     }
     set_has_bias_filler();
@@ -24922,11 +24922,11 @@ inline void FlattenParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 FlattenParameter::axis() const {
+inline ::cv::protobuf::int32 FlattenParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.FlattenParameter.axis)
   return axis_;
 }
-inline void FlattenParameter::set_axis(::google::protobuf::int32 value) {
+inline void FlattenParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.FlattenParameter.axis)
@@ -24946,11 +24946,11 @@ inline void FlattenParameter::clear_end_axis() {
   end_axis_ = -1;
   clear_has_end_axis();
 }
-inline ::google::protobuf::int32 FlattenParameter::end_axis() const {
+inline ::cv::protobuf::int32 FlattenParameter::end_axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.FlattenParameter.end_axis)
   return end_axis_;
 }
-inline void FlattenParameter::set_end_axis(::google::protobuf::int32 value) {
+inline void FlattenParameter::set_end_axis(::cv::protobuf::int32 value) {
   set_has_end_axis();
   end_axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.FlattenParameter.end_axis)
@@ -24971,7 +24971,7 @@ inline void HDF5DataParameter::clear_has_source() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void HDF5DataParameter::clear_source() {
-  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  source_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_source();
 }
 inline const ::std::string& HDF5DataParameter::source() const {
@@ -24980,38 +24980,38 @@ inline const ::std::string& HDF5DataParameter::source() const {
 }
 inline void HDF5DataParameter::set_source(const ::std::string& value) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.HDF5DataParameter.source)
 }
 #if LANG_CXX11
 inline void HDF5DataParameter::set_source(::std::string&& value) {
   set_has_source();
   source_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.HDF5DataParameter.source)
 }
 #endif
 inline void HDF5DataParameter::set_source(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.HDF5DataParameter.source)
 }
 inline void HDF5DataParameter::set_source(const char* value, size_t size) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.HDF5DataParameter.source)
 }
 inline ::std::string* HDF5DataParameter::mutable_source() {
   set_has_source();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.HDF5DataParameter.source)
-  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* HDF5DataParameter::release_source() {
   // @@protoc_insertion_point(field_release:opencv_caffe.HDF5DataParameter.source)
   clear_has_source();
-  return source_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HDF5DataParameter::set_allocated_source(::std::string* source) {
   if (source != NULL) {
@@ -25019,7 +25019,7 @@ inline void HDF5DataParameter::set_allocated_source(::std::string* source) {
   } else {
     clear_has_source();
   }
-  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
+  source_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.HDF5DataParameter.source)
 }
 
@@ -25037,11 +25037,11 @@ inline void HDF5DataParameter::clear_batch_size() {
   batch_size_ = 0u;
   clear_has_batch_size();
 }
-inline ::google::protobuf::uint32 HDF5DataParameter::batch_size() const {
+inline ::cv::protobuf::uint32 HDF5DataParameter::batch_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.HDF5DataParameter.batch_size)
   return batch_size_;
 }
-inline void HDF5DataParameter::set_batch_size(::google::protobuf::uint32 value) {
+inline void HDF5DataParameter::set_batch_size(::cv::protobuf::uint32 value) {
   set_has_batch_size();
   batch_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.HDF5DataParameter.batch_size)
@@ -25086,7 +25086,7 @@ inline void HDF5OutputParameter::clear_has_file_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void HDF5OutputParameter::clear_file_name() {
-  file_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  file_name_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_file_name();
 }
 inline const ::std::string& HDF5OutputParameter::file_name() const {
@@ -25095,38 +25095,38 @@ inline const ::std::string& HDF5OutputParameter::file_name() const {
 }
 inline void HDF5OutputParameter::set_file_name(const ::std::string& value) {
   set_has_file_name();
-  file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  file_name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.HDF5OutputParameter.file_name)
 }
 #if LANG_CXX11
 inline void HDF5OutputParameter::set_file_name(::std::string&& value) {
   set_has_file_name();
   file_name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.HDF5OutputParameter.file_name)
 }
 #endif
 inline void HDF5OutputParameter::set_file_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_file_name();
-  file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  file_name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.HDF5OutputParameter.file_name)
 }
 inline void HDF5OutputParameter::set_file_name(const char* value, size_t size) {
   set_has_file_name();
-  file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  file_name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.HDF5OutputParameter.file_name)
 }
 inline ::std::string* HDF5OutputParameter::mutable_file_name() {
   set_has_file_name();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.HDF5OutputParameter.file_name)
-  return file_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return file_name_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* HDF5OutputParameter::release_file_name() {
   // @@protoc_insertion_point(field_release:opencv_caffe.HDF5OutputParameter.file_name)
   clear_has_file_name();
-  return file_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return file_name_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void HDF5OutputParameter::set_allocated_file_name(::std::string* file_name) {
   if (file_name != NULL) {
@@ -25134,7 +25134,7 @@ inline void HDF5OutputParameter::set_allocated_file_name(::std::string* file_nam
   } else {
     clear_has_file_name();
   }
-  file_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), file_name);
+  file_name_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), file_name);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.HDF5OutputParameter.file_name)
 }
 
@@ -25182,7 +25182,7 @@ inline void ImageDataParameter::clear_has_source() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void ImageDataParameter::clear_source() {
-  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  source_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_source();
 }
 inline const ::std::string& ImageDataParameter::source() const {
@@ -25191,38 +25191,38 @@ inline const ::std::string& ImageDataParameter::source() const {
 }
 inline void ImageDataParameter::set_source(const ::std::string& value) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.source)
 }
 #if LANG_CXX11
 inline void ImageDataParameter::set_source(::std::string&& value) {
   set_has_source();
   source_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.ImageDataParameter.source)
 }
 #endif
 inline void ImageDataParameter::set_source(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.ImageDataParameter.source)
 }
 inline void ImageDataParameter::set_source(const char* value, size_t size) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.ImageDataParameter.source)
 }
 inline ::std::string* ImageDataParameter::mutable_source() {
   set_has_source();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.ImageDataParameter.source)
-  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* ImageDataParameter::release_source() {
   // @@protoc_insertion_point(field_release:opencv_caffe.ImageDataParameter.source)
   clear_has_source();
-  return source_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ImageDataParameter::set_allocated_source(::std::string* source) {
   if (source != NULL) {
@@ -25230,7 +25230,7 @@ inline void ImageDataParameter::set_allocated_source(::std::string* source) {
   } else {
     clear_has_source();
   }
-  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
+  source_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.ImageDataParameter.source)
 }
 
@@ -25248,11 +25248,11 @@ inline void ImageDataParameter::clear_batch_size() {
   batch_size_ = 1u;
   clear_has_batch_size();
 }
-inline ::google::protobuf::uint32 ImageDataParameter::batch_size() const {
+inline ::cv::protobuf::uint32 ImageDataParameter::batch_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ImageDataParameter.batch_size)
   return batch_size_;
 }
-inline void ImageDataParameter::set_batch_size(::google::protobuf::uint32 value) {
+inline void ImageDataParameter::set_batch_size(::cv::protobuf::uint32 value) {
   set_has_batch_size();
   batch_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.batch_size)
@@ -25272,11 +25272,11 @@ inline void ImageDataParameter::clear_rand_skip() {
   rand_skip_ = 0u;
   clear_has_rand_skip();
 }
-inline ::google::protobuf::uint32 ImageDataParameter::rand_skip() const {
+inline ::cv::protobuf::uint32 ImageDataParameter::rand_skip() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ImageDataParameter.rand_skip)
   return rand_skip_;
 }
-inline void ImageDataParameter::set_rand_skip(::google::protobuf::uint32 value) {
+inline void ImageDataParameter::set_rand_skip(::cv::protobuf::uint32 value) {
   set_has_rand_skip();
   rand_skip_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.rand_skip)
@@ -25320,11 +25320,11 @@ inline void ImageDataParameter::clear_new_height() {
   new_height_ = 0u;
   clear_has_new_height();
 }
-inline ::google::protobuf::uint32 ImageDataParameter::new_height() const {
+inline ::cv::protobuf::uint32 ImageDataParameter::new_height() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ImageDataParameter.new_height)
   return new_height_;
 }
-inline void ImageDataParameter::set_new_height(::google::protobuf::uint32 value) {
+inline void ImageDataParameter::set_new_height(::cv::protobuf::uint32 value) {
   set_has_new_height();
   new_height_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.new_height)
@@ -25344,11 +25344,11 @@ inline void ImageDataParameter::clear_new_width() {
   new_width_ = 0u;
   clear_has_new_width();
 }
-inline ::google::protobuf::uint32 ImageDataParameter::new_width() const {
+inline ::cv::protobuf::uint32 ImageDataParameter::new_width() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ImageDataParameter.new_width)
   return new_width_;
 }
-inline void ImageDataParameter::set_new_width(::google::protobuf::uint32 value) {
+inline void ImageDataParameter::set_new_width(::cv::protobuf::uint32 value) {
   set_has_new_width();
   new_width_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.new_width)
@@ -25413,7 +25413,7 @@ inline void ImageDataParameter::clear_has_mean_file() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void ImageDataParameter::clear_mean_file() {
-  mean_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  mean_file_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_mean_file();
 }
 inline const ::std::string& ImageDataParameter::mean_file() const {
@@ -25422,38 +25422,38 @@ inline const ::std::string& ImageDataParameter::mean_file() const {
 }
 inline void ImageDataParameter::set_mean_file(const ::std::string& value) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.mean_file)
 }
 #if LANG_CXX11
 inline void ImageDataParameter::set_mean_file(::std::string&& value) {
   set_has_mean_file();
   mean_file_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.ImageDataParameter.mean_file)
 }
 #endif
 inline void ImageDataParameter::set_mean_file(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.ImageDataParameter.mean_file)
 }
 inline void ImageDataParameter::set_mean_file(const char* value, size_t size) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.ImageDataParameter.mean_file)
 }
 inline ::std::string* ImageDataParameter::mutable_mean_file() {
   set_has_mean_file();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.ImageDataParameter.mean_file)
-  return mean_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* ImageDataParameter::release_mean_file() {
   // @@protoc_insertion_point(field_release:opencv_caffe.ImageDataParameter.mean_file)
   clear_has_mean_file();
-  return mean_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ImageDataParameter::set_allocated_mean_file(::std::string* mean_file) {
   if (mean_file != NULL) {
@@ -25461,7 +25461,7 @@ inline void ImageDataParameter::set_allocated_mean_file(::std::string* mean_file
   } else {
     clear_has_mean_file();
   }
-  mean_file_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
+  mean_file_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.ImageDataParameter.mean_file)
 }
 
@@ -25479,11 +25479,11 @@ inline void ImageDataParameter::clear_crop_size() {
   crop_size_ = 0u;
   clear_has_crop_size();
 }
-inline ::google::protobuf::uint32 ImageDataParameter::crop_size() const {
+inline ::cv::protobuf::uint32 ImageDataParameter::crop_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ImageDataParameter.crop_size)
   return crop_size_;
 }
-inline void ImageDataParameter::set_crop_size(::google::protobuf::uint32 value) {
+inline void ImageDataParameter::set_crop_size(::cv::protobuf::uint32 value) {
   set_has_crop_size();
   crop_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.crop_size)
@@ -25524,7 +25524,7 @@ inline void ImageDataParameter::clear_has_root_folder() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void ImageDataParameter::clear_root_folder() {
-  root_folder_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  root_folder_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_root_folder();
 }
 inline const ::std::string& ImageDataParameter::root_folder() const {
@@ -25533,38 +25533,38 @@ inline const ::std::string& ImageDataParameter::root_folder() const {
 }
 inline void ImageDataParameter::set_root_folder(const ::std::string& value) {
   set_has_root_folder();
-  root_folder_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  root_folder_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.ImageDataParameter.root_folder)
 }
 #if LANG_CXX11
 inline void ImageDataParameter::set_root_folder(::std::string&& value) {
   set_has_root_folder();
   root_folder_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.ImageDataParameter.root_folder)
 }
 #endif
 inline void ImageDataParameter::set_root_folder(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_root_folder();
-  root_folder_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  root_folder_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.ImageDataParameter.root_folder)
 }
 inline void ImageDataParameter::set_root_folder(const char* value, size_t size) {
   set_has_root_folder();
-  root_folder_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  root_folder_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.ImageDataParameter.root_folder)
 }
 inline ::std::string* ImageDataParameter::mutable_root_folder() {
   set_has_root_folder();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.ImageDataParameter.root_folder)
-  return root_folder_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return root_folder_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* ImageDataParameter::release_root_folder() {
   // @@protoc_insertion_point(field_release:opencv_caffe.ImageDataParameter.root_folder)
   clear_has_root_folder();
-  return root_folder_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return root_folder_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void ImageDataParameter::set_allocated_root_folder(::std::string* root_folder) {
   if (root_folder != NULL) {
@@ -25572,7 +25572,7 @@ inline void ImageDataParameter::set_allocated_root_folder(::std::string* root_fo
   } else {
     clear_has_root_folder();
   }
-  root_folder_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), root_folder);
+  root_folder_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), root_folder);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.ImageDataParameter.root_folder)
 }
 
@@ -25591,7 +25591,7 @@ inline void InfogainLossParameter::clear_has_source() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void InfogainLossParameter::clear_source() {
-  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  source_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_source();
 }
 inline const ::std::string& InfogainLossParameter::source() const {
@@ -25600,38 +25600,38 @@ inline const ::std::string& InfogainLossParameter::source() const {
 }
 inline void InfogainLossParameter::set_source(const ::std::string& value) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.InfogainLossParameter.source)
 }
 #if LANG_CXX11
 inline void InfogainLossParameter::set_source(::std::string&& value) {
   set_has_source();
   source_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.InfogainLossParameter.source)
 }
 #endif
 inline void InfogainLossParameter::set_source(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.InfogainLossParameter.source)
 }
 inline void InfogainLossParameter::set_source(const char* value, size_t size) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.InfogainLossParameter.source)
 }
 inline ::std::string* InfogainLossParameter::mutable_source() {
   set_has_source();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.InfogainLossParameter.source)
-  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* InfogainLossParameter::release_source() {
   // @@protoc_insertion_point(field_release:opencv_caffe.InfogainLossParameter.source)
   clear_has_source();
-  return source_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void InfogainLossParameter::set_allocated_source(::std::string* source) {
   if (source != NULL) {
@@ -25639,7 +25639,7 @@ inline void InfogainLossParameter::set_allocated_source(::std::string* source) {
   } else {
     clear_has_source();
   }
-  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
+  source_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.InfogainLossParameter.source)
 }
 
@@ -25661,11 +25661,11 @@ inline void InnerProductParameter::clear_num_output() {
   num_output_ = 0u;
   clear_has_num_output();
 }
-inline ::google::protobuf::uint32 InnerProductParameter::num_output() const {
+inline ::cv::protobuf::uint32 InnerProductParameter::num_output() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.InnerProductParameter.num_output)
   return num_output_;
 }
-inline void InnerProductParameter::set_num_output(::google::protobuf::uint32 value) {
+inline void InnerProductParameter::set_num_output(::cv::protobuf::uint32 value) {
   set_has_num_output();
   num_output_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.InnerProductParameter.num_output)
@@ -25731,14 +25731,14 @@ inline ::opencv_caffe::FillerParameter* InnerProductParameter::mutable_weight_fi
   return weight_filler_;
 }
 inline void InnerProductParameter::set_allocated_weight_filler(::opencv_caffe::FillerParameter* weight_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete weight_filler_;
   }
   if (weight_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      weight_filler = ::google::protobuf::internal::GetOwnedMessage(
+      weight_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, weight_filler, submessage_arena);
     }
     set_has_weight_filler();
@@ -25785,14 +25785,14 @@ inline ::opencv_caffe::FillerParameter* InnerProductParameter::mutable_bias_fill
   return bias_filler_;
 }
 inline void InnerProductParameter::set_allocated_bias_filler(::opencv_caffe::FillerParameter* bias_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete bias_filler_;
   }
   if (bias_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      bias_filler = ::google::protobuf::internal::GetOwnedMessage(
+      bias_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, bias_filler, submessage_arena);
     }
     set_has_bias_filler();
@@ -25817,11 +25817,11 @@ inline void InnerProductParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 InnerProductParameter::axis() const {
+inline ::cv::protobuf::int32 InnerProductParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.InnerProductParameter.axis)
   return axis_;
 }
-inline void InnerProductParameter::set_axis(::google::protobuf::int32 value) {
+inline void InnerProductParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.InnerProductParameter.axis)
@@ -25874,12 +25874,12 @@ inline ::opencv_caffe::BlobShape* InputParameter::add_shape() {
   // @@protoc_insertion_point(field_add:opencv_caffe.InputParameter.shape)
   return shape_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >*
 InputParameter::mutable_shape() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.InputParameter.shape)
   return &shape_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobShape >&
 InputParameter::shape() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.InputParameter.shape)
   return shape_;
@@ -25979,11 +25979,11 @@ inline void LRNParameter::clear_local_size() {
   local_size_ = 5u;
   clear_has_local_size();
 }
-inline ::google::protobuf::uint32 LRNParameter::local_size() const {
+inline ::cv::protobuf::uint32 LRNParameter::local_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.LRNParameter.local_size)
   return local_size_;
 }
-inline void LRNParameter::set_local_size(::google::protobuf::uint32 value) {
+inline void LRNParameter::set_local_size(::cv::protobuf::uint32 value) {
   set_has_local_size();
   local_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.LRNParameter.local_size)
@@ -26129,11 +26129,11 @@ inline void MemoryDataParameter::clear_batch_size() {
   batch_size_ = 0u;
   clear_has_batch_size();
 }
-inline ::google::protobuf::uint32 MemoryDataParameter::batch_size() const {
+inline ::cv::protobuf::uint32 MemoryDataParameter::batch_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.MemoryDataParameter.batch_size)
   return batch_size_;
 }
-inline void MemoryDataParameter::set_batch_size(::google::protobuf::uint32 value) {
+inline void MemoryDataParameter::set_batch_size(::cv::protobuf::uint32 value) {
   set_has_batch_size();
   batch_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.MemoryDataParameter.batch_size)
@@ -26153,11 +26153,11 @@ inline void MemoryDataParameter::clear_channels() {
   channels_ = 0u;
   clear_has_channels();
 }
-inline ::google::protobuf::uint32 MemoryDataParameter::channels() const {
+inline ::cv::protobuf::uint32 MemoryDataParameter::channels() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.MemoryDataParameter.channels)
   return channels_;
 }
-inline void MemoryDataParameter::set_channels(::google::protobuf::uint32 value) {
+inline void MemoryDataParameter::set_channels(::cv::protobuf::uint32 value) {
   set_has_channels();
   channels_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.MemoryDataParameter.channels)
@@ -26177,11 +26177,11 @@ inline void MemoryDataParameter::clear_height() {
   height_ = 0u;
   clear_has_height();
 }
-inline ::google::protobuf::uint32 MemoryDataParameter::height() const {
+inline ::cv::protobuf::uint32 MemoryDataParameter::height() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.MemoryDataParameter.height)
   return height_;
 }
-inline void MemoryDataParameter::set_height(::google::protobuf::uint32 value) {
+inline void MemoryDataParameter::set_height(::cv::protobuf::uint32 value) {
   set_has_height();
   height_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.MemoryDataParameter.height)
@@ -26201,11 +26201,11 @@ inline void MemoryDataParameter::clear_width() {
   width_ = 0u;
   clear_has_width();
 }
-inline ::google::protobuf::uint32 MemoryDataParameter::width() const {
+inline ::cv::protobuf::uint32 MemoryDataParameter::width() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.MemoryDataParameter.width)
   return width_;
 }
-inline void MemoryDataParameter::set_width(::google::protobuf::uint32 value) {
+inline void MemoryDataParameter::set_width(::cv::protobuf::uint32 value) {
   set_has_width();
   width_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.MemoryDataParameter.width)
@@ -26327,14 +26327,14 @@ inline ::opencv_caffe::BlobShape* ParameterParameter::mutable_shape() {
   return shape_;
 }
 inline void ParameterParameter::set_allocated_shape(::opencv_caffe::BlobShape* shape) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete shape_;
   }
   if (shape) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      shape = ::google::protobuf::internal::GetOwnedMessage(
+      shape = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, shape, submessage_arena);
     }
     set_has_shape();
@@ -26388,11 +26388,11 @@ inline void PoolingParameter::clear_pad() {
   pad_ = 0u;
   clear_has_pad();
 }
-inline ::google::protobuf::uint32 PoolingParameter::pad() const {
+inline ::cv::protobuf::uint32 PoolingParameter::pad() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.pad)
   return pad_;
 }
-inline void PoolingParameter::set_pad(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_pad(::cv::protobuf::uint32 value) {
   set_has_pad();
   pad_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.pad)
@@ -26412,11 +26412,11 @@ inline void PoolingParameter::clear_pad_h() {
   pad_h_ = 0u;
   clear_has_pad_h();
 }
-inline ::google::protobuf::uint32 PoolingParameter::pad_h() const {
+inline ::cv::protobuf::uint32 PoolingParameter::pad_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.pad_h)
   return pad_h_;
 }
-inline void PoolingParameter::set_pad_h(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_pad_h(::cv::protobuf::uint32 value) {
   set_has_pad_h();
   pad_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.pad_h)
@@ -26436,11 +26436,11 @@ inline void PoolingParameter::clear_pad_w() {
   pad_w_ = 0u;
   clear_has_pad_w();
 }
-inline ::google::protobuf::uint32 PoolingParameter::pad_w() const {
+inline ::cv::protobuf::uint32 PoolingParameter::pad_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.pad_w)
   return pad_w_;
 }
-inline void PoolingParameter::set_pad_w(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_pad_w(::cv::protobuf::uint32 value) {
   set_has_pad_w();
   pad_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.pad_w)
@@ -26460,11 +26460,11 @@ inline void PoolingParameter::clear_kernel_size() {
   kernel_size_ = 0u;
   clear_has_kernel_size();
 }
-inline ::google::protobuf::uint32 PoolingParameter::kernel_size() const {
+inline ::cv::protobuf::uint32 PoolingParameter::kernel_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.kernel_size)
   return kernel_size_;
 }
-inline void PoolingParameter::set_kernel_size(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_kernel_size(::cv::protobuf::uint32 value) {
   set_has_kernel_size();
   kernel_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.kernel_size)
@@ -26484,11 +26484,11 @@ inline void PoolingParameter::clear_kernel_h() {
   kernel_h_ = 0u;
   clear_has_kernel_h();
 }
-inline ::google::protobuf::uint32 PoolingParameter::kernel_h() const {
+inline ::cv::protobuf::uint32 PoolingParameter::kernel_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.kernel_h)
   return kernel_h_;
 }
-inline void PoolingParameter::set_kernel_h(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_kernel_h(::cv::protobuf::uint32 value) {
   set_has_kernel_h();
   kernel_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.kernel_h)
@@ -26508,11 +26508,11 @@ inline void PoolingParameter::clear_kernel_w() {
   kernel_w_ = 0u;
   clear_has_kernel_w();
 }
-inline ::google::protobuf::uint32 PoolingParameter::kernel_w() const {
+inline ::cv::protobuf::uint32 PoolingParameter::kernel_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.kernel_w)
   return kernel_w_;
 }
-inline void PoolingParameter::set_kernel_w(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_kernel_w(::cv::protobuf::uint32 value) {
   set_has_kernel_w();
   kernel_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.kernel_w)
@@ -26532,11 +26532,11 @@ inline void PoolingParameter::clear_stride() {
   stride_ = 1u;
   clear_has_stride();
 }
-inline ::google::protobuf::uint32 PoolingParameter::stride() const {
+inline ::cv::protobuf::uint32 PoolingParameter::stride() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.stride)
   return stride_;
 }
-inline void PoolingParameter::set_stride(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_stride(::cv::protobuf::uint32 value) {
   set_has_stride();
   stride_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.stride)
@@ -26556,11 +26556,11 @@ inline void PoolingParameter::clear_stride_h() {
   stride_h_ = 0u;
   clear_has_stride_h();
 }
-inline ::google::protobuf::uint32 PoolingParameter::stride_h() const {
+inline ::cv::protobuf::uint32 PoolingParameter::stride_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.stride_h)
   return stride_h_;
 }
-inline void PoolingParameter::set_stride_h(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_stride_h(::cv::protobuf::uint32 value) {
   set_has_stride_h();
   stride_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.stride_h)
@@ -26580,11 +26580,11 @@ inline void PoolingParameter::clear_stride_w() {
   stride_w_ = 0u;
   clear_has_stride_w();
 }
-inline ::google::protobuf::uint32 PoolingParameter::stride_w() const {
+inline ::cv::protobuf::uint32 PoolingParameter::stride_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PoolingParameter.stride_w)
   return stride_w_;
 }
-inline void PoolingParameter::set_stride_w(::google::protobuf::uint32 value) {
+inline void PoolingParameter::set_stride_w(::cv::protobuf::uint32 value) {
   set_has_stride_w();
   stride_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PoolingParameter.stride_w)
@@ -26754,7 +26754,7 @@ inline void PythonParameter::clear_has_module() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void PythonParameter::clear_module() {
-  module_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  module_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_module();
 }
 inline const ::std::string& PythonParameter::module() const {
@@ -26763,38 +26763,38 @@ inline const ::std::string& PythonParameter::module() const {
 }
 inline void PythonParameter::set_module(const ::std::string& value) {
   set_has_module();
-  module_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  module_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.PythonParameter.module)
 }
 #if LANG_CXX11
 inline void PythonParameter::set_module(::std::string&& value) {
   set_has_module();
   module_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.PythonParameter.module)
 }
 #endif
 inline void PythonParameter::set_module(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_module();
-  module_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  module_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.PythonParameter.module)
 }
 inline void PythonParameter::set_module(const char* value, size_t size) {
   set_has_module();
-  module_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  module_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.PythonParameter.module)
 }
 inline ::std::string* PythonParameter::mutable_module() {
   set_has_module();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.PythonParameter.module)
-  return module_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return module_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* PythonParameter::release_module() {
   // @@protoc_insertion_point(field_release:opencv_caffe.PythonParameter.module)
   clear_has_module();
-  return module_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return module_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PythonParameter::set_allocated_module(::std::string* module) {
   if (module != NULL) {
@@ -26802,7 +26802,7 @@ inline void PythonParameter::set_allocated_module(::std::string* module) {
   } else {
     clear_has_module();
   }
-  module_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), module);
+  module_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), module);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.PythonParameter.module)
 }
 
@@ -26817,7 +26817,7 @@ inline void PythonParameter::clear_has_layer() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void PythonParameter::clear_layer() {
-  layer_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  layer_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_layer();
 }
 inline const ::std::string& PythonParameter::layer() const {
@@ -26826,38 +26826,38 @@ inline const ::std::string& PythonParameter::layer() const {
 }
 inline void PythonParameter::set_layer(const ::std::string& value) {
   set_has_layer();
-  layer_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  layer_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.PythonParameter.layer)
 }
 #if LANG_CXX11
 inline void PythonParameter::set_layer(::std::string&& value) {
   set_has_layer();
   layer_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.PythonParameter.layer)
 }
 #endif
 inline void PythonParameter::set_layer(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_layer();
-  layer_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  layer_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.PythonParameter.layer)
 }
 inline void PythonParameter::set_layer(const char* value, size_t size) {
   set_has_layer();
-  layer_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  layer_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.PythonParameter.layer)
 }
 inline ::std::string* PythonParameter::mutable_layer() {
   set_has_layer();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.PythonParameter.layer)
-  return layer_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return layer_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* PythonParameter::release_layer() {
   // @@protoc_insertion_point(field_release:opencv_caffe.PythonParameter.layer)
   clear_has_layer();
-  return layer_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return layer_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PythonParameter::set_allocated_layer(::std::string* layer) {
   if (layer != NULL) {
@@ -26865,7 +26865,7 @@ inline void PythonParameter::set_allocated_layer(::std::string* layer) {
   } else {
     clear_has_layer();
   }
-  layer_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), layer);
+  layer_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), layer);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.PythonParameter.layer)
 }
 
@@ -26880,7 +26880,7 @@ inline void PythonParameter::clear_has_param_str() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void PythonParameter::clear_param_str() {
-  param_str_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  param_str_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_param_str();
 }
 inline const ::std::string& PythonParameter::param_str() const {
@@ -26889,38 +26889,38 @@ inline const ::std::string& PythonParameter::param_str() const {
 }
 inline void PythonParameter::set_param_str(const ::std::string& value) {
   set_has_param_str();
-  param_str_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  param_str_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.PythonParameter.param_str)
 }
 #if LANG_CXX11
 inline void PythonParameter::set_param_str(::std::string&& value) {
   set_has_param_str();
   param_str_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.PythonParameter.param_str)
 }
 #endif
 inline void PythonParameter::set_param_str(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_param_str();
-  param_str_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  param_str_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.PythonParameter.param_str)
 }
 inline void PythonParameter::set_param_str(const char* value, size_t size) {
   set_has_param_str();
-  param_str_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  param_str_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.PythonParameter.param_str)
 }
 inline ::std::string* PythonParameter::mutable_param_str() {
   set_has_param_str();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.PythonParameter.param_str)
-  return param_str_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return param_str_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* PythonParameter::release_param_str() {
   // @@protoc_insertion_point(field_release:opencv_caffe.PythonParameter.param_str)
   clear_has_param_str();
-  return param_str_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return param_str_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void PythonParameter::set_allocated_param_str(::std::string* param_str) {
   if (param_str != NULL) {
@@ -26928,7 +26928,7 @@ inline void PythonParameter::set_allocated_param_str(::std::string* param_str) {
   } else {
     clear_has_param_str();
   }
-  param_str_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), param_str);
+  param_str_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), param_str);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.PythonParameter.param_str)
 }
 
@@ -26974,11 +26974,11 @@ inline void RecurrentParameter::clear_num_output() {
   num_output_ = 0u;
   clear_has_num_output();
 }
-inline ::google::protobuf::uint32 RecurrentParameter::num_output() const {
+inline ::cv::protobuf::uint32 RecurrentParameter::num_output() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.RecurrentParameter.num_output)
   return num_output_;
 }
-inline void RecurrentParameter::set_num_output(::google::protobuf::uint32 value) {
+inline void RecurrentParameter::set_num_output(::cv::protobuf::uint32 value) {
   set_has_num_output();
   num_output_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.RecurrentParameter.num_output)
@@ -27020,14 +27020,14 @@ inline ::opencv_caffe::FillerParameter* RecurrentParameter::mutable_weight_fille
   return weight_filler_;
 }
 inline void RecurrentParameter::set_allocated_weight_filler(::opencv_caffe::FillerParameter* weight_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete weight_filler_;
   }
   if (weight_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      weight_filler = ::google::protobuf::internal::GetOwnedMessage(
+      weight_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, weight_filler, submessage_arena);
     }
     set_has_weight_filler();
@@ -27074,14 +27074,14 @@ inline ::opencv_caffe::FillerParameter* RecurrentParameter::mutable_bias_filler(
   return bias_filler_;
 }
 inline void RecurrentParameter::set_allocated_bias_filler(::opencv_caffe::FillerParameter* bias_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete bias_filler_;
   }
   if (bias_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      bias_filler = ::google::protobuf::internal::GetOwnedMessage(
+      bias_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, bias_filler, submessage_arena);
     }
     set_has_bias_filler();
@@ -27183,11 +27183,11 @@ inline void ReductionParameter::clear_axis() {
   axis_ = 0;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 ReductionParameter::axis() const {
+inline ::cv::protobuf::int32 ReductionParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ReductionParameter.axis)
   return axis_;
 }
-inline void ReductionParameter::set_axis(::google::protobuf::int32 value) {
+inline void ReductionParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ReductionParameter.axis)
@@ -27310,14 +27310,14 @@ inline ::opencv_caffe::BlobShape* ReshapeParameter::mutable_shape() {
   return shape_;
 }
 inline void ReshapeParameter::set_allocated_shape(::opencv_caffe::BlobShape* shape) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete shape_;
   }
   if (shape) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      shape = ::google::protobuf::internal::GetOwnedMessage(
+      shape = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, shape, submessage_arena);
     }
     set_has_shape();
@@ -27342,11 +27342,11 @@ inline void ReshapeParameter::clear_axis() {
   axis_ = 0;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 ReshapeParameter::axis() const {
+inline ::cv::protobuf::int32 ReshapeParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ReshapeParameter.axis)
   return axis_;
 }
-inline void ReshapeParameter::set_axis(::google::protobuf::int32 value) {
+inline void ReshapeParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ReshapeParameter.axis)
@@ -27366,11 +27366,11 @@ inline void ReshapeParameter::clear_num_axes() {
   num_axes_ = -1;
   clear_has_num_axes();
 }
-inline ::google::protobuf::int32 ReshapeParameter::num_axes() const {
+inline ::cv::protobuf::int32 ReshapeParameter::num_axes() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ReshapeParameter.num_axes)
   return num_axes_;
 }
-inline void ReshapeParameter::set_num_axes(::google::protobuf::int32 value) {
+inline void ReshapeParameter::set_num_axes(::cv::protobuf::int32 value) {
   set_has_num_axes();
   num_axes_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ReshapeParameter.num_axes)
@@ -27394,11 +27394,11 @@ inline void ScaleParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 ScaleParameter::axis() const {
+inline ::cv::protobuf::int32 ScaleParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ScaleParameter.axis)
   return axis_;
 }
-inline void ScaleParameter::set_axis(::google::protobuf::int32 value) {
+inline void ScaleParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ScaleParameter.axis)
@@ -27418,11 +27418,11 @@ inline void ScaleParameter::clear_num_axes() {
   num_axes_ = 1;
   clear_has_num_axes();
 }
-inline ::google::protobuf::int32 ScaleParameter::num_axes() const {
+inline ::cv::protobuf::int32 ScaleParameter::num_axes() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ScaleParameter.num_axes)
   return num_axes_;
 }
-inline void ScaleParameter::set_num_axes(::google::protobuf::int32 value) {
+inline void ScaleParameter::set_num_axes(::cv::protobuf::int32 value) {
   set_has_num_axes();
   num_axes_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ScaleParameter.num_axes)
@@ -27464,14 +27464,14 @@ inline ::opencv_caffe::FillerParameter* ScaleParameter::mutable_filler() {
   return filler_;
 }
 inline void ScaleParameter::set_allocated_filler(::opencv_caffe::FillerParameter* filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete filler_;
   }
   if (filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      filler = ::google::protobuf::internal::GetOwnedMessage(
+      filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, filler, submessage_arena);
     }
     set_has_filler();
@@ -27542,14 +27542,14 @@ inline ::opencv_caffe::FillerParameter* ScaleParameter::mutable_bias_filler() {
   return bias_filler_;
 }
 inline void ScaleParameter::set_allocated_bias_filler(::opencv_caffe::FillerParameter* bias_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete bias_filler_;
   }
   if (bias_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      bias_filler = ::google::protobuf::internal::GetOwnedMessage(
+      bias_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, bias_filler, submessage_arena);
     }
     set_has_bias_filler();
@@ -27607,11 +27607,11 @@ inline void SliceParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 SliceParameter::axis() const {
+inline ::cv::protobuf::int32 SliceParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SliceParameter.axis)
   return axis_;
 }
-inline void SliceParameter::set_axis(::google::protobuf::int32 value) {
+inline void SliceParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SliceParameter.axis)
@@ -27624,24 +27624,24 @@ inline int SliceParameter::slice_point_size() const {
 inline void SliceParameter::clear_slice_point() {
   slice_point_.Clear();
 }
-inline ::google::protobuf::uint32 SliceParameter::slice_point(int index) const {
+inline ::cv::protobuf::uint32 SliceParameter::slice_point(int index) const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SliceParameter.slice_point)
   return slice_point_.Get(index);
 }
-inline void SliceParameter::set_slice_point(int index, ::google::protobuf::uint32 value) {
+inline void SliceParameter::set_slice_point(int index, ::cv::protobuf::uint32 value) {
   slice_point_.Set(index, value);
   // @@protoc_insertion_point(field_set:opencv_caffe.SliceParameter.slice_point)
 }
-inline void SliceParameter::add_slice_point(::google::protobuf::uint32 value) {
+inline void SliceParameter::add_slice_point(::cv::protobuf::uint32 value) {
   slice_point_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.SliceParameter.slice_point)
 }
-inline const ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >&
+inline const ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >&
 SliceParameter::slice_point() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.SliceParameter.slice_point)
   return slice_point_;
 }
-inline ::google::protobuf::RepeatedField< ::google::protobuf::uint32 >*
+inline ::cv::protobuf::RepeatedField< ::cv::protobuf::uint32 >*
 SliceParameter::mutable_slice_point() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.SliceParameter.slice_point)
   return &slice_point_;
@@ -27661,11 +27661,11 @@ inline void SliceParameter::clear_slice_dim() {
   slice_dim_ = 1u;
   clear_has_slice_dim();
 }
-inline ::google::protobuf::uint32 SliceParameter::slice_dim() const {
+inline ::cv::protobuf::uint32 SliceParameter::slice_dim() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SliceParameter.slice_dim)
   return slice_dim_;
 }
-inline void SliceParameter::set_slice_dim(::google::protobuf::uint32 value) {
+inline void SliceParameter::set_slice_dim(::cv::protobuf::uint32 value) {
   set_has_slice_dim();
   slice_dim_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SliceParameter.slice_dim)
@@ -27714,11 +27714,11 @@ inline void SoftmaxParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 SoftmaxParameter::axis() const {
+inline ::cv::protobuf::int32 SoftmaxParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SoftmaxParameter.axis)
   return axis_;
 }
-inline void SoftmaxParameter::set_axis(::google::protobuf::int32 value) {
+inline void SoftmaxParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SoftmaxParameter.axis)
@@ -27771,11 +27771,11 @@ inline void TileParameter::clear_axis() {
   axis_ = 1;
   clear_has_axis();
 }
-inline ::google::protobuf::int32 TileParameter::axis() const {
+inline ::cv::protobuf::int32 TileParameter::axis() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.TileParameter.axis)
   return axis_;
 }
-inline void TileParameter::set_axis(::google::protobuf::int32 value) {
+inline void TileParameter::set_axis(::cv::protobuf::int32 value) {
   set_has_axis();
   axis_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.TileParameter.axis)
@@ -27795,11 +27795,11 @@ inline void TileParameter::clear_tiles() {
   tiles_ = 0;
   clear_has_tiles();
 }
-inline ::google::protobuf::int32 TileParameter::tiles() const {
+inline ::cv::protobuf::int32 TileParameter::tiles() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.TileParameter.tiles)
   return tiles_;
 }
-inline void TileParameter::set_tiles(::google::protobuf::int32 value) {
+inline void TileParameter::set_tiles(::cv::protobuf::int32 value) {
   set_has_tiles();
   tiles_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.TileParameter.tiles)
@@ -27848,7 +27848,7 @@ inline void WindowDataParameter::clear_has_source() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void WindowDataParameter::clear_source() {
-  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  source_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_source();
 }
 inline const ::std::string& WindowDataParameter::source() const {
@@ -27857,38 +27857,38 @@ inline const ::std::string& WindowDataParameter::source() const {
 }
 inline void WindowDataParameter::set_source(const ::std::string& value) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.WindowDataParameter.source)
 }
 #if LANG_CXX11
 inline void WindowDataParameter::set_source(::std::string&& value) {
   set_has_source();
   source_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.WindowDataParameter.source)
 }
 #endif
 inline void WindowDataParameter::set_source(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.WindowDataParameter.source)
 }
 inline void WindowDataParameter::set_source(const char* value, size_t size) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.WindowDataParameter.source)
 }
 inline ::std::string* WindowDataParameter::mutable_source() {
   set_has_source();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.WindowDataParameter.source)
-  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* WindowDataParameter::release_source() {
   // @@protoc_insertion_point(field_release:opencv_caffe.WindowDataParameter.source)
   clear_has_source();
-  return source_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void WindowDataParameter::set_allocated_source(::std::string* source) {
   if (source != NULL) {
@@ -27896,7 +27896,7 @@ inline void WindowDataParameter::set_allocated_source(::std::string* source) {
   } else {
     clear_has_source();
   }
-  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
+  source_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.WindowDataParameter.source)
 }
 
@@ -27935,7 +27935,7 @@ inline void WindowDataParameter::clear_has_mean_file() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void WindowDataParameter::clear_mean_file() {
-  mean_file_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  mean_file_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_mean_file();
 }
 inline const ::std::string& WindowDataParameter::mean_file() const {
@@ -27944,38 +27944,38 @@ inline const ::std::string& WindowDataParameter::mean_file() const {
 }
 inline void WindowDataParameter::set_mean_file(const ::std::string& value) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.WindowDataParameter.mean_file)
 }
 #if LANG_CXX11
 inline void WindowDataParameter::set_mean_file(::std::string&& value) {
   set_has_mean_file();
   mean_file_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.WindowDataParameter.mean_file)
 }
 #endif
 inline void WindowDataParameter::set_mean_file(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.WindowDataParameter.mean_file)
 }
 inline void WindowDataParameter::set_mean_file(const char* value, size_t size) {
   set_has_mean_file();
-  mean_file_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  mean_file_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.WindowDataParameter.mean_file)
 }
 inline ::std::string* WindowDataParameter::mutable_mean_file() {
   set_has_mean_file();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.WindowDataParameter.mean_file)
-  return mean_file_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* WindowDataParameter::release_mean_file() {
   // @@protoc_insertion_point(field_release:opencv_caffe.WindowDataParameter.mean_file)
   clear_has_mean_file();
-  return mean_file_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return mean_file_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void WindowDataParameter::set_allocated_mean_file(::std::string* mean_file) {
   if (mean_file != NULL) {
@@ -27983,7 +27983,7 @@ inline void WindowDataParameter::set_allocated_mean_file(::std::string* mean_fil
   } else {
     clear_has_mean_file();
   }
-  mean_file_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
+  mean_file_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), mean_file);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.WindowDataParameter.mean_file)
 }
 
@@ -28001,11 +28001,11 @@ inline void WindowDataParameter::clear_batch_size() {
   batch_size_ = 0u;
   clear_has_batch_size();
 }
-inline ::google::protobuf::uint32 WindowDataParameter::batch_size() const {
+inline ::cv::protobuf::uint32 WindowDataParameter::batch_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.WindowDataParameter.batch_size)
   return batch_size_;
 }
-inline void WindowDataParameter::set_batch_size(::google::protobuf::uint32 value) {
+inline void WindowDataParameter::set_batch_size(::cv::protobuf::uint32 value) {
   set_has_batch_size();
   batch_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.WindowDataParameter.batch_size)
@@ -28025,11 +28025,11 @@ inline void WindowDataParameter::clear_crop_size() {
   crop_size_ = 0u;
   clear_has_crop_size();
 }
-inline ::google::protobuf::uint32 WindowDataParameter::crop_size() const {
+inline ::cv::protobuf::uint32 WindowDataParameter::crop_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.WindowDataParameter.crop_size)
   return crop_size_;
 }
-inline void WindowDataParameter::set_crop_size(::google::protobuf::uint32 value) {
+inline void WindowDataParameter::set_crop_size(::cv::protobuf::uint32 value) {
   set_has_crop_size();
   crop_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.WindowDataParameter.crop_size)
@@ -28145,11 +28145,11 @@ inline void WindowDataParameter::clear_context_pad() {
   context_pad_ = 0u;
   clear_has_context_pad();
 }
-inline ::google::protobuf::uint32 WindowDataParameter::context_pad() const {
+inline ::cv::protobuf::uint32 WindowDataParameter::context_pad() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.WindowDataParameter.context_pad)
   return context_pad_;
 }
-inline void WindowDataParameter::set_context_pad(::google::protobuf::uint32 value) {
+inline void WindowDataParameter::set_context_pad(::cv::protobuf::uint32 value) {
   set_has_context_pad();
   context_pad_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.WindowDataParameter.context_pad)
@@ -28253,7 +28253,7 @@ inline void WindowDataParameter::clear_has_root_folder() {
   _has_bits_[0] &= ~0x00000008u;
 }
 inline void WindowDataParameter::clear_root_folder() {
-  root_folder_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  root_folder_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_root_folder();
 }
 inline const ::std::string& WindowDataParameter::root_folder() const {
@@ -28262,38 +28262,38 @@ inline const ::std::string& WindowDataParameter::root_folder() const {
 }
 inline void WindowDataParameter::set_root_folder(const ::std::string& value) {
   set_has_root_folder();
-  root_folder_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  root_folder_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.WindowDataParameter.root_folder)
 }
 #if LANG_CXX11
 inline void WindowDataParameter::set_root_folder(::std::string&& value) {
   set_has_root_folder();
   root_folder_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.WindowDataParameter.root_folder)
 }
 #endif
 inline void WindowDataParameter::set_root_folder(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_root_folder();
-  root_folder_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  root_folder_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.WindowDataParameter.root_folder)
 }
 inline void WindowDataParameter::set_root_folder(const char* value, size_t size) {
   set_has_root_folder();
-  root_folder_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  root_folder_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.WindowDataParameter.root_folder)
 }
 inline ::std::string* WindowDataParameter::mutable_root_folder() {
   set_has_root_folder();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.WindowDataParameter.root_folder)
-  return root_folder_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return root_folder_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* WindowDataParameter::release_root_folder() {
   // @@protoc_insertion_point(field_release:opencv_caffe.WindowDataParameter.root_folder)
   clear_has_root_folder();
-  return root_folder_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return root_folder_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void WindowDataParameter::set_allocated_root_folder(::std::string* root_folder) {
   if (root_folder != NULL) {
@@ -28301,7 +28301,7 @@ inline void WindowDataParameter::set_allocated_root_folder(::std::string* root_f
   } else {
     clear_has_root_folder();
   }
-  root_folder_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), root_folder);
+  root_folder_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), root_folder);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.WindowDataParameter.root_folder)
 }
 
@@ -28323,11 +28323,11 @@ inline void SPPParameter::clear_pyramid_height() {
   pyramid_height_ = 0u;
   clear_has_pyramid_height();
 }
-inline ::google::protobuf::uint32 SPPParameter::pyramid_height() const {
+inline ::cv::protobuf::uint32 SPPParameter::pyramid_height() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.SPPParameter.pyramid_height)
   return pyramid_height_;
 }
-inline void SPPParameter::set_pyramid_height(::google::protobuf::uint32 value) {
+inline void SPPParameter::set_pyramid_height(::cv::protobuf::uint32 value) {
   set_has_pyramid_height();
   pyramid_height_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.SPPParameter.pyramid_height)
@@ -28445,12 +28445,12 @@ inline void V1LayerParameter::add_bottom(const char* value, size_t size) {
   bottom_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.V1LayerParameter.bottom)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 V1LayerParameter::bottom() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.bottom)
   return bottom_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 V1LayerParameter::mutable_bottom() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.bottom)
   return &bottom_;
@@ -28514,12 +28514,12 @@ inline void V1LayerParameter::add_top(const char* value, size_t size) {
   top_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.V1LayerParameter.top)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 V1LayerParameter::top() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.top)
   return top_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 V1LayerParameter::mutable_top() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.top)
   return &top_;
@@ -28536,7 +28536,7 @@ inline void V1LayerParameter::clear_has_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void V1LayerParameter::clear_name() {
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_name();
 }
 inline const ::std::string& V1LayerParameter::name() const {
@@ -28545,38 +28545,38 @@ inline const ::std::string& V1LayerParameter::name() const {
 }
 inline void V1LayerParameter::set_name(const ::std::string& value) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.V1LayerParameter.name)
 }
 #if LANG_CXX11
 inline void V1LayerParameter::set_name(::std::string&& value) {
   set_has_name();
   name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.V1LayerParameter.name)
 }
 #endif
 inline void V1LayerParameter::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.V1LayerParameter.name)
 }
 inline void V1LayerParameter::set_name(const char* value, size_t size) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.V1LayerParameter.name)
 }
 inline ::std::string* V1LayerParameter::mutable_name() {
   set_has_name();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.V1LayerParameter.name)
-  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* V1LayerParameter::release_name() {
   // @@protoc_insertion_point(field_release:opencv_caffe.V1LayerParameter.name)
   clear_has_name();
-  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void V1LayerParameter::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -28584,7 +28584,7 @@ inline void V1LayerParameter::set_allocated_name(::std::string* name) {
   } else {
     clear_has_name();
   }
-  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  name_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.V1LayerParameter.name)
 }
 
@@ -28607,12 +28607,12 @@ inline ::opencv_caffe::NetStateRule* V1LayerParameter::add_include() {
   // @@protoc_insertion_point(field_add:opencv_caffe.V1LayerParameter.include)
   return include_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
 V1LayerParameter::mutable_include() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.include)
   return &include_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
 V1LayerParameter::include() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.include)
   return include_;
@@ -28637,12 +28637,12 @@ inline ::opencv_caffe::NetStateRule* V1LayerParameter::add_exclude() {
   // @@protoc_insertion_point(field_add:opencv_caffe.V1LayerParameter.exclude)
   return exclude_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >*
 V1LayerParameter::mutable_exclude() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.exclude)
   return &exclude_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::NetStateRule >&
 V1LayerParameter::exclude() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.exclude)
   return exclude_;
@@ -28692,12 +28692,12 @@ inline ::opencv_caffe::BlobProto* V1LayerParameter::add_blobs() {
   // @@protoc_insertion_point(field_add:opencv_caffe.V1LayerParameter.blobs)
   return blobs_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
 V1LayerParameter::mutable_blobs() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.blobs)
   return &blobs_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
 V1LayerParameter::blobs() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.blobs)
   return blobs_;
@@ -28761,12 +28761,12 @@ inline void V1LayerParameter::add_param(const char* value, size_t size) {
   param_.Add()->assign(reinterpret_cast<const char*>(value), size);
   // @@protoc_insertion_point(field_add_pointer:opencv_caffe.V1LayerParameter.param)
 }
-inline const ::google::protobuf::RepeatedPtrField< ::std::string>&
+inline const ::cv::protobuf::RepeatedPtrField< ::std::string>&
 V1LayerParameter::param() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.param)
   return param_;
 }
-inline ::google::protobuf::RepeatedPtrField< ::std::string>*
+inline ::cv::protobuf::RepeatedPtrField< ::std::string>*
 V1LayerParameter::mutable_param() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.param)
   return &param_;
@@ -28793,12 +28793,12 @@ inline void V1LayerParameter::add_blob_share_mode(::opencv_caffe::V1LayerParamet
   blob_share_mode_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.V1LayerParameter.blob_share_mode)
 }
-inline const ::google::protobuf::RepeatedField<int>&
+inline const ::cv::protobuf::RepeatedField<int>&
 V1LayerParameter::blob_share_mode() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.blob_share_mode)
   return blob_share_mode_;
 }
-inline ::google::protobuf::RepeatedField<int>*
+inline ::cv::protobuf::RepeatedField<int>*
 V1LayerParameter::mutable_blob_share_mode() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.blob_share_mode)
   return &blob_share_mode_;
@@ -28823,12 +28823,12 @@ inline void V1LayerParameter::add_blobs_lr(float value) {
   blobs_lr_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.V1LayerParameter.blobs_lr)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 V1LayerParameter::blobs_lr() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.blobs_lr)
   return blobs_lr_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 V1LayerParameter::mutable_blobs_lr() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.blobs_lr)
   return &blobs_lr_;
@@ -28853,12 +28853,12 @@ inline void V1LayerParameter::add_weight_decay(float value) {
   weight_decay_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.V1LayerParameter.weight_decay)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 V1LayerParameter::weight_decay() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.weight_decay)
   return weight_decay_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 V1LayerParameter::mutable_weight_decay() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.weight_decay)
   return &weight_decay_;
@@ -28883,12 +28883,12 @@ inline void V1LayerParameter::add_loss_weight(float value) {
   loss_weight_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.V1LayerParameter.loss_weight)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 V1LayerParameter::loss_weight() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V1LayerParameter.loss_weight)
   return loss_weight_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 V1LayerParameter::mutable_loss_weight() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V1LayerParameter.loss_weight)
   return &loss_weight_;
@@ -28930,14 +28930,14 @@ inline ::opencv_caffe::AccuracyParameter* V1LayerParameter::mutable_accuracy_par
   return accuracy_param_;
 }
 inline void V1LayerParameter::set_allocated_accuracy_param(::opencv_caffe::AccuracyParameter* accuracy_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete accuracy_param_;
   }
   if (accuracy_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      accuracy_param = ::google::protobuf::internal::GetOwnedMessage(
+      accuracy_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, accuracy_param, submessage_arena);
     }
     set_has_accuracy_param();
@@ -28984,14 +28984,14 @@ inline ::opencv_caffe::ArgMaxParameter* V1LayerParameter::mutable_argmax_param()
   return argmax_param_;
 }
 inline void V1LayerParameter::set_allocated_argmax_param(::opencv_caffe::ArgMaxParameter* argmax_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete argmax_param_;
   }
   if (argmax_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      argmax_param = ::google::protobuf::internal::GetOwnedMessage(
+      argmax_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, argmax_param, submessage_arena);
     }
     set_has_argmax_param();
@@ -29038,14 +29038,14 @@ inline ::opencv_caffe::ConcatParameter* V1LayerParameter::mutable_concat_param()
   return concat_param_;
 }
 inline void V1LayerParameter::set_allocated_concat_param(::opencv_caffe::ConcatParameter* concat_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete concat_param_;
   }
   if (concat_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      concat_param = ::google::protobuf::internal::GetOwnedMessage(
+      concat_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, concat_param, submessage_arena);
     }
     set_has_concat_param();
@@ -29092,14 +29092,14 @@ inline ::opencv_caffe::ContrastiveLossParameter* V1LayerParameter::mutable_contr
   return contrastive_loss_param_;
 }
 inline void V1LayerParameter::set_allocated_contrastive_loss_param(::opencv_caffe::ContrastiveLossParameter* contrastive_loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete contrastive_loss_param_;
   }
   if (contrastive_loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      contrastive_loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      contrastive_loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, contrastive_loss_param, submessage_arena);
     }
     set_has_contrastive_loss_param();
@@ -29146,14 +29146,14 @@ inline ::opencv_caffe::ConvolutionParameter* V1LayerParameter::mutable_convoluti
   return convolution_param_;
 }
 inline void V1LayerParameter::set_allocated_convolution_param(::opencv_caffe::ConvolutionParameter* convolution_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete convolution_param_;
   }
   if (convolution_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      convolution_param = ::google::protobuf::internal::GetOwnedMessage(
+      convolution_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, convolution_param, submessage_arena);
     }
     set_has_convolution_param();
@@ -29200,14 +29200,14 @@ inline ::opencv_caffe::DataParameter* V1LayerParameter::mutable_data_param() {
   return data_param_;
 }
 inline void V1LayerParameter::set_allocated_data_param(::opencv_caffe::DataParameter* data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete data_param_;
   }
   if (data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      data_param = ::google::protobuf::internal::GetOwnedMessage(
+      data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, data_param, submessage_arena);
     }
     set_has_data_param();
@@ -29254,14 +29254,14 @@ inline ::opencv_caffe::DropoutParameter* V1LayerParameter::mutable_dropout_param
   return dropout_param_;
 }
 inline void V1LayerParameter::set_allocated_dropout_param(::opencv_caffe::DropoutParameter* dropout_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete dropout_param_;
   }
   if (dropout_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      dropout_param = ::google::protobuf::internal::GetOwnedMessage(
+      dropout_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, dropout_param, submessage_arena);
     }
     set_has_dropout_param();
@@ -29308,14 +29308,14 @@ inline ::opencv_caffe::DummyDataParameter* V1LayerParameter::mutable_dummy_data_
   return dummy_data_param_;
 }
 inline void V1LayerParameter::set_allocated_dummy_data_param(::opencv_caffe::DummyDataParameter* dummy_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete dummy_data_param_;
   }
   if (dummy_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      dummy_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      dummy_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, dummy_data_param, submessage_arena);
     }
     set_has_dummy_data_param();
@@ -29362,14 +29362,14 @@ inline ::opencv_caffe::EltwiseParameter* V1LayerParameter::mutable_eltwise_param
   return eltwise_param_;
 }
 inline void V1LayerParameter::set_allocated_eltwise_param(::opencv_caffe::EltwiseParameter* eltwise_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete eltwise_param_;
   }
   if (eltwise_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      eltwise_param = ::google::protobuf::internal::GetOwnedMessage(
+      eltwise_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, eltwise_param, submessage_arena);
     }
     set_has_eltwise_param();
@@ -29416,14 +29416,14 @@ inline ::opencv_caffe::ExpParameter* V1LayerParameter::mutable_exp_param() {
   return exp_param_;
 }
 inline void V1LayerParameter::set_allocated_exp_param(::opencv_caffe::ExpParameter* exp_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete exp_param_;
   }
   if (exp_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      exp_param = ::google::protobuf::internal::GetOwnedMessage(
+      exp_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, exp_param, submessage_arena);
     }
     set_has_exp_param();
@@ -29470,14 +29470,14 @@ inline ::opencv_caffe::HDF5DataParameter* V1LayerParameter::mutable_hdf5_data_pa
   return hdf5_data_param_;
 }
 inline void V1LayerParameter::set_allocated_hdf5_data_param(::opencv_caffe::HDF5DataParameter* hdf5_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete hdf5_data_param_;
   }
   if (hdf5_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      hdf5_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      hdf5_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, hdf5_data_param, submessage_arena);
     }
     set_has_hdf5_data_param();
@@ -29524,14 +29524,14 @@ inline ::opencv_caffe::HDF5OutputParameter* V1LayerParameter::mutable_hdf5_outpu
   return hdf5_output_param_;
 }
 inline void V1LayerParameter::set_allocated_hdf5_output_param(::opencv_caffe::HDF5OutputParameter* hdf5_output_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete hdf5_output_param_;
   }
   if (hdf5_output_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      hdf5_output_param = ::google::protobuf::internal::GetOwnedMessage(
+      hdf5_output_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, hdf5_output_param, submessage_arena);
     }
     set_has_hdf5_output_param();
@@ -29578,14 +29578,14 @@ inline ::opencv_caffe::HingeLossParameter* V1LayerParameter::mutable_hinge_loss_
   return hinge_loss_param_;
 }
 inline void V1LayerParameter::set_allocated_hinge_loss_param(::opencv_caffe::HingeLossParameter* hinge_loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete hinge_loss_param_;
   }
   if (hinge_loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      hinge_loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      hinge_loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, hinge_loss_param, submessage_arena);
     }
     set_has_hinge_loss_param();
@@ -29632,14 +29632,14 @@ inline ::opencv_caffe::ImageDataParameter* V1LayerParameter::mutable_image_data_
   return image_data_param_;
 }
 inline void V1LayerParameter::set_allocated_image_data_param(::opencv_caffe::ImageDataParameter* image_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete image_data_param_;
   }
   if (image_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      image_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      image_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, image_data_param, submessage_arena);
     }
     set_has_image_data_param();
@@ -29686,14 +29686,14 @@ inline ::opencv_caffe::InfogainLossParameter* V1LayerParameter::mutable_infogain
   return infogain_loss_param_;
 }
 inline void V1LayerParameter::set_allocated_infogain_loss_param(::opencv_caffe::InfogainLossParameter* infogain_loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete infogain_loss_param_;
   }
   if (infogain_loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      infogain_loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      infogain_loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, infogain_loss_param, submessage_arena);
     }
     set_has_infogain_loss_param();
@@ -29740,14 +29740,14 @@ inline ::opencv_caffe::InnerProductParameter* V1LayerParameter::mutable_inner_pr
   return inner_product_param_;
 }
 inline void V1LayerParameter::set_allocated_inner_product_param(::opencv_caffe::InnerProductParameter* inner_product_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete inner_product_param_;
   }
   if (inner_product_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      inner_product_param = ::google::protobuf::internal::GetOwnedMessage(
+      inner_product_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, inner_product_param, submessage_arena);
     }
     set_has_inner_product_param();
@@ -29794,14 +29794,14 @@ inline ::opencv_caffe::LRNParameter* V1LayerParameter::mutable_lrn_param() {
   return lrn_param_;
 }
 inline void V1LayerParameter::set_allocated_lrn_param(::opencv_caffe::LRNParameter* lrn_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete lrn_param_;
   }
   if (lrn_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      lrn_param = ::google::protobuf::internal::GetOwnedMessage(
+      lrn_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, lrn_param, submessage_arena);
     }
     set_has_lrn_param();
@@ -29848,14 +29848,14 @@ inline ::opencv_caffe::MemoryDataParameter* V1LayerParameter::mutable_memory_dat
   return memory_data_param_;
 }
 inline void V1LayerParameter::set_allocated_memory_data_param(::opencv_caffe::MemoryDataParameter* memory_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete memory_data_param_;
   }
   if (memory_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      memory_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      memory_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, memory_data_param, submessage_arena);
     }
     set_has_memory_data_param();
@@ -29902,14 +29902,14 @@ inline ::opencv_caffe::MVNParameter* V1LayerParameter::mutable_mvn_param() {
   return mvn_param_;
 }
 inline void V1LayerParameter::set_allocated_mvn_param(::opencv_caffe::MVNParameter* mvn_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete mvn_param_;
   }
   if (mvn_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      mvn_param = ::google::protobuf::internal::GetOwnedMessage(
+      mvn_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, mvn_param, submessage_arena);
     }
     set_has_mvn_param();
@@ -29956,14 +29956,14 @@ inline ::opencv_caffe::PoolingParameter* V1LayerParameter::mutable_pooling_param
   return pooling_param_;
 }
 inline void V1LayerParameter::set_allocated_pooling_param(::opencv_caffe::PoolingParameter* pooling_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete pooling_param_;
   }
   if (pooling_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      pooling_param = ::google::protobuf::internal::GetOwnedMessage(
+      pooling_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, pooling_param, submessage_arena);
     }
     set_has_pooling_param();
@@ -30010,14 +30010,14 @@ inline ::opencv_caffe::PowerParameter* V1LayerParameter::mutable_power_param() {
   return power_param_;
 }
 inline void V1LayerParameter::set_allocated_power_param(::opencv_caffe::PowerParameter* power_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete power_param_;
   }
   if (power_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      power_param = ::google::protobuf::internal::GetOwnedMessage(
+      power_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, power_param, submessage_arena);
     }
     set_has_power_param();
@@ -30064,14 +30064,14 @@ inline ::opencv_caffe::ReLUParameter* V1LayerParameter::mutable_relu_param() {
   return relu_param_;
 }
 inline void V1LayerParameter::set_allocated_relu_param(::opencv_caffe::ReLUParameter* relu_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete relu_param_;
   }
   if (relu_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      relu_param = ::google::protobuf::internal::GetOwnedMessage(
+      relu_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, relu_param, submessage_arena);
     }
     set_has_relu_param();
@@ -30118,14 +30118,14 @@ inline ::opencv_caffe::SigmoidParameter* V1LayerParameter::mutable_sigmoid_param
   return sigmoid_param_;
 }
 inline void V1LayerParameter::set_allocated_sigmoid_param(::opencv_caffe::SigmoidParameter* sigmoid_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete sigmoid_param_;
   }
   if (sigmoid_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      sigmoid_param = ::google::protobuf::internal::GetOwnedMessage(
+      sigmoid_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, sigmoid_param, submessage_arena);
     }
     set_has_sigmoid_param();
@@ -30172,14 +30172,14 @@ inline ::opencv_caffe::SoftmaxParameter* V1LayerParameter::mutable_softmax_param
   return softmax_param_;
 }
 inline void V1LayerParameter::set_allocated_softmax_param(::opencv_caffe::SoftmaxParameter* softmax_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete softmax_param_;
   }
   if (softmax_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      softmax_param = ::google::protobuf::internal::GetOwnedMessage(
+      softmax_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, softmax_param, submessage_arena);
     }
     set_has_softmax_param();
@@ -30226,14 +30226,14 @@ inline ::opencv_caffe::SliceParameter* V1LayerParameter::mutable_slice_param() {
   return slice_param_;
 }
 inline void V1LayerParameter::set_allocated_slice_param(::opencv_caffe::SliceParameter* slice_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete slice_param_;
   }
   if (slice_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      slice_param = ::google::protobuf::internal::GetOwnedMessage(
+      slice_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, slice_param, submessage_arena);
     }
     set_has_slice_param();
@@ -30280,14 +30280,14 @@ inline ::opencv_caffe::TanHParameter* V1LayerParameter::mutable_tanh_param() {
   return tanh_param_;
 }
 inline void V1LayerParameter::set_allocated_tanh_param(::opencv_caffe::TanHParameter* tanh_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete tanh_param_;
   }
   if (tanh_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      tanh_param = ::google::protobuf::internal::GetOwnedMessage(
+      tanh_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, tanh_param, submessage_arena);
     }
     set_has_tanh_param();
@@ -30334,14 +30334,14 @@ inline ::opencv_caffe::ThresholdParameter* V1LayerParameter::mutable_threshold_p
   return threshold_param_;
 }
 inline void V1LayerParameter::set_allocated_threshold_param(::opencv_caffe::ThresholdParameter* threshold_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete threshold_param_;
   }
   if (threshold_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      threshold_param = ::google::protobuf::internal::GetOwnedMessage(
+      threshold_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, threshold_param, submessage_arena);
     }
     set_has_threshold_param();
@@ -30388,14 +30388,14 @@ inline ::opencv_caffe::WindowDataParameter* V1LayerParameter::mutable_window_dat
   return window_data_param_;
 }
 inline void V1LayerParameter::set_allocated_window_data_param(::opencv_caffe::WindowDataParameter* window_data_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete window_data_param_;
   }
   if (window_data_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      window_data_param = ::google::protobuf::internal::GetOwnedMessage(
+      window_data_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, window_data_param, submessage_arena);
     }
     set_has_window_data_param();
@@ -30442,14 +30442,14 @@ inline ::opencv_caffe::TransformationParameter* V1LayerParameter::mutable_transf
   return transform_param_;
 }
 inline void V1LayerParameter::set_allocated_transform_param(::opencv_caffe::TransformationParameter* transform_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete transform_param_;
   }
   if (transform_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      transform_param = ::google::protobuf::internal::GetOwnedMessage(
+      transform_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, transform_param, submessage_arena);
     }
     set_has_transform_param();
@@ -30496,14 +30496,14 @@ inline ::opencv_caffe::LossParameter* V1LayerParameter::mutable_loss_param() {
   return loss_param_;
 }
 inline void V1LayerParameter::set_allocated_loss_param(::opencv_caffe::LossParameter* loss_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete loss_param_;
   }
   if (loss_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      loss_param = ::google::protobuf::internal::GetOwnedMessage(
+      loss_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, loss_param, submessage_arena);
     }
     set_has_loss_param();
@@ -30550,14 +30550,14 @@ inline ::opencv_caffe::V0LayerParameter* V1LayerParameter::mutable_layer() {
   return layer_;
 }
 inline void V1LayerParameter::set_allocated_layer(::opencv_caffe::V0LayerParameter* layer) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete layer_;
   }
   if (layer) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      layer = ::google::protobuf::internal::GetOwnedMessage(
+      layer = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, layer, submessage_arena);
     }
     set_has_layer();
@@ -30583,7 +30583,7 @@ inline void V0LayerParameter::clear_has_name() {
   _has_bits_[0] &= ~0x00000001u;
 }
 inline void V0LayerParameter::clear_name() {
-  name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  name_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_name();
 }
 inline const ::std::string& V0LayerParameter::name() const {
@@ -30592,38 +30592,38 @@ inline const ::std::string& V0LayerParameter::name() const {
 }
 inline void V0LayerParameter::set_name(const ::std::string& value) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.name)
 }
 #if LANG_CXX11
 inline void V0LayerParameter::set_name(::std::string&& value) {
   set_has_name();
   name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.V0LayerParameter.name)
 }
 #endif
 inline void V0LayerParameter::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.V0LayerParameter.name)
 }
 inline void V0LayerParameter::set_name(const char* value, size_t size) {
   set_has_name();
-  name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.V0LayerParameter.name)
 }
 inline ::std::string* V0LayerParameter::mutable_name() {
   set_has_name();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.V0LayerParameter.name)
-  return name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* V0LayerParameter::release_name() {
   // @@protoc_insertion_point(field_release:opencv_caffe.V0LayerParameter.name)
   clear_has_name();
-  return name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return name_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void V0LayerParameter::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -30631,7 +30631,7 @@ inline void V0LayerParameter::set_allocated_name(::std::string* name) {
   } else {
     clear_has_name();
   }
-  name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), name);
+  name_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.V0LayerParameter.name)
 }
 
@@ -30646,7 +30646,7 @@ inline void V0LayerParameter::clear_has_type() {
   _has_bits_[0] &= ~0x00000002u;
 }
 inline void V0LayerParameter::clear_type() {
-  type_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  type_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_type();
 }
 inline const ::std::string& V0LayerParameter::type() const {
@@ -30655,38 +30655,38 @@ inline const ::std::string& V0LayerParameter::type() const {
 }
 inline void V0LayerParameter::set_type(const ::std::string& value) {
   set_has_type();
-  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  type_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.type)
 }
 #if LANG_CXX11
 inline void V0LayerParameter::set_type(::std::string&& value) {
   set_has_type();
   type_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.V0LayerParameter.type)
 }
 #endif
 inline void V0LayerParameter::set_type(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_type();
-  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  type_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.V0LayerParameter.type)
 }
 inline void V0LayerParameter::set_type(const char* value, size_t size) {
   set_has_type();
-  type_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  type_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.V0LayerParameter.type)
 }
 inline ::std::string* V0LayerParameter::mutable_type() {
   set_has_type();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.V0LayerParameter.type)
-  return type_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return type_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* V0LayerParameter::release_type() {
   // @@protoc_insertion_point(field_release:opencv_caffe.V0LayerParameter.type)
   clear_has_type();
-  return type_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return type_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void V0LayerParameter::set_allocated_type(::std::string* type) {
   if (type != NULL) {
@@ -30694,7 +30694,7 @@ inline void V0LayerParameter::set_allocated_type(::std::string* type) {
   } else {
     clear_has_type();
   }
-  type_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type);
+  type_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), type);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.V0LayerParameter.type)
 }
 
@@ -30712,11 +30712,11 @@ inline void V0LayerParameter::clear_num_output() {
   num_output_ = 0u;
   clear_has_num_output();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::num_output() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::num_output() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.num_output)
   return num_output_;
 }
-inline void V0LayerParameter::set_num_output(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_num_output(::cv::protobuf::uint32 value) {
   set_has_num_output();
   num_output_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.num_output)
@@ -30782,14 +30782,14 @@ inline ::opencv_caffe::FillerParameter* V0LayerParameter::mutable_weight_filler(
   return weight_filler_;
 }
 inline void V0LayerParameter::set_allocated_weight_filler(::opencv_caffe::FillerParameter* weight_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete weight_filler_;
   }
   if (weight_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      weight_filler = ::google::protobuf::internal::GetOwnedMessage(
+      weight_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, weight_filler, submessage_arena);
     }
     set_has_weight_filler();
@@ -30836,14 +30836,14 @@ inline ::opencv_caffe::FillerParameter* V0LayerParameter::mutable_bias_filler() 
   return bias_filler_;
 }
 inline void V0LayerParameter::set_allocated_bias_filler(::opencv_caffe::FillerParameter* bias_filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete bias_filler_;
   }
   if (bias_filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      bias_filler = ::google::protobuf::internal::GetOwnedMessage(
+      bias_filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, bias_filler, submessage_arena);
     }
     set_has_bias_filler();
@@ -30868,11 +30868,11 @@ inline void V0LayerParameter::clear_pad() {
   pad_ = 0u;
   clear_has_pad();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::pad() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::pad() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.pad)
   return pad_;
 }
-inline void V0LayerParameter::set_pad(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_pad(::cv::protobuf::uint32 value) {
   set_has_pad();
   pad_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.pad)
@@ -30892,11 +30892,11 @@ inline void V0LayerParameter::clear_kernelsize() {
   kernelsize_ = 0u;
   clear_has_kernelsize();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::kernelsize() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::kernelsize() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.kernelsize)
   return kernelsize_;
 }
-inline void V0LayerParameter::set_kernelsize(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_kernelsize(::cv::protobuf::uint32 value) {
   set_has_kernelsize();
   kernelsize_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.kernelsize)
@@ -30916,11 +30916,11 @@ inline void V0LayerParameter::clear_group() {
   group_ = 1u;
   clear_has_group();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::group() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::group() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.group)
   return group_;
 }
-inline void V0LayerParameter::set_group(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_group(::cv::protobuf::uint32 value) {
   set_has_group();
   group_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.group)
@@ -30940,11 +30940,11 @@ inline void V0LayerParameter::clear_stride() {
   stride_ = 1u;
   clear_has_stride();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::stride() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::stride() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.stride)
   return stride_;
 }
-inline void V0LayerParameter::set_stride(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_stride(::cv::protobuf::uint32 value) {
   set_has_stride();
   stride_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.stride)
@@ -31013,11 +31013,11 @@ inline void V0LayerParameter::clear_local_size() {
   local_size_ = 5u;
   clear_has_local_size();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::local_size() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::local_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.local_size)
   return local_size_;
 }
-inline void V0LayerParameter::set_local_size(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_local_size(::cv::protobuf::uint32 value) {
   set_has_local_size();
   local_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.local_size)
@@ -31106,7 +31106,7 @@ inline void V0LayerParameter::clear_has_source() {
   _has_bits_[0] &= ~0x00000004u;
 }
 inline void V0LayerParameter::clear_source() {
-  source_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  source_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_source();
 }
 inline const ::std::string& V0LayerParameter::source() const {
@@ -31115,38 +31115,38 @@ inline const ::std::string& V0LayerParameter::source() const {
 }
 inline void V0LayerParameter::set_source(const ::std::string& value) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.source)
 }
 #if LANG_CXX11
 inline void V0LayerParameter::set_source(::std::string&& value) {
   set_has_source();
   source_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.V0LayerParameter.source)
 }
 #endif
 inline void V0LayerParameter::set_source(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.V0LayerParameter.source)
 }
 inline void V0LayerParameter::set_source(const char* value, size_t size) {
   set_has_source();
-  source_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  source_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.V0LayerParameter.source)
 }
 inline ::std::string* V0LayerParameter::mutable_source() {
   set_has_source();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.V0LayerParameter.source)
-  return source_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* V0LayerParameter::release_source() {
   // @@protoc_insertion_point(field_release:opencv_caffe.V0LayerParameter.source)
   clear_has_source();
-  return source_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return source_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void V0LayerParameter::set_allocated_source(::std::string* source) {
   if (source != NULL) {
@@ -31154,7 +31154,7 @@ inline void V0LayerParameter::set_allocated_source(::std::string* source) {
   } else {
     clear_has_source();
   }
-  source_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), source);
+  source_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), source);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.V0LayerParameter.source)
 }
 
@@ -31193,7 +31193,7 @@ inline void V0LayerParameter::clear_has_meanfile() {
   _has_bits_[0] &= ~0x00000008u;
 }
 inline void V0LayerParameter::clear_meanfile() {
-  meanfile_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  meanfile_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
   clear_has_meanfile();
 }
 inline const ::std::string& V0LayerParameter::meanfile() const {
@@ -31202,38 +31202,38 @@ inline const ::std::string& V0LayerParameter::meanfile() const {
 }
 inline void V0LayerParameter::set_meanfile(const ::std::string& value) {
   set_has_meanfile();
-  meanfile_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  meanfile_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.meanfile)
 }
 #if LANG_CXX11
 inline void V0LayerParameter::set_meanfile(::std::string&& value) {
   set_has_meanfile();
   meanfile_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:opencv_caffe.V0LayerParameter.meanfile)
 }
 #endif
 inline void V0LayerParameter::set_meanfile(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   set_has_meanfile();
-  meanfile_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  meanfile_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:opencv_caffe.V0LayerParameter.meanfile)
 }
 inline void V0LayerParameter::set_meanfile(const char* value, size_t size) {
   set_has_meanfile();
-  meanfile_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  meanfile_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:opencv_caffe.V0LayerParameter.meanfile)
 }
 inline ::std::string* V0LayerParameter::mutable_meanfile() {
   set_has_meanfile();
   // @@protoc_insertion_point(field_mutable:opencv_caffe.V0LayerParameter.meanfile)
-  return meanfile_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return meanfile_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* V0LayerParameter::release_meanfile() {
   // @@protoc_insertion_point(field_release:opencv_caffe.V0LayerParameter.meanfile)
   clear_has_meanfile();
-  return meanfile_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return meanfile_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void V0LayerParameter::set_allocated_meanfile(::std::string* meanfile) {
   if (meanfile != NULL) {
@@ -31241,7 +31241,7 @@ inline void V0LayerParameter::set_allocated_meanfile(::std::string* meanfile) {
   } else {
     clear_has_meanfile();
   }
-  meanfile_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), meanfile);
+  meanfile_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), meanfile);
   // @@protoc_insertion_point(field_set_allocated:opencv_caffe.V0LayerParameter.meanfile)
 }
 
@@ -31259,11 +31259,11 @@ inline void V0LayerParameter::clear_batchsize() {
   batchsize_ = 0u;
   clear_has_batchsize();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::batchsize() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::batchsize() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.batchsize)
   return batchsize_;
 }
-inline void V0LayerParameter::set_batchsize(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_batchsize(::cv::protobuf::uint32 value) {
   set_has_batchsize();
   batchsize_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.batchsize)
@@ -31283,11 +31283,11 @@ inline void V0LayerParameter::clear_cropsize() {
   cropsize_ = 0u;
   clear_has_cropsize();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::cropsize() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::cropsize() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.cropsize)
   return cropsize_;
 }
-inline void V0LayerParameter::set_cropsize(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_cropsize(::cv::protobuf::uint32 value) {
   set_has_cropsize();
   cropsize_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.cropsize)
@@ -31336,12 +31336,12 @@ inline ::opencv_caffe::BlobProto* V0LayerParameter::add_blobs() {
   // @@protoc_insertion_point(field_add:opencv_caffe.V0LayerParameter.blobs)
   return blobs_.Add();
 }
-inline ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
+inline ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >*
 V0LayerParameter::mutable_blobs() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V0LayerParameter.blobs)
   return &blobs_;
 }
-inline const ::google::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
+inline const ::cv::protobuf::RepeatedPtrField< ::opencv_caffe::BlobProto >&
 V0LayerParameter::blobs() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V0LayerParameter.blobs)
   return blobs_;
@@ -31366,12 +31366,12 @@ inline void V0LayerParameter::add_blobs_lr(float value) {
   blobs_lr_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.V0LayerParameter.blobs_lr)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 V0LayerParameter::blobs_lr() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V0LayerParameter.blobs_lr)
   return blobs_lr_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 V0LayerParameter::mutable_blobs_lr() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V0LayerParameter.blobs_lr)
   return &blobs_lr_;
@@ -31396,12 +31396,12 @@ inline void V0LayerParameter::add_weight_decay(float value) {
   weight_decay_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.V0LayerParameter.weight_decay)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 V0LayerParameter::weight_decay() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.V0LayerParameter.weight_decay)
   return weight_decay_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 V0LayerParameter::mutable_weight_decay() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.V0LayerParameter.weight_decay)
   return &weight_decay_;
@@ -31421,11 +31421,11 @@ inline void V0LayerParameter::clear_rand_skip() {
   rand_skip_ = 0u;
   clear_has_rand_skip();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::rand_skip() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::rand_skip() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.rand_skip)
   return rand_skip_;
 }
-inline void V0LayerParameter::set_rand_skip(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_rand_skip(::cv::protobuf::uint32 value) {
   set_has_rand_skip();
   rand_skip_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.rand_skip)
@@ -31517,11 +31517,11 @@ inline void V0LayerParameter::clear_det_context_pad() {
   det_context_pad_ = 0u;
   clear_has_det_context_pad();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::det_context_pad() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::det_context_pad() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.det_context_pad)
   return det_context_pad_;
 }
-inline void V0LayerParameter::set_det_context_pad(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_det_context_pad(::cv::protobuf::uint32 value) {
   set_has_det_context_pad();
   det_context_pad_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.det_context_pad)
@@ -31604,11 +31604,11 @@ inline void V0LayerParameter::clear_new_num() {
   new_num_ = 0;
   clear_has_new_num();
 }
-inline ::google::protobuf::int32 V0LayerParameter::new_num() const {
+inline ::cv::protobuf::int32 V0LayerParameter::new_num() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.new_num)
   return new_num_;
 }
-inline void V0LayerParameter::set_new_num(::google::protobuf::int32 value) {
+inline void V0LayerParameter::set_new_num(::cv::protobuf::int32 value) {
   set_has_new_num();
   new_num_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.new_num)
@@ -31628,11 +31628,11 @@ inline void V0LayerParameter::clear_new_channels() {
   new_channels_ = 0;
   clear_has_new_channels();
 }
-inline ::google::protobuf::int32 V0LayerParameter::new_channels() const {
+inline ::cv::protobuf::int32 V0LayerParameter::new_channels() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.new_channels)
   return new_channels_;
 }
-inline void V0LayerParameter::set_new_channels(::google::protobuf::int32 value) {
+inline void V0LayerParameter::set_new_channels(::cv::protobuf::int32 value) {
   set_has_new_channels();
   new_channels_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.new_channels)
@@ -31652,11 +31652,11 @@ inline void V0LayerParameter::clear_new_height() {
   new_height_ = 0;
   clear_has_new_height();
 }
-inline ::google::protobuf::int32 V0LayerParameter::new_height() const {
+inline ::cv::protobuf::int32 V0LayerParameter::new_height() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.new_height)
   return new_height_;
 }
-inline void V0LayerParameter::set_new_height(::google::protobuf::int32 value) {
+inline void V0LayerParameter::set_new_height(::cv::protobuf::int32 value) {
   set_has_new_height();
   new_height_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.new_height)
@@ -31676,11 +31676,11 @@ inline void V0LayerParameter::clear_new_width() {
   new_width_ = 0;
   clear_has_new_width();
 }
-inline ::google::protobuf::int32 V0LayerParameter::new_width() const {
+inline ::cv::protobuf::int32 V0LayerParameter::new_width() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.new_width)
   return new_width_;
 }
-inline void V0LayerParameter::set_new_width(::google::protobuf::int32 value) {
+inline void V0LayerParameter::set_new_width(::cv::protobuf::int32 value) {
   set_has_new_width();
   new_width_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.new_width)
@@ -31724,11 +31724,11 @@ inline void V0LayerParameter::clear_concat_dim() {
   concat_dim_ = 1u;
   clear_has_concat_dim();
 }
-inline ::google::protobuf::uint32 V0LayerParameter::concat_dim() const {
+inline ::cv::protobuf::uint32 V0LayerParameter::concat_dim() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.V0LayerParameter.concat_dim)
   return concat_dim_;
 }
-inline void V0LayerParameter::set_concat_dim(::google::protobuf::uint32 value) {
+inline void V0LayerParameter::set_concat_dim(::cv::protobuf::uint32 value) {
   set_has_concat_dim();
   concat_dim_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.V0LayerParameter.concat_dim)
@@ -31770,14 +31770,14 @@ inline ::opencv_caffe::HDF5OutputParameter* V0LayerParameter::mutable_hdf5_outpu
   return hdf5_output_param_;
 }
 inline void V0LayerParameter::set_allocated_hdf5_output_param(::opencv_caffe::HDF5OutputParameter* hdf5_output_param) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete hdf5_output_param_;
   }
   if (hdf5_output_param) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      hdf5_output_param = ::google::protobuf::internal::GetOwnedMessage(
+      hdf5_output_param = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, hdf5_output_param, submessage_arena);
     }
     set_has_hdf5_output_param();
@@ -31828,14 +31828,14 @@ inline ::opencv_caffe::FillerParameter* PReLUParameter::mutable_filler() {
   return filler_;
 }
 inline void PReLUParameter::set_allocated_filler(::opencv_caffe::FillerParameter* filler) {
-  ::google::protobuf::Arena* message_arena = GetArenaNoVirtual();
+  ::cv::protobuf::Arena* message_arena = GetArenaNoVirtual();
   if (message_arena == NULL) {
     delete filler_;
   }
   if (filler) {
-    ::google::protobuf::Arena* submessage_arena = NULL;
+    ::cv::protobuf::Arena* submessage_arena = NULL;
     if (message_arena != submessage_arena) {
-      filler = ::google::protobuf::internal::GetOwnedMessage(
+      filler = ::cv::protobuf::internal::GetOwnedMessage(
           message_arena, filler, submessage_arena);
     }
     set_has_filler();
@@ -31984,11 +31984,11 @@ inline void NormalizedBBox::clear_label() {
   label_ = 0;
   clear_has_label();
 }
-inline ::google::protobuf::int32 NormalizedBBox::label() const {
+inline ::cv::protobuf::int32 NormalizedBBox::label() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.NormalizedBBox.label)
   return label_;
 }
-inline void NormalizedBBox::set_label(::google::protobuf::int32 value) {
+inline void NormalizedBBox::set_label(::cv::protobuf::int32 value) {
   set_has_label();
   label_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.NormalizedBBox.label)
@@ -32084,11 +32084,11 @@ inline void ROIPoolingParameter::clear_pooled_h() {
   pooled_h_ = 0u;
   clear_has_pooled_h();
 }
-inline ::google::protobuf::uint32 ROIPoolingParameter::pooled_h() const {
+inline ::cv::protobuf::uint32 ROIPoolingParameter::pooled_h() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ROIPoolingParameter.pooled_h)
   return pooled_h_;
 }
-inline void ROIPoolingParameter::set_pooled_h(::google::protobuf::uint32 value) {
+inline void ROIPoolingParameter::set_pooled_h(::cv::protobuf::uint32 value) {
   set_has_pooled_h();
   pooled_h_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ROIPoolingParameter.pooled_h)
@@ -32108,11 +32108,11 @@ inline void ROIPoolingParameter::clear_pooled_w() {
   pooled_w_ = 0u;
   clear_has_pooled_w();
 }
-inline ::google::protobuf::uint32 ROIPoolingParameter::pooled_w() const {
+inline ::cv::protobuf::uint32 ROIPoolingParameter::pooled_w() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ROIPoolingParameter.pooled_w)
   return pooled_w_;
 }
-inline void ROIPoolingParameter::set_pooled_w(::google::protobuf::uint32 value) {
+inline void ROIPoolingParameter::set_pooled_w(::cv::protobuf::uint32 value) {
   set_has_pooled_w();
   pooled_w_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ROIPoolingParameter.pooled_w)
@@ -32160,11 +32160,11 @@ inline void ProposalParameter::clear_feat_stride() {
   feat_stride_ = 16u;
   clear_has_feat_stride();
 }
-inline ::google::protobuf::uint32 ProposalParameter::feat_stride() const {
+inline ::cv::protobuf::uint32 ProposalParameter::feat_stride() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ProposalParameter.feat_stride)
   return feat_stride_;
 }
-inline void ProposalParameter::set_feat_stride(::google::protobuf::uint32 value) {
+inline void ProposalParameter::set_feat_stride(::cv::protobuf::uint32 value) {
   set_has_feat_stride();
   feat_stride_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ProposalParameter.feat_stride)
@@ -32184,11 +32184,11 @@ inline void ProposalParameter::clear_base_size() {
   base_size_ = 16u;
   clear_has_base_size();
 }
-inline ::google::protobuf::uint32 ProposalParameter::base_size() const {
+inline ::cv::protobuf::uint32 ProposalParameter::base_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ProposalParameter.base_size)
   return base_size_;
 }
-inline void ProposalParameter::set_base_size(::google::protobuf::uint32 value) {
+inline void ProposalParameter::set_base_size(::cv::protobuf::uint32 value) {
   set_has_base_size();
   base_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ProposalParameter.base_size)
@@ -32208,11 +32208,11 @@ inline void ProposalParameter::clear_min_size() {
   min_size_ = 16u;
   clear_has_min_size();
 }
-inline ::google::protobuf::uint32 ProposalParameter::min_size() const {
+inline ::cv::protobuf::uint32 ProposalParameter::min_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ProposalParameter.min_size)
   return min_size_;
 }
-inline void ProposalParameter::set_min_size(::google::protobuf::uint32 value) {
+inline void ProposalParameter::set_min_size(::cv::protobuf::uint32 value) {
   set_has_min_size();
   min_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ProposalParameter.min_size)
@@ -32237,12 +32237,12 @@ inline void ProposalParameter::add_ratio(float value) {
   ratio_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.ProposalParameter.ratio)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 ProposalParameter::ratio() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.ProposalParameter.ratio)
   return ratio_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 ProposalParameter::mutable_ratio() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.ProposalParameter.ratio)
   return &ratio_;
@@ -32267,12 +32267,12 @@ inline void ProposalParameter::add_scale(float value) {
   scale_.Add(value);
   // @@protoc_insertion_point(field_add:opencv_caffe.ProposalParameter.scale)
 }
-inline const ::google::protobuf::RepeatedField< float >&
+inline const ::cv::protobuf::RepeatedField< float >&
 ProposalParameter::scale() const {
   // @@protoc_insertion_point(field_list:opencv_caffe.ProposalParameter.scale)
   return scale_;
 }
-inline ::google::protobuf::RepeatedField< float >*
+inline ::cv::protobuf::RepeatedField< float >*
 ProposalParameter::mutable_scale() {
   // @@protoc_insertion_point(field_mutable_list:opencv_caffe.ProposalParameter.scale)
   return &scale_;
@@ -32292,11 +32292,11 @@ inline void ProposalParameter::clear_pre_nms_topn() {
   pre_nms_topn_ = 6000u;
   clear_has_pre_nms_topn();
 }
-inline ::google::protobuf::uint32 ProposalParameter::pre_nms_topn() const {
+inline ::cv::protobuf::uint32 ProposalParameter::pre_nms_topn() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ProposalParameter.pre_nms_topn)
   return pre_nms_topn_;
 }
-inline void ProposalParameter::set_pre_nms_topn(::google::protobuf::uint32 value) {
+inline void ProposalParameter::set_pre_nms_topn(::cv::protobuf::uint32 value) {
   set_has_pre_nms_topn();
   pre_nms_topn_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ProposalParameter.pre_nms_topn)
@@ -32316,11 +32316,11 @@ inline void ProposalParameter::clear_post_nms_topn() {
   post_nms_topn_ = 300u;
   clear_has_post_nms_topn();
 }
-inline ::google::protobuf::uint32 ProposalParameter::post_nms_topn() const {
+inline ::cv::protobuf::uint32 ProposalParameter::post_nms_topn() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.ProposalParameter.post_nms_topn)
   return post_nms_topn_;
 }
-inline void ProposalParameter::set_post_nms_topn(::google::protobuf::uint32 value) {
+inline void ProposalParameter::set_post_nms_topn(::cv::protobuf::uint32 value) {
   set_has_post_nms_topn();
   post_nms_topn_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.ProposalParameter.post_nms_topn)
@@ -32392,11 +32392,11 @@ inline void PSROIPoolingParameter::clear_output_dim() {
   output_dim_ = 0;
   clear_has_output_dim();
 }
-inline ::google::protobuf::int32 PSROIPoolingParameter::output_dim() const {
+inline ::cv::protobuf::int32 PSROIPoolingParameter::output_dim() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PSROIPoolingParameter.output_dim)
   return output_dim_;
 }
-inline void PSROIPoolingParameter::set_output_dim(::google::protobuf::int32 value) {
+inline void PSROIPoolingParameter::set_output_dim(::cv::protobuf::int32 value) {
   set_has_output_dim();
   output_dim_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PSROIPoolingParameter.output_dim)
@@ -32416,11 +32416,11 @@ inline void PSROIPoolingParameter::clear_group_size() {
   group_size_ = 0;
   clear_has_group_size();
 }
-inline ::google::protobuf::int32 PSROIPoolingParameter::group_size() const {
+inline ::cv::protobuf::int32 PSROIPoolingParameter::group_size() const {
   // @@protoc_insertion_point(field_get:opencv_caffe.PSROIPoolingParameter.group_size)
   return group_size_;
 }
-inline void PSROIPoolingParameter::set_group_size(::google::protobuf::int32 value) {
+inline void PSROIPoolingParameter::set_group_size(::cv::protobuf::int32 value) {
   set_has_group_size();
   group_size_ = value;
   // @@protoc_insertion_point(field_set:opencv_caffe.PSROIPoolingParameter.group_size)
@@ -32577,137 +32577,137 @@ inline void PSROIPoolingParameter::set_group_size(::google::protobuf::int32 valu
 namespace google {
 namespace protobuf {
 
-template <> struct is_proto_enum< ::opencv_caffe::PriorBoxParameter_CodeType> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::PriorBoxParameter_CodeType> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::PriorBoxParameter_CodeType>() {
   return ::opencv_caffe::PriorBoxParameter_CodeType_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::FillerParameter_VarianceNorm> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::FillerParameter_VarianceNorm> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::FillerParameter_VarianceNorm>() {
   return ::opencv_caffe::FillerParameter_VarianceNorm_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::SolverParameter_SnapshotFormat> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::SolverParameter_SnapshotFormat> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::SolverParameter_SnapshotFormat>() {
   return ::opencv_caffe::SolverParameter_SnapshotFormat_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::SolverParameter_SolverMode> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::SolverParameter_SolverMode> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::SolverParameter_SolverMode>() {
   return ::opencv_caffe::SolverParameter_SolverMode_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::SolverParameter_SolverType> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::SolverParameter_SolverType> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::SolverParameter_SolverType>() {
   return ::opencv_caffe::SolverParameter_SolverType_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::ParamSpec_DimCheckMode> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::ParamSpec_DimCheckMode> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::ParamSpec_DimCheckMode>() {
   return ::opencv_caffe::ParamSpec_DimCheckMode_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::LossParameter_NormalizationMode> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::LossParameter_NormalizationMode> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::LossParameter_NormalizationMode>() {
   return ::opencv_caffe::LossParameter_NormalizationMode_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::ConvolutionParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::ConvolutionParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::ConvolutionParameter_Engine>() {
   return ::opencv_caffe::ConvolutionParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::DataParameter_DB> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::DataParameter_DB> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::DataParameter_DB>() {
   return ::opencv_caffe::DataParameter_DB_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::EltwiseParameter_EltwiseOp> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::EltwiseParameter_EltwiseOp> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::EltwiseParameter_EltwiseOp>() {
   return ::opencv_caffe::EltwiseParameter_EltwiseOp_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::HingeLossParameter_Norm> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::HingeLossParameter_Norm> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::HingeLossParameter_Norm>() {
   return ::opencv_caffe::HingeLossParameter_Norm_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::LRNParameter_NormRegion> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::LRNParameter_NormRegion> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::LRNParameter_NormRegion>() {
   return ::opencv_caffe::LRNParameter_NormRegion_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::LRNParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::LRNParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::LRNParameter_Engine>() {
   return ::opencv_caffe::LRNParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::PoolingParameter_PoolMethod> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::PoolingParameter_PoolMethod> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::PoolingParameter_PoolMethod>() {
   return ::opencv_caffe::PoolingParameter_PoolMethod_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::PoolingParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::PoolingParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::PoolingParameter_Engine>() {
   return ::opencv_caffe::PoolingParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::ReductionParameter_ReductionOp> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::ReductionParameter_ReductionOp> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::ReductionParameter_ReductionOp>() {
   return ::opencv_caffe::ReductionParameter_ReductionOp_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::ReLUParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::ReLUParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::ReLUParameter_Engine>() {
   return ::opencv_caffe::ReLUParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::SigmoidParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::SigmoidParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::SigmoidParameter_Engine>() {
   return ::opencv_caffe::SigmoidParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::SoftmaxParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::SoftmaxParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::SoftmaxParameter_Engine>() {
   return ::opencv_caffe::SoftmaxParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::TanHParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::TanHParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::TanHParameter_Engine>() {
   return ::opencv_caffe::TanHParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::SPPParameter_PoolMethod> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::SPPParameter_PoolMethod> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::SPPParameter_PoolMethod>() {
   return ::opencv_caffe::SPPParameter_PoolMethod_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::SPPParameter_Engine> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::SPPParameter_Engine> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::SPPParameter_Engine>() {
   return ::opencv_caffe::SPPParameter_Engine_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::V1LayerParameter_LayerType> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::V1LayerParameter_LayerType> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::V1LayerParameter_LayerType>() {
   return ::opencv_caffe::V1LayerParameter_LayerType_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::V1LayerParameter_DimCheckMode> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::V1LayerParameter_DimCheckMode> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::V1LayerParameter_DimCheckMode>() {
   return ::opencv_caffe::V1LayerParameter_DimCheckMode_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::V0LayerParameter_PoolMethod> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::V0LayerParameter_PoolMethod> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::V0LayerParameter_PoolMethod>() {
   return ::opencv_caffe::V0LayerParameter_PoolMethod_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::Type> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::Type> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::Type>() {
   return ::opencv_caffe::Type_descriptor();
 }
-template <> struct is_proto_enum< ::opencv_caffe::Phase> : ::google::protobuf::internal::true_type {};
+template <> struct is_proto_enum< ::opencv_caffe::Phase> : ::cv::protobuf::internal::true_type {};
 template <>
 inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::Phase>() {
   return ::opencv_caffe::Phase_descriptor();

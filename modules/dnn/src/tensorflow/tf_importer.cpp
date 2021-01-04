@@ -28,12 +28,12 @@ CV__DNN_INLINE_NS_BEGIN
 
 #if HAVE_PROTOBUF
 
-using ::google::protobuf::RepeatedField;
-using ::google::protobuf::RepeatedPtrField;
-using ::google::protobuf::Message;
-using ::google::protobuf::Descriptor;
-using ::google::protobuf::FieldDescriptor;
-using ::google::protobuf::Reflection;
+using ::cv::protobuf::RepeatedField;
+using ::cv::protobuf::RepeatedPtrField;
+using ::cv::protobuf::Message;
+using ::cv::protobuf::Descriptor;
+using ::cv::protobuf::FieldDescriptor;
+using ::cv::protobuf::Reflection;
 
 namespace
 {
@@ -216,9 +216,9 @@ void printLayerAttr(const tensorflow::NodeDef &layer)
     for (int ii = 0; ii < layer.input_size(); ii++)
         std::cout << "(" << layer.input(ii) << ")";
     std::cout << std::endl;
-    google::protobuf::Map<std::string, tensorflow::AttrValue> attr
+    cv::protobuf::Map<std::string, tensorflow::AttrValue> attr
             = layer.attr();
-    for (google::protobuf::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
+    for (cv::protobuf::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
          ai != attr.end(); ++ai)
     {
         std::cout << ai->first << ":";
@@ -241,7 +241,7 @@ void printLayerAttr(const tensorflow::NodeDef &layer)
 
 bool hasLayerAttr(const tensorflow::NodeDef &layer, const std::string &name)
 {
-    google::protobuf::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
+    cv::protobuf::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
     return attr.find(name) != attr.end();
 }
 
@@ -2180,8 +2180,8 @@ void TFImporter::populateNet(Net dstNet)
             // However we create a layer with the same type and rely that user defined a custom layer.
 
             // All the attributes are added to LayerParams.
-            google::protobuf::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
-            for (google::protobuf::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
+            cv::protobuf::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
+            for (cv::protobuf::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
                  ai != attr.end(); ++ai)
             {
                 if (ai->second.value_case() == tensorflow::AttrValue::kS)  // string
@@ -2271,7 +2271,7 @@ void writeTextGraph(const String& _model, const String& output)
     }
 
     std::string content;
-    google::protobuf::TextFormat::PrintToString(net, &content);
+    cv::protobuf::TextFormat::PrintToString(net, &content);
 
     std::ofstream ofs(output.c_str());
     ofs << content;
