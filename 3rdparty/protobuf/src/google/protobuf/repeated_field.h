@@ -66,9 +66,9 @@
 // Forward-declare these so that we can make them friends.
 namespace cv {
 namespace upb {
-namespace cv_opensource {
+namespace google_opensource {
 class GMR_Handlers;
-}  // namespace cv_opensource
+}  // namespace google_opensource
 }  // namespace upb
 
 namespace protobuf {
