@@ -51,7 +51,7 @@
 #include <google/protobuf/message_lite.h>
 #include <google/protobuf/wire_format_lite.h>
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
 
@@ -97,7 +97,7 @@ namespace internal {
 // choose 16 rather than some other number just in case the compiler would
 // be confused by an unaligned pointer.
 #define GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(TYPE, FIELD)  \
-  static_cast< ::google::protobuf::uint32>(                           \
+  static_cast< ::cv::protobuf::uint32>(                           \
       reinterpret_cast<const char*>(                                 \
           &reinterpret_cast<const TYPE*>(16)->FIELD) -               \
       reinterpret_cast<const char*>(16))
@@ -168,14 +168,14 @@ inline bool IsOneofPresent(const void* base, uint32 offset, uint32 tag) {
 
 typedef void (*SpecialSerializer)(const uint8* base, uint32 offset, uint32 tag,
                                   uint32 has_offset,
-                                  ::google::protobuf::io::CodedOutputStream* output);
+                                  ::cv::protobuf::io::CodedOutputStream* output);
 
 LIBPROTOBUF_EXPORT void ExtensionSerializer(const uint8* base, uint32 offset, uint32 tag,
                          uint32 has_offset,
-                         ::google::protobuf::io::CodedOutputStream* output);
+                         ::cv::protobuf::io::CodedOutputStream* output);
 LIBPROTOBUF_EXPORT void UnknownFieldSerializerLite(const uint8* base, uint32 offset, uint32 tag,
                                 uint32 has_offset,
-                                ::google::protobuf::io::CodedOutputStream* output);
+                                ::cv::protobuf::io::CodedOutputStream* output);
 
 struct SerializationTable {
   int num_fields;
@@ -183,11 +183,11 @@ struct SerializationTable {
 };
 
 LIBPROTOBUF_EXPORT void SerializeInternal(const uint8* base, const FieldMetadata* table,
-                       int num_fields, ::google::protobuf::io::CodedOutputStream* output);
+                       int num_fields, ::cv::protobuf::io::CodedOutputStream* output);
 
-inline void TableSerialize(const ::google::protobuf::MessageLite& msg,
+inline void TableSerialize(const ::cv::protobuf::MessageLite& msg,
                            const SerializationTable* table,
-                           ::google::protobuf::io::CodedOutputStream* output) {
+                           ::cv::protobuf::io::CodedOutputStream* output) {
   const FieldMetadata* field_table = table->field_table;
   int num_fields = table->num_fields - 1;
   const uint8* base = reinterpret_cast<const uint8*>(&msg);
@@ -204,7 +204,7 @@ uint8* SerializeInternalToArray(const uint8* base, const FieldMetadata* table,
                                 int num_fields, bool is_deterministic,
                                 uint8* buffer);
 
-inline uint8* TableSerializeToArray(const ::google::protobuf::MessageLite& msg,
+inline uint8* TableSerializeToArray(const ::cv::protobuf::MessageLite& msg,
                                     const SerializationTable* table,
                                     bool is_deterministic, uint8* buffer) {
   const uint8* base = reinterpret_cast<const uint8*>(&msg);
@@ -240,7 +240,7 @@ struct CompareMapKey {
 template <typename MapFieldType, const SerializationTable* table>
 void MapFieldSerializer(const uint8* base, uint32 offset, uint32 tag,
                         uint32 has_offset,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
   typedef MapEntryHelper<typename MapFieldType::EntryTypeTrait> Entry;
   typedef typename MapFieldType::MapType::const_iterator Iter;
 
@@ -302,7 +302,7 @@ T* GetOwnedMessage(Arena* message_arena, T* submessage,
 template <typename T>
 T* GetOwnedMessage(T* message, Arena* arena) {
   GOOGLE_DCHECK(message);
-  Arena* message_arena = google::protobuf::Arena::GetArena(message);
+  Arena* message_arena = cv::protobuf::Arena::GetArena(message);
   if (message_arena == arena) {
     return message;
   } else if (arena != NULL && message_arena == NULL) {
@@ -316,5 +316,5 @@ T* GetOwnedMessage(T* message, Arena* arena) {
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_GENERATED_MESSAGE_UTIL_H__

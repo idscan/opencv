@@ -39,12 +39,12 @@
 #include <google/protobuf/field_mask.pb.h>
 #include <google/protobuf/stubs/stringpiece.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
 class LIBPROTOBUF_EXPORT FieldMaskUtil {
-  typedef google::protobuf::FieldMask FieldMask;
+  typedef cv::protobuf::FieldMask FieldMask;
 
  public:
   // Converts FieldMask to/from string, formatted by separating each path
@@ -232,5 +232,5 @@ class LIBPROTOBUF_EXPORT FieldMaskUtil::TrimOptions {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_FIELD_MASK_UTIL_H__

@@ -34,7 +34,7 @@
 #include <google/protobuf/arena.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -577,7 +577,7 @@ inline bool MapTypeHandler<WireFormatLite::TYPE_MESSAGE,
   template <typename Type>                                                     \
   inline void MapTypeHandler<WireFormatLite::TYPE_##FieldType, Type>::Clear(   \
       TypeOnMemory* value, Arena* arena) {                                     \
-    value->ClearToEmpty(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),    \
+    value->ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),    \
                         arena);                                                \
   }                                                                            \
   template <typename Type>                                                     \
@@ -589,12 +589,12 @@ inline bool MapTypeHandler<WireFormatLite::TYPE_MESSAGE,
   template <typename Type>                                                     \
   inline void MapTypeHandler<WireFormatLite::TYPE_##FieldType, Type>::Merge(   \
       const MapEntryAccessorType& from, TypeOnMemory* to, Arena* arena) {      \
-    to->Set(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from, arena);  \
+    to->Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), from, arena);  \
   }                                                                            \
   template <typename Type>                                                     \
   void MapTypeHandler<WireFormatLite::TYPE_##FieldType, Type>::DeleteNoArena(  \
       TypeOnMemory& value) {                                                   \
-    value.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());  \
+    value.DestroyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());  \
   }                                                                            \
   template <typename Type>                                                     \
   inline void MapTypeHandler<WireFormatLite::TYPE_##FieldType,                 \
@@ -604,7 +604,7 @@ inline bool MapTypeHandler<WireFormatLite::TYPE_MESSAGE,
   MapTypeHandler<WireFormatLite::TYPE_##FieldType, Type>::Initialize(          \
       TypeOnMemory* value, Arena* /* arena */) {                               \
     value->UnsafeSetDefault(                                                   \
-        &::google::protobuf::internal::GetEmptyStringAlreadyInited());                   \
+        &::cv::protobuf::internal::GetEmptyStringAlreadyInited());                   \
   }                                                                            \
   template <typename Type>                                                     \
   inline void MapTypeHandler<WireFormatLite::TYPE_##FieldType, Type>::         \
@@ -618,7 +618,7 @@ inline bool MapTypeHandler<WireFormatLite::TYPE_MESSAGE,
                                  Type>::MapEntryAccessorType*                  \
   MapTypeHandler<WireFormatLite::TYPE_##FieldType, Type>::EnsureMutable(       \
       TypeOnMemory* value, Arena* arena) {                                     \
-    return value->Mutable(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),  \
+    return value->Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),  \
                           arena);                                              \
   }                                                                            \
   template <typename Type>                                                     \
@@ -735,5 +735,5 @@ PRIMITIVE_HANDLER_FUNCTIONS(BOOL)
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_TYPE_HANDLER_H__

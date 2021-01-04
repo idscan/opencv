@@ -41,7 +41,7 @@
 #include <google/protobuf/stubs/status.h>
 #include <google/protobuf/stubs/statusor.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -58,7 +58,7 @@ class TypeInfoForTypeResolver : public TypeInfo {
     DeleteCachedTypes(&cached_enums_);
   }
 
-  virtual util::StatusOr<const google::protobuf::Type*> ResolveTypeUrl(
+  virtual util::StatusOr<const cv::protobuf::Type*> ResolveTypeUrl(
       StringPiece type_url) const {
     std::map<StringPiece, StatusOrType>::iterator it =
         cached_types_.find(type_url);
@@ -69,7 +69,7 @@ class TypeInfoForTypeResolver : public TypeInfo {
     // cached_types_ map.
     const string& string_type_url =
         *string_storage_.insert(type_url.ToString()).first;
-    google::protobuf::scoped_ptr<google::protobuf::Type> type(new google::protobuf::Type());
+    cv::protobuf::scoped_ptr<cv::protobuf::Type> type(new cv::protobuf::Type());
     util::Status status =
         type_resolver_->ResolveMessageType(string_type_url, type.get());
     StatusOrType result =
@@ -78,13 +78,13 @@ class TypeInfoForTypeResolver : public TypeInfo {
     return result;
   }
 
-  virtual const google::protobuf::Type* GetTypeByTypeUrl(
+  virtual const cv::protobuf::Type* GetTypeByTypeUrl(
       StringPiece type_url) const {
     StatusOrType result = ResolveTypeUrl(type_url);
     return result.ok() ? result.ValueOrDie() : NULL;
   }
 
-  virtual const google::protobuf::Enum* GetEnumByTypeUrl(
+  virtual const cv::protobuf::Enum* GetEnumByTypeUrl(
       StringPiece type_url) const {
     std::map<StringPiece, StatusOrEnum>::iterator it =
         cached_enums_.find(type_url);
@@ -95,8 +95,8 @@ class TypeInfoForTypeResolver : public TypeInfo {
     // cached_enums_ map.
     const string& string_type_url =
         *string_storage_.insert(type_url.ToString()).first;
-    google::protobuf::scoped_ptr<google::protobuf::Enum> enum_type(
-        new google::protobuf::Enum());
+    cv::protobuf::scoped_ptr<cv::protobuf::Enum> enum_type(
+        new cv::protobuf::Enum());
     util::Status status =
         type_resolver_->ResolveEnumType(string_type_url, enum_type.get());
     StatusOrEnum result =
@@ -105,9 +105,9 @@ class TypeInfoForTypeResolver : public TypeInfo {
     return result.ok() ? result.ValueOrDie() : NULL;
   }
 
-  virtual const google::protobuf::Field* FindField(
-      const google::protobuf::Type* type, StringPiece camel_case_name) const {
-    std::map<const google::protobuf::Type*, CamelCaseNameTable>::const_iterator
+  virtual const cv::protobuf::Field* FindField(
+      const cv::protobuf::Type* type, StringPiece camel_case_name) const {
+    std::map<const cv::protobuf::Type*, CamelCaseNameTable>::const_iterator
         it = indexed_types_.find(type);
     const CamelCaseNameTable& camel_case_name_table =
         (it == indexed_types_.end())
@@ -123,8 +123,8 @@ class TypeInfoForTypeResolver : public TypeInfo {
   }
 
  private:
-  typedef util::StatusOr<const google::protobuf::Type*> StatusOrType;
-  typedef util::StatusOr<const google::protobuf::Enum*> StatusOrEnum;
+  typedef util::StatusOr<const cv::protobuf::Type*> StatusOrType;
+  typedef util::StatusOr<const cv::protobuf::Enum*> StatusOrEnum;
   typedef std::map<StringPiece, StringPiece> CamelCaseNameTable;
 
   template <typename T>
@@ -138,10 +138,10 @@ class TypeInfoForTypeResolver : public TypeInfo {
   }
 
   const CamelCaseNameTable& PopulateNameLookupTable(
-      const google::protobuf::Type* type,
+      const cv::protobuf::Type* type,
       CamelCaseNameTable* camel_case_name_table) const {
     for (int i = 0; i < type->fields_size(); ++i) {
-      const google::protobuf::Field& field = type->fields(i);
+      const cv::protobuf::Field& field = type->fields(i);
       StringPiece name = field.name();
       StringPiece camel_case_name = field.json_name();
       const StringPiece* existing =
@@ -164,7 +164,7 @@ class TypeInfoForTypeResolver : public TypeInfo {
   mutable std::map<StringPiece, StatusOrType> cached_types_;
   mutable std::map<StringPiece, StatusOrEnum> cached_enums_;
 
-  mutable std::map<const google::protobuf::Type*, CamelCaseNameTable>
+  mutable std::map<const cv::protobuf::Type*, CamelCaseNameTable>
       indexed_types_;
 };
 }  // namespace
@@ -176,4 +176,4 @@ TypeInfo* TypeInfo::NewTypeInfo(TypeResolver* type_resolver) {
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

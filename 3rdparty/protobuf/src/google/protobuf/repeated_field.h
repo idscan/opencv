@@ -64,11 +64,11 @@
 
 
 // Forward-declare these so that we can make them friends.
-namespace google {
+namespace cv {
 namespace upb {
-namespace google_opensource {
+namespace cv_opensource {
 class GMR_Handlers;
-}  // namespace google_opensource
+}  // namespace cv_opensource
 }  // namespace upb
 
 namespace protobuf {
@@ -247,7 +247,7 @@ class RepeatedField PROTOBUF_FINAL {
   iterator erase(const_iterator first, const_iterator last);
 
   // Get the Arena on which this RepeatedField stores its elements.
-  ::google::protobuf::Arena* GetArena() const {
+  ::cv::protobuf::Arena* GetArena() const {
     return GetArenaNoVirtual();
   }
 
@@ -376,8 +376,8 @@ struct TypeImplementsMergeBehaviorProbeForMergeFrom {
       CheckType<U, bool, &U::MergeFrom>*);
   template<typename U> static HasNoMerge Check(...);
 
-  // Resolves to either google::protobuf::internal::true_type or google::protobuf::internal::false_type.
-  typedef google::protobuf::internal::integral_constant<bool,
+  // Resolves to either cv::protobuf::internal::true_type or cv::protobuf::internal::false_type.
+  typedef cv::protobuf::internal::integral_constant<bool,
                (sizeof(Check<T>(0)) == sizeof(HasMerge))> type;
 };
 
@@ -388,7 +388,7 @@ struct TypeImplementsMergeBehavior :
 
 template <>
 struct TypeImplementsMergeBehavior< ::std::string> {
-  typedef google::protobuf::internal::true_type type;
+  typedef cv::protobuf::internal::true_type type;
 };
 
 // This is the common base class for RepeatedPtrFields.  It deals only in void*
@@ -435,7 +435,7 @@ class LIBPROTOBUF_EXPORT RepeatedPtrFieldBase {
   friend class upb::google_opensource::GMR_Handlers;
 
   RepeatedPtrFieldBase();
-  explicit RepeatedPtrFieldBase(::google::protobuf::Arena* arena);
+  explicit RepeatedPtrFieldBase(::cv::protobuf::Arena* arena);
   ~RepeatedPtrFieldBase() {}
 
   // Must be called from destructor.
@@ -528,9 +528,9 @@ class LIBPROTOBUF_EXPORT RepeatedPtrFieldBase {
   inline void InternalSwap(RepeatedPtrFieldBase* other);
 
   template <typename TypeHandler>
-  void AddAllocatedInternal(typename TypeHandler::Type* value, google::protobuf::internal::true_type);
+  void AddAllocatedInternal(typename TypeHandler::Type* value, cv::protobuf::internal::true_type);
   template <typename TypeHandler>
-  void AddAllocatedInternal(typename TypeHandler::Type* value, google::protobuf::internal::false_type);
+  void AddAllocatedInternal(typename TypeHandler::Type* value, cv::protobuf::internal::false_type);
 
   template <typename TypeHandler> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE
   void AddAllocatedSlowWithCopy(typename TypeHandler::Type* value,
@@ -540,9 +540,9 @@ class LIBPROTOBUF_EXPORT RepeatedPtrFieldBase {
   void AddAllocatedSlowWithoutCopy(typename TypeHandler::Type* value);
 
   template <typename TypeHandler>
-  typename TypeHandler::Type* ReleaseLastInternal(google::protobuf::internal::true_type);
+  typename TypeHandler::Type* ReleaseLastInternal(cv::protobuf::internal::true_type);
   template <typename TypeHandler>
-  typename TypeHandler::Type* ReleaseLastInternal(google::protobuf::internal::false_type);
+  typename TypeHandler::Type* ReleaseLastInternal(cv::protobuf::internal::false_type);
 
   template<typename TypeHandler> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE
   void SwapFallback(RepeatedPtrFieldBase* other);
@@ -614,20 +614,20 @@ class GenericTypeHandler {
 #endif
 
   static inline GenericType* New(Arena* arena) {
-    return ::google::protobuf::Arena::CreateMaybeMessage<Type>(arena);
+    return ::cv::protobuf::Arena::CreateMaybeMessage<Type>(arena);
   }
   static inline GenericType* NewFromPrototype(
-      const GenericType* prototype, ::google::protobuf::Arena* arena = NULL);
+      const GenericType* prototype, ::cv::protobuf::Arena* arena = NULL);
   static inline void Delete(GenericType* value, Arena* arena) {
     if (arena == NULL) {
       delete value;
     }
   }
-  static inline ::google::protobuf::Arena* GetArena(GenericType* value) {
-    return ::google::protobuf::Arena::GetArena<Type>(value);
+  static inline ::cv::protobuf::Arena* GetArena(GenericType* value) {
+    return ::cv::protobuf::Arena::GetArena<Type>(value);
   }
   static inline void* GetMaybeArenaPointer(GenericType* value) {
-    return ::google::protobuf::Arena::GetArena<Type>(value);
+    return ::cv::protobuf::Arena::GetArena<Type>(value);
   }
 
   static inline void Clear(GenericType* value) { value->Clear(); }
@@ -643,7 +643,7 @@ class GenericTypeHandler {
 
 template <typename GenericType>
 GenericType* GenericTypeHandler<GenericType>::NewFromPrototype(
-    const GenericType* /* prototype */, ::google::protobuf::Arena* arena) {
+    const GenericType* /* prototype */, ::cv::protobuf::Arena* arena) {
   return New(arena);
 }
 template <typename GenericType>
@@ -657,9 +657,9 @@ void GenericTypeHandler<GenericType>::Merge(const GenericType& from,
 // New/Merge.
 template<>
 MessageLite* GenericTypeHandler<MessageLite>::NewFromPrototype(
-    const MessageLite* prototype, google::protobuf::Arena* arena);
+    const MessageLite* prototype, cv::protobuf::Arena* arena);
 template<>
-inline google::protobuf::Arena* GenericTypeHandler<MessageLite>::GetArena(
+inline cv::protobuf::Arena* GenericTypeHandler<MessageLite>::GetArena(
     MessageLite* value) {
   return value->GetArena();
 }
@@ -684,9 +684,9 @@ void GenericTypeHandler<string>::Merge(const string& from,
 #define DECLARE_SPECIALIZATIONS_FOR_BASE_PROTO_TYPES(TypeName)                 \
     template<>                                                                 \
     TypeName* GenericTypeHandler<TypeName>::NewFromPrototype(                  \
-        const TypeName* prototype, google::protobuf::Arena* arena);                      \
+        const TypeName* prototype, cv::protobuf::Arena* arena);                      \
     template<>                                                                 \
-    google::protobuf::Arena* GenericTypeHandler<TypeName>::GetArena(                     \
+    cv::protobuf::Arena* GenericTypeHandler<TypeName>::GetArena(                     \
         TypeName* value);                                                      \
     template<>                                                                 \
     void* GenericTypeHandler<TypeName>::GetMaybeArenaPointer(                  \
@@ -737,10 +737,10 @@ class StringTypeHandler {
   }
 #endif
   static inline string* NewFromPrototype(const string*,
-                                         ::google::protobuf::Arena* arena) {
+                                         ::cv::protobuf::Arena* arena) {
     return New(arena);
   }
-  static inline ::google::protobuf::Arena* GetArena(string*) {
+  static inline ::cv::protobuf::Arena* GetArena(string*) {
     return NULL;
   }
   static inline void* GetMaybeArenaPointer(string* /* value */) {
@@ -754,7 +754,7 @@ class StringTypeHandler {
   static inline void Clear(string* value) { value->clear(); }
   static inline void Merge(const string& from, string* to) { *to = from; }
   static inline const Type& default_instance() {
-    return ::google::protobuf::internal::GetEmptyString();
+    return ::cv::protobuf::internal::GetEmptyString();
   }
   static size_t SpaceUsedLong(const string& value)  {
     return sizeof(value) + StringSpaceUsedExcludingSelfLong(value);
@@ -769,7 +769,7 @@ template <typename Element>
 class RepeatedPtrField PROTOBUF_FINAL : public internal::RepeatedPtrFieldBase {
  public:
   RepeatedPtrField();
-  explicit RepeatedPtrField(::google::protobuf::Arena* arena);
+  explicit RepeatedPtrField(::cv::protobuf::Arena* arena);
 
   RepeatedPtrField(const RepeatedPtrField& other);
   template <typename Iter>
@@ -999,7 +999,7 @@ class RepeatedPtrField PROTOBUF_FINAL : public internal::RepeatedPtrFieldBase {
   iterator erase(const_iterator first, const_iterator last);
 
   // Gets the arena on which this RepeatedPtrField stores its elements.
-  ::google::protobuf::Arena* GetArena() const {
+  ::cv::protobuf::Arena* GetArena() const {
     return GetArenaNoVirtual();
   }
 
@@ -1020,9 +1020,9 @@ class RepeatedPtrField PROTOBUF_FINAL : public internal::RepeatedPtrFieldBase {
   // MergeFrom()), so we must resolve this at compile time. ExtractSubrange()
   // uses SFINAE to choose one of the below implementations.
   void ExtractSubrangeInternal(int start, int num, Element** elements,
-                               google::protobuf::internal::true_type);
+                               cv::protobuf::internal::true_type);
   void ExtractSubrangeInternal(int start, int num, Element** elements,
-                               google::protobuf::internal::false_type);
+                               cv::protobuf::internal::false_type);
 
   friend class Arena;
   typedef void InternalArenaConstructable_;
@@ -1047,7 +1047,7 @@ inline RepeatedField<Element>::RepeatedField(Arena* arena)
   // `rep_ == NULL then arena == NULL`.
   if (arena != NULL) {
     rep_ = reinterpret_cast<Rep*>(
-        ::google::protobuf::Arena::CreateArray<char>(arena, kRepHeaderSize));
+        ::cv::protobuf::Arena::CreateArray<char>(arena, kRepHeaderSize));
     rep_->arena = arena;
   }
 }
@@ -1369,7 +1369,7 @@ void RepeatedField<Element>::Reserve(int new_size) {
   if (total_size_ >= new_size) return;
   Rep* old_rep = rep_;
   Arena* arena = GetArenaNoVirtual();
-  new_size = std::max(google::protobuf::internal::kMinRepeatedFieldAllocationSize,
+  new_size = std::max(cv::protobuf::internal::kMinRepeatedFieldAllocationSize,
                       std::max(total_size_ * 2, new_size));
   GOOGLE_DCHECK_LE(
       static_cast<size_t>(new_size),
@@ -1380,7 +1380,7 @@ void RepeatedField<Element>::Reserve(int new_size) {
     rep_ = static_cast<Rep*>(::operator new(bytes));
   } else {
     rep_ = reinterpret_cast<Rep*>(
-            ::google::protobuf::Arena::CreateArray<char>(arena, bytes));
+            ::cv::protobuf::Arena::CreateArray<char>(arena, bytes));
   }
   rep_->arena = arena;
   int old_total_size = total_size_;
@@ -1457,7 +1457,7 @@ inline RepeatedPtrFieldBase::RepeatedPtrFieldBase()
     rep_(NULL) {
 }
 
-inline RepeatedPtrFieldBase::RepeatedPtrFieldBase(::google::protobuf::Arena* arena)
+inline RepeatedPtrFieldBase::RepeatedPtrFieldBase(::cv::protobuf::Arena* arena)
   : arena_(arena),
     current_size_(0),
     total_size_(0),
@@ -1715,7 +1715,7 @@ inline typename TypeHandler::Type* RepeatedPtrFieldBase::AddFromCleared() {
 template <typename TypeHandler>
 void RepeatedPtrFieldBase::AddAllocatedInternal(
     typename TypeHandler::Type* value,
-    google::protobuf::internal::true_type) {
+    cv::protobuf::internal::true_type) {
   Arena* element_arena = reinterpret_cast<Arena*>(
       TypeHandler::GetMaybeArenaPointer(value));
   Arena* arena = GetArenaNoVirtual();
@@ -1765,7 +1765,7 @@ void RepeatedPtrFieldBase::AddAllocatedSlowWithCopy(
 template <typename TypeHandler>
 void RepeatedPtrFieldBase::AddAllocatedInternal(
     typename TypeHandler::Type* value,
-    google::protobuf::internal::false_type) {
+    cv::protobuf::internal::false_type) {
   if (rep_ &&  rep_->allocated_size < total_size_) {
     // Fast path: underlying arena representation (tagged pointer) is equal to
     // our arena pointer, and we can add to array without resizing it (at least
@@ -1815,7 +1815,7 @@ void RepeatedPtrFieldBase::UnsafeArenaAddAllocated(
 // ReleaseLast() for types that implement merge/copy behavior.
 template <typename TypeHandler>
 inline typename TypeHandler::Type*
-RepeatedPtrFieldBase::ReleaseLastInternal(google::protobuf::internal::true_type) {
+RepeatedPtrFieldBase::ReleaseLastInternal(cv::protobuf::internal::true_type) {
   // First, release an element.
   typename TypeHandler::Type* result = UnsafeArenaReleaseLast<TypeHandler>();
   // Now perform a copy if we're on an arena.
@@ -1836,7 +1836,7 @@ RepeatedPtrFieldBase::ReleaseLastInternal(google::protobuf::internal::true_type)
 // case.
 template <typename TypeHandler>
 inline typename TypeHandler::Type*
-RepeatedPtrFieldBase::ReleaseLastInternal(google::protobuf::internal::false_type) {
+RepeatedPtrFieldBase::ReleaseLastInternal(cv::protobuf::internal::false_type) {
   GOOGLE_DCHECK(GetArenaNoVirtual() == NULL)
       << "ReleaseLast() called on a RepeatedPtrField that is on an arena, "
       << "with a type that does not implement MergeFrom. This is unsafe; "
@@ -1906,7 +1906,7 @@ inline RepeatedPtrField<Element>::RepeatedPtrField()
   : RepeatedPtrFieldBase() {}
 
 template <typename Element>
-inline RepeatedPtrField<Element>::RepeatedPtrField(::google::protobuf::Arena* arena) :
+inline RepeatedPtrField<Element>::RepeatedPtrField(::cv::protobuf::Arena* arena) :
   RepeatedPtrFieldBase(arena) {}
 
 template <typename Element>
@@ -2035,7 +2035,7 @@ inline void RepeatedPtrField<Element>::ExtractSubrange(
 // behavior.
 template <typename Element>
 inline void RepeatedPtrField<Element>::ExtractSubrangeInternal(
-    int start, int num, Element** elements, google::protobuf::internal::true_type) {
+    int start, int num, Element** elements, cv::protobuf::internal::true_type) {
   GOOGLE_DCHECK_GE(start, 0);
   GOOGLE_DCHECK_GE(num, 0);
   GOOGLE_DCHECK_LE(start + num, size());
@@ -2068,7 +2068,7 @@ inline void RepeatedPtrField<Element>::ExtractSubrangeInternal(
 // behavior.
 template<typename Element>
 inline void RepeatedPtrField<Element>::ExtractSubrangeInternal(
-    int start, int num, Element** elements, google::protobuf::internal::false_type) {
+    int start, int num, Element** elements, cv::protobuf::internal::false_type) {
   // This case is identical to UnsafeArenaExtractSubrange(). However, since
   // ExtractSubrange() must return heap-allocated objects by contract, and we
   // cannot fulfill this contract if we are an on arena, we must GOOGLE_DCHECK() that
@@ -2471,7 +2471,7 @@ RepeatedPtrField<Element>::pointer_end() const {
 // for RepeatedField and RepeatedPtrField. Typical usage would be:
 //
 //   std::copy(some_sequence.begin(), some_sequence.end(),
-//             google::protobuf::RepeatedFieldBackInserter(proto.mutable_sequence()));
+//             cv::protobuf::RepeatedFieldBackInserter(proto.mutable_sequence()));
 //
 // Ported by johannes from util/gtl/proto-array-iterators.h
 
@@ -2575,7 +2575,7 @@ class UnsafeArenaAllocatedRepeatedPtrFieldBackInsertIterator
     : public std::iterator<std::output_iterator_tag, T> {
  public:
   explicit UnsafeArenaAllocatedRepeatedPtrFieldBackInsertIterator(
-    ::google::protobuf::RepeatedPtrField<T>* const mutable_field)
+    ::cv::protobuf::RepeatedPtrField<T>* const mutable_field)
   : field_(mutable_field) {
   }
   UnsafeArenaAllocatedRepeatedPtrFieldBackInsertIterator<T>& operator=(
@@ -2595,7 +2595,7 @@ class UnsafeArenaAllocatedRepeatedPtrFieldBackInsertIterator
   }
 
  private:
-  ::google::protobuf::RepeatedPtrField<T>* field_;
+  ::cv::protobuf::RepeatedPtrField<T>* field_;
 };
 
 }  // namespace internal
@@ -2646,12 +2646,12 @@ AllocatedRepeatedPtrFieldBackInserter(
 template<typename T>
 internal::UnsafeArenaAllocatedRepeatedPtrFieldBackInsertIterator<T>
 UnsafeArenaAllocatedRepeatedPtrFieldBackInserter(
-    ::google::protobuf::RepeatedPtrField<T>* const mutable_field) {
+    ::cv::protobuf::RepeatedPtrField<T>* const mutable_field) {
   return internal::UnsafeArenaAllocatedRepeatedPtrFieldBackInsertIterator<T>(
       mutable_field);
 }
 
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_REPEATED_FIELD_H__

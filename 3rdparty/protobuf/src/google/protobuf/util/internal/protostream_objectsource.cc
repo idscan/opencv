@@ -50,7 +50,7 @@
 #include <google/protobuf/stubs/status_macros.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 using util::Status;
@@ -61,11 +61,11 @@ using util::error::INTERNAL;
 }
 namespace converter {
 
-using google::protobuf::Descriptor;
-using google::protobuf::EnumValueDescriptor;
-using google::protobuf::FieldDescriptor;
-using google::protobuf::internal::WireFormat;
-using google::protobuf::internal::WireFormatLite;
+using cv::protobuf::Descriptor;
+using cv::protobuf::EnumValueDescriptor;
+using cv::protobuf::FieldDescriptor;
+using cv::protobuf::internal::WireFormat;
+using cv::protobuf::internal::WireFormatLite;
 using util::Status;
 using util::StatusOr;
 
@@ -74,36 +74,36 @@ namespace {
 static int kDefaultMaxRecursionDepth = 64;
 
 // Finds a field with the given number. NULL if none found.
-const google::protobuf::Field* FindFieldByNumber(
-    const google::protobuf::Type& type, int number);
+const cv::protobuf::Field* FindFieldByNumber(
+    const cv::protobuf::Type& type, int number);
 
 // Returns true if the field is packable.
-bool IsPackable(const google::protobuf::Field& field);
+bool IsPackable(const cv::protobuf::Field& field);
 
 // Finds an enum value with the given number. NULL if none found.
-const google::protobuf::EnumValue* FindEnumValueByNumber(
-    const google::protobuf::Enum& tech_enum, int number);
+const cv::protobuf::EnumValue* FindEnumValueByNumber(
+    const cv::protobuf::Enum& tech_enum, int number);
 
 // Utility function to format nanos.
 const string FormatNanos(uint32 nanos, bool with_trailing_zeros);
 
 StatusOr<string> MapKeyDefaultValueAsString(
-    const google::protobuf::Field& field) {
+    const cv::protobuf::Field& field) {
   switch (field.kind()) {
-    case google::protobuf::Field_Kind_TYPE_BOOL:
+    case cv::protobuf::Field_Kind_TYPE_BOOL:
       return string("false");
-    case google::protobuf::Field_Kind_TYPE_INT32:
-    case google::protobuf::Field_Kind_TYPE_INT64:
-    case google::protobuf::Field_Kind_TYPE_UINT32:
-    case google::protobuf::Field_Kind_TYPE_UINT64:
-    case google::protobuf::Field_Kind_TYPE_SINT32:
-    case google::protobuf::Field_Kind_TYPE_SINT64:
-    case google::protobuf::Field_Kind_TYPE_SFIXED32:
-    case google::protobuf::Field_Kind_TYPE_SFIXED64:
-    case google::protobuf::Field_Kind_TYPE_FIXED32:
-    case google::protobuf::Field_Kind_TYPE_FIXED64:
+    case cv::protobuf::Field_Kind_TYPE_INT32:
+    case cv::protobuf::Field_Kind_TYPE_INT64:
+    case cv::protobuf::Field_Kind_TYPE_UINT32:
+    case cv::protobuf::Field_Kind_TYPE_UINT64:
+    case cv::protobuf::Field_Kind_TYPE_SINT32:
+    case cv::protobuf::Field_Kind_TYPE_SINT64:
+    case cv::protobuf::Field_Kind_TYPE_SFIXED32:
+    case cv::protobuf::Field_Kind_TYPE_SFIXED64:
+    case cv::protobuf::Field_Kind_TYPE_FIXED32:
+    case cv::protobuf::Field_Kind_TYPE_FIXED64:
       return string("0");
-    case google::protobuf::Field_Kind_TYPE_STRING:
+    case cv::protobuf::Field_Kind_TYPE_STRING:
       return string();
     default:
       return Status(util::error::INTERNAL, "Invalid map key type.");
@@ -113,8 +113,8 @@ StatusOr<string> MapKeyDefaultValueAsString(
 
 
 ProtoStreamObjectSource::ProtoStreamObjectSource(
-    google::protobuf::io::CodedInputStream* stream, TypeResolver* type_resolver,
-    const google::protobuf::Type& type)
+    cv::protobuf::io::CodedInputStream* stream, TypeResolver* type_resolver,
+    const cv::protobuf::Type& type)
     : stream_(stream),
       typeinfo_(TypeInfo::NewTypeInfo(type_resolver)),
       own_typeinfo_(true),
@@ -131,8 +131,8 @@ ProtoStreamObjectSource::ProtoStreamObjectSource(
 }
 
 ProtoStreamObjectSource::ProtoStreamObjectSource(
-    google::protobuf::io::CodedInputStream* stream, const TypeInfo* typeinfo,
-    const google::protobuf::Type& type)
+    cv::protobuf::io::CodedInputStream* stream, const TypeInfo* typeinfo,
+    const cv::protobuf::Type& type)
     : stream_(stream),
       typeinfo_(typeinfo),
       own_typeinfo_(false),
@@ -159,10 +159,10 @@ Status ProtoStreamObjectSource::NamedWriteTo(StringPiece name,
   return WriteMessage(type_, name, 0, true, ow);
 }
 
-const google::protobuf::Field* ProtoStreamObjectSource::FindAndVerifyField(
-    const google::protobuf::Type& type, uint32 tag) const {
+const cv::protobuf::Field* ProtoStreamObjectSource::FindAndVerifyField(
+    const cv::protobuf::Type& type, uint32 tag) const {
   // Lookup the new field in the type by tag number.
-  const google::protobuf::Field* field = FindFieldByNumber(type, tag >> 3);
+  const cv::protobuf::Field* field = FindFieldByNumber(type, tag >> 3);
   // Verify if the field corresponds to the wire type in tag.
   // If there is any discrepancy, mark the field as not found.
   if (field != NULL) {
@@ -179,7 +179,7 @@ const google::protobuf::Field* ProtoStreamObjectSource::FindAndVerifyField(
   return field;
 }
 
-Status ProtoStreamObjectSource::WriteMessage(const google::protobuf::Type& type,
+Status ProtoStreamObjectSource::WriteMessage(const cv::protobuf::Type& type,
                                              StringPiece name,
                                              const uint32 end_tag,
                                              bool include_start_and_end,
@@ -190,11 +190,11 @@ Status ProtoStreamObjectSource::WriteMessage(const google::protobuf::Type& type,
       return (*type_renderer)(this, type, name, ow);
     }
 
-  const google::protobuf::Field* field = NULL;
+  const cv::protobuf::Field* field = NULL;
   string field_name;
   // last_tag set to dummy value that is different from tag.
   uint32 tag = stream_->ReadTag(), last_tag = tag + 1;
-  google::protobuf::UnknownFieldSet unknown_fields;
+  cv::protobuf::UnknownFieldSet unknown_fields;
 
   if (include_start_and_end) {
     ow->StartObject(name);
@@ -221,7 +221,7 @@ Status ProtoStreamObjectSource::WriteMessage(const google::protobuf::Type& type,
     }
 
     if (field->cardinality() ==
-        google::protobuf::Field_Cardinality_CARDINALITY_REPEATED) {
+        cv::protobuf::Field_Cardinality_CARDINALITY_REPEATED) {
       bool check_maps = true;
 
       if (check_maps && IsMap(*field)) {
@@ -246,7 +246,7 @@ Status ProtoStreamObjectSource::WriteMessage(const google::protobuf::Type& type,
 }
 
 StatusOr<uint32> ProtoStreamObjectSource::RenderList(
-    const google::protobuf::Field* field, StringPiece name, uint32 list_tag,
+    const cv::protobuf::Field* field, StringPiece name, uint32 list_tag,
     ObjectWriter* ow) const {
   uint32 tag_to_return = 0;
   ow->StartList(name);
@@ -268,9 +268,9 @@ StatusOr<uint32> ProtoStreamObjectSource::RenderList(
 }
 
 StatusOr<uint32> ProtoStreamObjectSource::RenderMap(
-    const google::protobuf::Field* field, StringPiece name, uint32 list_tag,
+    const cv::protobuf::Field* field, StringPiece name, uint32 list_tag,
     ObjectWriter* ow) const {
-  const google::protobuf::Type* field_type =
+  const cv::protobuf::Type* field_type =
       typeinfo_->GetTypeByTypeUrl(field->type_url());
   uint32 tag_to_return = 0;
   do {
@@ -280,7 +280,7 @@ StatusOr<uint32> ProtoStreamObjectSource::RenderMap(
     int old_limit = stream_->PushLimit(buffer32);
     string map_key;
     for (uint32 tag = stream_->ReadTag(); tag != 0; tag = stream_->ReadTag()) {
-      const google::protobuf::Field* field =
+      const cv::protobuf::Field* field =
           FindAndVerifyField(*field_type, tag);
       if (field == NULL) {
         WireFormat::SkipField(stream_, tag, NULL);
@@ -292,7 +292,7 @@ StatusOr<uint32> ProtoStreamObjectSource::RenderMap(
       } else if (field->number() == 2) {
         if (map_key.empty()) {
           // An absent map key is treated as the default.
-          const google::protobuf::Field* key_field =
+          const cv::protobuf::Field* key_field =
               FindFieldByNumber(*field_type, 1);
           if (key_field == NULL) {
             // The Type info for this map entry is incorrect. It should always
@@ -316,7 +316,7 @@ StatusOr<uint32> ProtoStreamObjectSource::RenderMap(
 }
 
 Status ProtoStreamObjectSource::RenderPacked(
-    const google::protobuf::Field* field, ObjectWriter* ow) const {
+    const cv::protobuf::Field* field, ObjectWriter* ow) const {
   uint32 length;
   stream_->ReadVarint32(&length);
   int old_limit = stream_->PushLimit(length);
@@ -328,7 +328,7 @@ Status ProtoStreamObjectSource::RenderPacked(
 }
 
 Status ProtoStreamObjectSource::RenderTimestamp(
-    const ProtoStreamObjectSource* os, const google::protobuf::Type& type,
+    const ProtoStreamObjectSource* os, const cv::protobuf::Type& type,
     StringPiece field_name, ObjectWriter* ow) {
   std::pair<int64, int32> p = os->ReadSecondsAndNanos(type);
   int64 seconds = p.first;
@@ -346,13 +346,13 @@ Status ProtoStreamObjectSource::RenderTimestamp(
   }
 
   ow->RenderString(field_name,
-                   ::google::protobuf::internal::FormatTime(seconds, nanos));
+                   ::cv::protobuf::internal::FormatTime(seconds, nanos));
 
   return util::Status();
 }
 
 Status ProtoStreamObjectSource::RenderDuration(
-    const ProtoStreamObjectSource* os, const google::protobuf::Type& type,
+    const ProtoStreamObjectSource* os, const cv::protobuf::Type& type,
     StringPiece field_name, ObjectWriter* ow) {
   std::pair<int64, int32> p = os->ReadSecondsAndNanos(type);
   int64 seconds = p.first;
@@ -393,7 +393,7 @@ Status ProtoStreamObjectSource::RenderDuration(
 }
 
 Status ProtoStreamObjectSource::RenderDouble(const ProtoStreamObjectSource* os,
-                                             const google::protobuf::Type& type,
+                                             const cv::protobuf::Type& type,
                                              StringPiece field_name,
                                              ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -407,7 +407,7 @@ Status ProtoStreamObjectSource::RenderDouble(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderFloat(const ProtoStreamObjectSource* os,
-                                            const google::protobuf::Type& type,
+                                            const cv::protobuf::Type& type,
                                             StringPiece field_name,
                                             ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -421,7 +421,7 @@ Status ProtoStreamObjectSource::RenderFloat(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderInt64(const ProtoStreamObjectSource* os,
-                                            const google::protobuf::Type& type,
+                                            const cv::protobuf::Type& type,
                                             StringPiece field_name,
                                             ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -435,7 +435,7 @@ Status ProtoStreamObjectSource::RenderInt64(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderUInt64(const ProtoStreamObjectSource* os,
-                                             const google::protobuf::Type& type,
+                                             const cv::protobuf::Type& type,
                                              StringPiece field_name,
                                              ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -449,7 +449,7 @@ Status ProtoStreamObjectSource::RenderUInt64(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderInt32(const ProtoStreamObjectSource* os,
-                                            const google::protobuf::Type& type,
+                                            const cv::protobuf::Type& type,
                                             StringPiece field_name,
                                             ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -463,7 +463,7 @@ Status ProtoStreamObjectSource::RenderInt32(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderUInt32(const ProtoStreamObjectSource* os,
-                                             const google::protobuf::Type& type,
+                                             const cv::protobuf::Type& type,
                                              StringPiece field_name,
                                              ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -477,7 +477,7 @@ Status ProtoStreamObjectSource::RenderUInt32(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderBool(const ProtoStreamObjectSource* os,
-                                           const google::protobuf::Type& type,
+                                           const cv::protobuf::Type& type,
                                            StringPiece field_name,
                                            ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -492,7 +492,7 @@ Status ProtoStreamObjectSource::RenderBool(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderString(const ProtoStreamObjectSource* os,
-                                             const google::protobuf::Type& type,
+                                             const cv::protobuf::Type& type,
                                              StringPiece field_name,
                                              ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -508,7 +508,7 @@ Status ProtoStreamObjectSource::RenderString(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderBytes(const ProtoStreamObjectSource* os,
-                                            const google::protobuf::Type& type,
+                                            const cv::protobuf::Type& type,
                                             StringPiece field_name,
                                             ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
@@ -524,10 +524,10 @@ Status ProtoStreamObjectSource::RenderBytes(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderStruct(const ProtoStreamObjectSource* os,
-                                             const google::protobuf::Type& type,
+                                             const cv::protobuf::Type& type,
                                              StringPiece field_name,
                                              ObjectWriter* ow) {
-  const google::protobuf::Field* field = NULL;
+  const cv::protobuf::Field* field = NULL;
   uint32 tag = os->stream_->ReadTag();
   ow->StartObject(field_name);
   while (tag != 0) {
@@ -543,9 +543,9 @@ Status ProtoStreamObjectSource::RenderStruct(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderStructValue(
-    const ProtoStreamObjectSource* os, const google::protobuf::Type& type,
+    const ProtoStreamObjectSource* os, const cv::protobuf::Type& type,
     StringPiece field_name, ObjectWriter* ow) {
-  const google::protobuf::Field* field = NULL;
+  const cv::protobuf::Field* field = NULL;
   for (uint32 tag = os->stream_->ReadTag(); tag != 0;
        tag = os->stream_->ReadTag()) {
     field = os->FindAndVerifyField(type, tag);
@@ -560,7 +560,7 @@ Status ProtoStreamObjectSource::RenderStructValue(
 
 // TODO(skarvaje): Avoid code duplication of for loops and SkipField logic.
 Status ProtoStreamObjectSource::RenderStructListValue(
-    const ProtoStreamObjectSource* os, const google::protobuf::Type& type,
+    const ProtoStreamObjectSource* os, const cv::protobuf::Type& type,
     StringPiece field_name, ObjectWriter* ow) {
   uint32 tag = os->stream_->ReadTag();
 
@@ -572,7 +572,7 @@ Status ProtoStreamObjectSource::RenderStructListValue(
   }
 
   while (tag != 0) {
-    const google::protobuf::Field* field = os->FindAndVerifyField(type, tag);
+    const cv::protobuf::Field* field = os->FindAndVerifyField(type, tag);
     if (field == NULL) {
       WireFormat::SkipField(os->stream_, tag, NULL);
       tag = os->stream_->ReadTag();
@@ -584,7 +584,7 @@ Status ProtoStreamObjectSource::RenderStructListValue(
 }
 
 Status ProtoStreamObjectSource::RenderAny(const ProtoStreamObjectSource* os,
-                                          const google::protobuf::Type& type,
+                                          const cv::protobuf::Type& type,
                                           StringPiece field_name,
                                           ObjectWriter* ow) {
   // An Any is of the form { string type_url = 1; bytes value = 2; }
@@ -594,7 +594,7 @@ Status ProtoStreamObjectSource::RenderAny(const ProtoStreamObjectSource* os,
 
   // First read out the type_url and value from the proto stream
   for (tag = os->stream_->ReadTag(); tag != 0; tag = os->stream_->ReadTag()) {
-    const google::protobuf::Field* field = os->FindAndVerifyField(type, tag);
+    const cv::protobuf::Field* field = os->FindAndVerifyField(type, tag);
     if (field == NULL) {
       WireFormat::SkipField(os->stream_, tag, NULL);
       continue;
@@ -632,7 +632,7 @@ Status ProtoStreamObjectSource::RenderAny(const ProtoStreamObjectSource* os,
                         "Invalid Any, the type_url is missing.");
   }
 
-  util::StatusOr<const google::protobuf::Type*> resolved_type =
+  util::StatusOr<const cv::protobuf::Type*> resolved_type =
       os->typeinfo_->ResolveTypeUrl(type_url);
 
   if (!resolved_type.ok()) {
@@ -642,10 +642,10 @@ Status ProtoStreamObjectSource::RenderAny(const ProtoStreamObjectSource* os,
                         resolved_type.status().error_message());
   }
   // nested_type cannot be null at this time.
-  const google::protobuf::Type* nested_type = resolved_type.ValueOrDie();
+  const cv::protobuf::Type* nested_type = resolved_type.ValueOrDie();
 
-  google::protobuf::io::ArrayInputStream zero_copy_stream(value.data(), value.size());
-  google::protobuf::io::CodedInputStream in_stream(&zero_copy_stream);
+  cv::protobuf::io::ArrayInputStream zero_copy_stream(value.data(), value.size());
+  cv::protobuf::io::CodedInputStream in_stream(&zero_copy_stream);
   // We know the type so we can render it. Recursively parse the nested stream
   // using a nested ProtoStreamObjectSource using our nested type information.
   ProtoStreamObjectSource nested_os(&in_stream, os->typeinfo_, *nested_type);
@@ -660,7 +660,7 @@ Status ProtoStreamObjectSource::RenderAny(const ProtoStreamObjectSource* os,
 }
 
 Status ProtoStreamObjectSource::RenderFieldMask(
-    const ProtoStreamObjectSource* os, const google::protobuf::Type& type,
+    const ProtoStreamObjectSource* os, const cv::protobuf::Type& type,
     StringPiece field_name, ObjectWriter* ow) {
   string combined;
   uint32 buffer32;
@@ -668,7 +668,7 @@ Status ProtoStreamObjectSource::RenderFieldMask(
   for (uint32 tag = os->stream_->ReadTag(); tag != 0;
        tag = os->stream_->ReadTag()) {
     if (paths_field_tag == 0) {
-      const google::protobuf::Field* field = os->FindAndVerifyField(type, tag);
+      const cv::protobuf::Field* field = os->FindAndVerifyField(type, tag);
       if (field != NULL && field->number() == 1 &&
           field->name() == "paths") {
         paths_field_tag = tag;
@@ -728,7 +728,7 @@ void ProtoStreamObjectSource::InitRendererMap() {
       &ProtoStreamObjectSource::RenderStructListValue;
   (*renderers_)["google.protobuf.FieldMask"] =
       &ProtoStreamObjectSource::RenderFieldMask;
-  ::google::protobuf::internal::OnShutdown(&DeleteRendererMap);
+  ::cv::protobuf::internal::OnShutdown(&DeleteRendererMap);
 }
 
 void ProtoStreamObjectSource::DeleteRendererMap() {
@@ -739,22 +739,22 @@ void ProtoStreamObjectSource::DeleteRendererMap() {
 // static
 ProtoStreamObjectSource::TypeRenderer*
 ProtoStreamObjectSource::FindTypeRenderer(const string& type_url) {
-  ::google::protobuf::GoogleOnceInit(&source_renderers_init_, &InitRendererMap);
+  ::cv::protobuf::GoogleOnceInit(&source_renderers_init_, &InitRendererMap);
   return FindOrNull(*renderers_, type_url);
 }
 
 Status ProtoStreamObjectSource::RenderField(
-    const google::protobuf::Field* field, StringPiece field_name,
+    const cv::protobuf::Field* field, StringPiece field_name,
     ObjectWriter* ow) const {
   // Short-circuit message types as it tends to call WriteMessage recursively
   // and ends up using a lot of stack space. Keep the stack usage of this
   // message small in order to preserve stack space and not crash.
-  if (field->kind() == google::protobuf::Field_Kind_TYPE_MESSAGE) {
+  if (field->kind() == cv::protobuf::Field_Kind_TYPE_MESSAGE) {
     uint32 buffer32;
     stream_->ReadVarint32(&buffer32);  // message length
     int old_limit = stream_->PushLimit(buffer32);
     // Get the nested message type for this field.
-    const google::protobuf::Type* type =
+    const cv::protobuf::Type* type =
         typeinfo_->GetTypeByTypeUrl(field->type_url());
     if (type == NULL) {
       return Status(util::error::INTERNAL,
@@ -787,79 +787,79 @@ Status ProtoStreamObjectSource::RenderField(
 }
 
 Status ProtoStreamObjectSource::RenderNonMessageField(
-    const google::protobuf::Field* field, StringPiece field_name,
+    const cv::protobuf::Field* field, StringPiece field_name,
     ObjectWriter* ow) const {
   // Temporary buffers of different types.
   uint32 buffer32;
   uint64 buffer64;
   string strbuffer;
   switch (field->kind()) {
-    case google::protobuf::Field_Kind_TYPE_BOOL: {
+    case cv::protobuf::Field_Kind_TYPE_BOOL: {
       stream_->ReadVarint64(&buffer64);
       ow->RenderBool(field_name, buffer64 != 0);
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_INT32: {
+    case cv::protobuf::Field_Kind_TYPE_INT32: {
       stream_->ReadVarint32(&buffer32);
       ow->RenderInt32(field_name, bit_cast<int32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_INT64: {
+    case cv::protobuf::Field_Kind_TYPE_INT64: {
       stream_->ReadVarint64(&buffer64);
       ow->RenderInt64(field_name, bit_cast<int64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_UINT32: {
+    case cv::protobuf::Field_Kind_TYPE_UINT32: {
       stream_->ReadVarint32(&buffer32);
       ow->RenderUint32(field_name, bit_cast<uint32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_UINT64: {
+    case cv::protobuf::Field_Kind_TYPE_UINT64: {
       stream_->ReadVarint64(&buffer64);
       ow->RenderUint64(field_name, bit_cast<uint64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SINT32: {
+    case cv::protobuf::Field_Kind_TYPE_SINT32: {
       stream_->ReadVarint32(&buffer32);
       ow->RenderInt32(field_name, WireFormatLite::ZigZagDecode32(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SINT64: {
+    case cv::protobuf::Field_Kind_TYPE_SINT64: {
       stream_->ReadVarint64(&buffer64);
       ow->RenderInt64(field_name, WireFormatLite::ZigZagDecode64(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SFIXED32: {
+    case cv::protobuf::Field_Kind_TYPE_SFIXED32: {
       stream_->ReadLittleEndian32(&buffer32);
       ow->RenderInt32(field_name, bit_cast<int32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SFIXED64: {
+    case cv::protobuf::Field_Kind_TYPE_SFIXED64: {
       stream_->ReadLittleEndian64(&buffer64);
       ow->RenderInt64(field_name, bit_cast<int64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_FIXED32: {
+    case cv::protobuf::Field_Kind_TYPE_FIXED32: {
       stream_->ReadLittleEndian32(&buffer32);
       ow->RenderUint32(field_name, bit_cast<uint32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_FIXED64: {
+    case cv::protobuf::Field_Kind_TYPE_FIXED64: {
       stream_->ReadLittleEndian64(&buffer64);
       ow->RenderUint64(field_name, bit_cast<uint64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_FLOAT: {
+    case cv::protobuf::Field_Kind_TYPE_FLOAT: {
       stream_->ReadLittleEndian32(&buffer32);
       ow->RenderFloat(field_name, bit_cast<float>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_DOUBLE: {
+    case cv::protobuf::Field_Kind_TYPE_DOUBLE: {
       stream_->ReadLittleEndian64(&buffer64);
       ow->RenderDouble(field_name, bit_cast<double>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_ENUM: {
+    case cv::protobuf::Field_Kind_TYPE_ENUM: {
       stream_->ReadVarint32(&buffer32);
 
       // If the field represents an explicit NULL value, render null.
@@ -871,12 +871,12 @@ Status ProtoStreamObjectSource::RenderNonMessageField(
       // Get the nested enum type for this field.
       // TODO(skarvaje): Avoid string manipulation. Find ways to speed this
       // up.
-      const google::protobuf::Enum* en =
+      const cv::protobuf::Enum* en =
           typeinfo_->GetEnumByTypeUrl(field->type_url());
       // Lookup the name of the enum, and render that. Unknown enum values
       // are printed as integers.
       if (en != NULL) {
-        const google::protobuf::EnumValue* enum_value =
+        const cv::protobuf::EnumValue* enum_value =
             FindEnumValueByNumber(*en, buffer32);
         if (enum_value != NULL) {
           if (use_ints_for_enums_) {
@@ -894,13 +894,13 @@ Status ProtoStreamObjectSource::RenderNonMessageField(
       }
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_STRING: {
+    case cv::protobuf::Field_Kind_TYPE_STRING: {
       stream_->ReadVarint32(&buffer32);  // string size.
       stream_->ReadString(&strbuffer, buffer32);
       ow->RenderString(field_name, strbuffer);
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_BYTES: {
+    case cv::protobuf::Field_Kind_TYPE_BYTES: {
       stream_->ReadVarint32(&buffer32);  // bytes size.
       stream_->ReadString(&strbuffer, buffer32);
       ow->RenderBytes(field_name, strbuffer);
@@ -914,98 +914,98 @@ Status ProtoStreamObjectSource::RenderNonMessageField(
 
 // TODO(skarvaje): Fix this to avoid code duplication.
 const string ProtoStreamObjectSource::ReadFieldValueAsString(
-    const google::protobuf::Field& field) const {
+    const cv::protobuf::Field& field) const {
   string result;
   switch (field.kind()) {
-    case google::protobuf::Field_Kind_TYPE_BOOL: {
+    case cv::protobuf::Field_Kind_TYPE_BOOL: {
       uint64 buffer64;
       stream_->ReadVarint64(&buffer64);
       result = buffer64 != 0 ? "true" : "false";
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_INT32: {
+    case cv::protobuf::Field_Kind_TYPE_INT32: {
       uint32 buffer32;
       stream_->ReadVarint32(&buffer32);
       result = SimpleItoa(bit_cast<int32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_INT64: {
+    case cv::protobuf::Field_Kind_TYPE_INT64: {
       uint64 buffer64;
       stream_->ReadVarint64(&buffer64);
       result = SimpleItoa(bit_cast<int64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_UINT32: {
+    case cv::protobuf::Field_Kind_TYPE_UINT32: {
       uint32 buffer32;
       stream_->ReadVarint32(&buffer32);
       result = SimpleItoa(bit_cast<uint32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_UINT64: {
+    case cv::protobuf::Field_Kind_TYPE_UINT64: {
       uint64 buffer64;
       stream_->ReadVarint64(&buffer64);
       result = SimpleItoa(bit_cast<uint64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SINT32: {
+    case cv::protobuf::Field_Kind_TYPE_SINT32: {
       uint32 buffer32;
       stream_->ReadVarint32(&buffer32);
       result = SimpleItoa(WireFormatLite::ZigZagDecode32(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SINT64: {
+    case cv::protobuf::Field_Kind_TYPE_SINT64: {
       uint64 buffer64;
       stream_->ReadVarint64(&buffer64);
       result = SimpleItoa(WireFormatLite::ZigZagDecode64(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SFIXED32: {
+    case cv::protobuf::Field_Kind_TYPE_SFIXED32: {
       uint32 buffer32;
       stream_->ReadLittleEndian32(&buffer32);
       result = SimpleItoa(bit_cast<int32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_SFIXED64: {
+    case cv::protobuf::Field_Kind_TYPE_SFIXED64: {
       uint64 buffer64;
       stream_->ReadLittleEndian64(&buffer64);
       result = SimpleItoa(bit_cast<int64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_FIXED32: {
+    case cv::protobuf::Field_Kind_TYPE_FIXED32: {
       uint32 buffer32;
       stream_->ReadLittleEndian32(&buffer32);
       result = SimpleItoa(bit_cast<uint32>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_FIXED64: {
+    case cv::protobuf::Field_Kind_TYPE_FIXED64: {
       uint64 buffer64;
       stream_->ReadLittleEndian64(&buffer64);
       result = SimpleItoa(bit_cast<uint64>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_FLOAT: {
+    case cv::protobuf::Field_Kind_TYPE_FLOAT: {
       uint32 buffer32;
       stream_->ReadLittleEndian32(&buffer32);
       result = SimpleFtoa(bit_cast<float>(buffer32));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_DOUBLE: {
+    case cv::protobuf::Field_Kind_TYPE_DOUBLE: {
       uint64 buffer64;
       stream_->ReadLittleEndian64(&buffer64);
       result = SimpleDtoa(bit_cast<double>(buffer64));
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_ENUM: {
+    case cv::protobuf::Field_Kind_TYPE_ENUM: {
       uint32 buffer32;
       stream_->ReadVarint32(&buffer32);
       // Get the nested enum type for this field.
       // TODO(skarvaje): Avoid string manipulation. Find ways to speed this
       // up.
-      const google::protobuf::Enum* en =
+      const cv::protobuf::Enum* en =
           typeinfo_->GetEnumByTypeUrl(field.type_url());
       // Lookup the name of the enum, and render that. Skips unknown enums.
       if (en != NULL) {
-        const google::protobuf::EnumValue* enum_value =
+        const cv::protobuf::EnumValue* enum_value =
             FindEnumValueByNumber(*en, buffer32);
         if (enum_value != NULL) {
           result = enum_value->name();
@@ -1013,13 +1013,13 @@ const string ProtoStreamObjectSource::ReadFieldValueAsString(
       }
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_STRING: {
+    case cv::protobuf::Field_Kind_TYPE_STRING: {
       uint32 buffer32;
       stream_->ReadVarint32(&buffer32);  // string size.
       stream_->ReadString(&result, buffer32);
       break;
     }
-    case google::protobuf::Field_Kind_TYPE_BYTES: {
+    case cv::protobuf::Field_Kind_TYPE_BYTES: {
       uint32 buffer32;
       stream_->ReadVarint32(&buffer32);  // bytes size.
       stream_->ReadString(&result, buffer32);
@@ -1034,15 +1034,15 @@ const string ProtoStreamObjectSource::ReadFieldValueAsString(
 // Field is a map if it is a repeated message and it has an option "map_type".
 // TODO(skarvaje): Consider pre-computing the IsMap() into Field directly.
 bool ProtoStreamObjectSource::IsMap(
-    const google::protobuf::Field& field) const {
-  const google::protobuf::Type* field_type =
+    const cv::protobuf::Field& field) const {
+  const cv::protobuf::Type* field_type =
       typeinfo_->GetTypeByTypeUrl(field.type_url());
-  return field.kind() == google::protobuf::Field_Kind_TYPE_MESSAGE &&
-         google::protobuf::util::converter::IsMap(field, *field_type);
+  return field.kind() == cv::protobuf::Field_Kind_TYPE_MESSAGE &&
+         cv::protobuf::util::converter::IsMap(field, *field_type);
 }
 
 std::pair<int64, int32> ProtoStreamObjectSource::ReadSecondsAndNanos(
-    const google::protobuf::Type& type) const {
+    const cv::protobuf::Type& type) const {
   uint64 seconds = 0;
   uint32 nanos = 0;
   uint32 tag = 0;
@@ -1050,7 +1050,7 @@ std::pair<int64, int32> ProtoStreamObjectSource::ReadSecondsAndNanos(
   int32 signed_nanos = 0;
 
   for (tag = stream_->ReadTag(); tag != 0; tag = stream_->ReadTag()) {
-    const google::protobuf::Field* field = FindAndVerifyField(type, tag);
+    const cv::protobuf::Field* field = FindAndVerifyField(type, tag);
     if (field == NULL) {
       WireFormat::SkipField(stream_, tag, NULL);
       continue;
@@ -1083,8 +1083,8 @@ Status ProtoStreamObjectSource::IncrementRecursionDepth(
 
 namespace {
 // TODO(skarvaje): Speed this up by not doing a linear scan.
-const google::protobuf::Field* FindFieldByNumber(
-    const google::protobuf::Type& type, int number) {
+const cv::protobuf::Field* FindFieldByNumber(
+    const cv::protobuf::Type& type, int number) {
   for (int i = 0; i < type.fields_size(); ++i) {
     if (type.fields(i).number() == number) {
       return &type.fields(i);
@@ -1095,18 +1095,18 @@ const google::protobuf::Field* FindFieldByNumber(
 
 // TODO(skarvaje): Replace FieldDescriptor by implementing IsTypePackable()
 // using tech Field.
-bool IsPackable(const google::protobuf::Field& field) {
+bool IsPackable(const cv::protobuf::Field& field) {
   return field.cardinality() ==
-             google::protobuf::Field_Cardinality_CARDINALITY_REPEATED &&
-         google::protobuf::FieldDescriptor::IsTypePackable(
-             static_cast<google::protobuf::FieldDescriptor::Type>(field.kind()));
+             cv::protobuf::Field_Cardinality_CARDINALITY_REPEATED &&
+         cv::protobuf::FieldDescriptor::IsTypePackable(
+             static_cast<cv::protobuf::FieldDescriptor::Type>(field.kind()));
 }
 
 // TODO(skarvaje): Speed this up by not doing a linear scan.
-const google::protobuf::EnumValue* FindEnumValueByNumber(
-    const google::protobuf::Enum& tech_enum, int number) {
+const cv::protobuf::EnumValue* FindEnumValueByNumber(
+    const cv::protobuf::Enum& tech_enum, int number) {
   for (int i = 0; i < tech_enum.enumvalue_size(); ++i) {
-    const google::protobuf::EnumValue& ev = tech_enum.enumvalue(i);
+    const cv::protobuf::EnumValue& ev = tech_enum.enumvalue(i);
     if (ev.number() == number) {
       return &ev;
     }
@@ -1133,4 +1133,4 @@ const string FormatNanos(uint32 nanos, bool with_trailing_zeros) {
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

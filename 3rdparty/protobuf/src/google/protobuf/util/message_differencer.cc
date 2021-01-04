@@ -59,7 +59,7 @@
 #include <google/protobuf/util/field_comparator.h>
 #include <google/protobuf/stubs/strutil.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 namespace util {
@@ -493,8 +493,8 @@ bool MessageDifferencer::Compare(
   }
   // Expand google.protobuf.Any payload if possible.
   if (descriptor1->full_name() == internal::kAnyFullTypeName) {
-    google::protobuf::scoped_ptr<Message> data1;
-    google::protobuf::scoped_ptr<Message> data2;
+    cv::protobuf::scoped_ptr<Message> data1;
+    cv::protobuf::scoped_ptr<Message> data2;
     if (UnpackAny(message1, &data1) && UnpackAny(message2, &data2)) {
       // Avoid DFATAL for different descriptors in google.protobuf.Any payloads.
       if (data1->GetDescriptor() != data2->GetDescriptor()) {
@@ -539,9 +539,9 @@ bool MessageDifferencer::Compare(
   bool unknown_compare_result = true;
   // Ignore unknown fields in EQUIVALENT mode
   if (message_field_comparison_ != EQUIVALENT) {
-    const google::protobuf::UnknownFieldSet* unknown_field_set1 =
+    const cv::protobuf::UnknownFieldSet* unknown_field_set1 =
         &reflection1->GetUnknownFields(message1);
-    const google::protobuf::UnknownFieldSet* unknown_field_set2 =
+    const cv::protobuf::UnknownFieldSet* unknown_field_set2 =
         &reflection2->GetUnknownFields(message2);
     if (!CompareUnknownFields(message1, message2,
                               *unknown_field_set1, *unknown_field_set2,
@@ -1071,7 +1071,7 @@ struct UnknownFieldOrdering {
 }  // namespace
 
 bool MessageDifferencer::UnpackAny(const Message& any,
-                                   google::protobuf::scoped_ptr<Message>* data) {
+                                   cv::protobuf::scoped_ptr<Message>* data) {
   const Reflection* reflection = any.GetReflection();
   const FieldDescriptor* type_url_field;
   const FieldDescriptor* value_field;
@@ -1084,7 +1084,7 @@ bool MessageDifferencer::UnpackAny(const Message& any,
     return false;
   }
 
-  const google::protobuf::Descriptor* desc =
+  const cv::protobuf::Descriptor* desc =
       any.GetDescriptor()->file()->pool()->FindMessageTypeByName(
           full_type_name);
   if (desc == NULL) {
@@ -1106,8 +1106,8 @@ bool MessageDifferencer::UnpackAny(const Message& any,
 
 bool MessageDifferencer::CompareUnknownFields(
     const Message& message1, const Message& message2,
-    const google::protobuf::UnknownFieldSet& unknown_field_set1,
-    const google::protobuf::UnknownFieldSet& unknown_field_set2,
+    const cv::protobuf::UnknownFieldSet& unknown_field_set1,
+    const cv::protobuf::UnknownFieldSet& unknown_field_set2,
     std::vector<SpecificField>* parent_field) {
   // Ignore unknown fields in EQUIVALENT mode.
   if (message_field_comparison_ == EQUIVALENT) return true;
@@ -1344,7 +1344,7 @@ class MaximumMatcher {
 
   int count1_;
   int count2_;
-  google::protobuf::scoped_ptr<NodeMatchCallback> match_callback_;
+  cv::protobuf::scoped_ptr<NodeMatchCallback> match_callback_;
   std::map<std::pair<int, int>, bool> cached_match_results_;
   std::vector<int>* match_list1_;
   std::vector<int>* match_list2_;
@@ -1449,7 +1449,7 @@ bool MessageDifferencer::MatchRepeatedFieldIndices(
       // algorithm will fail to find a maximum matching.
       // Here we use the argumenting path algorithm.
       MaximumMatcher::NodeMatchCallback* callback =
-          ::google::protobuf::NewPermanentCallback(
+          ::cv::protobuf::NewPermanentCallback(
               this, &MessageDifferencer::IsMatch,
               repeated_field, key_comparator,
               &message1, &message2, parent_fields);
@@ -1753,4 +1753,4 @@ void MessageDifferencer::StreamReporter::ReportUnknownFieldIgnored(
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

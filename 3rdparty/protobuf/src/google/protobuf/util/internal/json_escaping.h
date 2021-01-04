@@ -34,7 +34,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/bytestream.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -86,6 +86,6 @@ class JsonEscaping {
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // NET_PROTO2_UTIL_CONVERTER_STRINGS_JSON_ESCAPING_H_

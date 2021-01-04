@@ -36,7 +36,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/stringpiece.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace error {
@@ -112,5 +112,5 @@ LIBPROTOBUF_EXPORT ostream& operator<<(ostream& os, const Status& x);
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_STUBS_STATUS_H_

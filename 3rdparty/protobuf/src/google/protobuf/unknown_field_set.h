@@ -45,7 +45,7 @@
 #include <google/protobuf/stubs/logging.h>
 #include <google/protobuf/message_lite.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
   namespace io {
     class CodedInputStream;         // coded_stream.h
@@ -359,5 +359,5 @@ inline void UnknownField::SetType(Type type) {
 
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UNKNOWN_FIELD_SET_H__

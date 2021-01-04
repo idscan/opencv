@@ -71,7 +71,7 @@
 // Useful integer and floating point limits and type traits.
 // This is just for the documentation;
 // real members are defined in our specializations below.
-namespace google {
+namespace cv {
 namespace protobuf {
 template<typename T> struct MathLimits {
   // Type name.
@@ -298,6 +298,6 @@ DECL_FP_LIMITS(long double, LDBL)
 
 // ========================================================================= //
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // UTIL_MATH_MATHLIMITS_H__

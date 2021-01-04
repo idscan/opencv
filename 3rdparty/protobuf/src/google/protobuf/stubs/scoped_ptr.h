@@ -33,7 +33,7 @@
 
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // ===================================================================
@@ -231,6 +231,6 @@ using internal::scoped_array;
 
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_SCOPED_PTR_H_

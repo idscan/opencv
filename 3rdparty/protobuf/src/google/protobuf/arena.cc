@@ -40,7 +40,7 @@
 
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 static const size_t kMinCleanupListElements = 8;
 static const size_t kMaxCleanupListElements = 64;  // 1kB on 64-bit.
 
@@ -48,7 +48,7 @@ namespace protobuf {
 namespace internal {
 
 
-google::protobuf::internal::SequenceNumber ArenaImpl::lifecycle_id_generator_;
+cv::protobuf::internal::SequenceNumber ArenaImpl::lifecycle_id_generator_;
 #if defined(GOOGLE_PROTOBUF_NO_THREADLOCAL)
 ArenaImpl::ThreadCache& ArenaImpl::thread_cache() {
   static internal::ThreadLocalStorage<ThreadCache>* thread_cache_ =
@@ -66,8 +66,8 @@ GOOGLE_THREAD_LOCAL ArenaImpl::ThreadCache ArenaImpl::thread_cache_ = {-1, NULL}
 
 void ArenaImpl::Init() {
   lifecycle_id_ = lifecycle_id_generator_.GetNext();
-  google::protobuf::internal::NoBarrier_Store(&hint_, 0);
-  google::protobuf::internal::NoBarrier_Store(&threads_, 0);
+  cv::protobuf::internal::NoBarrier_Store(&hint_, 0);
+  cv::protobuf::internal::NoBarrier_Store(&threads_, 0);
 
   if (initial_block_) {
     // Thread which calls Init() owns the first block. This allows the
@@ -76,13 +76,13 @@ void ArenaImpl::Init() {
     InitBlock(initial_block_, &thread_cache(), options_.initial_block_size);
     ThreadInfo* info = NewThreadInfo(initial_block_);
     info->next = NULL;
-    google::protobuf::internal::NoBarrier_Store(&threads_,
-                                  reinterpret_cast<google::protobuf::internal::AtomicWord>(info));
-    google::protobuf::internal::NoBarrier_Store(&space_allocated_,
+    cv::protobuf::internal::NoBarrier_Store(&threads_,
+                                  reinterpret_cast<cv::protobuf::internal::AtomicWord>(info));
+    cv::protobuf::internal::NoBarrier_Store(&space_allocated_,
                                   options_.initial_block_size);
     CacheBlock(initial_block_);
   } else {
-    google::protobuf::internal::NoBarrier_Store(&space_allocated_, 0);
+    cv::protobuf::internal::NoBarrier_Store(&space_allocated_, 0);
   }
 }
 
@@ -118,7 +118,7 @@ ArenaImpl::Block* ArenaImpl::NewBlock(void* me, Block* my_last_block,
 
   Block* b = reinterpret_cast<Block*>(options_.block_alloc(size));
   InitBlock(b, me, size);
-  google::protobuf::internal::NoBarrier_AtomicIncrement(&space_allocated_, size);
+  cv::protobuf::internal::NoBarrier_AtomicIncrement(&space_allocated_, size);
   return b;
 }
 
@@ -204,7 +204,7 @@ ArenaImpl::Block* ArenaImpl::GetBlock(size_t n) {
   // Check whether we own the last accessed block on this arena.
   // This fast path optimizes the case where a single thread uses multiple
   // arenas.
-  Block* b = reinterpret_cast<Block*>(google::protobuf::internal::Acquire_Load(&hint_));
+  Block* b = reinterpret_cast<Block*>(cv::protobuf::internal::Acquire_Load(&hint_));
   if (b != NULL && b->owner == tc) {
     my_block = b;
     if (my_block->avail() >= n) {
@@ -245,12 +245,12 @@ ArenaImpl::Block* ArenaImpl::GetBlockSlow(void* me, Block* my_full_block,
 }
 
 uint64 ArenaImpl::SpaceAllocated() const {
-  return google::protobuf::internal::NoBarrier_Load(&space_allocated_);
+  return cv::protobuf::internal::NoBarrier_Load(&space_allocated_);
 }
 
 uint64 ArenaImpl::SpaceUsed() const {
   ThreadInfo* info =
-      reinterpret_cast<ThreadInfo*>(google::protobuf::internal::Acquire_Load(&threads_));
+      reinterpret_cast<ThreadInfo*>(cv::protobuf::internal::Acquire_Load(&threads_));
   uint64 space_used = 0;
 
   for ( ; info; info = info->next) {
@@ -269,7 +269,7 @@ uint64 ArenaImpl::FreeBlocks() {
   // By omitting an Acquire barrier we ensure that any user code that doesn't
   // properly synchronize Reset() or the destructor will throw a TSAN warning.
   ThreadInfo* info =
-      reinterpret_cast<ThreadInfo*>(google::protobuf::internal::NoBarrier_Load(&threads_));
+      reinterpret_cast<ThreadInfo*>(cv::protobuf::internal::NoBarrier_Load(&threads_));
 
   while (info) {
     // This is inside the block we are freeing, so we need to read it now.
@@ -301,7 +301,7 @@ void ArenaImpl::CleanupList() {
   // By omitting an Acquire barrier we ensure that any user code that doesn't
   // properly synchronize Reset() or the destructor will throw a TSAN warning.
   ThreadInfo* info =
-      reinterpret_cast<ThreadInfo*>(google::protobuf::internal::NoBarrier_Load(&threads_));
+      reinterpret_cast<ThreadInfo*>(cv::protobuf::internal::NoBarrier_Load(&threads_));
 
   for ( ; info; info = info->next) {
     CleanupChunk* list = info->cleanup;
@@ -329,7 +329,7 @@ ArenaImpl::ThreadInfo* ArenaImpl::NewThreadInfo(Block* b) {
 
 ArenaImpl::ThreadInfo* ArenaImpl::FindThreadInfo(void* me) {
   ThreadInfo* info =
-      reinterpret_cast<ThreadInfo*>(google::protobuf::internal::Acquire_Load(&threads_));
+      reinterpret_cast<ThreadInfo*>(cv::protobuf::internal::Acquire_Load(&threads_));
   for ( ; info; info = info->next) {
     if (info->owner == me) {
       return info;
@@ -348,12 +348,12 @@ ArenaImpl::ThreadInfo* ArenaImpl::GetThreadInfo(void* me, size_t n) {
     Block* b = NewBlock(me, NULL, sizeof(ThreadInfo) + n);
     info = NewThreadInfo(b);
 
-    google::protobuf::internal::AtomicWord head;
+    cv::protobuf::internal::AtomicWord head;
     do {
-      head = google::protobuf::internal::NoBarrier_Load(&threads_);
+      head = cv::protobuf::internal::NoBarrier_Load(&threads_);
       info->next = reinterpret_cast<ThreadInfo*>(head);
-    } while (google::protobuf::internal::Release_CompareAndSwap(
-                 &threads_, head, reinterpret_cast<google::protobuf::internal::AtomicWord>(info)) != head);
+    } while (cv::protobuf::internal::Release_CompareAndSwap(
+                 &threads_, head, reinterpret_cast<cv::protobuf::internal::AtomicWord>(info)) != head);
   }
 
   return info;
@@ -382,4 +382,4 @@ void Arena::OnArenaAllocation(const std::type_info* allocated_type,
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

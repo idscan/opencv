@@ -40,7 +40,7 @@
 #include <google/protobuf/map_field.h>
 #include <google/protobuf/map_type_handler.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 // UnwrapMapKey template
@@ -337,5 +337,5 @@ size_t MapField<Derived, Key, T, kKeyFieldType, kValueFieldType,
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_MAP_FIELD_INL_H__

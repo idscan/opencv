@@ -37,7 +37,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // MSVC++ 2005 and older compilers think the header declaration was a
@@ -141,4 +141,4 @@ DEF_FP_LIMITS(long double, LDBL);
 #undef DEF_FP_LIMITS
 #undef DEF_PRECISION_LIMITS
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

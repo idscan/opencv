@@ -32,7 +32,7 @@
 
 #include <google/protobuf/generated_message_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -62,10 +62,10 @@ void AnyMetadata::PackFrom(const Message& message) {
 
 void AnyMetadata::PackFrom(const Message& message,
                            const string& type_url_prefix) {
-  type_url_->SetNoArena(&::google::protobuf::internal::GetEmptyString(),
+  type_url_->SetNoArena(&::cv::protobuf::internal::GetEmptyString(),
                         GetTypeUrl(message.GetDescriptor(), type_url_prefix));
   message.SerializeToString(value_->MutableNoArena(
-      &::google::protobuf::internal::GetEmptyStringAlreadyInited()));
+      &::cv::protobuf::internal::GetEmptyStringAlreadyInited()));
 }
 
 bool AnyMetadata::UnpackTo(Message* message) const {
@@ -111,4 +111,4 @@ bool GetAnyFieldDescriptors(const Message& message,
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

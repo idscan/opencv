@@ -36,7 +36,7 @@
 #include <google/protobuf/util/internal/location_tracker.h>
 #include <gmock/gmock.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -59,5 +59,5 @@ class MockErrorListener : public ErrorListener {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_MOCK_ERROR_LISTENER_H__

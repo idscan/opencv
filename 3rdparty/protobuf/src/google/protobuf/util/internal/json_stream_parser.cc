@@ -48,7 +48,7 @@
 #include <google/protobuf/stubs/mathlimits.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
@@ -157,7 +157,7 @@ util::Status JsonStreamParser::FinishParse() {
   }
 
   // Storage for UTF8-coerced string.
-  google::protobuf::scoped_array<char> utf8;
+  cv::protobuf::scoped_array<char> utf8;
   if (coerce_to_utf8_) {
     utf8.reset(new char[leftover_.size()]);
     char* coerced = internal::UTF8CoerceToStructurallyValid(leftover_, utf8.get(), ' ');
@@ -861,4 +861,4 @@ JsonStreamParser::TokenType JsonStreamParser::GetNextTokenType() {
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
