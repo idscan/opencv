@@ -32574,7 +32574,7 @@ inline void PSROIPoolingParameter::set_group_size(::cv::protobuf::int32 value) {
 
 }  // namespace opencv_caffe
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 template <> struct is_proto_enum< ::opencv_caffe::PriorBoxParameter_CodeType> : ::cv::protobuf::internal::true_type {};

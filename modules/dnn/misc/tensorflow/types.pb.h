@@ -126,7 +126,7 @@ inline bool DataType_Parse(
 
 }  // namespace opencv_tensorflow
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 template <> struct is_proto_enum< ::opencv_tensorflow::DataType> : ::cv::protobuf::internal::true_type {};

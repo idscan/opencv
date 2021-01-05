@@ -5822,7 +5822,7 @@ inline void OperatorSetIdProto::set_version(::cv::protobuf::int64 value) {
 
 }  // namespace opencv_onnx
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 template <> struct is_proto_enum< ::opencv_onnx::AttributeProto_AttributeType> : ::cv::protobuf::internal::true_type {};
