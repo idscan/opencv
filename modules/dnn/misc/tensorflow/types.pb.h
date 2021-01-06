@@ -136,7 +136,7 @@ inline const EnumDescriptor* GetEnumDescriptor< ::opencv_tensorflow::DataType>()
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 // @@protoc_insertion_point(global_scope)
 

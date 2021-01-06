@@ -5841,7 +5841,7 @@ inline const EnumDescriptor* GetEnumDescriptor< ::opencv_onnx::Version>() {
   return ::opencv_onnx::Version_descriptor();
 }
 
-}  // namespace protobuf
+}  // namespace cv
 }  // namespace google
 
 // @@protoc_insertion_point(global_scope)

@@ -32714,7 +32714,7 @@ inline const EnumDescriptor* GetEnumDescriptor< ::opencv_caffe::Phase>() {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 // @@protoc_insertion_point(global_scope)
 
