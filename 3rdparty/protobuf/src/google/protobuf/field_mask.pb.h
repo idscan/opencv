@@ -31,7 +31,7 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2ffield_5fmask_2eproto {
+namespace protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -47,7 +47,7 @@ void LIBPROTOBUF_EXPORT InitDefaultsFieldMask();
 inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsFieldMask();
 }
-}  // namespace protobuf_google_2fprotobuf_2ffield_5fmask_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto
 namespace cv {
 namespace protobuf {
 class FieldMask;
@@ -170,8 +170,8 @@ class LIBPROTOBUF_EXPORT FieldMask : public ::cv::protobuf::Message /* @@protoc_
   ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::cv::protobuf::RepeatedPtrField< ::std::string> paths_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::InitDefaultsFieldMaskImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::InitDefaultsFieldMaskImpl();
 };
 // ===================================================================
 

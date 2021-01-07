@@ -33,7 +33,7 @@
 #include <google/protobuf/type.pb.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fapi_2eproto {
+namespace protobuf_cv_2fprotobuf_2fapi_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -55,7 +55,7 @@ inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsMethod();
   InitDefaultsMixin();
 }
-}  // namespace protobuf_google_2fprotobuf_2fapi_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fapi_2eproto
 namespace cv {
 namespace protobuf {
 class Api;
@@ -247,8 +247,8 @@ class LIBPROTOBUF_EXPORT Api : public ::cv::protobuf::Message /* @@protoc_insert
   ::cv::protobuf::SourceContext* source_context_;
   int syntax_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fapi_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsApiImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fapi_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsApiImpl();
 };
 // -------------------------------------------------------------------
 
@@ -418,8 +418,8 @@ class LIBPROTOBUF_EXPORT Method : public ::cv::protobuf::Message /* @@protoc_ins
   bool response_streaming_;
   int syntax_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fapi_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMethodImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fapi_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMethodImpl();
 };
 // -------------------------------------------------------------------
 
@@ -540,8 +540,8 @@ class LIBPROTOBUF_EXPORT Mixin : public ::cv::protobuf::Message /* @@protoc_inse
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::internal::ArenaStringPtr root_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fapi_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMixinImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fapi_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMixinImpl();
 };
 // ===================================================================
 

@@ -31,7 +31,7 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fduration_2eproto {
+namespace protobuf_cv_2fprotobuf_2fduration_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -47,7 +47,7 @@ void LIBPROTOBUF_EXPORT InitDefaultsDuration();
 inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsDuration();
 }
-}  // namespace protobuf_google_2fprotobuf_2fduration_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fduration_2eproto
 namespace cv {
 namespace protobuf {
 class Duration;
@@ -176,8 +176,8 @@ class LIBPROTOBUF_EXPORT Duration : public ::cv::protobuf::Message /* @@protoc_i
   ::cv::protobuf::int64 seconds_;
   ::cv::protobuf::int32 nanos_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fduration_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fduration_2eproto::InitDefaultsDurationImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fduration_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fduration_2eproto::InitDefaultsDurationImpl();
 };
 // ===================================================================
 

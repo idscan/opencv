@@ -28,7 +28,7 @@ class EmptyDefaultTypeInternal {
 } _Empty_default_instance_;
 }  // namespace protobuf
 }  // namespace cv
-namespace protobuf_google_2fprotobuf_2fempty_2eproto {
+namespace protobuf_cv_2fprotobuf_2fempty_2eproto {
 void InitDefaultsEmptyImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -111,7 +111,7 @@ struct StaticDescriptorInitializer {
     AddDescriptors();
   }
 } static_descriptor_initializer;
-}  // namespace protobuf_google_2fprotobuf_2fempty_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fempty_2eproto
 namespace cv {
 namespace protobuf {
 
@@ -125,7 +125,7 @@ void Empty::InitAsDefaultInstance() {
 Empty::Empty()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2fempty_2eproto::InitDefaultsEmpty();
+    ::protobuf_cv_2fprotobuf_2fempty_2eproto::InitDefaultsEmpty();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Empty)
@@ -133,7 +133,7 @@ Empty::Empty()
 Empty::Empty(::cv::protobuf::Arena* arena)
   : ::cv::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_google_2fprotobuf_2fempty_2eproto::InitDefaultsEmpty();
+  ::protobuf_cv_2fprotobuf_2fempty_2eproto::InitDefaultsEmpty();
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.protobuf.Empty)
@@ -171,12 +171,12 @@ void Empty::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Empty::descriptor() {
-  ::protobuf_google_2fprotobuf_2fempty_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fempty_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2fempty_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fempty_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Empty& Empty::default_instance() {
-  ::protobuf_google_2fprotobuf_2fempty_2eproto::InitDefaultsEmpty();
+  ::protobuf_cv_2fprotobuf_2fempty_2eproto::InitDefaultsEmpty();
   return *internal_default_instance();
 }
 
@@ -330,8 +330,8 @@ void Empty::InternalSwap(Empty* other) {
 }
 
 ::cv::protobuf::Metadata Empty::GetMetadata() const {
-  protobuf_google_2fprotobuf_2fempty_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fempty_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2fempty_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fempty_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 

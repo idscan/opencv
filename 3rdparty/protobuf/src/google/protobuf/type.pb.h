@@ -34,7 +34,7 @@
 #include <google/protobuf/source_context.pb.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2ftype_2eproto {
+namespace protobuf_cv_2fprotobuf_2ftype_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -62,7 +62,7 @@ inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsEnumValue();
   InitDefaultsOption();
 }
-}  // namespace protobuf_google_2fprotobuf_2ftype_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2ftype_2eproto
 namespace cv {
 namespace protobuf {
 class Enum;
@@ -367,8 +367,8 @@ class LIBPROTOBUF_EXPORT Type : public ::cv::protobuf::Message /* @@protoc_inser
   ::cv::protobuf::SourceContext* source_context_;
   int syntax_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2ftype_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsTypeImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2ftype_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsTypeImpl();
 };
 // -------------------------------------------------------------------
 
@@ -708,8 +708,8 @@ class LIBPROTOBUF_EXPORT Field : public ::cv::protobuf::Message /* @@protoc_inse
   ::cv::protobuf::int32 oneof_index_;
   bool packed_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2ftype_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsFieldImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2ftype_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsFieldImpl();
 };
 // -------------------------------------------------------------------
 
@@ -888,8 +888,8 @@ class LIBPROTOBUF_EXPORT Enum : public ::cv::protobuf::Message /* @@protoc_inser
   ::cv::protobuf::SourceContext* source_context_;
   int syntax_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2ftype_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnumImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2ftype_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnumImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1039,8 +1039,8 @@ class LIBPROTOBUF_EXPORT EnumValue : public ::cv::protobuf::Message /* @@protoc_
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::int32 number_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2ftype_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2ftype_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1186,8 +1186,8 @@ class LIBPROTOBUF_EXPORT Option : public ::cv::protobuf::Message /* @@protoc_ins
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::Any* value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2ftype_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOptionImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2ftype_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOptionImpl();
 };
 // ===================================================================
 

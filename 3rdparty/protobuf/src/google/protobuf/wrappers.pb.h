@@ -31,7 +31,7 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fwrappers_2eproto {
+namespace protobuf_cv_2fprotobuf_2fwrappers_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -71,7 +71,7 @@ inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsStringValue();
   InitDefaultsBytesValue();
 }
-}  // namespace protobuf_google_2fprotobuf_2fwrappers_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fwrappers_2eproto
 namespace cv {
 namespace protobuf {
 class BoolValue;
@@ -217,8 +217,8 @@ class LIBPROTOBUF_EXPORT DoubleValue : public ::cv::protobuf::Message /* @@proto
   typedef void DestructorSkippable_;
   double value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsDoubleValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsDoubleValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -331,8 +331,8 @@ class LIBPROTOBUF_EXPORT FloatValue : public ::cv::protobuf::Message /* @@protoc
   typedef void DestructorSkippable_;
   float value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsFloatValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsFloatValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -445,8 +445,8 @@ class LIBPROTOBUF_EXPORT Int64Value : public ::cv::protobuf::Message /* @@protoc
   typedef void DestructorSkippable_;
   ::cv::protobuf::int64 value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsInt64ValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsInt64ValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -559,8 +559,8 @@ class LIBPROTOBUF_EXPORT UInt64Value : public ::cv::protobuf::Message /* @@proto
   typedef void DestructorSkippable_;
   ::cv::protobuf::uint64 value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsUInt64ValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsUInt64ValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -673,8 +673,8 @@ class LIBPROTOBUF_EXPORT Int32Value : public ::cv::protobuf::Message /* @@protoc
   typedef void DestructorSkippable_;
   ::cv::protobuf::int32 value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsInt32ValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsInt32ValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -787,8 +787,8 @@ class LIBPROTOBUF_EXPORT UInt32Value : public ::cv::protobuf::Message /* @@proto
   typedef void DestructorSkippable_;
   ::cv::protobuf::uint32 value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsUInt32ValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsUInt32ValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -901,8 +901,8 @@ class LIBPROTOBUF_EXPORT BoolValue : public ::cv::protobuf::Message /* @@protoc_
   typedef void DestructorSkippable_;
   bool value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsBoolValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsBoolValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1032,8 +1032,8 @@ class LIBPROTOBUF_EXPORT StringValue : public ::cv::protobuf::Message /* @@proto
   typedef void DestructorSkippable_;
   ::cv::protobuf::internal::ArenaStringPtr value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsStringValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsStringValueImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1163,8 +1163,8 @@ class LIBPROTOBUF_EXPORT BytesValue : public ::cv::protobuf::Message /* @@protoc
   typedef void DestructorSkippable_;
   ::cv::protobuf::internal::ArenaStringPtr value_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fwrappers_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fwrappers_2eproto::InitDefaultsBytesValueImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fwrappers_2eproto::InitDefaultsBytesValueImpl();
 };
 // ===================================================================
 

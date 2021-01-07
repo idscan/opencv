@@ -48,7 +48,7 @@ class OptionDefaultTypeInternal {
 } _Option_default_instance_;
 }  // namespace protobuf
 }  // namespace cv
-namespace protobuf_google_2fprotobuf_2ftype_2eproto {
+namespace protobuf_cv_2fprotobuf_2ftype_2eproto {
 void InitDefaultsTypeImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -57,9 +57,9 @@ void InitDefaultsTypeImpl() {
 #else
   ::cv::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsField();
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
-  protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsField();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
   {
     void* ptr = &::cv::protobuf::_Type_default_instance_;
     new (ptr) ::cv::protobuf::Type();
@@ -81,7 +81,7 @@ void InitDefaultsFieldImpl() {
 #else
   ::cv::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
   {
     void* ptr = &::cv::protobuf::_Field_default_instance_;
     new (ptr) ::cv::protobuf::Field();
@@ -103,9 +103,9 @@ void InitDefaultsEnumImpl() {
 #else
   ::cv::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
-  protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
   {
     void* ptr = &::cv::protobuf::_Enum_default_instance_;
     new (ptr) ::cv::protobuf::Enum();
@@ -127,7 +127,7 @@ void InitDefaultsEnumValueImpl() {
 #else
   ::cv::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
   {
     void* ptr = &::cv::protobuf::_EnumValue_default_instance_;
     new (ptr) ::cv::protobuf::EnumValue();
@@ -149,7 +149,7 @@ void InitDefaultsOptionImpl() {
 #else
   ::cv::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2fany_2eproto::InitDefaultsAny();
+  protobuf_cv_2fprotobuf_2fany_2eproto::InitDefaultsAny();
   {
     void* ptr = &::cv::protobuf::_Option_default_instance_;
     new (ptr) ::cv::protobuf::Option();
@@ -302,8 +302,8 @@ void AddDescriptorsImpl() {
       descriptor, 1594);
   ::cv::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/protobuf/type.proto", &protobuf_RegisterTypes);
-  ::protobuf_google_2fprotobuf_2fany_2eproto::AddDescriptors();
-  ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::AddDescriptors();
+  ::protobuf_cv_2fprotobuf_2fany_2eproto::AddDescriptors();
+  ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -316,12 +316,12 @@ struct StaticDescriptorInitializer {
     AddDescriptors();
   }
 } static_descriptor_initializer;
-}  // namespace protobuf_google_2fprotobuf_2ftype_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2ftype_2eproto
 namespace cv {
 namespace protobuf {
 const ::cv::protobuf::EnumDescriptor* Field_Kind_descriptor() {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_google_2fprotobuf_2ftype_2eproto::file_level_enum_descriptors[0];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_enum_descriptors[0];
 }
 bool Field_Kind_IsValid(int value) {
   switch (value) {
@@ -375,8 +375,8 @@ const Field_Kind Field::Kind_MAX;
 const int Field::Kind_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::cv::protobuf::EnumDescriptor* Field_Cardinality_descriptor() {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_google_2fprotobuf_2ftype_2eproto::file_level_enum_descriptors[1];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_enum_descriptors[1];
 }
 bool Field_Cardinality_IsValid(int value) {
   switch (value) {
@@ -400,8 +400,8 @@ const Field_Cardinality Field::Cardinality_MAX;
 const int Field::Cardinality_ARRAYSIZE;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 const ::cv::protobuf::EnumDescriptor* Syntax_descriptor() {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_google_2fprotobuf_2ftype_2eproto::file_level_enum_descriptors[2];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_enum_descriptors[2];
 }
 bool Syntax_IsValid(int value) {
   switch (value) {
@@ -455,7 +455,7 @@ const int Type::kSyntaxFieldNumber;
 Type::Type()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsType();
+    ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsType();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Type)
@@ -466,7 +466,7 @@ Type::Type(::cv::protobuf::Arena* arena)
   fields_(arena),
   oneofs_(arena),
   options_(arena) {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsType();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsType();
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.protobuf.Type)
@@ -524,12 +524,12 @@ void Type::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Type::descriptor() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Type& Type::default_instance() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsType();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsType();
   return *internal_default_instance();
 }
 
@@ -943,8 +943,8 @@ void Type::InternalSwap(Type* other) {
 }
 
 ::cv::protobuf::Metadata Type::GetMetadata() const {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 
@@ -968,7 +968,7 @@ const int Field::kDefaultValueFieldNumber;
 Field::Field()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsField();
+    ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsField();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Field)
@@ -977,7 +977,7 @@ Field::Field(::cv::protobuf::Arena* arena)
   : ::cv::protobuf::Message(),
   _internal_metadata_(arena),
   options_(arena) {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsField();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsField();
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.protobuf.Field)
@@ -1050,12 +1050,12 @@ void Field::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Field::descriptor() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Field& Field::default_instance() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsField();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsField();
   return *internal_default_instance();
 }
 
@@ -1630,8 +1630,8 @@ void Field::InternalSwap(Field* other) {
 }
 
 ::cv::protobuf::Metadata Field::GetMetadata() const {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 
@@ -1675,7 +1675,7 @@ const int Enum::kSyntaxFieldNumber;
 Enum::Enum()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnum();
+    ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnum();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Enum)
@@ -1685,7 +1685,7 @@ Enum::Enum(::cv::protobuf::Arena* arena)
   _internal_metadata_(arena),
   enumvalue_(arena),
   options_(arena) {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnum();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnum();
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.protobuf.Enum)
@@ -1742,12 +1742,12 @@ void Enum::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Enum::descriptor() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Enum& Enum::default_instance() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnum();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnum();
   return *internal_default_instance();
 }
 
@@ -2113,8 +2113,8 @@ void Enum::InternalSwap(Enum* other) {
 }
 
 ::cv::protobuf::Metadata Enum::GetMetadata() const {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 
@@ -2131,7 +2131,7 @@ const int EnumValue::kOptionsFieldNumber;
 EnumValue::EnumValue()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
+    ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.EnumValue)
@@ -2140,7 +2140,7 @@ EnumValue::EnumValue(::cv::protobuf::Arena* arena)
   : ::cv::protobuf::Message(),
   _internal_metadata_(arena),
   options_(arena) {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.protobuf.EnumValue)
@@ -2188,12 +2188,12 @@ void EnumValue::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* EnumValue::descriptor() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const EnumValue& EnumValue::default_instance() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsEnumValue();
   return *internal_default_instance();
 }
 
@@ -2477,8 +2477,8 @@ void EnumValue::InternalSwap(EnumValue* other) {
 }
 
 ::cv::protobuf::Metadata EnumValue::GetMetadata() const {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 
@@ -2519,7 +2519,7 @@ const int Option::kValueFieldNumber;
 Option::Option()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+    ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Option)
@@ -2527,7 +2527,7 @@ Option::Option()
 Option::Option(::cv::protobuf::Arena* arena)
   : ::cv::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.protobuf.Option)
@@ -2579,12 +2579,12 @@ void Option::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Option::descriptor() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Option& Option::default_instance() {
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
   return *internal_default_instance();
 }
 
@@ -2832,8 +2832,8 @@ void Option::InternalSwap(Option* other) {
 }
 
 ::cv::protobuf::Metadata Option::GetMetadata() const {
-  protobuf_google_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2ftype_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftype_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 

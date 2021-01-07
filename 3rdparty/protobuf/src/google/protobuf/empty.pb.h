@@ -31,7 +31,7 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fempty_2eproto {
+namespace protobuf_cv_2fprotobuf_2fempty_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -47,7 +47,7 @@ void LIBPROTOBUF_EXPORT InitDefaultsEmpty();
 inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsEmpty();
 }
-}  // namespace protobuf_google_2fprotobuf_2fempty_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fempty_2eproto
 namespace cv {
 namespace protobuf {
 class Empty;
@@ -162,8 +162,8 @@ class LIBPROTOBUF_EXPORT Empty : public ::cv::protobuf::Message /* @@protoc_inse
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fempty_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fempty_2eproto::InitDefaultsEmptyImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fempty_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fempty_2eproto::InitDefaultsEmptyImpl();
 };
 // ===================================================================
 

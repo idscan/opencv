@@ -28,7 +28,7 @@ class TimestampDefaultTypeInternal {
 } _Timestamp_default_instance_;
 }  // namespace protobuf
 }  // namespace cv
-namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto {
+namespace protobuf_cv_2fprotobuf_2ftimestamp_2eproto {
 void InitDefaultsTimestampImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -114,7 +114,7 @@ struct StaticDescriptorInitializer {
     AddDescriptors();
   }
 } static_descriptor_initializer;
-}  // namespace protobuf_google_2fprotobuf_2ftimestamp_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2ftimestamp_2eproto
 namespace cv {
 namespace protobuf {
 
@@ -130,7 +130,7 @@ const int Timestamp::kNanosFieldNumber;
 Timestamp::Timestamp()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
+    ::protobuf_cv_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Timestamp)
@@ -138,7 +138,7 @@ Timestamp::Timestamp()
 Timestamp::Timestamp(::cv::protobuf::Arena* arena)
   : ::cv::protobuf::Message(),
   _internal_metadata_(arena) {
-  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
+  ::protobuf_cv_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
   SharedCtor();
   RegisterArenaDtor(arena);
   // @@protoc_insertion_point(arena_constructor:google.protobuf.Timestamp)
@@ -182,12 +182,12 @@ void Timestamp::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Timestamp::descriptor() {
-  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2ftimestamp_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftimestamp_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Timestamp& Timestamp::default_instance() {
-  ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
+  ::protobuf_cv_2fprotobuf_2ftimestamp_2eproto::InitDefaultsTimestamp();
   return *internal_default_instance();
 }
 
@@ -419,8 +419,8 @@ void Timestamp::InternalSwap(Timestamp* other) {
 }
 
 ::cv::protobuf::Metadata Timestamp::GetMetadata() const {
-  protobuf_google_2fprotobuf_2ftimestamp_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ftimestamp_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2ftimestamp_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ftimestamp_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 

@@ -28,7 +28,7 @@ class SourceContextDefaultTypeInternal {
 } _SourceContext_default_instance_;
 }  // namespace protobuf
 }  // namespace cv
-namespace protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto {
+namespace protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto {
 void InitDefaultsSourceContextImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -114,7 +114,7 @@ struct StaticDescriptorInitializer {
     AddDescriptors();
   }
 } static_descriptor_initializer;
-}  // namespace protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto
 namespace cv {
 namespace protobuf {
 
@@ -129,7 +129,7 @@ const int SourceContext::kFileNameFieldNumber;
 SourceContext::SourceContext()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
+    ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.SourceContext)
@@ -166,12 +166,12 @@ void SourceContext::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* SourceContext::descriptor() {
-  ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const SourceContext& SourceContext::default_instance() {
-  ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
+  ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
   return *internal_default_instance();
 }
 
@@ -369,8 +369,8 @@ void SourceContext::InternalSwap(SourceContext* other) {
 }
 
 ::cv::protobuf::Metadata SourceContext::GetMetadata() const {
-  protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 

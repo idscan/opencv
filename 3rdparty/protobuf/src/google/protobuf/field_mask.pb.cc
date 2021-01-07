@@ -28,7 +28,7 @@ class FieldMaskDefaultTypeInternal {
 } _FieldMask_default_instance_;
 }  // namespace protobuf
 }  // namespace cv
-namespace protobuf_google_2fprotobuf_2ffield_5fmask_2eproto {
+namespace protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto {
 void InitDefaultsFieldMaskImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -113,7 +113,7 @@ struct StaticDescriptorInitializer {
     AddDescriptors();
   }
 } static_descriptor_initializer;
-}  // namespace protobuf_google_2fprotobuf_2ffield_5fmask_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto
 namespace cv {
 namespace protobuf {
 
@@ -128,7 +128,7 @@ const int FieldMask::kPathsFieldNumber;
 FieldMask::FieldMask()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::InitDefaultsFieldMask();
+    ::protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::InitDefaultsFieldMask();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.FieldMask)
@@ -160,12 +160,12 @@ void FieldMask::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* FieldMask::descriptor() {
-  ::protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const FieldMask& FieldMask::default_instance() {
-  ::protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::InitDefaultsFieldMask();
+  ::protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::InitDefaultsFieldMask();
   return *internal_default_instance();
 }
 
@@ -361,8 +361,8 @@ void FieldMask::InternalSwap(FieldMask* other) {
 }
 
 ::cv::protobuf::Metadata FieldMask::GetMetadata() const {
-  protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2ffield_5fmask_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2ffield_5fmask_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 

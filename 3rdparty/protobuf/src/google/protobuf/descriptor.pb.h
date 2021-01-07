@@ -32,7 +32,7 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fdescriptor_2eproto {
+namespace protobuf_cv_2fprotobuf_2fdescriptor_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -126,7 +126,7 @@ inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsGeneratedCodeInfo_Annotation();
   InitDefaultsGeneratedCodeInfo();
 }
-}  // namespace protobuf_google_2fprotobuf_2fdescriptor_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fdescriptor_2eproto
 namespace cv {
 namespace protobuf {
 class DescriptorProto;
@@ -475,8 +475,8 @@ class LIBPROTOBUF_EXPORT FileDescriptorSet : public ::cv::protobuf::Message /* @
   ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::FileDescriptorProto > file_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFileDescriptorSetImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFileDescriptorSetImpl();
 };
 // -------------------------------------------------------------------
 
@@ -808,8 +808,8 @@ class LIBPROTOBUF_EXPORT FileDescriptorProto : public ::cv::protobuf::Message /*
   ::cv::protobuf::internal::ArenaStringPtr syntax_;
   ::cv::protobuf::FileOptions* options_;
   ::cv::protobuf::SourceCodeInfo* source_code_info_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFileDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFileDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -961,8 +961,8 @@ class LIBPROTOBUF_EXPORT DescriptorProto_ExtensionRange : public ::cv::protobuf:
   ::cv::protobuf::ExtensionRangeOptions* options_;
   ::cv::protobuf::int32 start_;
   ::cv::protobuf::int32 end_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsDescriptorProto_ExtensionRangeImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsDescriptorProto_ExtensionRangeImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1096,8 +1096,8 @@ class LIBPROTOBUF_EXPORT DescriptorProto_ReservedRange : public ::cv::protobuf::
   mutable int _cached_size_;
   ::cv::protobuf::int32 start_;
   ::cv::protobuf::int32 end_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsDescriptorProto_ReservedRangeImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsDescriptorProto_ReservedRangeImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1373,8 +1373,8 @@ class LIBPROTOBUF_EXPORT DescriptorProto : public ::cv::protobuf::Message /* @@p
   ::cv::protobuf::RepeatedPtrField< ::std::string> reserved_name_;
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::MessageOptions* options_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1504,8 +1504,8 @@ class LIBPROTOBUF_EXPORT ExtensionRangeOptions : public ::cv::protobuf::Message 
   ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::UninterpretedOption > uninterpreted_option_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsExtensionRangeOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsExtensionRangeOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -1898,8 +1898,8 @@ class LIBPROTOBUF_EXPORT FieldDescriptorProto : public ::cv::protobuf::Message /
   ::cv::protobuf::int32 oneof_index_;
   int label_;
   int type_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFieldDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFieldDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -2058,8 +2058,8 @@ class LIBPROTOBUF_EXPORT OneofDescriptorProto : public ::cv::protobuf::Message /
   mutable int _cached_size_;
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::OneofOptions* options_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsOneofDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsOneofDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -2193,8 +2193,8 @@ class LIBPROTOBUF_EXPORT EnumDescriptorProto_EnumReservedRange : public ::cv::pr
   mutable int _cached_size_;
   ::cv::protobuf::int32 start_;
   ::cv::protobuf::int32 end_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumDescriptorProto_EnumReservedRangeImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumDescriptorProto_EnumReservedRangeImpl();
 };
 // -------------------------------------------------------------------
 
@@ -2404,8 +2404,8 @@ class LIBPROTOBUF_EXPORT EnumDescriptorProto : public ::cv::protobuf::Message /*
   ::cv::protobuf::RepeatedPtrField< ::std::string> reserved_name_;
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::EnumOptions* options_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -2574,8 +2574,8 @@ class LIBPROTOBUF_EXPORT EnumValueDescriptorProto : public ::cv::protobuf::Messa
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::EnumValueOptions* options_;
   ::cv::protobuf::int32 number_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumValueDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumValueDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -2747,8 +2747,8 @@ class LIBPROTOBUF_EXPORT ServiceDescriptorProto : public ::cv::protobuf::Message
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::MethodDescriptorProto > method_;
   ::cv::protobuf::internal::ArenaStringPtr name_;
   ::cv::protobuf::ServiceOptions* options_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsServiceDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsServiceDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -2981,8 +2981,8 @@ class LIBPROTOBUF_EXPORT MethodDescriptorProto : public ::cv::protobuf::Message 
   ::cv::protobuf::MethodOptions* options_;
   bool client_streaming_;
   bool server_streaming_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsMethodDescriptorProtoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsMethodDescriptorProtoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -3456,8 +3456,8 @@ class LIBPROTOBUF_EXPORT FileOptions : public ::cv::protobuf::Message /* @@proto
   bool php_generic_services_;
   bool deprecated_;
   int optimize_for_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFileOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFileOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -3627,8 +3627,8 @@ class LIBPROTOBUF_EXPORT MessageOptions : public ::cv::protobuf::Message /* @@pr
   bool no_standard_descriptor_accessor_;
   bool deprecated_;
   bool map_entry_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsMessageOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsMessageOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -3874,8 +3874,8 @@ class LIBPROTOBUF_EXPORT FieldOptions : public ::cv::protobuf::Message /* @@prot
   bool deprecated_;
   bool weak_;
   int jstype_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFieldOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsFieldOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -4005,8 +4005,8 @@ class LIBPROTOBUF_EXPORT OneofOptions : public ::cv::protobuf::Message /* @@prot
   ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::UninterpretedOption > uninterpreted_option_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsOneofOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsOneofOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -4156,8 +4156,8 @@ class LIBPROTOBUF_EXPORT EnumOptions : public ::cv::protobuf::Message /* @@proto
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::UninterpretedOption > uninterpreted_option_;
   bool allow_alias_;
   bool deprecated_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -4297,8 +4297,8 @@ class LIBPROTOBUF_EXPORT EnumValueOptions : public ::cv::protobuf::Message /* @@
   mutable int _cached_size_;
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::UninterpretedOption > uninterpreted_option_;
   bool deprecated_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumValueOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsEnumValueOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -4438,8 +4438,8 @@ class LIBPROTOBUF_EXPORT ServiceOptions : public ::cv::protobuf::Message /* @@pr
   mutable int _cached_size_;
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::UninterpretedOption > uninterpreted_option_;
   bool deprecated_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsServiceOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsServiceOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -4617,8 +4617,8 @@ class LIBPROTOBUF_EXPORT MethodOptions : public ::cv::protobuf::Message /* @@pro
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::UninterpretedOption > uninterpreted_option_;
   bool deprecated_;
   int idempotency_level_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsMethodOptionsImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsMethodOptionsImpl();
 };
 // -------------------------------------------------------------------
 
@@ -4772,8 +4772,8 @@ class LIBPROTOBUF_EXPORT UninterpretedOption_NamePart : public ::cv::protobuf::M
   mutable int _cached_size_;
   ::cv::protobuf::internal::ArenaStringPtr name_part_;
   bool is_extension_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsUninterpretedOption_NamePartImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsUninterpretedOption_NamePartImpl();
 };
 // -------------------------------------------------------------------
 
@@ -5013,8 +5013,8 @@ class LIBPROTOBUF_EXPORT UninterpretedOption : public ::cv::protobuf::Message /*
   ::cv::protobuf::uint64 positive_int_value_;
   ::cv::protobuf::int64 negative_int_value_;
   double double_value_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsUninterpretedOptionImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsUninterpretedOptionImpl();
 };
 // -------------------------------------------------------------------
 
@@ -5233,8 +5233,8 @@ class LIBPROTOBUF_EXPORT SourceCodeInfo_Location : public ::cv::protobuf::Messag
   ::cv::protobuf::RepeatedPtrField< ::std::string> leading_detached_comments_;
   ::cv::protobuf::internal::ArenaStringPtr leading_comments_;
   ::cv::protobuf::internal::ArenaStringPtr trailing_comments_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsSourceCodeInfo_LocationImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsSourceCodeInfo_LocationImpl();
 };
 // -------------------------------------------------------------------
 
@@ -5363,8 +5363,8 @@ class LIBPROTOBUF_EXPORT SourceCodeInfo : public ::cv::protobuf::Message /* @@pr
   ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::SourceCodeInfo_Location > location_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsSourceCodeInfoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsSourceCodeInfoImpl();
 };
 // -------------------------------------------------------------------
 
@@ -5539,8 +5539,8 @@ class LIBPROTOBUF_EXPORT GeneratedCodeInfo_Annotation : public ::cv::protobuf::M
   ::cv::protobuf::internal::ArenaStringPtr source_file_;
   ::cv::protobuf::int32 begin_;
   ::cv::protobuf::int32 end_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsGeneratedCodeInfo_AnnotationImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsGeneratedCodeInfo_AnnotationImpl();
 };
 // -------------------------------------------------------------------
 
@@ -5669,8 +5669,8 @@ class LIBPROTOBUF_EXPORT GeneratedCodeInfo : public ::cv::protobuf::Message /* @
   ::cv::protobuf::internal::HasBits<1> _has_bits_;
   mutable int _cached_size_;
   ::cv::protobuf::RepeatedPtrField< ::cv::protobuf::GeneratedCodeInfo_Annotation > annotation_;
-  friend struct ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fdescriptor_2eproto::InitDefaultsGeneratedCodeInfoImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fdescriptor_2eproto::InitDefaultsGeneratedCodeInfoImpl();
 };
 // ===================================================================
 

@@ -38,7 +38,7 @@ class MixinDefaultTypeInternal {
 } _Mixin_default_instance_;
 }  // namespace protobuf
 }  // namespace cv
-namespace protobuf_google_2fprotobuf_2fapi_2eproto {
+namespace protobuf_cv_2fprotobuf_2fapi_2eproto {
 void InitDefaultsApiImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -47,10 +47,10 @@ void InitDefaultsApiImpl() {
 #else
   ::cv::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMethod();
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
-  protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
-  protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMixin();
+  protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMethod();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContext();
+  protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMixin();
   {
     void* ptr = &::cv::protobuf::_Api_default_instance_;
     new (ptr) ::cv::protobuf::Api();
@@ -72,7 +72,7 @@ void InitDefaultsMethodImpl() {
 #else
   ::cv::protobuf::internal::InitProtobufDefaults();
 #endif  // GOOGLE_PROTOBUF_ENFORCE_UNIQUENESS
-  protobuf_google_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
+  protobuf_cv_2fprotobuf_2ftype_2eproto::InitDefaultsOption();
   {
     void* ptr = &::cv::protobuf::_Method_default_instance_;
     new (ptr) ::cv::protobuf::Method();
@@ -200,8 +200,8 @@ void AddDescriptorsImpl() {
       descriptor, 750);
   ::cv::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "google/protobuf/api.proto", &protobuf_RegisterTypes);
-  ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::AddDescriptors();
-  ::protobuf_google_2fprotobuf_2ftype_2eproto::AddDescriptors();
+  ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::AddDescriptors();
+  ::protobuf_cv_2fprotobuf_2ftype_2eproto::AddDescriptors();
 }
 
 void AddDescriptors() {
@@ -214,7 +214,7 @@ struct StaticDescriptorInitializer {
     AddDescriptors();
   }
 } static_descriptor_initializer;
-}  // namespace protobuf_google_2fprotobuf_2fapi_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fapi_2eproto
 namespace cv {
 namespace protobuf {
 
@@ -246,7 +246,7 @@ const int Api::kSyntaxFieldNumber;
 Api::Api()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsApi();
+    ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsApi();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Api)
@@ -302,12 +302,12 @@ void Api::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Api::descriptor() {
-  ::protobuf_google_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Api& Api::default_instance() {
-  ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsApi();
+  ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsApi();
   return *internal_default_instance();
 }
 
@@ -753,8 +753,8 @@ void Api::InternalSwap(Api* other) {
 }
 
 ::cv::protobuf::Metadata Api::GetMetadata() const {
-  protobuf_google_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 
@@ -778,7 +778,7 @@ const int Method::kSyntaxFieldNumber;
 Method::Method()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMethod();
+    ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMethod();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Method)
@@ -834,12 +834,12 @@ void Method::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Method::descriptor() {
-  ::protobuf_google_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Method& Method::default_instance() {
-  ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMethod();
+  ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMethod();
   return *internal_default_instance();
 }
 
@@ -1283,8 +1283,8 @@ void Method::InternalSwap(Method* other) {
 }
 
 ::cv::protobuf::Metadata Method::GetMetadata() const {
-  protobuf_google_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 
@@ -1300,7 +1300,7 @@ const int Mixin::kRootFieldNumber;
 Mixin::Mixin()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMixin();
+    ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMixin();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Mixin)
@@ -1343,12 +1343,12 @@ void Mixin::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Mixin::descriptor() {
-  ::protobuf_google_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Mixin& Mixin::default_instance() {
-  ::protobuf_google_2fprotobuf_2fapi_2eproto::InitDefaultsMixin();
+  ::protobuf_cv_2fprotobuf_2fapi_2eproto::InitDefaultsMixin();
   return *internal_default_instance();
 }
 
@@ -1596,8 +1596,8 @@ void Mixin::InternalSwap(Mixin* other) {
 }
 
 ::cv::protobuf::Metadata Mixin::GetMetadata() const {
-  protobuf_google_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2fapi_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fapi_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 

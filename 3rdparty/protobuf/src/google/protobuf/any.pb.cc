@@ -28,7 +28,7 @@ class AnyDefaultTypeInternal {
 } _Any_default_instance_;
 }  // namespace protobuf
 }  // namespace cv
-namespace protobuf_google_2fprotobuf_2fany_2eproto {
+namespace protobuf_cv_2fprotobuf_2fany_2eproto {
 void InitDefaultsAnyImpl() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
@@ -114,7 +114,7 @@ struct StaticDescriptorInitializer {
     AddDescriptors();
   }
 } static_descriptor_initializer;
-}  // namespace protobuf_google_2fprotobuf_2fany_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fany_2eproto
 namespace cv {
 namespace protobuf {
 
@@ -143,7 +143,7 @@ const int Any::kValueFieldNumber;
 Any::Any()
   : ::cv::protobuf::Message(), _internal_metadata_(NULL), _any_metadata_(&type_url_, &value_) {
   if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    ::protobuf_google_2fprotobuf_2fany_2eproto::InitDefaultsAny();
+    ::protobuf_cv_2fprotobuf_2fany_2eproto::InitDefaultsAny();
   }
   SharedCtor();
   // @@protoc_insertion_point(constructor:google.protobuf.Any)
@@ -187,12 +187,12 @@ void Any::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::cv::protobuf::Descriptor* Any::descriptor() {
-  ::protobuf_google_2fprotobuf_2fany_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fany_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  ::protobuf_cv_2fprotobuf_2fany_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fany_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
 }
 
 const Any& Any::default_instance() {
-  ::protobuf_google_2fprotobuf_2fany_2eproto::InitDefaultsAny();
+  ::protobuf_cv_2fprotobuf_2fany_2eproto::InitDefaultsAny();
   return *internal_default_instance();
 }
 
@@ -428,8 +428,8 @@ void Any::InternalSwap(Any* other) {
 }
 
 ::cv::protobuf::Metadata Any::GetMetadata() const {
-  protobuf_google_2fprotobuf_2fany_2eproto::protobuf_AssignDescriptorsOnce();
-  return ::protobuf_google_2fprotobuf_2fany_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_cv_2fprotobuf_2fany_2eproto::protobuf_AssignDescriptorsOnce();
+  return ::protobuf_cv_2fprotobuf_2fany_2eproto::file_level_metadata[kIndexInFileMessages];
 }
 
 

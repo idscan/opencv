@@ -31,7 +31,7 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto {
+namespace protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
   static const ::cv::protobuf::internal::ParseTableField entries[];
@@ -47,7 +47,7 @@ void LIBPROTOBUF_EXPORT InitDefaultsSourceContext();
 inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsSourceContext();
 }
-}  // namespace protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto
+}  // namespace protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto
 namespace cv {
 namespace protobuf {
 class SourceContext;
@@ -162,8 +162,8 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::cv::protobuf::Message /* @@pro
   ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   ::cv::protobuf::internal::ArenaStringPtr file_name_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContextImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContextImpl();
 };
 // ===================================================================
 
