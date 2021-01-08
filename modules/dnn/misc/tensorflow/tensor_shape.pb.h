@@ -34,12 +34,12 @@
 namespace protobuf_tensor_5fshape_2eproto {
 // Internal implementation detail -- do not use these members.
 struct TableStruct {
-  static const ::cv::protobuf::internal::ParseTableField entries[];
-  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::cv::protobuf::internal::ParseTable schema[2];
-  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
-  static const ::cv::protobuf::uint32 offsets[];
+  static const ::PROTOBUF_NAMESPACE::internal::ParseTableField entries[];
+  static const ::PROTOBUF_NAMESPACE::internal::AuxillaryParseTableField aux[];
+  static const ::PROTOBUF_NAMESPACE::internal::ParseTable schema[2];
+  static const ::PROTOBUF_NAMESPACE::internal::FieldMetadata field_metadata[];
+  static const ::PROTOBUF_NAMESPACE::internal::SerializationTable serialization_table[];
+  static const ::PROTOBUF_NAMESPACE::uint32 offsets[];
 };
 void AddDescriptors();
 void InitDefaultsTensorShapeProto_DimImpl();
@@ -63,7 +63,7 @@ namespace opencv_tensorflow {
 
 // ===================================================================
 
-class TensorShapeProto_Dim : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.TensorShapeProto.Dim) */ {
+class TensorShapeProto_Dim : public ::PROTOBUF_NAMESPACE::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.TensorShapeProto.Dim) */ {
  public:
   TensorShapeProto_Dim();
   virtual ~TensorShapeProto_Dim();
@@ -89,13 +89,13 @@ class TensorShapeProto_Dim : public ::cv::protobuf::Message /* @@protoc_insertio
     return *this;
   }
   #endif
-  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::PROTOBUF_NAMESPACE::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::cv::protobuf::Descriptor* descriptor();
+  static const ::PROTOBUF_NAMESPACE::Descriptor* descriptor();
   static const TensorShapeProto_Dim& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -116,9 +116,9 @@ class TensorShapeProto_Dim : public ::cv::protobuf::Message /* @@protoc_insertio
 
   inline TensorShapeProto_Dim* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  TensorShapeProto_Dim* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  TensorShapeProto_Dim* New(::PROTOBUF_NAMESPACE::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::PROTOBUF_NAMESPACE::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const TensorShapeProto_Dim& from);
   void MergeFrom(const TensorShapeProto_Dim& from);
   void Clear() PROTOBUF_FINAL;
@@ -126,11 +126,11 @@ class TensorShapeProto_Dim : public ::cv::protobuf::Message /* @@protoc_insertio
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::PROTOBUF_NAMESPACE::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::PROTOBUF_NAMESPACE::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::PROTOBUF_NAMESPACE::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::PROTOBUF_NAMESPACE::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -138,12 +138,12 @@ class TensorShapeProto_Dim : public ::cv::protobuf::Message /* @@protoc_insertio
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(TensorShapeProto_Dim* other);
   protected:
-  explicit TensorShapeProto_Dim(::cv::protobuf::Arena* arena);
+  explicit TensorShapeProto_Dim(::PROTOBUF_NAMESPACE::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE::Arena* arena);
   private:
-  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::PROTOBUF_NAMESPACE::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -151,7 +151,7 @@ class TensorShapeProto_Dim : public ::cv::protobuf::Message /* @@protoc_insertio
   }
   public:
 
-  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::PROTOBUF_NAMESPACE::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -183,25 +183,25 @@ class TensorShapeProto_Dim : public ::cv::protobuf::Message /* @@protoc_insertio
   // int64 size = 1;
   void clear_size();
   static const int kSizeFieldNumber = 1;
-  ::cv::protobuf::int64 size() const;
-  void set_size(::cv::protobuf::int64 value);
+  ::PROTOBUF_NAMESPACE::int64 size() const;
+  void set_size(::PROTOBUF_NAMESPACE::int64 value);
 
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.TensorShapeProto.Dim)
  private:
 
-  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
+  ::PROTOBUF_NAMESPACE::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::PROTOBUF_NAMESPACE::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::cv::protobuf::internal::ArenaStringPtr name_;
-  ::cv::protobuf::int64 size_;
+  ::PROTOBUF_NAMESPACE::internal::ArenaStringPtr name_;
+  ::PROTOBUF_NAMESPACE::int64 size_;
   mutable int _cached_size_;
   friend struct ::protobuf_tensor_5fshape_2eproto::TableStruct;
   friend void ::protobuf_tensor_5fshape_2eproto::InitDefaultsTensorShapeProto_DimImpl();
 };
 // -------------------------------------------------------------------
 
-class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.TensorShapeProto) */ {
+class TensorShapeProto : public ::PROTOBUF_NAMESPACE::Message /* @@protoc_insertion_point(class_definition:opencv_tensorflow.TensorShapeProto) */ {
  public:
   TensorShapeProto();
   virtual ~TensorShapeProto();
@@ -227,13 +227,13 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
     return *this;
   }
   #endif
-  inline ::cv::protobuf::Arena* GetArena() const PROTOBUF_FINAL {
+  inline ::PROTOBUF_NAMESPACE::Arena* GetArena() const PROTOBUF_FINAL {
     return GetArenaNoVirtual();
   }
   inline void* GetMaybeArenaPointer() const PROTOBUF_FINAL {
     return MaybeArenaPtr();
   }
-  static const ::cv::protobuf::Descriptor* descriptor();
+  static const ::PROTOBUF_NAMESPACE::Descriptor* descriptor();
   static const TensorShapeProto& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -254,9 +254,9 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
 
   inline TensorShapeProto* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  TensorShapeProto* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  TensorShapeProto* New(::PROTOBUF_NAMESPACE::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::PROTOBUF_NAMESPACE::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::PROTOBUF_NAMESPACE::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const TensorShapeProto& from);
   void MergeFrom(const TensorShapeProto& from);
   void Clear() PROTOBUF_FINAL;
@@ -264,11 +264,11 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::PROTOBUF_NAMESPACE::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::PROTOBUF_NAMESPACE::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::PROTOBUF_NAMESPACE::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::PROTOBUF_NAMESPACE::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -276,12 +276,12 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(TensorShapeProto* other);
   protected:
-  explicit TensorShapeProto(::cv::protobuf::Arena* arena);
+  explicit TensorShapeProto(::PROTOBUF_NAMESPACE::Arena* arena);
   private:
   static void ArenaDtor(void* object);
-  inline void RegisterArenaDtor(::cv::protobuf::Arena* arena);
+  inline void RegisterArenaDtor(::PROTOBUF_NAMESPACE::Arena* arena);
   private:
-  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::PROTOBUF_NAMESPACE::Arena* GetArenaNoVirtual() const {
     return _internal_metadata_.arena();
   }
   inline void* MaybeArenaPtr() const {
@@ -289,7 +289,7 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
   }
   public:
 
-  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::PROTOBUF_NAMESPACE::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -304,9 +304,9 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
   const ::opencv_tensorflow::TensorShapeProto_Dim& dim(int index) const;
   ::opencv_tensorflow::TensorShapeProto_Dim* mutable_dim(int index);
   ::opencv_tensorflow::TensorShapeProto_Dim* add_dim();
-  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >*
+  ::PROTOBUF_NAMESPACE::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >*
       mutable_dim();
-  const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >&
+  const ::PROTOBUF_NAMESPACE::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >&
       dim() const;
 
   // bool unknown_rank = 3;
@@ -318,11 +318,11 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
   // @@protoc_insertion_point(class_scope:opencv_tensorflow.TensorShapeProto)
  private:
 
-  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  template <typename T> friend class ::cv::protobuf::Arena::InternalHelper;
+  ::PROTOBUF_NAMESPACE::internal::InternalMetadataWithArena _internal_metadata_;
+  template <typename T> friend class ::PROTOBUF_NAMESPACE::Arena::InternalHelper;
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
-  ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim > dim_;
+  ::PROTOBUF_NAMESPACE::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim > dim_;
   bool unknown_rank_;
   mutable int _cached_size_;
   friend struct ::protobuf_tensor_5fshape_2eproto::TableStruct;
@@ -343,11 +343,11 @@ class TensorShapeProto : public ::cv::protobuf::Message /* @@protoc_insertion_po
 inline void TensorShapeProto_Dim::clear_size() {
   size_ = GOOGLE_LONGLONG(0);
 }
-inline ::cv::protobuf::int64 TensorShapeProto_Dim::size() const {
+inline ::PROTOBUF_NAMESPACE::int64 TensorShapeProto_Dim::size() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.TensorShapeProto.Dim.size)
   return size_;
 }
-inline void TensorShapeProto_Dim::set_size(::cv::protobuf::int64 value) {
+inline void TensorShapeProto_Dim::set_size(::PROTOBUF_NAMESPACE::int64 value) {
 
   size_ = value;
   // @@protoc_insertion_point(field_set:opencv_tensorflow.TensorShapeProto.Dim.size)
@@ -355,7 +355,7 @@ inline void TensorShapeProto_Dim::set_size(::cv::protobuf::int64 value) {
 
 // string name = 2;
 inline void TensorShapeProto_Dim::clear_name() {
-  name_.ClearToEmpty(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  name_.ClearToEmpty(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline const ::std::string& TensorShapeProto_Dim::name() const {
   // @@protoc_insertion_point(field_get:opencv_tensorflow.TensorShapeProto.Dim.name)
@@ -363,40 +363,40 @@ inline const ::std::string& TensorShapeProto_Dim::name() const {
 }
 inline void TensorShapeProto_Dim::set_name(const ::std::string& value) {
 
-  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
+  name_.Set(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), value, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set:opencv_tensorflow.TensorShapeProto.Dim.name)
 }
 #if LANG_CXX11
 inline void TensorShapeProto_Dim::set_name(::std::string&& value) {
 
   name_.Set(
-    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
+    &::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), ::std::move(value), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_rvalue:opencv_tensorflow.TensorShapeProto.Dim.name)
 }
 #endif
 inline void TensorShapeProto_Dim::set_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
 
-  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
+  name_.Set(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), ::std::string(value),
               GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_char:opencv_tensorflow.TensorShapeProto.Dim.name)
 }
 inline void TensorShapeProto_Dim::set_name(const char* value,
     size_t size) {
 
-  name_.Set(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(
+  name_.Set(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), ::std::string(
       reinterpret_cast<const char*>(value), size), GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_pointer:opencv_tensorflow.TensorShapeProto.Dim.name)
 }
 inline ::std::string* TensorShapeProto_Dim::mutable_name() {
 
   // @@protoc_insertion_point(field_mutable:opencv_tensorflow.TensorShapeProto.Dim.name)
-  return name_.Mutable(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Mutable(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline ::std::string* TensorShapeProto_Dim::release_name() {
   // @@protoc_insertion_point(field_release:opencv_tensorflow.TensorShapeProto.Dim.name)
 
-  return name_.Release(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
+  return name_.Release(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), GetArenaNoVirtual());
 }
 inline void TensorShapeProto_Dim::set_allocated_name(::std::string* name) {
   if (name != NULL) {
@@ -404,7 +404,7 @@ inline void TensorShapeProto_Dim::set_allocated_name(::std::string* name) {
   } else {
 
   }
-  name_.SetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), name,
+  name_.SetAllocated(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(), name,
       GetArenaNoVirtual());
   // @@protoc_insertion_point(field_set_allocated:opencv_tensorflow.TensorShapeProto.Dim.name)
 }
@@ -412,7 +412,7 @@ inline ::std::string* TensorShapeProto_Dim::unsafe_arena_release_name() {
   // @@protoc_insertion_point(field_unsafe_arena_release:opencv_tensorflow.TensorShapeProto.Dim.name)
   GOOGLE_DCHECK(GetArenaNoVirtual() != NULL);
 
-  return name_.UnsafeArenaRelease(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
+  return name_.UnsafeArenaRelease(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(),
       GetArenaNoVirtual());
 }
 inline void TensorShapeProto_Dim::unsafe_arena_set_allocated_name(
@@ -423,7 +423,7 @@ inline void TensorShapeProto_Dim::unsafe_arena_set_allocated_name(
   } else {
 
   }
-  name_.UnsafeArenaSetAllocated(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
+  name_.UnsafeArenaSetAllocated(&::PROTOBUF_NAMESPACE::internal::GetEmptyStringAlreadyInited(),
       name, GetArenaNoVirtual());
   // @@protoc_insertion_point(field_unsafe_arena_set_allocated:opencv_tensorflow.TensorShapeProto.Dim.name)
 }
@@ -451,12 +451,12 @@ inline ::opencv_tensorflow::TensorShapeProto_Dim* TensorShapeProto::add_dim() {
   // @@protoc_insertion_point(field_add:opencv_tensorflow.TensorShapeProto.dim)
   return dim_.Add();
 }
-inline ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >*
+inline ::PROTOBUF_NAMESPACE::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >*
 TensorShapeProto::mutable_dim() {
   // @@protoc_insertion_point(field_mutable_list:opencv_tensorflow.TensorShapeProto.dim)
   return &dim_;
 }
-inline const ::cv::protobuf::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >&
+inline const ::PROTOBUF_NAMESPACE::RepeatedPtrField< ::opencv_tensorflow::TensorShapeProto_Dim >&
 TensorShapeProto::dim() const {
   // @@protoc_insertion_point(field_list:opencv_tensorflow.TensorShapeProto.dim)
   return dim_;

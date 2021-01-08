@@ -56,7 +56,10 @@ if(ANDROID)
 endif()
 
 if(NOT BUILD_PROTOBUF)
-  add_definitions(-DOPENCV_DNN_EXTERNAL_PROTOBUF=1)
+  add_definitions(-DOPENCV_DNN_EXTERNAL_PROTOBUF=1
+		  -DPROTOBUF_NAMESPACE=google::protobuf)
+else()
+  add_definitions(-DPROTOBUF_NAMESPACE=PROTOBUF_NAMESPACE)
 endif()
 
 add_definitions(-DHAVE_PROTOBUF=1)

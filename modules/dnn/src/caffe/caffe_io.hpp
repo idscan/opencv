@@ -118,10 +118,10 @@ void ReadNetParamsFromTextBufferOrDie(const char* data, size_t len,
                                       caffe::NetParameter* param);
 
 // Utility functions used internally by Caffe and TensorFlow loaders
-bool ReadProtoFromTextFile(const char* filename, ::cv::protobuf::Message* proto);
-bool ReadProtoFromBinaryFile(const char* filename, ::cv::protobuf::Message* proto);
-bool ReadProtoFromTextBuffer(const char* data, size_t len, ::cv::protobuf::Message* proto);
-bool ReadProtoFromBinaryBuffer(const char* data, size_t len, ::cv::protobuf::Message* proto);
+bool ReadProtoFromTextFile(const char* filename, ::PROTOBUF_NAMESPACE::Message* proto);
+bool ReadProtoFromBinaryFile(const char* filename, ::PROTOBUF_NAMESPACE::Message* proto);
+bool ReadProtoFromTextBuffer(const char* data, size_t len, ::PROTOBUF_NAMESPACE::Message* proto);
+bool ReadProtoFromBinaryBuffer(const char* data, size_t len, ::PROTOBUF_NAMESPACE::Message* proto);
 
 }
 }
