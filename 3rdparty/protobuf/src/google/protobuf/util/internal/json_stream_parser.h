@@ -38,7 +38,7 @@
 #include <google/protobuf/stubs/stringpiece.h>
 #include <google/protobuf/stubs/status.h>
 
-namespace google {
+namespace cv {
 namespace util {
 class Status;
 }  // namespace util
@@ -268,5 +268,5 @@ class LIBPROTOBUF_EXPORT JsonStreamParser {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_JSON_STREAM_PARSER_H__

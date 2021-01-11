@@ -59,7 +59,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/platform_macros.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -163,7 +163,7 @@ Atomic64 Release_Load(volatile const Atomic64* ptr);
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 // Include our platform specific implementation.
 #define GOOGLE_PROTOBUF_ATOMICOPS_ERROR \

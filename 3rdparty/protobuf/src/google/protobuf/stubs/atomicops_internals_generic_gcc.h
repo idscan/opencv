@@ -31,7 +31,7 @@
 #ifndef GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_GENERIC_GCC_H_
 #define GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_GENERIC_GCC_H_
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -158,6 +158,6 @@ inline Atomic64 Release_CompareAndSwap(volatile Atomic64* ptr,
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_GENERIC_GCC_H_

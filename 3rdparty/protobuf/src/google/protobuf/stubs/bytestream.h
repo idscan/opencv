@@ -59,7 +59,7 @@
 class CordByteSink;
 class MemBlock;
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace strings {
 
@@ -343,6 +343,6 @@ class LIBPROTOBUF_EXPORT LimitByteSource : public ByteSource {
 
 }  // namespace strings
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_BYTESTREAM_H_

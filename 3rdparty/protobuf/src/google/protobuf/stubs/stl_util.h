@@ -35,7 +35,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // STLDeleteContainerPointers()
@@ -116,6 +116,6 @@ void STLDeleteValues(T *v) {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_STL_UTIL_H__

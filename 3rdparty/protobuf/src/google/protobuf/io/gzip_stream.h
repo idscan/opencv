@@ -47,7 +47,7 @@
 #include <google/protobuf/io/zero_copy_stream.h>
 #include <zlib.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -205,5 +205,5 @@ class LIBPROTOBUF_EXPORT GzipOutputStream : public ZeroCopyOutputStream {
 }  // namespace io
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_IO_GZIP_STREAM_H__

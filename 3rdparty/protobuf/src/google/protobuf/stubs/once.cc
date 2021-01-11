@@ -47,7 +47,7 @@
 
 #include <google/protobuf/stubs/atomicops.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 namespace {
@@ -94,6 +94,6 @@ void GoogleOnceInitImpl(ProtobufOnceType* once, Closure* closure) {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_NO_THREAD_SAFETY

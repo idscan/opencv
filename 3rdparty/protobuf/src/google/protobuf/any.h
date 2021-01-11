@@ -38,11 +38,11 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/arenastring.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
-// Helper class used to implement google::protobuf::Any.
+// Helper class used to implement cv::protobuf::Any.
 class LIBPROTOBUF_EXPORT AnyMetadata {
   typedef ArenaStringPtr UrlType;
   typedef ArenaStringPtr ValueType;
@@ -103,5 +103,5 @@ bool GetAnyFieldDescriptors(const Message& message,
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_ANY_H__

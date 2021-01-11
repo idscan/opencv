@@ -39,7 +39,7 @@
 
 #include <sanitizer/tsan_interface_atomic.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -212,7 +212,7 @@ inline void MemoryBarrierInternal() {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #undef ATOMICOPS_COMPILER_BARRIER
 

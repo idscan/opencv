@@ -42,7 +42,7 @@
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/stubs/map_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -95,7 +95,7 @@ void InitRegistry() {
 // safety.
 void Register(const MessageLite* containing_type,
               int number, ExtensionInfo info) {
-  ::google::protobuf::GoogleOnceInit(&registry_init_, &InitRegistry);
+  ::cv::protobuf::GoogleOnceInit(&registry_init_, &InitRegistry);
 
   if (!InsertIfNotPresent(registry_, std::make_pair(containing_type, number),
                           info)) {
@@ -177,7 +177,7 @@ void ExtensionSet::RegisterMessageExtension(const MessageLite* containing_type,
 // ===================================================================
 // Constructors and basic methods.
 
-ExtensionSet::ExtensionSet(::google::protobuf::Arena* arena)
+ExtensionSet::ExtensionSet(::cv::protobuf::Arena* arena)
     : arena_(arena) {
   if (arena_ != NULL) {
     arena_->OwnDestructor(&extensions_);
@@ -596,7 +596,7 @@ void ExtensionSet::SetAllocatedMessage(int number, FieldType type,
     ClearExtension(number);
     return;
   }
-  ::google::protobuf::Arena* message_arena = message->GetArena();
+  ::cv::protobuf::Arena* message_arena = message->GetArena();
   Extension* extension;
   if (MaybeNewExtension(number, descriptor, &extension)) {
     extension->type = type;
@@ -1814,4 +1814,4 @@ RepeatedMessageGenericTypeTraits::default_repeated_field_ = NULL;
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

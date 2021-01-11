@@ -38,7 +38,7 @@
 #include <google/protobuf/stubs/logging.h>
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 namespace internal {
@@ -63,7 +63,7 @@ void** RepeatedPtrFieldBase::InternalExtend(int extend_amount) {
     rep_ = reinterpret_cast<Rep*>(::operator new(bytes));
   } else {
     rep_ = reinterpret_cast<Rep*>(
-        ::google::protobuf::Arena::CreateArray<char>(arena, bytes));
+        ::cv::protobuf::Arena::CreateArray<char>(arena, bytes));
   }
 #if defined(__GXX_DELETE_WITH_SIZE__) || defined(__cpp_sized_deallocation)
   const int old_total_size = total_size_;
@@ -107,4 +107,4 @@ void RepeatedPtrFieldBase::CloseGap(int start, int num) {
 
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

@@ -37,7 +37,7 @@
 #include <google/protobuf/stubs/logging.h>
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -52,4 +52,4 @@ bool ZeroCopyOutputStream::WriteAliasedRaw(const void* /* data */,
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

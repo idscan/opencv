@@ -34,12 +34,12 @@ CV__DNN_INLINE_NS_BEGIN
 
 #if HAVE_PROTOBUF
 
-using ::google::protobuf::RepeatedField;
-using ::google::protobuf::RepeatedPtrField;
-using ::google::protobuf::Message;
-using ::google::protobuf::Descriptor;
-using ::google::protobuf::FieldDescriptor;
-using ::google::protobuf::Reflection;
+using ::PROTOBUF_NAMESPACE::RepeatedField;
+using ::PROTOBUF_NAMESPACE::RepeatedPtrField;
+using ::PROTOBUF_NAMESPACE::Message;
+using ::PROTOBUF_NAMESPACE::Descriptor;
+using ::PROTOBUF_NAMESPACE::FieldDescriptor;
+using ::PROTOBUF_NAMESPACE::Reflection;
 
 namespace
 {
@@ -230,9 +230,9 @@ void printLayerAttr(const tensorflow::NodeDef &layer)
     for (int ii = 0; ii < layer.input_size(); ii++)
         std::cout << "(" << layer.input(ii) << ")";
     std::cout << std::endl;
-    google::protobuf::Map<std::string, tensorflow::AttrValue> attr
+    PROTOBUF_NAMESPACE::Map<std::string, tensorflow::AttrValue> attr
             = layer.attr();
-    for (google::protobuf::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
+    for (PROTOBUF_NAMESPACE::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
          ai != attr.end(); ++ai)
     {
         std::cout << ai->first << ":";
@@ -255,7 +255,7 @@ void printLayerAttr(const tensorflow::NodeDef &layer)
 
 bool hasLayerAttr(const tensorflow::NodeDef &layer, const std::string &name)
 {
-    google::protobuf::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
+    PROTOBUF_NAMESPACE::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
     return attr.find(name) != attr.end();
 }
 
@@ -2116,7 +2116,7 @@ void TFImporter::parseNode(const tensorflow::NodeDef& layer_)
                 {
                     // FIXIT do NOT modify input model
                     layer.mutable_attr()->insert(
-                        ::google::protobuf::MapPair<std::string, tensorflow::AttrValue>("align_corners",
+                        ::PROTOBUF_NAMESPACE::MapPair<std::string, tensorflow::AttrValue>("align_corners",
                                                                                         getLayerAttr(layer, "resize_align_corners")));
                 }
             }
@@ -2521,8 +2521,8 @@ void TFImporter::parseNode(const tensorflow::NodeDef& layer_)
             // However we create a layer with the same type and rely that user defined a custom layer.
 
             // All the attributes are added to LayerParams.
-            google::protobuf::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
-            for (google::protobuf::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
+            PROTOBUF_NAMESPACE::Map<std::string, tensorflow::AttrValue> attr = layer.attr();
+            for (PROTOBUF_NAMESPACE::Map<std::string, tensorflow::AttrValue>::const_iterator ai = attr.begin();
                  ai != attr.end(); ++ai)
             {
                 if (ai->second.value_case() == tensorflow::AttrValue::kS)  // string
@@ -2614,7 +2614,7 @@ void writeTextGraph(const String& _model, const String& output)
     }
 
     std::string content;
-    google::protobuf::TextFormat::PrintToString(net, &content);
+    PROTOBUF_NAMESPACE::TextFormat::PrintToString(net, &content);
 
     std::ofstream ofs(output.c_str());
     ofs << content;

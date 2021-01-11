@@ -38,7 +38,7 @@
 
 #define ATOMICOPS_COMPILER_BARRIER() __asm__ __volatile__("" : : : "memory")
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -148,7 +148,7 @@ inline Atomic32 Release_Load(volatile const Atomic32 *ptr) {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #undef ATOMICOPS_COMPILER_BARRIER
 

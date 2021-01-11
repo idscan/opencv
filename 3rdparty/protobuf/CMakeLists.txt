@@ -141,28 +141,28 @@ append_if_exist(Protobuf_SRCS
 )
 
 include_directories(BEFORE "${PROTOBUF_ROOT}/src")  # ensure using if own headers: https://github.com/opencv/opencv/issues/13328
-add_library(libprotobuf STATIC ${OPENCV_3RDPARTY_EXCLUDE_FROM_ALL} ${Protobuf_SRCS})
-target_include_directories(libprotobuf SYSTEM PUBLIC $<BUILD_INTERFACE:${PROTOBUF_ROOT}/src>)
-set_target_properties(libprotobuf
+add_library(libcvprotobuf STATIC ${OPENCV_3RDPARTY_EXCLUDE_FROM_ALL} ${Protobuf_SRCS})
+target_include_directories(libcvprotobuf SYSTEM PUBLIC $<BUILD_INTERFACE:${PROTOBUF_ROOT}/src>)
+set_target_properties(libcvprotobuf
     PROPERTIES
     FOLDER "3rdparty"
-    OUTPUT_NAME libprotobuf
+    OUTPUT_NAME libcvprotobuf
     DEBUG_POSTFIX "${OPENCV_DEBUG_POSTFIX}"
-    COMPILE_PDB_NAME libprotobuf
-    COMPILE_PDB_NAME_DEBUG "libprotobuf${OPENCV_DEBUG_POSTFIX}"
+    COMPILE_PDB_NAME libcvprotobuf
+    COMPILE_PDB_NAME_DEBUG "libcvprotobuf${OPENCV_DEBUG_POSTFIX}"
     ARCHIVE_OUTPUT_DIRECTORY ${3P_LIBRARY_OUTPUT_PATH}
     )
 
 if(ANDROID)
   # https://github.com/opencv/opencv/issues/17282
-  target_link_libraries(libprotobuf INTERFACE "-landroid" "-llog")
+  target_link_libraries(libcvprotobuf INTERFACE "-landroid" "-llog")
 endif()
 
 get_protobuf_version(Protobuf_VERSION "${PROTOBUF_ROOT}/src")
 set(Protobuf_VERSION ${Protobuf_VERSION} CACHE INTERNAL "" FORCE)
 
 if(NOT BUILD_SHARED_LIBS)
-  ocv_install_target(libprotobuf EXPORT OpenCVModules ARCHIVE DESTINATION ${OPENCV_3P_LIB_INSTALL_PATH} COMPONENT dev OPTIONAL)
+  ocv_install_target(libcvprotobuf EXPORT OpenCVModules ARCHIVE DESTINATION ${OPENCV_3P_LIB_INSTALL_PATH} COMPONENT dev OPTIONAL)
 endif()
 
 ocv_install_3rdparty_licenses(protobuf LICENSE README.md)

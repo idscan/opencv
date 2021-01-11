@@ -45,7 +45,7 @@
 #include <google/protobuf/unknown_field_set.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 class DynamicMessage;
 class MapKey;
@@ -75,7 +75,7 @@ class LIBPROTOBUF_EXPORT MapFieldBase {
   virtual ~MapFieldBase();
 
   // Returns reference to internal repeated field. Data written using
-  // google::protobuf::Map's api prior to calling this function is guarantted to be
+  // cv::protobuf::Map's api prior to calling this function is guarantted to be
   // included in repeated field.
   const RepeatedPtrFieldBase& GetRepeatedField() const;
 
@@ -148,13 +148,13 @@ class LIBPROTOBUF_EXPORT MapFieldBase {
   friend class ContendedMapCleanTest;
   friend class GeneratedMessageReflection;
   friend class MapFieldAccessor;
-  friend class ::google::protobuf::DynamicMessage;
+  friend class ::cv::protobuf::DynamicMessage;
 
   // Virtual helper methods for MapIterator. MapIterator doesn't have the
   // type helper for key and value. Call these help methods to deal with
   // different types. Real helper methods are implemented in
   // TypeDefinedMapFieldBase.
-  friend class ::google::protobuf::MapIterator;
+  friend class ::cv::protobuf::MapIterator;
   // Allocate map<...>::iterator for MapIterator.
   virtual void InitializeIterator(MapIterator* map_iter) const = 0;
 
@@ -227,7 +227,7 @@ class MapField : public TypeDefinedMapFieldBase<Key, T> {
       MapFieldLiteType;
 
   // Enum needs to be handled differently from other types because it has
-  // different exposed type in google::protobuf::Map's api and repeated field's api. For
+  // different exposed type in cv::protobuf::Map's api and repeated field's api. For
   // details see the comment in the implementation of
   // SyncMapWithRepeatedFieldNoLock.
   static const bool kIsValueEnum = ValueTypeHandler::kIsEnum;
@@ -291,7 +291,7 @@ class MapField : public TypeDefinedMapFieldBase<Key, T> {
 
   void SetMapIteratorValue(MapIterator* map_iter) const;
 
-  friend class ::google::protobuf::Arena;
+  friend class ::cv::protobuf::Arena;
   friend class MapFieldStateTest;  // For testing, it needs raw access to impl_
   GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(MapField);
 };
@@ -697,7 +697,7 @@ class LIBPROTOBUF_EXPORT MapValueRef {
   void DeleteData() {
     switch (type_) {
 #define HANDLE_TYPE(CPPTYPE, TYPE)                              \
-      case google::protobuf::FieldDescriptor::CPPTYPE_##CPPTYPE: {        \
+      case cv::protobuf::FieldDescriptor::CPPTYPE_##CPPTYPE: {        \
         delete reinterpret_cast<TYPE*>(data_);                  \
         break;                                                  \
       }
@@ -797,39 +797,39 @@ class LIBPROTOBUF_EXPORT MapIterator {
 };
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 GOOGLE_PROTOBUF_HASH_NAMESPACE_DECLARATION_START
 template<>
-struct hash<google::protobuf::MapKey> {
+struct hash<cv::protobuf::MapKey> {
   size_t
-  operator()(const google::protobuf::MapKey& map_key) const {
+  operator()(const cv::protobuf::MapKey& map_key) const {
     switch (map_key.type()) {
-      case google::protobuf::FieldDescriptor::CPPTYPE_DOUBLE:
-      case google::protobuf::FieldDescriptor::CPPTYPE_FLOAT:
-      case google::protobuf::FieldDescriptor::CPPTYPE_ENUM:
-      case google::protobuf::FieldDescriptor::CPPTYPE_MESSAGE:
+      case cv::protobuf::FieldDescriptor::CPPTYPE_DOUBLE:
+      case cv::protobuf::FieldDescriptor::CPPTYPE_FLOAT:
+      case cv::protobuf::FieldDescriptor::CPPTYPE_ENUM:
+      case cv::protobuf::FieldDescriptor::CPPTYPE_MESSAGE:
         GOOGLE_LOG(FATAL) << "Unsupported";
         break;
-      case google::protobuf::FieldDescriptor::CPPTYPE_STRING:
+      case cv::protobuf::FieldDescriptor::CPPTYPE_STRING:
         return hash<string>()(map_key.GetStringValue());
-      case google::protobuf::FieldDescriptor::CPPTYPE_INT64:
-        return hash< ::google::protobuf::int64>()(map_key.GetInt64Value());
-      case google::protobuf::FieldDescriptor::CPPTYPE_INT32:
-        return hash< ::google::protobuf::int32>()(map_key.GetInt32Value());
-      case google::protobuf::FieldDescriptor::CPPTYPE_UINT64:
-        return hash< ::google::protobuf::uint64>()(map_key.GetUInt64Value());
-      case google::protobuf::FieldDescriptor::CPPTYPE_UINT32:
-        return hash< ::google::protobuf::uint32>()(map_key.GetUInt32Value());
-      case google::protobuf::FieldDescriptor::CPPTYPE_BOOL:
+      case cv::protobuf::FieldDescriptor::CPPTYPE_INT64:
+        return hash< ::cv::protobuf::int64>()(map_key.GetInt64Value());
+      case cv::protobuf::FieldDescriptor::CPPTYPE_INT32:
+        return hash< ::cv::protobuf::int32>()(map_key.GetInt32Value());
+      case cv::protobuf::FieldDescriptor::CPPTYPE_UINT64:
+        return hash< ::cv::protobuf::uint64>()(map_key.GetUInt64Value());
+      case cv::protobuf::FieldDescriptor::CPPTYPE_UINT32:
+        return hash< ::cv::protobuf::uint32>()(map_key.GetUInt32Value());
+      case cv::protobuf::FieldDescriptor::CPPTYPE_BOOL:
         return hash<bool>()(map_key.GetBoolValue());
     }
     GOOGLE_LOG(FATAL) << "Can't get here.";
     return 0;
   }
   bool
-  operator()(const google::protobuf::MapKey& map_key1,
-             const google::protobuf::MapKey& map_key2) const {
+  operator()(const cv::protobuf::MapKey& map_key1,
+             const cv::protobuf::MapKey& map_key2) const {
     return map_key1 < map_key2;
   }
 };

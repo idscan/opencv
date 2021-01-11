@@ -39,7 +39,7 @@
 #include <google/protobuf/unknown_field_set.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 class Arena;
 namespace internal {
@@ -53,8 +53,8 @@ class MapField;
 namespace protobuf {
 namespace internal {
 
-// MapEntry is the returned google::protobuf::Message when calling AddMessage of
-// google::protobuf::Reflection. In order to let it work with generated message
+// MapEntry is the returned cv::protobuf::Message when calling AddMessage of
+// cv::protobuf::Reflection. In order to let it work with generated message
 // reflection, its in-memory type is the same as generated message with the same
 // fields. However, in order to decide the in-memory type of key/value, we need
 // to know both their cpp type in generated api and proto type. In
@@ -98,7 +98,7 @@ class MapEntry
   InternalMetadataWithArena _internal_metadata_;
 
  private:
-  friend class ::google::protobuf::Arena;
+  friend class ::cv::protobuf::Arena;
   template <typename C, typename K, typename V,
             WireFormatLite::FieldType k_wire_type, WireFormatLite::FieldType,
             int default_enum>
@@ -136,5 +136,5 @@ struct DeconstructMapEntry<MapEntry<Derived, K, V, key, value, default_enum> > {
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_MAP_ENTRY_H__

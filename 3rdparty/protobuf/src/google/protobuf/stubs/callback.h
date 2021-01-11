@@ -7,7 +7,7 @@
 // ===================================================================
 // emulates google3/base/callback.h
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // Abstract interface for a callback.  When calling an RPC, you must provide
@@ -571,6 +571,6 @@ void LIBPROTOBUF_EXPORT DoNothing();
 
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_CALLBACK_H_

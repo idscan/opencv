@@ -50,7 +50,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/mutex.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // Defined in other files.
@@ -130,7 +130,7 @@ class LIBPROTOBUF_EXPORT DynamicMessageFactory : public MessageFactory {
   // public header (for good reason), but dynamic_message.h is, and public
   // headers may only #include other public headers.
   struct PrototypeMap;
-  google::protobuf::scoped_ptr<PrototypeMap> prototypes_;
+  cv::protobuf::scoped_ptr<PrototypeMap> prototypes_;
   mutable Mutex prototypes_mutex_;
 
   friend class DynamicMessage;
@@ -232,5 +232,5 @@ class LIBPROTOBUF_EXPORT DynamicMapSorter {
 
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_DYNAMIC_MESSAGE_H__

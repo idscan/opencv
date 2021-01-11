@@ -69,7 +69,7 @@
 
 #undef PACKAGE  // autoheader #defines this.  :(
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
 
@@ -494,7 +494,7 @@ void InitAllowedProto3Extendee() {
     allowed_proto3_extendees_->insert(string("proto") + "2." + kOptionNames[i]);
   }
 
-  google::protobuf::internal::OnShutdown(&DeleteAllowedProto3Extendee);
+  cv::protobuf::internal::OnShutdown(&DeleteAllowedProto3Extendee);
 }
 
 // Checks whether the extendee type is allowed in proto3.
@@ -502,7 +502,7 @@ void InitAllowedProto3Extendee() {
 // instead of comparing the descriptor directly because the extensions may be
 // defined in a different pool.
 bool AllowedExtendeeInProto3(const string& name) {
-  ::google::protobuf::GoogleOnceInit(&allowed_proto3_extendees_init_, &InitAllowedProto3Extendee);
+  ::cv::protobuf::GoogleOnceInit(&allowed_proto3_extendees_init_, &InitAllowedProto3Extendee);
   return allowed_proto3_extendees_->find(name) !=
          allowed_proto3_extendees_->end();
 }
@@ -838,7 +838,7 @@ void InitFileDescriptorTables() {
 }
 
 inline void InitFileDescriptorTablesOnce() {
-  ::google::protobuf::GoogleOnceInit(
+  ::cv::protobuf::GoogleOnceInit(
       &file_descriptor_tables_once_init_, &InitFileDescriptorTables);
 }
 
@@ -1349,7 +1349,7 @@ static void InitGeneratedPool() {
 }
 
 inline void InitGeneratedPoolOnce() {
-  ::google::protobuf::GoogleOnceInit(&generated_pool_init_, &InitGeneratedPool);
+  ::cv::protobuf::GoogleOnceInit(&generated_pool_init_, &InitGeneratedPool);
 }
 
 }  // anonymous namespace
@@ -2288,7 +2288,7 @@ bool RetrieveOptions(int depth, const Message& options,
       return RetrieveOptionsAssumingRightPool(depth, options, option_entries);
     }
     DynamicMessageFactory factory;
-    google::protobuf::scoped_ptr<Message> dynamic_options(
+    cv::protobuf::scoped_ptr<Message> dynamic_options(
         factory.GetPrototype(option_descriptor)->New());
     if (dynamic_options->ParseFromString(options.SerializeAsString())) {
       return RetrieveOptionsAssumingRightPool(depth, *dynamic_options,
@@ -5021,12 +5021,12 @@ void DescriptorBuilder::CheckEnumValueUniqueness(
   //     NAME_TYPE_LAST_NAME = 2,
   //   }
   PrefixRemover remover(result->name());
-  std::map<string, const google::protobuf::EnumValueDescriptor*> values;
+  std::map<string, const cv::protobuf::EnumValueDescriptor*> values;
   for (int i = 0; i < result->value_count(); i++) {
-    const google::protobuf::EnumValueDescriptor* value = result->value(i);
+    const cv::protobuf::EnumValueDescriptor* value = result->value(i);
     string stripped =
         EnumValueToPascalCase(remover.MaybeRemove(value->name()));
-    std::pair<std::map<string, const google::protobuf::EnumValueDescriptor*>::iterator,
+    std::pair<std::map<string, const cv::protobuf::EnumValueDescriptor*>::iterator,
               bool>
         insert_result = values.insert(std::make_pair(stripped, value));
     bool inserted = insert_result.second;
@@ -6438,7 +6438,7 @@ bool DescriptorBuilder::OptionInterpreter::InterpretSingleOption(
 
   // First set the value on the UnknownFieldSet corresponding to the
   // innermost message.
-  google::protobuf::scoped_ptr<UnknownFieldSet> unknown_fields(new UnknownFieldSet());
+  cv::protobuf::scoped_ptr<UnknownFieldSet> unknown_fields(new UnknownFieldSet());
   if (!SetOptionValue(field, unknown_fields.get())) {
     return false;  // SetOptionValue() already added the error.
   }
@@ -6448,7 +6448,7 @@ bool DescriptorBuilder::OptionInterpreter::InterpretSingleOption(
   for (std::vector<const FieldDescriptor*>::reverse_iterator iter =
            intermediate_fields.rbegin();
        iter != intermediate_fields.rend(); ++iter) {
-    google::protobuf::scoped_ptr<UnknownFieldSet> parent_unknown_fields(
+    cv::protobuf::scoped_ptr<UnknownFieldSet> parent_unknown_fields(
         new UnknownFieldSet());
     switch ((*iter)->type()) {
       case FieldDescriptor::TYPE_MESSAGE: {
@@ -6650,7 +6650,7 @@ bool DescriptorBuilder::OptionInterpreter::SetOptionValue(
                              option_field->full_name() + "\".");
       }
       unknown_fields->AddFixed32(option_field->number(),
-          google::protobuf::internal::WireFormatLite::EncodeFloat(value));
+          cv::protobuf::internal::WireFormatLite::EncodeFloat(value));
       break;
     }
 
@@ -6667,7 +6667,7 @@ bool DescriptorBuilder::OptionInterpreter::SetOptionValue(
                              option_field->full_name() + "\".");
       }
       unknown_fields->AddFixed64(option_field->number(),
-          google::protobuf::internal::WireFormatLite::EncodeDouble(value));
+          cv::protobuf::internal::WireFormatLite::EncodeDouble(value));
       break;
     }
 
@@ -6836,7 +6836,7 @@ bool DescriptorBuilder::OptionInterpreter::SetAggregateOption(
   }
 
   const Descriptor* type = option_field->message_type();
-  google::protobuf::scoped_ptr<Message> dynamic(dynamic_factory_.GetPrototype(type)->New());
+  cv::protobuf::scoped_ptr<Message> dynamic(dynamic_factory_.GetPrototype(type)->New());
   GOOGLE_CHECK(dynamic.get() != NULL)
       << "Could not create an instance of " << option_field->DebugString();
 
@@ -6879,7 +6879,7 @@ void DescriptorBuilder::OptionInterpreter::SetInt32(int number, int32 value,
 
     case FieldDescriptor::TYPE_SINT32:
       unknown_fields->AddVarint(number,
-          google::protobuf::internal::WireFormatLite::ZigZagEncode32(value));
+          cv::protobuf::internal::WireFormatLite::ZigZagEncode32(value));
       break;
 
     default:
@@ -6901,7 +6901,7 @@ void DescriptorBuilder::OptionInterpreter::SetInt64(int number, int64 value,
 
     case FieldDescriptor::TYPE_SINT64:
       unknown_fields->AddVarint(number,
-          google::protobuf::internal::WireFormatLite::ZigZagEncode64(value));
+          cv::protobuf::internal::WireFormatLite::ZigZagEncode64(value));
       break;
 
     default:
@@ -7134,4 +7134,4 @@ void LazyDescriptor::OnceInternal() {
 }  // namespace internal
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

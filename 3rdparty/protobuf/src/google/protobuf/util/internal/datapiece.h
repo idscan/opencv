@@ -38,7 +38,7 @@
 #include <google/protobuf/stubs/statusor.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 class Enum;
 }  // namespace protobuf
@@ -163,7 +163,7 @@ class LIBPROTOBUF_EXPORT DataPiece {
   //   enum name without underscore with the value upper cased above.
   // If the value is not a string, attempts to convert to a 32-bit integer.
   // If none of these succeeds, returns a conversion error status.
-  util::StatusOr<int> ToEnum(const google::protobuf::Enum* enum_type,
+  util::StatusOr<int> ToEnum(const cv::protobuf::Enum* enum_type,
                                bool use_lower_camel_for_enums) const;
 
  private:
@@ -193,7 +193,7 @@ class LIBPROTOBUF_EXPORT DataPiece {
   // Data type for this piece of data.
   Type type_;
 
-  typedef ::google::protobuf::internal::StringPiecePod StringPiecePod;
+  typedef ::cv::protobuf::internal::StringPiecePod StringPiecePod;
 
   // Stored piece of data.
   union {
@@ -215,5 +215,5 @@ class LIBPROTOBUF_EXPORT DataPiece {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_DATAPIECE_H__

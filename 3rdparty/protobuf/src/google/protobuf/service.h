@@ -61,7 +61,7 @@
 //
 //     // implements MyService ---------------------------------------
 //
-//     void Foo(google::protobuf::RpcController* controller,
+//     void Foo(cv::protobuf::RpcController* controller,
 //              const MyRequest* request,
 //              MyResponse* response,
 //              Closure* done) {
@@ -104,7 +104,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/callback.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // Defined in this file.
@@ -288,5 +288,5 @@ class LIBPROTOBUF_EXPORT RpcChannel {
 
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_SERVICE_H__

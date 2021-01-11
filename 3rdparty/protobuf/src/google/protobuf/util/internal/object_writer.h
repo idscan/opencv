@@ -34,7 +34,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/stringpiece.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -142,5 +142,5 @@ class LIBPROTOBUF_EXPORT ObjectWriter {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_OBJECT_WRITER_H__

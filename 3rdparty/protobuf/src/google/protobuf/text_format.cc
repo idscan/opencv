@@ -60,7 +60,7 @@
 #include <google/protobuf/stubs/map_util.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 namespace {
@@ -1107,7 +1107,7 @@ label_skip_parsing:
     if (value_prototype == NULL) {
       return false;
     }
-    google::protobuf::scoped_ptr<Message> value(value_prototype->New());
+    cv::protobuf::scoped_ptr<Message> value(value_prototype->New());
     string sub_delimiter;
     DO(ConsumeMessageDelimiter(&sub_delimiter));
     DO(ConsumeMessage(value.get(), sub_delimiter));
@@ -1703,7 +1703,7 @@ class FieldValuePrinterWrapper : public TextFormat::FastFieldValuePrinter {
   }
 
  private:
-  google::protobuf::scoped_ptr<const TextFormat::FieldValuePrinter> delegate_;
+  cv::protobuf::scoped_ptr<const TextFormat::FieldValuePrinter> delegate_;
 };
 
 // Our own specialization: for UTF8 escaped strings.
@@ -1849,7 +1849,7 @@ bool TextFormat::Printer::PrintAny(const Message& message,
   }
 
   // Print the "value" in text.
-  const google::protobuf::Descriptor* value_descriptor =
+  const cv::protobuf::Descriptor* value_descriptor =
       message.GetDescriptor()->file()->pool()->FindMessageTypeByName(
           full_type_name);
   if (value_descriptor == NULL) {
@@ -1857,7 +1857,7 @@ bool TextFormat::Printer::PrintAny(const Message& message,
     return false;
   }
   DynamicMessageFactory factory;
-  google::protobuf::scoped_ptr<google::protobuf::Message> value_message(
+  cv::protobuf::scoped_ptr<cv::protobuf::Message> value_message(
       factory.GetPrototype(value_descriptor)->New());
   string serialized_value = reflection->GetString(message, value_field);
   if (!value_message->ParseFromString(serialized_value)) {
@@ -2233,4 +2233,4 @@ void TextFormat::Printer::PrintUnknownFields(
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

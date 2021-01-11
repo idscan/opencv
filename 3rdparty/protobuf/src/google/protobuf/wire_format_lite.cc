@@ -48,7 +48,7 @@
 #include <google/protobuf/io/zero_copy_stream_impl_lite.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -304,7 +304,7 @@ bool WireFormatLite::ReadPackedEnumNoInline(io::CodedInputStream* input,
   io::CodedInputStream::Limit limit = input->PushLimit(length);
   while (input->BytesUntilLimit() > 0) {
     int value;
-    if (!google::protobuf::internal::WireFormatLite::ReadPrimitive<
+    if (!cv::protobuf::internal::WireFormatLite::ReadPrimitive<
         int, WireFormatLite::TYPE_ENUM>(input, &value)) {
       return false;
     }
@@ -327,7 +327,7 @@ bool WireFormatLite::ReadPackedEnumPreserveUnknowns(
   io::CodedInputStream::Limit limit = input->PushLimit(length);
   while (input->BytesUntilLimit() > 0) {
     int value;
-    if (!google::protobuf::internal::WireFormatLite::ReadPrimitive<
+    if (!cv::protobuf::internal::WireFormatLite::ReadPrimitive<
         int, WireFormatLite::TYPE_ENUM>(input, &value)) {
       return false;
     }
@@ -600,7 +600,7 @@ bool WireFormatLite::ReadBytes(io::CodedInputStream* input, string* value) {
 }
 
 bool WireFormatLite::ReadBytes(io::CodedInputStream* input, string** p) {
-  if (*p == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+  if (*p == &::cv::protobuf::internal::GetEmptyStringAlreadyInited()) {
     *p = new ::std::string();
   }
   return ReadBytesToString(input, *p);
@@ -783,4 +783,4 @@ size_t WireFormatLite::EnumSize(const RepeatedField<int>& value) {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

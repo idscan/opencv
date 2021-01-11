@@ -56,7 +56,7 @@
 #include <google/protobuf/stubs/singleton.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 using internal::WireFormat;
@@ -298,7 +298,7 @@ GeneratedMessageFactory::GeneratedMessageFactory() {}
 GeneratedMessageFactory::~GeneratedMessageFactory() {}
 
 GeneratedMessageFactory* GeneratedMessageFactory::singleton() {
-  ::google::protobuf::GoogleOnceInit(&generated_message_factory_once_init_,
+  ::cv::protobuf::GoogleOnceInit(&generated_message_factory_once_init_,
                  &InitGeneratedMessageFactory);
   return generated_message_factory_;
 }
@@ -466,7 +466,7 @@ template<>
 GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE
 #endif
 Message* GenericTypeHandler<Message>::NewFromPrototype(
-    const Message* prototype, google::protobuf::Arena* arena) {
+    const Message* prototype, cv::protobuf::Arena* arena) {
   return prototype->New(arena);
 }
 template<>
@@ -474,7 +474,7 @@ template<>
 // Note: force noinline to workaround MSVC compiler bug with /Zc:inline, issue #240
 GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE
 #endif
-google::protobuf::Arena* GenericTypeHandler<Message>::GetArena(
+cv::protobuf::Arena* GenericTypeHandler<Message>::GetArena(
     Message* value) {
   return value->GetArena();
 }
@@ -490,4 +490,4 @@ void* GenericTypeHandler<Message>::GetMaybeArenaPointer(
 }  // namespace internal
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

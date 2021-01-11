@@ -59,7 +59,7 @@ Mutex& getInitializationMutex()
 Mutex* __initialization_mutex_initializer = &getInitializationMutex();
 
 namespace {
-using namespace google::protobuf;
+using namespace PROTOBUF_NAMESPACE;
 class ProtobufShutdown {
 public:
     bool initialized;
@@ -67,7 +67,7 @@ public:
     ~ProtobufShutdown()
     {
         initialized = false;
-        google::protobuf::ShutdownProtobufLibrary();
+        PROTOBUF_NAMESPACE::ShutdownProtobufLibrary();
     }
 };
 } // namespace

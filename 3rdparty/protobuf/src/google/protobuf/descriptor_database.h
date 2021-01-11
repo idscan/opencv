@@ -44,7 +44,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/descriptor.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // Defined in this file.
@@ -379,5 +379,5 @@ class LIBPROTOBUF_EXPORT MergedDescriptorDatabase : public DescriptorDatabase {
 
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_DESCRIPTOR_DATABASE_H__

@@ -38,7 +38,7 @@
 
 // ===================================================================
 // emulates google3/base/mutex.h
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -135,6 +135,6 @@ using internal::MutexLockMaybe;
 
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_MUTEX_H_

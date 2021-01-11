@@ -42,7 +42,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/logging.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -407,5 +407,5 @@ inline void Tokenizer::ParseString(const string& text, string* output) {
 }  // namespace io
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_IO_TOKENIZER_H__

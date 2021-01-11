@@ -110,8 +110,8 @@ namespace dnn {
 using std::string;
 using std::map;
 using namespace caffe;
-using namespace ::google::protobuf;
-using namespace ::google::protobuf::io;
+using namespace ::PROTOBUF_NAMESPACE;
+using namespace ::PROTOBUF_NAMESPACE::io;
 
 // Return true iff the net is not the current version.
 bool NetNeedsUpgrade(const NetParameter& net_param);
@@ -1120,7 +1120,7 @@ bool ReadProtoFromTextFile(const char* filename, Message* proto) {
     std::ifstream fs(filename, std::ifstream::in);
     CHECK(fs.is_open()) << "Can't open \"" << filename << "\"";
     IstreamInputStream input(&fs);
-    google::protobuf::TextFormat::Parser parser;
+    PROTOBUF_NAMESPACE::TextFormat::Parser parser;
 #ifndef OPENCV_DNN_EXTERNAL_PROTOBUF
     parser.AllowUnknownField(true);
     parser.SetRecursionLimit(1000);
@@ -1138,7 +1138,7 @@ bool ReadProtoFromBinaryFile(const char* filename, Message* proto) {
 
 bool ReadProtoFromTextBuffer(const char* data, size_t len, Message* proto) {
     ArrayInputStream input(data, len);
-    google::protobuf::TextFormat::Parser parser;
+    PROTOBUF_NAMESPACE::TextFormat::Parser parser;
 #ifndef OPENCV_DNN_EXTERNAL_PROTOBUF
     parser.AllowUnknownField(true);
     parser.SetRecursionLimit(1000);

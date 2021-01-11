@@ -45,14 +45,14 @@
 #include <google/protobuf/duration.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
 // Utility functions for Timestamp and Duration.
 class LIBPROTOBUF_EXPORT TimeUtil {
-  typedef google::protobuf::Timestamp Timestamp;
-  typedef google::protobuf::Duration Duration;
+  typedef cv::protobuf::Timestamp Timestamp;
+  typedef cv::protobuf::Duration Duration;
 
  public:
   // The min/max Timestamp/Duration values we support.
@@ -238,7 +238,7 @@ inline Duration operator%(const Duration& d1, const Duration& d2) {
 }
 
 inline std::ostream& operator<<(std::ostream& out, const Duration& d) {
-  out << google::protobuf::util::TimeUtil::ToString(d);
+  out << cv::protobuf::util::TimeUtil::ToString(d);
   return out;
 }
 
@@ -285,12 +285,12 @@ inline Timestamp operator-(const Timestamp& t, const Duration& d) {
 LIBPROTOBUF_EXPORT Duration operator-(const Timestamp& t1, const Timestamp& t2);
 
 inline std::ostream& operator<<(std::ostream& out, const Timestamp& t) {
-  out << google::protobuf::util::TimeUtil::ToString(t);
+  out << cv::protobuf::util::TimeUtil::ToString(t);
   return out;
 }
 
 }  // namespace protobuf
 
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_TIME_UTIL_H__

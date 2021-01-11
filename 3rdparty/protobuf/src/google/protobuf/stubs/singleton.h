@@ -34,7 +34,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/once.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 template<typename T>
@@ -63,6 +63,6 @@ template<typename T>
 T* Singleton<T>::instance_ = NULL;
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_SINGLETON_H__
