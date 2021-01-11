@@ -33,7 +33,7 @@
 #include <string.h>
 #include <algorithm>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace strings {
 
@@ -193,4 +193,4 @@ void LimitByteSource::CopyTo(ByteSink *sink, size_t n) {
 
 }  // namespace strings
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

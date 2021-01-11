@@ -47,7 +47,7 @@
 #include <google/protobuf/util/type_resolver.h>
 #include <google/protobuf/stubs/stringpiece.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -70,17 +70,17 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
   // a is the parent message field of b), then the vector should contain { "a",
   // "b", "c" }.
   //
-  // The Field* should point to the google::protobuf::Field of "c".
+  // The Field* should point to the cv::protobuf::Field of "c".
   typedef ResultCallback2<bool /*return*/,
                           const std::vector<string>& /*path of the field*/,
-                          const google::protobuf::Field* /*field*/>
+                          const cv::protobuf::Field* /*field*/>
       FieldScrubCallBack;
 
   // A unique pointer to a DefaultValueObjectWriter::FieldScrubCallBack.
-  typedef google::protobuf::scoped_ptr<FieldScrubCallBack> FieldScrubCallBackPtr;
+  typedef cv::protobuf::scoped_ptr<FieldScrubCallBack> FieldScrubCallBackPtr;
 
   DefaultValueObjectWriter(TypeResolver* type_resolver,
-                           const google::protobuf::Type& type,
+                           const cv::protobuf::Type& type,
                            ObjectWriter* ow);
 
   virtual ~DefaultValueObjectWriter();
@@ -143,11 +143,11 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
   // DefaultValueObjectWriter.
   class LIBPROTOBUF_EXPORT Node {
    public:
-    Node(const string& name, const google::protobuf::Type* type, NodeKind kind,
+    Node(const string& name, const cv::protobuf::Type* type, NodeKind kind,
          const DataPiece& data, bool is_placeholder,
          const std::vector<string>& path, bool suppress_empty_list,
          FieldScrubCallBack* field_scrub_callback);
-    Node(const string& name, const google::protobuf::Type* type, NodeKind kind,
+    Node(const string& name, const cv::protobuf::Type* type, NodeKind kind,
          const DataPiece& data, bool is_placeholder,
          const std::vector<string>& path, bool suppress_empty_list,
          bool preserve_proto_field_names,
@@ -179,9 +179,9 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
 
     const std::vector<string>& path() const { return path_; }
 
-    const google::protobuf::Type* type() const { return type_; }
+    const cv::protobuf::Type* type() const { return type_; }
 
-    void set_type(const google::protobuf::Type* type) { type_ = type; }
+    void set_type(const cv::protobuf::Type* type) { type_ = type; }
 
     NodeKind kind() const { return kind_; }
 
@@ -200,16 +200,16 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
    protected:
     // Returns the Value Type of a map given the Type of the map entry and a
     // TypeInfo instance.
-    const google::protobuf::Type* GetMapValueType(
-        const google::protobuf::Type& entry_type, const TypeInfo* typeinfo);
+    const cv::protobuf::Type* GetMapValueType(
+        const cv::protobuf::Type& entry_type, const TypeInfo* typeinfo);
 
     // Calls WriteTo() on every child in children_.
     void WriteChildren(ObjectWriter* ow);
 
     // The name of this node.
     string name_;
-    // google::protobuf::Type of this node. Owned by TypeInfo.
-    const google::protobuf::Type* type_;
+    // cv::protobuf::Type of this node. Owned by TypeInfo.
+    const cv::protobuf::Type* type_;
     // The kind of this node.
     NodeKind kind_;
     // Whether this is a node for "Any".
@@ -243,7 +243,7 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
 
   // Creates a new Node and returns it. Caller owns memory of returned object.
   virtual Node* CreateNewNode(const string& name,
-                              const google::protobuf::Type* type, NodeKind kind,
+                              const cv::protobuf::Type* type, NodeKind kind,
                               const DataPiece& data, bool is_placeholder,
                               const std::vector<string>& path,
                               bool suppress_empty_list,
@@ -251,7 +251,7 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
 
   // Creates a new Node and returns it. Caller owns memory of returned object.
   virtual Node* CreateNewNode(const string& name,
-                              const google::protobuf::Type* type, NodeKind kind,
+                              const cv::protobuf::Type* type, NodeKind kind,
                               const DataPiece& data, bool is_placeholder,
                               const std::vector<string>& path,
                               bool suppress_empty_list,
@@ -260,7 +260,7 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
 
   // Creates a DataPiece containing the default value of the type of the field.
   static DataPiece CreateDefaultDataPieceForField(
-      const google::protobuf::Field& field, const TypeInfo* typeinfo);
+      const cv::protobuf::Field& field, const TypeInfo* typeinfo);
 
  protected:
   // Returns a pointer to current Node in tree.
@@ -281,23 +281,23 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
   // Returns the default enum value as a DataPiece, or the first enum value if
   // there is no default. For proto3, where we cannot specify an explicit
   // default, a zero value will always be returned.
-  static DataPiece FindEnumDefault(const google::protobuf::Field& field,
+  static DataPiece FindEnumDefault(const cv::protobuf::Field& field,
                                    const TypeInfo* typeinfo);
 
   // Type information for all the types used in the descriptor. Used to find
-  // google::protobuf::Type of nested messages/enums.
+  // cv::protobuf::Type of nested messages/enums.
   const TypeInfo* typeinfo_;
   // Whether the TypeInfo object is owned by this class.
   bool own_typeinfo_;
-  // google::protobuf::Type of the root message type.
-  const google::protobuf::Type& type_;
+  // cv::protobuf::Type of the root message type.
+  const cv::protobuf::Type& type_;
   // Holds copies of strings passed to RenderString.
   std::vector<string*> string_values_;
 
   // The current Node. Owned by its parents.
   Node* current_;
   // The root Node.
-  google::protobuf::scoped_ptr<Node> root_;
+  cv::protobuf::scoped_ptr<Node> root_;
   // The stack to hold the path of Nodes from current_ to root_;
   std::stack<Node*> stack_;
 
@@ -320,5 +320,5 @@ class LIBPROTOBUF_EXPORT DefaultValueObjectWriter : public ObjectWriter {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_DEFAULT_VALUE_OBJECTWRITER_H__

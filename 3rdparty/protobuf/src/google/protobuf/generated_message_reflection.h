@@ -50,7 +50,7 @@
 #include <google/protobuf/unknown_field_set.h>
 
 
-namespace google {
+namespace cv {
 namespace upb {
 namespace google_opensource {
 class GMR_Handlers;
@@ -127,7 +127,7 @@ class WeakFieldMap;             // weak_field_map.h
 //                  -1.
 struct ReflectionSchema {
  public:
-  // Size of a google::protobuf::Message object of this type.
+  // Size of a cv::protobuf::Message object of this type.
   uint32 GetObjectSize() const { return static_cast<uint32>(object_size_); }
 
   // Offset of a non-oneof field.  Getting a field offset is slightly more
@@ -497,7 +497,7 @@ class LIBPROTOBUF_EXPORT GeneratedMessageReflection PROTOBUF_FINAL : public Refl
       const Descriptor* message_type) const;
 
  private:
-  friend class google::protobuf::flat::MetadataBuilder;
+  friend class cv::protobuf::flat::MetadataBuilder;
   friend class upb::google_opensource::GMR_Handlers;
 
   const Descriptor* const descriptor_;
@@ -684,7 +684,7 @@ T* DynamicCastToGenerated(const Message* from) {
   const T&(*get_default_instance)() = &T::default_instance;
   (void)get_default_instance;
 
-  // Compile-time assert that T is a subclass of google::protobuf::Message.
+  // Compile-time assert that T is a subclass of cv::protobuf::Message.
   const Message* unused = static_cast<T*>(NULL);
   (void)unused;
 
@@ -719,10 +719,10 @@ LIBPROTOBUF_EXPORT void RegisterAllTypes(const Metadata* file_level_metadata, in
 // These cannot be in lite so we put them in the reflection.
 LIBPROTOBUF_EXPORT void UnknownFieldSetSerializer(const uint8* base, uint32 offset, uint32 tag,
                                uint32 has_offset,
-                               ::google::protobuf::io::CodedOutputStream* output);
+                               ::cv::protobuf::io::CodedOutputStream* output);
 
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_GENERATED_MESSAGE_REFLECTION_H__

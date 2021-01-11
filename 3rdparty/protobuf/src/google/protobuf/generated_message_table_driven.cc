@@ -40,7 +40,7 @@
 #include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -100,4 +100,4 @@ bool MergePartialFromCodedStream(
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

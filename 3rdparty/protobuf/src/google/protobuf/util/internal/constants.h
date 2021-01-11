@@ -35,7 +35,7 @@
 
 // This file contains constants used by //net/proto2/util/converter.
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -99,5 +99,5 @@ const char kFieldMaskTypeUrl[] =
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_CONSTANTS_H__

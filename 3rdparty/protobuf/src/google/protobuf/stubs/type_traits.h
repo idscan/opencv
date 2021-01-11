@@ -64,7 +64,7 @@
 
 #include <google/protobuf/stubs/template_util.h>  // For true_type and false_type
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -359,6 +359,6 @@ struct is_convertible
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_TYPE_TRAITS_H_

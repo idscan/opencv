@@ -44,7 +44,7 @@
 #include <google/protobuf/stubs/template_util.h>
 #include <google/protobuf/generated_enum_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
   class EnumDescriptor;
 }  // namespace protobuf
@@ -84,5 +84,5 @@ LIBPROTOBUF_EXPORT const string& NameOfEnum(const EnumDescriptor* descriptor, in
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_GENERATED_ENUM_REFLECTION_H__

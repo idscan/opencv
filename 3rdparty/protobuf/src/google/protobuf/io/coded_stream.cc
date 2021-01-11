@@ -49,7 +49,7 @@
 #include <google/protobuf/stubs/stl_util.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -618,7 +618,7 @@ bool CodedInputStream::Refresh() {
 
 // CodedOutputStream =================================================
 
-google::protobuf::internal::AtomicWord CodedOutputStream::default_serialization_deterministic_ = 0;
+cv::protobuf::internal::AtomicWord CodedOutputStream::default_serialization_deterministic_ = 0;
 
 CodedOutputStream::CodedOutputStream(ZeroCopyOutputStream* output)
   : output_(output),
@@ -788,4 +788,4 @@ uint8* CodedOutputStream::WriteStringWithSizeToArray(const string& str,
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

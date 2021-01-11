@@ -89,7 +89,7 @@
 
 #include <google/protobuf/stubs/status.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
@@ -254,6 +254,6 @@ inline const T& StatusOr<T>::ValueOrDie() const {
 }
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_STATUSOR_H_

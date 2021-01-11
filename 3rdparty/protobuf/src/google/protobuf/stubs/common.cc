@@ -55,7 +55,7 @@
 #include <android/log.h>
 #endif
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 namespace internal {
@@ -207,7 +207,7 @@ LogMessage& LogMessage::operator<<(const StringPiece& value) {
 }
 
 LogMessage& LogMessage::operator<<(
-    const ::google::protobuf::util::Status& status) {
+    const ::cv::protobuf::util::Status& status) {
   message_ += status.ToString();
   return *this;
 }
@@ -490,4 +490,4 @@ const char* FatalException::what() const throw() {
 #endif
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

@@ -41,7 +41,7 @@
 #include <google/protobuf/util/internal/structured_objectwriter.h>
 #include <google/protobuf/stubs/bytestream.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -88,7 +88,7 @@ namespace converter {
 class LIBPROTOBUF_EXPORT JsonObjectWriter : public StructuredObjectWriter {
  public:
   JsonObjectWriter(StringPiece indent_string,
-                   google::protobuf::io::CodedOutputStream* out)
+                   cv::protobuf::io::CodedOutputStream* out)
       : element_(new Element(NULL)),
         stream_(out),
         sink_(out),
@@ -151,7 +151,7 @@ class LIBPROTOBUF_EXPORT JsonObjectWriter : public StructuredObjectWriter {
  private:
   class LIBPROTOBUF_EXPORT ByteSinkWrapper : public strings::ByteSink {
    public:
-    explicit ByteSinkWrapper(google::protobuf::io::CodedOutputStream* stream)
+    explicit ByteSinkWrapper(cv::protobuf::io::CodedOutputStream* stream)
         : stream_(stream) {}
     virtual ~ByteSinkWrapper() {}
 
@@ -161,7 +161,7 @@ class LIBPROTOBUF_EXPORT JsonObjectWriter : public StructuredObjectWriter {
     }
 
    private:
-    google::protobuf::io::CodedOutputStream* stream_;
+    cv::protobuf::io::CodedOutputStream* stream_;
 
     GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(ByteSinkWrapper);
   };
@@ -208,8 +208,8 @@ class LIBPROTOBUF_EXPORT JsonObjectWriter : public StructuredObjectWriter {
   // false.
   bool GetAndResetEmptyKeyOk();
 
-  google::protobuf::scoped_ptr<Element> element_;
-  google::protobuf::io::CodedOutputStream* stream_;
+  cv::protobuf::scoped_ptr<Element> element_;
+  cv::protobuf::io::CodedOutputStream* stream_;
   ByteSinkWrapper sink_;
   const string indent_string_;
 
@@ -229,5 +229,5 @@ class LIBPROTOBUF_EXPORT JsonObjectWriter : public StructuredObjectWriter {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_JSON_OBJECTWRITER_H__

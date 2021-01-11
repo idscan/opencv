@@ -45,7 +45,7 @@
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 class Arena;
 namespace io {
@@ -140,7 +140,7 @@ LIBPROTOBUF_EXPORT inline const ::std::string& GetEmptyStringAlreadyInited() {
 }
 
 LIBPROTOBUF_EXPORT inline const ::std::string& GetEmptyString() {
-  ::google::protobuf::GoogleOnceInit(&empty_string_once_init_, &InitEmptyString);
+  ::cv::protobuf::GoogleOnceInit(&empty_string_once_init_, &InitEmptyString);
   return GetEmptyStringAlreadyInited();
 }
 
@@ -187,14 +187,14 @@ class LIBPROTOBUF_EXPORT MessageLite {
 
   // Construct a new instance on the arena. Ownership is passed to the caller
   // if arena is a NULL. Default implementation for backwards compatibility.
-  virtual MessageLite* New(::google::protobuf::Arena* arena) const;
+  virtual MessageLite* New(::cv::protobuf::Arena* arena) const;
 
   // Get the arena, if any, associated with this message. Virtual method
   // required for generic operations but most arena-related operations should
   // use the GetArenaNoVirtual() generated-code method. Default implementation
   // to reduce code size by avoiding the need for per-type implementations
   // when types do not implement arena support.
-  virtual ::google::protobuf::Arena* GetArena() const { return NULL; }
+  virtual ::cv::protobuf::Arena* GetArena() const { return NULL; }
 
   // Get a pointer that may be equal to this message's arena, or may not be.
   // If the value returned by this method is equal to some arena pointer, then
@@ -258,7 +258,7 @@ class LIBPROTOBUF_EXPORT MessageLite {
   // This function takes a string in the (non-human-readable) binary wire
   // format, matching the encoding output by MessageLite::SerializeToString().
   // If you'd like to convert a human-readable string into a protocol buffer
-  // object, see google::protobuf::TextFormat::ParseFromString().
+  // object, see cv::protobuf::TextFormat::ParseFromString().
   bool ParseFromString(const string& data);
   // Like ParseFromString(), but accepts messages that are missing
   // required fields.
@@ -408,5 +408,5 @@ void LIBPROTOBUF_EXPORT SetProto3PreserveUnknownsDefault(bool preserve);
 
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_MESSAGE_LITE_H__

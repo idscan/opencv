@@ -32,7 +32,7 @@
 
 #include <google/protobuf/util/internal/datapiece.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -89,4 +89,4 @@ void ObjectWriter::RenderDataPieceTo(const DataPiece& data, StringPiece name,
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

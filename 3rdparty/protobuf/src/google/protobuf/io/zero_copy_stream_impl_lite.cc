@@ -42,7 +42,7 @@
 #include <google/protobuf/stubs/logging.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -398,4 +398,4 @@ void CopyingOutputStreamAdaptor::FreeBuffer() {
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

@@ -34,7 +34,7 @@
 
 #include <iosfwd>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 struct uint128_pod;
@@ -378,6 +378,6 @@ inline uint128& uint128::operator--() {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_INT128_H_

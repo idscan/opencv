@@ -38,7 +38,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/stringpiece.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 #ifdef _MSC_VER
@@ -873,6 +873,6 @@ LIBPROTOBUF_EXPORT int EncodeAsUTF8Char(uint32 code_point, char* output);
 LIBPROTOBUF_EXPORT int UTF8FirstLetterNumBytes(const char* src, int len);
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_STRUTIL_H__

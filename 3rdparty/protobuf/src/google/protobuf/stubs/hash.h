@@ -156,7 +156,7 @@
 #endif
 
 # define GOOGLE_PROTOBUF_HASH_NAMESPACE_DECLARATION_START \
-  namespace google {                                      \
+  namespace cv {                                      \
   namespace protobuf {
 # define GOOGLE_PROTOBUF_HASH_NAMESPACE_DECLARATION_END }}
 
@@ -171,7 +171,7 @@
 #include <set>
 #endif
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 #ifdef GOOGLE_PROTOBUF_MISSING_HASH
@@ -435,6 +435,6 @@ struct streq {
 };
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_HASH_H__

@@ -46,7 +46,7 @@
 #include <google/protobuf/wire_format.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
 namespace internal {
@@ -246,7 +246,7 @@ ExtensionSet::Extension* ExtensionSet::MaybeNewRepeatedExtension(const FieldDesc
     GOOGLE_DCHECK_EQ(cpp_type(extension->type), FieldDescriptor::CPPTYPE_MESSAGE);
     extension->is_repeated = true;
     extension->repeated_message_value =
-        ::google::protobuf::Arena::CreateMessage<RepeatedPtrField<MessageLite> >(arena_);
+        ::cv::protobuf::Arena::CreateMessage<RepeatedPtrField<MessageLite> >(arena_);
   } else {
     GOOGLE_DCHECK_TYPE(*extension, REPEATED, MESSAGE);
   }
@@ -422,14 +422,14 @@ uint8* ExtensionSet::SerializeWithCachedSizesToArray(int start_field_number,
                                                      uint8* target) const {
   return InternalSerializeWithCachedSizesToArray(
       start_field_number, end_field_number,
-      google::protobuf::io::CodedOutputStream::IsDefaultSerializationDeterministic(),
+      cv::protobuf::io::CodedOutputStream::IsDefaultSerializationDeterministic(),
       target);
 }
 
 uint8* ExtensionSet::SerializeMessageSetWithCachedSizesToArray(
     uint8* target) const {
   return InternalSerializeMessageSetWithCachedSizesToArray(
-      google::protobuf::io::CodedOutputStream::IsDefaultSerializationDeterministic(),
+      cv::protobuf::io::CodedOutputStream::IsDefaultSerializationDeterministic(),
       target);
 }
 
@@ -811,4 +811,4 @@ size_t ExtensionSet::MessageSetByteSize() const {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

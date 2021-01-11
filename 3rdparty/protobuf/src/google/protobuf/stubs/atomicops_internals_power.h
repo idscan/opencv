@@ -31,7 +31,7 @@
 #ifndef GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_AIX_H_
 #define GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_AIX_H_
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -435,6 +435,6 @@ inline Atomic64 Release_Load(volatile const Atomic64* ptr) {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_SPARC_GCC_H_

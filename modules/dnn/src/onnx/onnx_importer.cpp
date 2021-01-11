@@ -214,7 +214,7 @@ std::map<std::string, Mat> ONNXImporter::getGraphTensors(
   return layers_weights;
 }
 
-static DictValue parse(const ::google::protobuf::RepeatedField< ::google::protobuf::int64>& src) {
+static DictValue parse(const ::PROTOBUF_NAMESPACE::RepeatedField< ::PROTOBUF_NAMESPACE::int64>& src) {
     std::vector<int32_t> dst(src.size());
     convertInt64ToInt32(src, dst, src.size());
     return DictValue::arrayInt(&dst[0], src.size());
@@ -279,7 +279,7 @@ LayerParams ONNXImporter::getLayerParams(const opencv_onnx::NodeProto& node_prot
         }
         else if (attribute_proto.has_i())
         {
-            ::google::protobuf::int64 src = attribute_proto.i();
+            ::PROTOBUF_NAMESPACE::int64 src = attribute_proto.i();
             if (src < std::numeric_limits<int32_t>::min() || src > std::numeric_limits<int32_t>::max())
                 CV_Error(Error::StsOutOfRange, "Input is out of OpenCV 32S range");
             else

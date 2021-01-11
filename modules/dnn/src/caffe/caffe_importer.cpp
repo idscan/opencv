@@ -57,12 +57,12 @@ namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
 #ifdef HAVE_PROTOBUF
-using ::google::protobuf::RepeatedField;
-using ::google::protobuf::RepeatedPtrField;
-using ::google::protobuf::Message;
-using ::google::protobuf::Descriptor;
-using ::google::protobuf::FieldDescriptor;
-using ::google::protobuf::Reflection;
+using ::PROTOBUF_NAMESPACE::RepeatedField;
+using ::PROTOBUF_NAMESPACE::RepeatedPtrField;
+using ::PROTOBUF_NAMESPACE::Message;
+using ::PROTOBUF_NAMESPACE::Descriptor;
+using ::PROTOBUF_NAMESPACE::FieldDescriptor;
+using ::PROTOBUF_NAMESPACE::Reflection;
 
 namespace
 {
@@ -103,13 +103,13 @@ public:
             ReadNetParamsFromBinaryBufferOrDie(dataModel, lenModel, &netBinary);
     }
 
-    void extractCustomParams(const google::protobuf::UnknownFieldSet& unknownFields, cv::dnn::LayerParams &params)
+    void extractCustomParams(const PROTOBUF_NAMESPACE::UnknownFieldSet& unknownFields, cv::dnn::LayerParams &params)
     {
         const int numFields = unknownFields.field_count();
         for (int i = 0; i < numFields; ++i)
         {
-            const google::protobuf::UnknownField& field = unknownFields.field(i);
-            CV_Assert(field.type() == google::protobuf::UnknownField::TYPE_GROUP);
+            const PROTOBUF_NAMESPACE::UnknownField& field = unknownFields.field(i);
+            CV_Assert(field.type() == PROTOBUF_NAMESPACE::UnknownField::TYPE_GROUP);
             std::string fieldName = field.group().field(0).length_delimited();
             std::string fieldValue = field.group().field(1).length_delimited();
             params.set(fieldName, fieldValue);
@@ -135,16 +135,16 @@ public:
         switch (type)
         {
         case FieldDescriptor::CPPTYPE_INT32:
-            SET_UP_FILED(GetInt32, arrayInt, ::google::protobuf::int32);
+            SET_UP_FILED(GetInt32, arrayInt, ::PROTOBUF_NAMESPACE::int32);
             break;
         case FieldDescriptor::CPPTYPE_UINT32:
-            SET_UP_FILED(GetUInt32, arrayInt, ::google::protobuf::uint32);
+            SET_UP_FILED(GetUInt32, arrayInt, ::PROTOBUF_NAMESPACE::uint32);
             break;
         case FieldDescriptor::CPPTYPE_INT64:
-            SET_UP_FILED(GetInt32, arrayInt, ::google::protobuf::int64);
+            SET_UP_FILED(GetInt32, arrayInt, ::PROTOBUF_NAMESPACE::int64);
             break;
         case FieldDescriptor::CPPTYPE_UINT64:
-            SET_UP_FILED(GetUInt32, arrayInt, ::google::protobuf::uint64);
+            SET_UP_FILED(GetUInt32, arrayInt, ::PROTOBUF_NAMESPACE::uint64);
             break;
         case FieldDescriptor::CPPTYPE_BOOL:
             SET_UP_FILED(GetBool, arrayInt, bool);
@@ -200,7 +200,7 @@ public:
             if (!isInternal && !ends_with_param(fd->name()))
                 continue;
 
-            const google::protobuf::UnknownFieldSet& unknownFields = msgRefl->GetUnknownFields(msg);
+            const PROTOBUF_NAMESPACE::UnknownFieldSet& unknownFields = msgRefl->GetUnknownFields(msg);
             bool hasData =  fd->is_required() ||
                             (fd->is_optional() && msgRefl->HasField(msg, fd)) ||
                             (fd->is_repeated() && msgRefl->FieldSize(msg, fd) > 0) ||
