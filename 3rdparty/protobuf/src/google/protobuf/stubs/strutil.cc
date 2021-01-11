@@ -56,7 +56,7 @@
 #define snprintf _snprintf
 #endif
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 // These are defined as macros on some platforms.  #undef them so that we can
@@ -2301,4 +2301,4 @@ int UTF8FirstLetterNumBytes(const char* src, int len) {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

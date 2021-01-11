@@ -34,7 +34,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -47,11 +47,11 @@ class HasBits {
     memset(has_bits_, 0, sizeof(has_bits_));
   }
 
-  ::google::protobuf::uint32& operator[](int index) GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE {
+  ::cv::protobuf::uint32& operator[](int index) GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE {
     return has_bits_[index];
   }
 
-  const ::google::protobuf::uint32& operator[](int index) const
+  const ::cv::protobuf::uint32& operator[](int index) const
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE {
     return has_bits_[index];
   }
@@ -67,7 +67,7 @@ class HasBits {
   bool empty() const;
 
  private:
-  ::google::protobuf::uint32 has_bits_[doublewords];
+  ::cv::protobuf::uint32 has_bits_[doublewords];
 };
 
 template <>
@@ -101,5 +101,5 @@ inline bool HasBits<doublewords>::empty() const {
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_HAS_BITS_H__

@@ -320,7 +320,7 @@ Mat getMatFromTensor(opencv_onnx::TensorProto& tensor_proto)
     if (datatype == opencv_onnx::TensorProto_DataType_FLOAT) {
 
         if (!tensor_proto.float_data().empty()) {
-            const ::google::protobuf::RepeatedField<float> field = tensor_proto.float_data();
+            const ::PROTOBUF_NAMESPACE::RepeatedField<float> field = tensor_proto.float_data();
             Mat(sizes, CV_32FC1, (void*)field.data()).copyTo(blob);
         }
         else {
@@ -330,7 +330,7 @@ Mat getMatFromTensor(opencv_onnx::TensorProto& tensor_proto)
     }
     else if (datatype == opencv_onnx::TensorProto_DataType_DOUBLE)
     {
-        const ::google::protobuf::RepeatedField<double> field = tensor_proto.double_data();
+        const ::PROTOBUF_NAMESPACE::RepeatedField<double> field = tensor_proto.double_data();
         CV_Assert(!field.empty());
         Mat(sizes, CV_64FC1, (void*)field.data()).convertTo(blob, CV_32FC1);
     }
@@ -340,7 +340,7 @@ Mat getMatFromTensor(opencv_onnx::TensorProto& tensor_proto)
         int32_t* dst = reinterpret_cast<int32_t*>(blob.data);
 
         if (!tensor_proto.int64_data().empty()) {
-            ::google::protobuf::RepeatedField< ::google::protobuf::int64> src = tensor_proto.int64_data();
+            ::PROTOBUF_NAMESPACE::RepeatedField< ::PROTOBUF_NAMESPACE::int64> src = tensor_proto.int64_data();
             convertInt64ToInt32(src, dst, blob.total());
         }
         else

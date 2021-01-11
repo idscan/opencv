@@ -54,7 +54,7 @@
 #include <google/protobuf/util/internal/object_writer.h>
 #include <gmock/gmock.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -234,5 +234,5 @@ class ExpectingObjectWriter : public ObjectWriter {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_EXPECTING_OBJECTWRITER_H__

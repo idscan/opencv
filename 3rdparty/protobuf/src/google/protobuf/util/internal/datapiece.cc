@@ -38,13 +38,13 @@
 #include <google/protobuf/stubs/mathlimits.h>
 #include <google/protobuf/stubs/mathutil.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
 
-using google::protobuf::EnumDescriptor;
-using google::protobuf::EnumValueDescriptor;
+using cv::protobuf::EnumDescriptor;
+using cv::protobuf::EnumValueDescriptor;
 ;
 ;
 ;
@@ -64,9 +64,9 @@ StatusOr<To> ValidateNumberConversion(To after, From before) {
       MathUtil::Sign<From>(before) == MathUtil::Sign<To>(after)) {
     return after;
   } else {
-    return InvalidArgument(::google::protobuf::internal::is_integral<From>::value
+    return InvalidArgument(::cv::protobuf::internal::is_integral<From>::value
                                ? ValueAsString(before)
-                               : ::google::protobuf::internal::is_same<From, double>::value
+                               : ::cv::protobuf::internal::is_same<From, double>::value
                                      ? DoubleAsString(before)
                                      : FloatAsString(before));
   }
@@ -77,7 +77,7 @@ StatusOr<To> ValidateNumberConversion(To after, From before) {
 // except conversion between double and float.
 template <typename To, typename From>
 StatusOr<To> NumberConvertAndCheck(From before) {
-  if (::google::protobuf::internal::is_same<From, To>::value) return before;
+  if (::cv::protobuf::internal::is_same<From, To>::value) return before;
 
   To after = static_cast<To>(before);
   return ValidateNumberConversion(after, before);
@@ -87,7 +87,7 @@ StatusOr<To> NumberConvertAndCheck(From before) {
 // point types (double, float) only.
 template <typename To, typename From>
 StatusOr<To> FloatingPointToIntConvertAndCheck(From before) {
-  if (::google::protobuf::internal::is_same<From, To>::value) return before;
+  if (::cv::protobuf::internal::is_same<From, To>::value) return before;
 
   To after = static_cast<To>(before);
   return ValidateNumberConversion(after, before);
@@ -271,21 +271,21 @@ StatusOr<string> DataPiece::ToBytes() const {
   }
 }
 
-StatusOr<int> DataPiece::ToEnum(const google::protobuf::Enum* enum_type,
+StatusOr<int> DataPiece::ToEnum(const cv::protobuf::Enum* enum_type,
                                 bool use_lower_camel_for_enums) const {
-  if (type_ == TYPE_NULL) return google::protobuf::NULL_VALUE;
+  if (type_ == TYPE_NULL) return cv::protobuf::NULL_VALUE;
 
   if (type_ == TYPE_STRING) {
     // First try the given value as a name.
     string enum_name = str_.ToString();
-    const google::protobuf::EnumValue* value =
+    const cv::protobuf::EnumValue* value =
         FindEnumValueByNameOrNull(enum_type, enum_name);
     if (value != NULL) return value->number();
 
     // Check if int version of enum is sent as string.
     StatusOr<int32> int_value = ToInt32();
     if (int_value.ok()) {
-      if (const google::protobuf::EnumValue* enum_value =
+      if (const cv::protobuf::EnumValue* enum_value =
               FindEnumValueByNumberOrNull(enum_type, int_value.ValueOrDie())) {
         return enum_value->number();
       }
@@ -403,4 +403,4 @@ void DataPiece::InternalCopy(const DataPiece& other) {
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

@@ -50,7 +50,7 @@
 #ifndef GOOGLE_PROTOBUF_TEMPLATE_UTIL_H_
 #define GOOGLE_PROTOBUF_TEMPLATE_UTIL_H_
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -133,6 +133,6 @@ struct or_ : public integral_constant<bool, (A::value || B::value)> {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_TEMPLATE_UTIL_H_

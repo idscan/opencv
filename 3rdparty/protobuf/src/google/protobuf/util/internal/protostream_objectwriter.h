@@ -47,7 +47,7 @@
 #include <google/protobuf/util/type_resolver.h>
 #include <google/protobuf/stubs/bytestream.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 class CodedOutputStream;
@@ -108,7 +108,7 @@ class LIBPROTOBUF_EXPORT ProtoStreamObjectWriter : public ProtoWriter {
 
 // Constructor. Does not take ownership of any parameter passed in.
   ProtoStreamObjectWriter(TypeResolver* type_resolver,
-                          const google::protobuf::Type& type,
+                          const cv::protobuf::Type& type,
                           strings::ByteSink* output, ErrorListener* listener,
                           const ProtoStreamObjectWriter::Options& options =
                               ProtoStreamObjectWriter::Options::Defaults());
@@ -216,7 +216,7 @@ class LIBPROTOBUF_EXPORT ProtoStreamObjectWriter : public ProtoWriter {
     ProtoStreamObjectWriter* parent_;
 
     // The nested object writer, used to write events.
-    google::protobuf::scoped_ptr<ProtoStreamObjectWriter> ow_;
+    cv::protobuf::scoped_ptr<ProtoStreamObjectWriter> ow_;
 
     // The type_url_ that this Any represents.
     string type_url_;
@@ -292,14 +292,14 @@ class LIBPROTOBUF_EXPORT ProtoStreamObjectWriter : public ProtoWriter {
     ProtoStreamObjectWriter* ow_;
 
     // A writer for Any objects, handles all Any-related nonsense.
-    google::protobuf::scoped_ptr<AnyWriter> any_;
+    cv::protobuf::scoped_ptr<AnyWriter> any_;
 
     // The type of this element, see enum for permissible types.
     ItemType item_type_;
 
     // Set of map keys already seen for the type_. Used to validate incoming
     // messages so no map key appears more than once.
-    google::protobuf::scoped_ptr<hash_set<string> > map_keys_;
+    cv::protobuf::scoped_ptr<hash_set<string> > map_keys_;
 
     // Conveys whether this Item is a placeholder or not. Placeholder items are
     // pushed to stack to account for special types.
@@ -313,23 +313,23 @@ class LIBPROTOBUF_EXPORT ProtoStreamObjectWriter : public ProtoWriter {
   };
 
   ProtoStreamObjectWriter(const TypeInfo* typeinfo,
-                          const google::protobuf::Type& type,
+                          const cv::protobuf::Type& type,
                           strings::ByteSink* output, ErrorListener* listener);
 
   // Returns true if the field is a map.
-  inline bool IsMap(const google::protobuf::Field& field);
+  inline bool IsMap(const cv::protobuf::Field& field);
 
   // Returns true if the field is an any.
-  inline bool IsAny(const google::protobuf::Field& field);
+  inline bool IsAny(const cv::protobuf::Field& field);
 
   // Returns true if the field is google.protobuf.Struct.
-  inline bool IsStruct(const google::protobuf::Field& field);
+  inline bool IsStruct(const cv::protobuf::Field& field);
 
   // Returns true if the field is google.protobuf.Value.
-  inline bool IsStructValue(const google::protobuf::Field& field);
+  inline bool IsStructValue(const cv::protobuf::Field& field);
 
   // Returns true if the field is google.protobuf.ListValue.
-  inline bool IsStructListValue(const google::protobuf::Field& field);
+  inline bool IsStructListValue(const cv::protobuf::Field& field);
 
   // Renders google.protobuf.Value in struct.proto. It picks the right oneof
   // type based on value's type.
@@ -389,10 +389,10 @@ class LIBPROTOBUF_EXPORT ProtoStreamObjectWriter : public ProtoWriter {
 
   // Variables for describing the structure of the input tree:
   // master_type_: descriptor for the whole protobuf message.
-  const google::protobuf::Type& master_type_;
+  const cv::protobuf::Type& master_type_;
 
   // The current element, variable for internal state processing.
-  google::protobuf::scoped_ptr<Item> current_;
+  cv::protobuf::scoped_ptr<Item> current_;
 
   // Reference to the options that control this class's behavior.
   const ProtoStreamObjectWriter::Options options_;
@@ -404,5 +404,5 @@ class LIBPROTOBUF_EXPORT ProtoStreamObjectWriter : public ProtoWriter {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_PROTOSTREAM_OBJECTWRITER_H__

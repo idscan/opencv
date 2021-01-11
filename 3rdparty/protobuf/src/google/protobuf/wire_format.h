@@ -45,7 +45,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/wire_format_lite.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
   namespace io {
     class CodedInputStream;      // coded_stream.h
@@ -331,5 +331,5 @@ inline void WireFormat::VerifyUTF8StringNamedField(
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_WIRE_FORMAT_H__

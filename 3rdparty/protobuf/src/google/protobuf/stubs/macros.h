@@ -33,7 +33,7 @@
 
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 #undef GOOGLE_DISALLOW_EVIL_CONSTRUCTORS
@@ -117,7 +117,7 @@ struct CompileAssert {
 #define GOOGLE_COMPILE_ASSERT(expr, msg) static_assert(expr, #msg)
 #else
 #define GOOGLE_COMPILE_ASSERT(expr, msg) \
-  ::google::protobuf::internal::CompileAssert<(bool(expr))> \
+  ::cv::protobuf::internal::CompileAssert<(bool(expr))> \
           msg[bool(expr) ? 1 : -1]; \
   (void)msg
 // Implementation details of COMPILE_ASSERT:
@@ -163,6 +163,6 @@ struct CompileAssert {
 #endif  // __cplusplus >= 201103L
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_MACROS_H__

@@ -39,16 +39,16 @@
 #include <google/protobuf/stubs/strutil.h>
 #include <google/protobuf/stubs/status.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace {
-using google::protobuf::BoolValue;
-using google::protobuf::Enum;
-using google::protobuf::EnumValue;
-using google::protobuf::Field;
-using google::protobuf::Option;
-using google::protobuf::Type;
+using cv::protobuf::BoolValue;
+using cv::protobuf::Enum;
+using cv::protobuf::EnumValue;
+using cv::protobuf::Field;
+using cv::protobuf::Option;
+using cv::protobuf::Type;
 
 using util::Status;
 using util::error::INVALID_ARGUMENT;
@@ -244,4 +244,4 @@ TypeResolver* NewTypeResolverForDescriptorPool(const string& url_prefix,
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

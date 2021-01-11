@@ -36,7 +36,7 @@
 #include <google/protobuf/message_lite.h>
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -220,5 +220,5 @@ class LIBPROTOBUF_EXPORT LiteUnknownFieldSetter {
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_METADATA_LITE_H__

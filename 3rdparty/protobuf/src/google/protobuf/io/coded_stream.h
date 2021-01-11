@@ -136,7 +136,7 @@
 #include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
 
@@ -866,7 +866,7 @@ class LIBPROTOBUF_EXPORT CodedOutputStream {
   }
 
   static bool IsDefaultSerializationDeterministic() {
-    return google::protobuf::internal::NoBarrier_Load(&default_serialization_deterministic_);
+    return cv::protobuf::internal::NoBarrier_Load(&default_serialization_deterministic_);
   }
 
  private:
@@ -883,7 +883,7 @@ class LIBPROTOBUF_EXPORT CodedOutputStream {
   bool serialization_deterministic_override_;
   // Conceptually, default_serialization_deterministic_ is an atomic bool.
   // TODO(haberman): replace with std::atomic<bool> when we move to C++11.
-  static google::protobuf::internal::AtomicWord default_serialization_deterministic_;
+  static cv::protobuf::internal::AtomicWord default_serialization_deterministic_;
 
   // Advance the buffer by a given number of bytes.
   void Advance(int amount);
@@ -908,9 +908,9 @@ class LIBPROTOBUF_EXPORT CodedOutputStream {
   // that wants deterministic serialization by default needs to call
   // SetDefaultSerializationDeterministic() or ensure on its own that another
   // thread has done so.
-  friend void ::google::protobuf::internal::MapTestForceDeterministic();
+  friend void ::cv::protobuf::internal::MapTestForceDeterministic();
   static void SetDefaultSerializationDeterministic() {
-    google::protobuf::internal::NoBarrier_Store(&default_serialization_deterministic_, 1);
+    cv::protobuf::internal::NoBarrier_Store(&default_serialization_deterministic_, 1);
   }
 };
 
@@ -1418,5 +1418,5 @@ inline bool CodedInputStream::Skip(int count) {
   #pragma runtime_checks("c", restore)
 #endif  // _MSC_VER && !defined(__INTEL_COMPILER)
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_IO_CODED_STREAM_H__

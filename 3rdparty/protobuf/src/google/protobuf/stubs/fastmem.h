@@ -51,7 +51,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -148,6 +148,6 @@ inline void memcpy_inlined(char *dst, const char *src, size_t size) {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_FASTMEM_H_

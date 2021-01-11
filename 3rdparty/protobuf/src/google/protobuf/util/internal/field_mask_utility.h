@@ -40,7 +40,7 @@
 #include <google/protobuf/stubs/stringpiece.h>
 #include <google/protobuf/stubs/status.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -68,5 +68,5 @@ util::Status DecodeCompactFieldMaskPaths(StringPiece paths,
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_FIELD_MASK_UTILITY_H__

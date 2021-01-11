@@ -86,7 +86,7 @@
 #include <google/protobuf/wire_format.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 using internal::DynamicMapField;
@@ -232,9 +232,9 @@ class DynamicMessage : public Message {
 
     // Warning:  The order in which the following pointers are defined is
     //   important (the prototype must be deleted *before* the offsets).
-    google::protobuf::scoped_array<uint32> offsets;
-    google::protobuf::scoped_array<uint32> has_bits_indices;
-    google::protobuf::scoped_ptr<const GeneratedMessageReflection> reflection;
+    cv::protobuf::scoped_array<uint32> offsets;
+    cv::protobuf::scoped_array<uint32> has_bits_indices;
+    cv::protobuf::scoped_ptr<const GeneratedMessageReflection> reflection;
     // Don't use a scoped_ptr to hold the prototype: the destructor for
     // DynamicMessage needs to know whether it is the prototype, and does so by
     // looking back at this field. This would assume details about the
@@ -262,8 +262,8 @@ class DynamicMessage : public Message {
   // implements Message ----------------------------------------------
 
   Message* New() const;
-  Message* New(::google::protobuf::Arena* arena) const;
-  ::google::protobuf::Arena* GetArena() const { return NULL; };
+  Message* New(::cv::protobuf::Arena* arena) const;
+  ::cv::protobuf::Arena* GetArena() const { return NULL; };
 
   int GetCachedSize() const;
   void SetCachedSize(int size) const;
@@ -283,7 +283,7 @@ class DynamicMessage : public Message {
 
  private:
   GOOGLE_DISALLOW_EVIL_CONSTRUCTORS(DynamicMessage);
-  DynamicMessage(const TypeInfo* type_info, ::google::protobuf::Arena* arena);
+  DynamicMessage(const TypeInfo* type_info, ::cv::protobuf::Arena* arena);
 
   void SharedCtor(bool lock_factory);
 
@@ -313,7 +313,7 @@ DynamicMessage::DynamicMessage(const TypeInfo* type_info)
 }
 
 DynamicMessage::DynamicMessage(const TypeInfo* type_info,
-                               ::google::protobuf::Arena* arena)
+                               ::cv::protobuf::Arena* arena)
   : type_info_(type_info),
     cached_byte_size_(0) {
   SharedCtor(true);
@@ -574,7 +574,7 @@ Message* DynamicMessage::New() const {
   return new(new_base) DynamicMessage(type_info_);
 }
 
-Message* DynamicMessage::New(::google::protobuf::Arena* arena) const {
+Message* DynamicMessage::New(::cv::protobuf::Arena* arena) const {
   if (arena != NULL) {
     Message* message = New();
     arena->Own(message);
@@ -867,4 +867,4 @@ void DynamicMessageFactory::DeleteDefaultOneofInstance(
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

@@ -40,7 +40,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/util/internal/object_writer.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -91,7 +91,7 @@ class LIBPROTOBUF_EXPORT StructuredObjectWriter : public ObjectWriter {
 
    private:
     // Pointer to the parent Element.
-    google::protobuf::scoped_ptr<BaseElement> parent_;
+    cv::protobuf::scoped_ptr<BaseElement> parent_;
 
     // Number of hops to the root Element.
     // The root Element has NULL parent_ and a level_ of 0.
@@ -114,5 +114,5 @@ class LIBPROTOBUF_EXPORT StructuredObjectWriter : public ObjectWriter {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_STRUCTURED_OBJECTWRITER_H__

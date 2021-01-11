@@ -40,7 +40,7 @@
 #include <google/protobuf/stubs/strutil.h>
 #include <google/protobuf/stubs/mathlimits.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -193,4 +193,4 @@ bool JsonObjectWriter::GetAndResetEmptyKeyOk() {
 }  // namespace converter
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

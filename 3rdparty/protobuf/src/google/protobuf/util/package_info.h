@@ -28,11 +28,11 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// This file exists solely to document the google::protobuf::util namespace.
+// This file exists solely to document the cv::protobuf::util namespace.
 // It is not compiled into anything, but it may be read by an automated
 // documentation generator.
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
 
@@ -43,4 +43,4 @@ namespace protobuf {
 namespace util {}
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

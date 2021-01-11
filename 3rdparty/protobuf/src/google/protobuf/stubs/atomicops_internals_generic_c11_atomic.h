@@ -35,7 +35,7 @@
 
 #include <atomic>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -226,6 +226,6 @@ inline Atomic64 Release_Load(volatile const Atomic64* ptr) {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_ATOMICOPS_INTERNALS_GENERIC_C11_ATOMIC_H_

@@ -37,7 +37,7 @@
 #include <google/protobuf/stubs/status.h>
 #include <google/protobuf/stubs/statusor.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
@@ -49,7 +49,7 @@ namespace util {
 #define RETURN_IF_ERROR(expr) \
   do { \
     /* Using _status below to avoid capture problems if expr is "status". */ \
-    const ::google::protobuf::util::Status _status = (expr); \
+    const ::cv::protobuf::util::Status _status = (expr); \
     if (GOOGLE_PREDICT_FALSE(!_status.ok())) return _status; \
   } while (0)
 
@@ -84,6 +84,6 @@ Status DoAssignOrReturn(T& lhs, StatusOr<T> result) {
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_STATUS_H_

@@ -33,11 +33,11 @@
 #include <google/protobuf/stubs/strutil.h>
 #include <google/protobuf/stubs/map_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
-using google::protobuf::FieldMask;
+using cv::protobuf::FieldMask;
 
 string FieldMaskUtil::ToString(const FieldMask& mask) {
   return Join(mask.paths(), ",");
@@ -687,4 +687,4 @@ void FieldMaskUtil::TrimMessage(const FieldMask& mask, Message* destination,
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

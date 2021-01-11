@@ -122,7 +122,7 @@
 #define PROTOBUF_FINAL
 #endif
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 typedef unsigned int uint;
@@ -519,6 +519,6 @@ class BigEndian {
 #define GOOGLE_PROTOBUF_ATTRIBUTE_SECTION_VARIABLE(name)
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_PORT_H_

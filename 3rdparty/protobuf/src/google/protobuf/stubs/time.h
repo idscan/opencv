@@ -32,7 +32,7 @@
 
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -70,6 +70,6 @@ bool LIBPROTOBUF_EXPORT ParseTime(const string& value, int64* seconds, int32* na
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_TIME_H_

@@ -16,8 +16,8 @@
 namespace cv { namespace dnn {
 CV__DNN_INLINE_NS_BEGIN
 
-using ::google::protobuf::RepeatedField;
-using ::google::protobuf::MapPair;
+using ::PROTOBUF_NAMESPACE::RepeatedField;
+using ::PROTOBUF_NAMESPACE::MapPair;
 
 class TFNodeWrapper : public ImportNodeWrapper
 {
@@ -780,7 +780,7 @@ void releaseTensor(tensorflow::TensorProto* tensor)
     }
 }
 
-static void permute(google::protobuf::RepeatedPtrField<tensorflow::NodeDef>* data,
+static void permute(PROTOBUF_NAMESPACE::RepeatedPtrField<tensorflow::NodeDef>* data,
                     const std::vector<int>& indices)
 {
     const int num = data->size();

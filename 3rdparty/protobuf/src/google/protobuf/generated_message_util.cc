@@ -48,7 +48,7 @@
 #include <google/protobuf/wire_format_lite.h>
 #include <google/protobuf/wire_format_lite_inl.h>
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
 namespace internal {
@@ -104,7 +104,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_BOOL> {
   typedef bool Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteBoolNoTag(Get<bool>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -116,7 +116,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_INT32> {
   typedef int32 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteInt32NoTag(Get<int32>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -128,7 +128,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_SINT32> {
   typedef int32 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteSInt32NoTag(Get<int32>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -140,7 +140,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_UINT32> {
   typedef uint32 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteUInt32NoTag(Get<uint32>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -151,7 +151,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_INT64> {
   typedef int64 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteInt64NoTag(Get<int64>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -163,7 +163,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_SINT64> {
   typedef int64 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteSInt64NoTag(Get<int64>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -174,7 +174,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_UINT64> {
   typedef uint64 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteUInt64NoTag(Get<uint64>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -186,7 +186,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_FIXED32> {
   typedef uint32 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteFixed32NoTag(Get<uint32>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -198,7 +198,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_FIXED64> {
   typedef uint64 Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     WireFormatLite::WriteFixed64NoTag(Get<uint64>(ptr), output);
   }
   static uint8* SerializeToArray(const void* ptr, uint8* buffer) {
@@ -235,7 +235,7 @@ template <>
 struct PrimitiveTypeHelper<WireFormatLite::TYPE_STRING> {
   typedef string Type;
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     const Type& value = *static_cast<const Type*>(ptr);
     output->WriteVarint32(value.size());
     output->WriteRawMaybeAliased(value.data(), value.size());
@@ -274,9 +274,9 @@ void WriteLengthTo(uint32 length, O* output) {
 
 // Specialization for coded output stream
 template <int type>
-struct OutputHelper< ::google::protobuf::io::CodedOutputStream, type> {
+struct OutputHelper< ::cv::protobuf::io::CodedOutputStream, type> {
   static void Serialize(const void* ptr,
-                        ::google::protobuf::io::CodedOutputStream* output) {
+                        ::cv::protobuf::io::CodedOutputStream* output) {
     PrimitiveTypeHelper<type>::Serialize(ptr, output);
   }
 };
@@ -295,7 +295,7 @@ struct OutputHelper<ArrayOutput, type> {
 };
 
 void SerializeMessageNoTable(const MessageLite* msg,
-                             ::google::protobuf::io::CodedOutputStream* output) {
+                             ::cv::protobuf::io::CodedOutputStream* output) {
   msg->SerializeWithCachedSizes(output);
 }
 
@@ -305,10 +305,10 @@ void SerializeMessageNoTable(const MessageLite* msg, ArrayOutput* output) {
 }
 
 // Helper to branch to fast path if possible
-void SerializeMessageDispatch(const ::google::protobuf::MessageLite& msg,
+void SerializeMessageDispatch(const ::cv::protobuf::MessageLite& msg,
                               const FieldMetadata* field_table, int num_fields,
                               int32 cached_size,
-                              ::google::protobuf::io::CodedOutputStream* output) {
+                              ::cv::protobuf::io::CodedOutputStream* output) {
   const uint8* base = reinterpret_cast<const uint8*>(&msg);
   // Try the fast path
   uint8* ptr = output->GetDirectBufferForNBytesAndAdvance(cached_size);
@@ -323,7 +323,7 @@ void SerializeMessageDispatch(const ::google::protobuf::MessageLite& msg,
 }
 
 // Helper to branch to fast path if possible
-void SerializeMessageDispatch(const ::google::protobuf::MessageLite& msg,
+void SerializeMessageDispatch(const ::cv::protobuf::MessageLite& msg,
                               const FieldMetadata* field_table, int num_fields,
                               int32 cached_size, ArrayOutput* output) {
   const uint8* base = reinterpret_cast<const uint8*>(&msg);
@@ -597,7 +597,7 @@ bool IsNull<WireFormatLite::TYPE_MESSAGE>(const void* ptr) {
 void SerializeInternal(const uint8* base,
                        const FieldMetadata* field_metadata_table,
                        int32 num_fields,
-                       ::google::protobuf::io::CodedOutputStream* output) {
+                       ::cv::protobuf::io::CodedOutputStream* output) {
   for (int i = 0; i < num_fields; i++) {
     const FieldMetadata& field_metadata = field_metadata_table[i];
     const uint8* ptr = base + field_metadata.offset;
@@ -685,14 +685,14 @@ uint8* SerializeInternalToArray(const uint8* base,
 
 void ExtensionSerializer(const uint8* ptr, uint32 offset, uint32 tag,
                          uint32 has_offset,
-                         ::google::protobuf::io::CodedOutputStream* output) {
+                         ::cv::protobuf::io::CodedOutputStream* output) {
   reinterpret_cast<const ExtensionSet*>(ptr + offset)
       ->SerializeWithCachedSizes(tag, has_offset, output);
 }
 
 void UnknownFieldSerializerLite(const uint8* ptr, uint32 offset, uint32 tag,
                                 uint32 has_offset,
-                                ::google::protobuf::io::CodedOutputStream* output) {
+                                ::cv::protobuf::io::CodedOutputStream* output) {
   output->WriteString(
       reinterpret_cast<const InternalMetadataWithArenaLite*>(ptr + offset)
           ->unknown_fields());
@@ -727,4 +727,4 @@ MessageLite* GetOwnedMessageInternal(Arena* message_arena,
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
