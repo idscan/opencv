@@ -92,7 +92,7 @@ inline BOOL GetMessage(
 
 namespace std {}
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -138,7 +138,7 @@ std::string LIBPROTOBUF_EXPORT VersionString(int version);
 // matches the headers you compiled against.  If a version mismatch is
 // detected, the process will abort.
 #define GOOGLE_PROTOBUF_VERIFY_VERSION                                    \
-  ::google::protobuf::internal::VerifyVersion(                            \
+  ::cv::protobuf::internal::VerifyVersion(                            \
     GOOGLE_PROTOBUF_VERSION, GOOGLE_PROTOBUF_MIN_LIBRARY_VERSION,         \
     __FILE__)
 
@@ -237,6 +237,6 @@ using std::string;
 using std::vector;
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_COMMON_H__

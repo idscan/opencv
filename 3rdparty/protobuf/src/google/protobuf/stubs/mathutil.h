@@ -37,7 +37,7 @@
 #include <google/protobuf/stubs/logging.h>
 #include <google/protobuf/stubs/mathlimits.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 template<typename T>
@@ -67,7 +67,7 @@ class MathUtil {
 
   template<typename T>
   static bool AlmostEquals(T a, T b) {
-    return ::google::protobuf::internal::AlmostEquals(a, b);
+    return ::cv::protobuf::internal::AlmostEquals(a, b);
   }
 
   // Largest of two values.
@@ -136,6 +136,6 @@ bool MathUtil::WithinFractionOrMargin(const T x, const T y,
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_STUBS_MATHUTIL_H_

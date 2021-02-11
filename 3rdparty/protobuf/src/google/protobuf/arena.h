@@ -54,7 +54,7 @@ using type_info = ::type_info;
 #include <google/protobuf/arena_impl.h>
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 class Arena;       // defined below
@@ -190,7 +190,7 @@ struct ArenaOptions {
 //
 // - The type T must have (at least) two constructors: a constructor with no
 //   arguments, called when a T is allocated on the heap; and a constructor with
-//   a google::protobuf::Arena* argument, called when a T is allocated on an arena. If the
+//   a cv::protobuf::Arena* argument, called when a T is allocated on an arena. If the
 //   second constructor is called with a NULL arena pointer, it must be
 //   equivalent to invoking the first (no-argument) constructor.
 //
@@ -266,7 +266,7 @@ class LIBPROTOBUF_EXPORT Arena {
 #if LANG_CXX11
   template <typename T, typename... Args>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE static T* CreateMessage(
-      ::google::protobuf::Arena* arena, Args&&... args) {
+      ::cv::protobuf::Arena* arena, Args&&... args) {
     static_assert(
         InternalHelper<T>::is_arena_constructable::value,
         "CreateMessage can only construct types that are ArenaConstructable");
@@ -278,7 +278,7 @@ class LIBPROTOBUF_EXPORT Arena {
   }
 #endif
   template <typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* CreateMessage(::google::protobuf::Arena* arena) {
+  static T* CreateMessage(::cv::protobuf::Arena* arena) {
 #if LANG_CXX11
     static_assert(
         InternalHelper<T>::is_arena_constructable::value,
@@ -295,7 +295,7 @@ class LIBPROTOBUF_EXPORT Arena {
   // that implement the arena message construction protocol described above but
   // take additional constructor arguments.
   template <typename T, typename Arg> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* CreateMessage(::google::protobuf::Arena* arena, const Arg& arg) {
+  static T* CreateMessage(::cv::protobuf::Arena* arena, const Arg& arg) {
 #if LANG_CXX11
     static_assert(
         InternalHelper<T>::is_arena_constructable::value,
@@ -313,7 +313,7 @@ class LIBPROTOBUF_EXPORT Arena {
   // take additional constructor arguments.
   template <typename T, typename Arg1, typename Arg2>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* CreateMessage(::google::protobuf::Arena* arena,
+  static T* CreateMessage(::cv::protobuf::Arena* arena,
                           const Arg1& arg1,
                           const Arg2& arg2) {
 #if LANG_CXX11
@@ -346,31 +346,31 @@ class LIBPROTOBUF_EXPORT Arena {
 #if LANG_CXX11
   template <typename T, typename... Args>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena, Args&&... args) {
+  static T* Create(::cv::protobuf::Arena* arena, Args&&... args) {
     if (arena == NULL) {
       return new T(std::forward<Args>(args)...);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       std::forward<Args>(args)...);
     }
   }
 #endif
   template <typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena) {
+  static T* Create(::cv::protobuf::Arena* arena) {
     if (arena == NULL) {
       return new T();
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value);
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value);
     }
   }
 
   // Version of the above with one constructor argument for the created object.
   template <typename T, typename Arg> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena, const Arg& arg) {
+  static T* Create(::cv::protobuf::Arena* arena, const Arg& arg) {
     if (arena == NULL) {
       return new T(arg);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       arg);
     }
   }
@@ -378,11 +378,11 @@ class LIBPROTOBUF_EXPORT Arena {
   // Version of the above with two constructor arguments for the created object.
   template <typename T, typename Arg1, typename Arg2>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena, const Arg1& arg1, const Arg2& arg2) {
+  static T* Create(::cv::protobuf::Arena* arena, const Arg1& arg1, const Arg2& arg2) {
     if (arena == NULL) {
       return new T(arg1, arg2);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       arg1, arg2);
     }
   }
@@ -391,14 +391,14 @@ class LIBPROTOBUF_EXPORT Arena {
   // object.
   template <typename T, typename Arg1, typename Arg2, typename Arg3>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena,
+  static T* Create(::cv::protobuf::Arena* arena,
                    const Arg1& arg1,
                    const Arg2& arg2,
                    const Arg3& arg3) {
     if (arena == NULL) {
       return new T(arg1, arg2, arg3);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       arg1, arg2, arg3);
     }
   }
@@ -408,13 +408,13 @@ class LIBPROTOBUF_EXPORT Arena {
   template <typename T, typename Arg1, typename Arg2, typename Arg3,
             typename Arg4>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena,
+  static T* Create(::cv::protobuf::Arena* arena,
                    const Arg1& arg1, const Arg2& arg2,
                    const Arg3& arg3, const Arg4& arg4) {
     if (arena == NULL) {
       return new T(arg1, arg2, arg3, arg4);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       arg1, arg2, arg3, arg4);
     }
   }
@@ -424,14 +424,14 @@ class LIBPROTOBUF_EXPORT Arena {
   template <typename T, typename Arg1, typename Arg2, typename Arg3,
             typename Arg4, typename Arg5>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena,
+  static T* Create(::cv::protobuf::Arena* arena,
                    const Arg1& arg1, const Arg2& arg2,
                    const Arg3& arg3, const Arg4& arg4,
                    const Arg5& arg5) {
     if (arena == NULL) {
       return new T(arg1, arg2, arg3, arg4, arg5);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       arg1, arg2, arg3, arg4, arg5);
     }
   }
@@ -441,14 +441,14 @@ class LIBPROTOBUF_EXPORT Arena {
   template <typename T, typename Arg1, typename Arg2, typename Arg3,
             typename Arg4, typename Arg5, typename Arg6>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena,
+  static T* Create(::cv::protobuf::Arena* arena,
                    const Arg1& arg1, const Arg2& arg2,
                    const Arg3& arg3, const Arg4& arg4,
                    const Arg5& arg5, const Arg6& arg6) {
     if (arena == NULL) {
       return new T(arg1, arg2, arg3, arg4, arg5, arg6);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       arg1, arg2, arg3, arg4, arg5, arg6);
     }
   }
@@ -458,7 +458,7 @@ class LIBPROTOBUF_EXPORT Arena {
   template <typename T, typename Arg1, typename Arg2, typename Arg3,
             typename Arg4, typename Arg5, typename Arg6, typename Arg7>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena,
+  static T* Create(::cv::protobuf::Arena* arena,
                    const Arg1& arg1, const Arg2& arg2,
                    const Arg3& arg3, const Arg4& arg4,
                    const Arg5& arg5, const Arg6& arg6,
@@ -466,7 +466,7 @@ class LIBPROTOBUF_EXPORT Arena {
     if (arena == NULL) {
       return new T(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
     } else {
-      return arena->CreateInternal<T>(google::protobuf::internal::has_trivial_destructor<T>::value,
+      return arena->CreateInternal<T>(cv::protobuf::internal::has_trivial_destructor<T>::value,
                                       arg1, arg2, arg3, arg4, arg5, arg6, arg7);
     }
   }
@@ -477,7 +477,7 @@ class LIBPROTOBUF_EXPORT Arena {
             typename Arg4, typename Arg5, typename Arg6, typename Arg7,
             typename Arg8>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* Create(::google::protobuf::Arena* arena,
+  static T* Create(::cv::protobuf::Arena* arena,
                    const Arg1& arg1, const Arg2& arg2,
                    const Arg3& arg3, const Arg4& arg4,
                    const Arg5& arg5, const Arg6& arg6,
@@ -486,7 +486,7 @@ class LIBPROTOBUF_EXPORT Arena {
       return new T(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
     } else {
       return arena->CreateInternal<T>(
-          google::protobuf::internal::has_trivial_destructor<T>::value,
+          cv::protobuf::internal::has_trivial_destructor<T>::value,
           arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
     }
   }
@@ -498,7 +498,7 @@ class LIBPROTOBUF_EXPORT Arena {
   // (when compiled as C++11) that T is trivially default-constructible and
   // trivially destructible.
   template <typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* CreateArray(::google::protobuf::Arena* arena, size_t num_elements) {
+  static T* CreateArray(::cv::protobuf::Arena* arena, size_t num_elements) {
     GOOGLE_CHECK_LE(num_elements,
              std::numeric_limits<size_t>::max() / sizeof(T))
         << "Requested size is too large to fit into size_t.";
@@ -543,7 +543,7 @@ class LIBPROTOBUF_EXPORT Arena {
   // when the arena is destroyed or reset.
   template <typename T> GOOGLE_PROTOBUF_ATTRIBUTE_NOINLINE
   void Own(T* object) {
-    OwnInternal(object, google::protobuf::internal::is_convertible<T*, ::google::protobuf::Message*>());
+    OwnInternal(object, cv::protobuf::internal::is_convertible<T*, ::cv::protobuf::Message*>());
   }
 
   // Adds |object| to a list of objects whose destructors will be manually
@@ -572,7 +572,7 @@ class LIBPROTOBUF_EXPORT Arena {
   // latter is a virtual call, while this method is a templated call that
   // resolves at compile-time.
   template<typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static ::google::protobuf::Arena* GetArena(const T* value) {
+  static ::cv::protobuf::Arena* GetArena(const T* value) {
     return GetArenaInternal(value, is_arena_constructable<T>());
   }
 
@@ -583,10 +583,10 @@ class LIBPROTOBUF_EXPORT Arena {
     template <typename U>
     static double DestructorSkippable(...);
 
-    typedef google::protobuf::internal::integral_constant<
+    typedef cv::protobuf::internal::integral_constant<
         bool, sizeof(DestructorSkippable<T>(static_cast<const T*>(0))) ==
                       sizeof(char) ||
-                  google::protobuf::internal::has_trivial_destructor<T>::value>
+                  cv::protobuf::internal::has_trivial_destructor<T>::value>
         is_destructor_skippable;
 
     template<typename U>
@@ -595,7 +595,7 @@ class LIBPROTOBUF_EXPORT Arena {
     template<typename U>
     static double ArenaConstructable(...);
 
-    typedef google::protobuf::internal::integral_constant<bool, sizeof(ArenaConstructable<T>(
+    typedef cv::protobuf::internal::integral_constant<bool, sizeof(ArenaConstructable<T>(
                                               static_cast<const T*>(0))) ==
                                               sizeof(char)>
         is_arena_constructable;
@@ -667,12 +667,12 @@ class LIBPROTOBUF_EXPORT Arena {
   // user code. These are used only internally from LazyField and Repeated
   // fields, since they are designed to work in all mode combinations.
   template <typename Msg> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static Msg* CreateMaybeMessage(Arena* arena, google::protobuf::internal::true_type) {
+  static Msg* CreateMaybeMessage(Arena* arena, cv::protobuf::internal::true_type) {
     return CreateMessage<Msg>(arena);
   }
 
   template <typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static T* CreateMaybeMessage(Arena* arena, google::protobuf::internal::false_type) {
+  static T* CreateMaybeMessage(Arena* arena, cv::protobuf::internal::false_type) {
     return Create<T>(arena);
   }
 
@@ -833,8 +833,8 @@ class LIBPROTOBUF_EXPORT Arena {
   }
 
   // CreateInArenaStorage is used to implement map field. Without it,
-  // google::protobuf::Map need to call generated message's protected arena constructor,
-  // which needs to declare google::protobuf::Map as friend of generated message.
+  // cv::protobuf::Map need to call generated message's protected arena constructor,
+  // which needs to declare cv::protobuf::Map as friend of generated message.
   template <typename T>
   static void CreateInArenaStorage(T* ptr, Arena* arena) {
     CreateInArenaStorageInternal(ptr, arena,
@@ -846,38 +846,38 @@ class LIBPROTOBUF_EXPORT Arena {
 
   template <typename T>
   static void CreateInArenaStorageInternal(
-      T* ptr, Arena* arena, google::protobuf::internal::true_type) {
+      T* ptr, Arena* arena, cv::protobuf::internal::true_type) {
     InternalHelper<T>::Construct(ptr, arena);
   }
   template <typename T>
   static void CreateInArenaStorageInternal(
-      T* ptr, Arena* /* arena */, google::protobuf::internal::false_type) {
+      T* ptr, Arena* /* arena */, cv::protobuf::internal::false_type) {
     new (ptr) T();
   }
 
   template <typename T>
   static void RegisterDestructorInternal(
-      T* /* ptr */, Arena* /* arena */, google::protobuf::internal::true_type) {}
+      T* /* ptr */, Arena* /* arena */, cv::protobuf::internal::true_type) {}
   template <typename T>
   static void RegisterDestructorInternal(
-      T* ptr, Arena* arena, google::protobuf::internal::false_type) {
+      T* ptr, Arena* arena, cv::protobuf::internal::false_type) {
     arena->OwnDestructor(ptr);
   }
 
   // These implement Own(), which registers an object for deletion (destructor
   // call and operator delete()). The second parameter has type 'true_type' if T
-  // is a subtype of ::google::protobuf::Message and 'false_type' otherwise. Collapsing
+  // is a subtype of ::cv::protobuf::Message and 'false_type' otherwise. Collapsing
   // all template instantiations to one for generic Message reduces code size,
   // using the virtual destructor instead.
   template<typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  void OwnInternal(T* object, google::protobuf::internal::true_type) {
+  void OwnInternal(T* object, cv::protobuf::internal::true_type) {
     if (object != NULL) {
       impl_.AddCleanup(object,
-                       &internal::arena_delete_object< ::google::protobuf::Message>);
+                       &internal::arena_delete_object< ::cv::protobuf::Message>);
     }
   }
   template<typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  void OwnInternal(T* object, google::protobuf::internal::false_type) {
+  void OwnInternal(T* object, cv::protobuf::internal::false_type) {
     if (object != NULL) {
       impl_.AddCleanup(object, &internal::arena_delete_object<T>);
     }
@@ -887,15 +887,15 @@ class LIBPROTOBUF_EXPORT Arena {
   // InternalArenaConstructable_ tags can be associated with an arena, and such
   // objects must implement a GetArenaNoVirtual() method.
   template <typename T> GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static ::google::protobuf::Arena* GetArenaInternal(
-      const T* value, google::protobuf::internal::true_type) {
+  static ::cv::protobuf::Arena* GetArenaInternal(
+      const T* value, cv::protobuf::internal::true_type) {
     return InternalHelper<T>::GetArena(value);
   }
 
   template <typename T>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
-  static ::google::protobuf::Arena* GetArenaInternal(
-      const T* /* value */, google::protobuf::internal::false_type) {
+  static ::cv::protobuf::Arena* GetArenaInternal(
+      const T* /* value */, cv::protobuf::internal::false_type) {
     return NULL;
   }
 
@@ -918,7 +918,7 @@ class LIBPROTOBUF_EXPORT Arena {
   void* hooks_cookie_;
 
   template <typename Type>
-  friend class ::google::protobuf::internal::GenericTypeHandler;
+  friend class ::cv::protobuf::internal::GenericTypeHandler;
   friend struct internal::ArenaStringPtr;  // For AllocateAligned.
   friend class internal::LazyField;    // For CreateMaybeMessage.
   template <typename Key, typename T>
@@ -930,5 +930,5 @@ class LIBPROTOBUF_EXPORT Arena {
 
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_ARENA_H__

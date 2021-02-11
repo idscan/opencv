@@ -47,7 +47,7 @@
 #include <google/protobuf/arenastring.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -1073,5 +1073,5 @@ size_t WireFormatLite::SInt64Size(const RepeatedField< int64>& value) {
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_WIRE_FORMAT_LITE_INL_H__

@@ -48,7 +48,7 @@
 #include <google/protobuf/stubs/io_win32.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -58,11 +58,11 @@ namespace io {
 #define lseek(fd, offset, origin) ((off_t)-1)
 // DO NOT include <io.h>, instead create functions in io_win32.{h,cc} and import
 // them like we do below.
-using google::protobuf::internal::win32::access;
-using google::protobuf::internal::win32::close;
-using google::protobuf::internal::win32::open;
-using google::protobuf::internal::win32::read;
-using google::protobuf::internal::win32::write;
+using cv::protobuf::internal::win32::access;
+using cv::protobuf::internal::win32::close;
+using cv::protobuf::internal::win32::open;
+using cv::protobuf::internal::win32::read;
+using cv::protobuf::internal::win32::write;
 #endif
 
 namespace {
@@ -463,4 +463,4 @@ int64 LimitingInputStream::ByteCount() const {
 
 }  // namespace io
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

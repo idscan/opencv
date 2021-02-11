@@ -37,12 +37,12 @@
 #include <google/protobuf/duration.pb.h>
 #include <google/protobuf/timestamp.pb.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
-using google::protobuf::Timestamp;
-using google::protobuf::Duration;
+using cv::protobuf::Timestamp;
+using cv::protobuf::Duration;
 
 namespace {
 static const int kNanosPerSecond = 1000000000;
@@ -112,15 +112,15 @@ string FormatNanos(int32 nanos) {
 }
 
 string FormatTime(int64 seconds, int32 nanos) {
-  return ::google::protobuf::internal::FormatTime(seconds, nanos);
+  return ::cv::protobuf::internal::FormatTime(seconds, nanos);
 }
 
 bool ParseTime(const string& value, int64* seconds, int32* nanos) {
-  return ::google::protobuf::internal::ParseTime(value, seconds, nanos);
+  return ::cv::protobuf::internal::ParseTime(value, seconds, nanos);
 }
 
 void CurrentTime(int64* seconds, int32* nanos) {
-  return ::google::protobuf::internal::GetCurrentTime(seconds, nanos);
+  return ::cv::protobuf::internal::GetCurrentTime(seconds, nanos);
 }
 
 // Truncates the remainder part after division.
@@ -371,8 +371,8 @@ timeval TimeUtil::DurationToTimeval(const Duration& value) {
 
 namespace protobuf {
 namespace {
-using google::protobuf::util::kNanosPerSecond;
-using google::protobuf::util::CreateNormalized;
+using cv::protobuf::util::kNanosPerSecond;
+using cv::protobuf::util::CreateNormalized;
 
 // Convert a Duration to uint128.
 void ToUint128(const Duration& value, uint128* result, bool* negative) {
@@ -501,4 +501,4 @@ Duration operator-(const Timestamp& t1, const Timestamp& t2) {
 }
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv

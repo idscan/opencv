@@ -31,15 +31,15 @@
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto {
+namespace protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
-  static const ::google::protobuf::internal::ParseTableField entries[];
-  static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[1];
-  static const ::google::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::google::protobuf::internal::SerializationTable serialization_table[];
-  static const ::google::protobuf::uint32 offsets[];
+  static const ::cv::protobuf::internal::ParseTableField entries[];
+  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
+  static const ::cv::protobuf::internal::ParseTable schema[1];
+  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
+  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
+  static const ::cv::protobuf::uint32 offsets[];
 };
 void LIBPROTOBUF_EXPORT AddDescriptors();
 void LIBPROTOBUF_EXPORT InitDefaultsSourceContextImpl();
@@ -47,20 +47,20 @@ void LIBPROTOBUF_EXPORT InitDefaultsSourceContext();
 inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsSourceContext();
 }
-}  // namespace protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto
-namespace google {
+}  // namespace protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto
+namespace cv {
 namespace protobuf {
 class SourceContext;
 class SourceContextDefaultTypeInternal;
 LIBPROTOBUF_EXPORT extern SourceContextDefaultTypeInternal _SourceContext_default_instance_;
 }  // namespace protobuf
-}  // namespace google
-namespace google {
+}  // namespace cv
+namespace cv {
 namespace protobuf {
 
 // ===================================================================
 
-class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.protobuf.SourceContext) */ {
+class LIBPROTOBUF_EXPORT SourceContext : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:google.protobuf.SourceContext) */ {
  public:
   SourceContext();
   virtual ~SourceContext();
@@ -86,7 +86,7 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @
     return *this;
   }
   #endif
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const SourceContext& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -106,9 +106,9 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @
 
   inline SourceContext* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  SourceContext* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  SourceContext* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const SourceContext& from);
   void MergeFrom(const SourceContext& from);
   void Clear() PROTOBUF_FINAL;
@@ -116,11 +116,11 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -128,7 +128,7 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(SourceContext* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -136,7 +136,7 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -159,11 +159,11 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @
   // @@protoc_insertion_point(class_scope:google.protobuf.SourceContext)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::ArenaStringPtr file_name_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::ArenaStringPtr file_name_;
   mutable int _cached_size_;
-  friend struct ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContextImpl();
+  friend struct ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fsource_5fcontext_2eproto::InitDefaultsSourceContextImpl();
 };
 // ===================================================================
 
@@ -178,7 +178,7 @@ class LIBPROTOBUF_EXPORT SourceContext : public ::google::protobuf::Message /* @
 
 // string file_name = 1;
 inline void SourceContext::clear_file_name() {
-  file_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  file_name_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& SourceContext::file_name() const {
   // @@protoc_insertion_point(field_get:google.protobuf.SourceContext.file_name)
@@ -186,38 +186,38 @@ inline const ::std::string& SourceContext::file_name() const {
 }
 inline void SourceContext::set_file_name(const ::std::string& value) {
   
-  file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  file_name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.protobuf.SourceContext.file_name)
 }
 #if LANG_CXX11
 inline void SourceContext::set_file_name(::std::string&& value) {
   
   file_name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:google.protobuf.SourceContext.file_name)
 }
 #endif
 inline void SourceContext::set_file_name(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
-  file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  file_name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.protobuf.SourceContext.file_name)
 }
 inline void SourceContext::set_file_name(const char* value, size_t size) {
   
-  file_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  file_name_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.protobuf.SourceContext.file_name)
 }
 inline ::std::string* SourceContext::mutable_file_name() {
   
   // @@protoc_insertion_point(field_mutable:google.protobuf.SourceContext.file_name)
-  return file_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return file_name_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* SourceContext::release_file_name() {
   // @@protoc_insertion_point(field_release:google.protobuf.SourceContext.file_name)
   
-  return file_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return file_name_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void SourceContext::set_allocated_file_name(::std::string* file_name) {
   if (file_name != NULL) {
@@ -225,7 +225,7 @@ inline void SourceContext::set_allocated_file_name(::std::string* file_name) {
   } else {
     
   }
-  file_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), file_name);
+  file_name_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), file_name);
   // @@protoc_insertion_point(field_set_allocated:google.protobuf.SourceContext.file_name)
 }
 
@@ -236,7 +236,7 @@ inline void SourceContext::set_allocated_file_name(::std::string* file_name) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 // @@protoc_insertion_point(global_scope)
 

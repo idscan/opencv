@@ -32,15 +32,15 @@
 #include <google/protobuf/any.h>
 // @@protoc_insertion_point(includes)
 
-namespace protobuf_google_2fprotobuf_2fany_2eproto {
+namespace protobuf_cv_2fprotobuf_2fany_2eproto {
 // Internal implementation detail -- do not use these members.
 struct LIBPROTOBUF_EXPORT TableStruct {
-  static const ::google::protobuf::internal::ParseTableField entries[];
-  static const ::google::protobuf::internal::AuxillaryParseTableField aux[];
-  static const ::google::protobuf::internal::ParseTable schema[1];
-  static const ::google::protobuf::internal::FieldMetadata field_metadata[];
-  static const ::google::protobuf::internal::SerializationTable serialization_table[];
-  static const ::google::protobuf::uint32 offsets[];
+  static const ::cv::protobuf::internal::ParseTableField entries[];
+  static const ::cv::protobuf::internal::AuxillaryParseTableField aux[];
+  static const ::cv::protobuf::internal::ParseTable schema[1];
+  static const ::cv::protobuf::internal::FieldMetadata field_metadata[];
+  static const ::cv::protobuf::internal::SerializationTable serialization_table[];
+  static const ::cv::protobuf::uint32 offsets[];
 };
 void LIBPROTOBUF_EXPORT AddDescriptors();
 void LIBPROTOBUF_EXPORT InitDefaultsAnyImpl();
@@ -48,20 +48,20 @@ void LIBPROTOBUF_EXPORT InitDefaultsAny();
 inline void LIBPROTOBUF_EXPORT InitDefaults() {
   InitDefaultsAny();
 }
-}  // namespace protobuf_google_2fprotobuf_2fany_2eproto
-namespace google {
+}  // namespace protobuf_cv_2fprotobuf_2fany_2eproto
+namespace cv {
 namespace protobuf {
 class Any;
 class AnyDefaultTypeInternal;
 LIBPROTOBUF_EXPORT extern AnyDefaultTypeInternal _Any_default_instance_;
 }  // namespace protobuf
-}  // namespace google
-namespace google {
+}  // namespace cv
+namespace cv {
 namespace protobuf {
 
 // ===================================================================
 
-class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:google.protobuf.Any) */ {
+class LIBPROTOBUF_EXPORT Any : public ::cv::protobuf::Message /* @@protoc_insertion_point(class_definition:google.protobuf.Any) */ {
  public:
   Any();
   virtual ~Any();
@@ -87,7 +87,7 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
     return *this;
   }
   #endif
-  static const ::google::protobuf::Descriptor* descriptor();
+  static const ::cv::protobuf::Descriptor* descriptor();
   static const Any& default_instance();
 
   static void InitAsDefaultInstance();  // FOR INTERNAL USE ONLY
@@ -100,10 +100,10 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
 
   // implements Any -----------------------------------------------
 
-  void PackFrom(const ::google::protobuf::Message& message);
-  void PackFrom(const ::google::protobuf::Message& message,
+  void PackFrom(const ::cv::protobuf::Message& message);
+  void PackFrom(const ::cv::protobuf::Message& message,
                 const ::std::string& type_url_prefix);
-  bool UnpackTo(::google::protobuf::Message* message) const;
+  bool UnpackTo(::cv::protobuf::Message* message) const;
   template<typename T> bool Is() const {
     return _any_metadata_.Is<T>();
   }
@@ -117,9 +117,9 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
 
   inline Any* New() const PROTOBUF_FINAL { return New(NULL); }
 
-  Any* New(::google::protobuf::Arena* arena) const PROTOBUF_FINAL;
-  void CopyFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
-  void MergeFrom(const ::google::protobuf::Message& from) PROTOBUF_FINAL;
+  Any* New(::cv::protobuf::Arena* arena) const PROTOBUF_FINAL;
+  void CopyFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
+  void MergeFrom(const ::cv::protobuf::Message& from) PROTOBUF_FINAL;
   void CopyFrom(const Any& from);
   void MergeFrom(const Any& from);
   void Clear() PROTOBUF_FINAL;
@@ -127,11 +127,11 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
 
   size_t ByteSizeLong() const PROTOBUF_FINAL;
   bool MergePartialFromCodedStream(
-      ::google::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedInputStream* input) PROTOBUF_FINAL;
   void SerializeWithCachedSizes(
-      ::google::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
-  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
-      bool deterministic, ::google::protobuf::uint8* target) const PROTOBUF_FINAL;
+      ::cv::protobuf::io::CodedOutputStream* output) const PROTOBUF_FINAL;
+  ::cv::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::cv::protobuf::uint8* target) const PROTOBUF_FINAL;
   int GetCachedSize() const PROTOBUF_FINAL { return _cached_size_; }
   private:
   void SharedCtor();
@@ -139,7 +139,7 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
   void SetCachedSize(int size) const PROTOBUF_FINAL;
   void InternalSwap(Any* other);
   private:
-  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+  inline ::cv::protobuf::Arena* GetArenaNoVirtual() const {
     return NULL;
   }
   inline void* MaybeArenaPtr() const {
@@ -147,7 +147,7 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
   }
   public:
 
-  ::google::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
+  ::cv::protobuf::Metadata GetMetadata() const PROTOBUF_FINAL;
 
   // nested types ----------------------------------------------------
 
@@ -184,13 +184,13 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
   // @@protoc_insertion_point(class_scope:google.protobuf.Any)
  private:
 
-  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
-  ::google::protobuf::internal::ArenaStringPtr type_url_;
-  ::google::protobuf::internal::ArenaStringPtr value_;
+  ::cv::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  ::cv::protobuf::internal::ArenaStringPtr type_url_;
+  ::cv::protobuf::internal::ArenaStringPtr value_;
   mutable int _cached_size_;
-  ::google::protobuf::internal::AnyMetadata _any_metadata_;
-  friend struct ::protobuf_google_2fprotobuf_2fany_2eproto::TableStruct;
-  friend void ::protobuf_google_2fprotobuf_2fany_2eproto::InitDefaultsAnyImpl();
+  ::cv::protobuf::internal::AnyMetadata _any_metadata_;
+  friend struct ::protobuf_cv_2fprotobuf_2fany_2eproto::TableStruct;
+  friend void ::protobuf_cv_2fprotobuf_2fany_2eproto::InitDefaultsAnyImpl();
 };
 // ===================================================================
 
@@ -205,7 +205,7 @@ class LIBPROTOBUF_EXPORT Any : public ::google::protobuf::Message /* @@protoc_in
 
 // string type_url = 1;
 inline void Any::clear_type_url() {
-  type_url_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  type_url_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Any::type_url() const {
   // @@protoc_insertion_point(field_get:google.protobuf.Any.type_url)
@@ -213,38 +213,38 @@ inline const ::std::string& Any::type_url() const {
 }
 inline void Any::set_type_url(const ::std::string& value) {
   
-  type_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  type_url_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.protobuf.Any.type_url)
 }
 #if LANG_CXX11
 inline void Any::set_type_url(::std::string&& value) {
   
   type_url_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:google.protobuf.Any.type_url)
 }
 #endif
 inline void Any::set_type_url(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
-  type_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  type_url_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.protobuf.Any.type_url)
 }
 inline void Any::set_type_url(const char* value, size_t size) {
   
-  type_url_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  type_url_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.protobuf.Any.type_url)
 }
 inline ::std::string* Any::mutable_type_url() {
   
   // @@protoc_insertion_point(field_mutable:google.protobuf.Any.type_url)
-  return type_url_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return type_url_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Any::release_type_url() {
   // @@protoc_insertion_point(field_release:google.protobuf.Any.type_url)
   
-  return type_url_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return type_url_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Any::set_allocated_type_url(::std::string* type_url) {
   if (type_url != NULL) {
@@ -252,13 +252,13 @@ inline void Any::set_allocated_type_url(::std::string* type_url) {
   } else {
     
   }
-  type_url_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), type_url);
+  type_url_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), type_url);
   // @@protoc_insertion_point(field_set_allocated:google.protobuf.Any.type_url)
 }
 
 // bytes value = 2;
 inline void Any::clear_value() {
-  value_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  value_.ClearToEmptyNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline const ::std::string& Any::value() const {
   // @@protoc_insertion_point(field_get:google.protobuf.Any.value)
@@ -266,38 +266,38 @@ inline const ::std::string& Any::value() const {
 }
 inline void Any::set_value(const ::std::string& value) {
   
-  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  value_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set:google.protobuf.Any.value)
 }
 #if LANG_CXX11
 inline void Any::set_value(::std::string&& value) {
   
   value_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+    &::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
   // @@protoc_insertion_point(field_set_rvalue:google.protobuf.Any.value)
 }
 #endif
 inline void Any::set_value(const char* value) {
   GOOGLE_DCHECK(value != NULL);
   
-  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  value_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:google.protobuf.Any.value)
 }
 inline void Any::set_value(const void* value, size_t size) {
   
-  value_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
+  value_.SetNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
   // @@protoc_insertion_point(field_set_pointer:google.protobuf.Any.value)
 }
 inline ::std::string* Any::mutable_value() {
   
   // @@protoc_insertion_point(field_mutable:google.protobuf.Any.value)
-  return value_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return value_.MutableNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline ::std::string* Any::release_value() {
   // @@protoc_insertion_point(field_release:google.protobuf.Any.value)
   
-  return value_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  return value_.ReleaseNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited());
 }
 inline void Any::set_allocated_value(::std::string* value) {
   if (value != NULL) {
@@ -305,7 +305,7 @@ inline void Any::set_allocated_value(::std::string* value) {
   } else {
     
   }
-  value_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
+  value_.SetAllocatedNoArena(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), value);
   // @@protoc_insertion_point(field_set_allocated:google.protobuf.Any.value)
 }
 
@@ -316,7 +316,7 @@ inline void Any::set_allocated_value(::std::string* value) {
 // @@protoc_insertion_point(namespace_scope)
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 // @@protoc_insertion_point(global_scope)
 

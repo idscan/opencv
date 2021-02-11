@@ -30,7 +30,7 @@
 
 #include <google/protobuf/stubs/statusor.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace internal {
@@ -43,4 +43,4 @@ void StatusOrHelper::Crash(const Status& status) {
 }  // namespace internal
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

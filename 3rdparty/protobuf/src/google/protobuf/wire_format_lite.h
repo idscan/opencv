@@ -63,7 +63,7 @@
 // #pragma pop_macro("TYPE_BOOL")
 #undef TYPE_BOOL
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
   template <typename T> class RepeatedField;  // repeated_field.h
@@ -204,7 +204,7 @@ class LIBPROTOBUF_EXPORT WireFormatLite {
 // type-safe, though, so prefer it if possible.
 #define GOOGLE_PROTOBUF_WIRE_FORMAT_MAKE_TAG(FIELD_NUMBER, TYPE)                  \
   static_cast<uint32>(                                                   \
-    (static_cast<uint32>(FIELD_NUMBER) << ::google::protobuf::internal::WireFormatLite::kTagTypeBits) \
+    (static_cast<uint32>(FIELD_NUMBER) << ::cv::protobuf::internal::WireFormatLite::kTagTypeBits) \
       | (TYPE))
 
   // These are the tags for the old MessageSet format, which was defined as:
@@ -718,14 +718,14 @@ class LIBPROTOBUF_EXPORT WireFormatLite {
   static bool ReadRepeatedFixedSizePrimitive(
       int tag_size,
       uint32 tag,
-      google::protobuf::io::CodedInputStream* input,
+      cv::protobuf::io::CodedInputStream* input,
       RepeatedField<CType>* value);
 
   // Like ReadRepeatedFixedSizePrimitive but for packed primitive fields.
   template <typename CType, enum FieldType DeclaredType>
   GOOGLE_PROTOBUF_ATTRIBUTE_ALWAYS_INLINE
   static bool ReadPackedFixedSizePrimitive(
-      google::protobuf::io::CodedInputStream* input, RepeatedField<CType>* value);
+      cv::protobuf::io::CodedInputStream* input, RepeatedField<CType>* value);
 
   static const CppType kFieldTypeToCppTypeMap[];
   static const WireFormatLite::WireType kWireTypeForFieldType[];
@@ -890,5 +890,5 @@ inline bool WireFormatLite::ReadString(io::CodedInputStream* input,
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_WIRE_FORMAT_LITE_H__

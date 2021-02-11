@@ -42,7 +42,7 @@
 #include <vector>
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -359,5 +359,5 @@ class LIBPROTOBUF_EXPORT Printer {
 }  // namespace io
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_IO_PRINTER_H__

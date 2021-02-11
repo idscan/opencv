@@ -38,7 +38,7 @@
 #include <google/protobuf/stubs/status.h>
 #include <google/protobuf/stubs/statusor.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 namespace converter {
@@ -54,26 +54,26 @@ class LIBPROTOBUF_EXPORT TypeInfo {
   // corresponding type cannot be found, returns a NOT_FOUND error status.
   //
   // This TypeInfo class retains the ownership of the returned pointer.
-  virtual util::StatusOr<const google::protobuf::Type*> ResolveTypeUrl(
+  virtual util::StatusOr<const cv::protobuf::Type*> ResolveTypeUrl(
       StringPiece type_url) const = 0;
 
   // Resolves a type url into a Type. Like ResolveTypeUrl() but returns
   // NULL if the type url is invalid or the type cannot be found.
   //
   // This TypeInfo class retains the ownership of the returned pointer.
-  virtual const google::protobuf::Type* GetTypeByTypeUrl(
+  virtual const cv::protobuf::Type* GetTypeByTypeUrl(
       StringPiece type_url) const = 0;
 
   // Resolves a type url for an enum. Returns NULL if the type url is
   // invalid or the type cannot be found.
   //
   // This TypeInfo class retains the ownership of the returned pointer.
-  virtual const google::protobuf::Enum* GetEnumByTypeUrl(
+  virtual const cv::protobuf::Enum* GetEnumByTypeUrl(
       StringPiece type_url) const = 0;
 
   // Looks up a field in the specified type given a CamelCase name.
-  virtual const google::protobuf::Field* FindField(
-      const google::protobuf::Type* type,
+  virtual const cv::protobuf::Field* FindField(
+      const cv::protobuf::Type* type,
       StringPiece camel_case_name) const = 0;
 
   // Creates a TypeInfo object that looks up type information from a
@@ -88,5 +88,5 @@ class LIBPROTOBUF_EXPORT TypeInfo {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_CONVERTER_TYPE_INFO_H__

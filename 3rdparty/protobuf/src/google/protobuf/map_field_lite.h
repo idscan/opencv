@@ -35,7 +35,7 @@
 #include <google/protobuf/map_entry_lite.h>
 #include <google/protobuf/wire_format_lite.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -105,7 +105,7 @@ class MapFieldLite {
   Arena* arena_;
   Map<Key, T> map_;
 
-  friend class ::google::protobuf::Arena;
+  friend class ::cv::protobuf::Arena;
 };
 
 // True if IsInitialized() is true for value field in all elements of t. T is
@@ -139,5 +139,5 @@ struct MapEntryToMapField<MapEntryLite<T, Key, Value, kKeyFieldType,
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_MAP_FIELD_LITE_H__

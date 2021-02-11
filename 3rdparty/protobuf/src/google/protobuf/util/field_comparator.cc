@@ -40,7 +40,7 @@
 #include <google/protobuf/stubs/mathlimits.h>
 #include <google/protobuf/stubs/mathutil.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
@@ -56,11 +56,11 @@ DefaultFieldComparator::DefaultFieldComparator()
 DefaultFieldComparator::~DefaultFieldComparator() {}
 
 FieldComparator::ComparisonResult DefaultFieldComparator::Compare(
-      const google::protobuf::Message& message_1,
-      const google::protobuf::Message& message_2,
-      const google::protobuf::FieldDescriptor* field,
+      const cv::protobuf::Message& message_1,
+      const cv::protobuf::Message& message_2,
+      const cv::protobuf::FieldDescriptor* field,
       int index_1, int index_2,
-      const google::protobuf::util::FieldContext* field_context) {
+      const cv::protobuf::util::FieldContext* field_context) {
   const Reflection* reflection_1 = message_1.GetReflection();
   const Reflection* reflection_2 = message_2.GetReflection();
 
@@ -205,4 +205,4 @@ FieldComparator::ComparisonResult DefaultFieldComparator::ResultFromBoolean(
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

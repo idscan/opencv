@@ -36,7 +36,7 @@
 #include <string>
 
 #include <google/protobuf/stubs/common.h>
-namespace google {
+namespace cv {
 namespace protobuf {
 class DescriptorPool;
 namespace util {
@@ -50,5 +50,5 @@ LIBPROTOBUF_EXPORT TypeResolver* NewTypeResolverForDescriptorPool(
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_TYPE_RESOLVER_UTIL_H__

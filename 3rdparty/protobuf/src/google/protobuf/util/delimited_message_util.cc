@@ -3,7 +3,7 @@
 
 #include <google/protobuf/util/delimited_message_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
@@ -21,7 +21,7 @@ bool SerializeDelimitedToOstream(const MessageLite& message, ostream* output) {
 }
 
 bool ParseDelimitedFromZeroCopyStream(MessageLite* message, io::ZeroCopyInputStream* input, bool* clean_eof) {
-  google::protobuf::io::CodedInputStream coded_input(input);
+  cv::protobuf::io::CodedInputStream coded_input(input);
   return ParseDelimitedFromCodedStream(message, &coded_input, clean_eof);
 }
 
@@ -37,7 +37,7 @@ bool ParseDelimitedFromCodedStream(MessageLite* message, io::CodedInputStream* i
   }
 
   // Tell the stream not to read beyond that size.
-  google::protobuf::io::CodedInputStream::Limit limit = input->PushLimit(size);
+  cv::protobuf::io::CodedInputStream::Limit limit = input->PushLimit(size);
 
   // Parse the message.
   if (!message->MergeFromCodedStream(input)) return false;
@@ -50,7 +50,7 @@ bool ParseDelimitedFromCodedStream(MessageLite* message, io::CodedInputStream* i
 }
 
 bool SerializeDelimitedToZeroCopyStream(const MessageLite& message, io::ZeroCopyOutputStream* output) {
-  google::protobuf::io::CodedOutputStream coded_output(output);
+  cv::protobuf::io::CodedOutputStream coded_output(output);
   return SerializeDelimitedToCodedStream(message, &coded_output);
 }
 
@@ -76,4 +76,4 @@ bool SerializeDelimitedToCodedStream(const MessageLite& message, io::CodedOutput
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

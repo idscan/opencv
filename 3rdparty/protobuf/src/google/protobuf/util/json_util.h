@@ -37,7 +37,7 @@
 #include <google/protobuf/util/type_resolver.h>
 #include <google/protobuf/stubs/bytestream.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 class ZeroCopyInputStream;
@@ -196,5 +196,5 @@ class LIBPROTOBUF_EXPORT ZeroCopyStreamByteSink : public strings::ByteSink {
 }  // namespace util
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_UTIL_JSON_UTIL_H__

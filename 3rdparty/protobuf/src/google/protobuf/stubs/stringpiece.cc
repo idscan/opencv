@@ -35,7 +35,7 @@
 #include <string>
 #include <ostream>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 std::ostream& operator<<(std::ostream& o, StringPiece piece) {
   o.write(piece.data(), piece.size());
@@ -265,4 +265,4 @@ StringPiece StringPiece::substr(size_type pos, size_type n) const {
 const StringPiece::size_type StringPiece::npos = size_type(-1);
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

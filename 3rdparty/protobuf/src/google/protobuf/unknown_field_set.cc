@@ -43,7 +43,7 @@
 #include <google/protobuf/wire_format.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 namespace {
@@ -65,7 +65,7 @@ GOOGLE_PROTOBUF_DECLARE_ONCE(default_unknown_field_set_once_init_);
 }
 
 const UnknownFieldSet* UnknownFieldSet::default_instance() {
-  ::google::protobuf::GoogleOnceInit(&default_unknown_field_set_once_init_,
+  ::cv::protobuf::GoogleOnceInit(&default_unknown_field_set_once_init_,
                  &InitDefaultUnknownFieldSet);
   return default_unknown_field_set_instance_;
 }
@@ -337,4 +337,4 @@ uint8* UnknownField::SerializeLengthDelimitedNoTagToArray(uint8* target) const {
 }
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

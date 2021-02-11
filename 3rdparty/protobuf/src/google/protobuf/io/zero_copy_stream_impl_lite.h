@@ -56,7 +56,7 @@
 #include <google/protobuf/stubs/stl_util.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace io {
 
@@ -239,7 +239,7 @@ class LIBPROTOBUF_EXPORT CopyingInputStreamAdaptor : public ZeroCopyInputStream 
 
   // Data is read into this buffer.  It may be NULL if no buffer is currently
   // in use.  Otherwise, it points to an array of size buffer_size_.
-  google::protobuf::scoped_array<uint8> buffer_;
+  cv::protobuf::scoped_array<uint8> buffer_;
   const int buffer_size_;
 
   // Number of valid bytes currently in the buffer (i.e. the size last
@@ -328,7 +328,7 @@ class LIBPROTOBUF_EXPORT CopyingOutputStreamAdaptor : public ZeroCopyOutputStrea
 
   // Data is written from this buffer.  It may be NULL if no buffer is
   // currently in use.  Otherwise, it points to an array of size buffer_size_.
-  google::protobuf::scoped_array<uint8> buffer_;
+  cv::protobuf::scoped_array<uint8> buffer_;
   const int buffer_size_;
 
   // Number of valid bytes currently in the buffer (i.e. the size last
@@ -382,5 +382,5 @@ inline std::pair<char*, bool> as_string_data(string* s) {
 }  // namespace io
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_IO_ZERO_COPY_STREAM_IMPL_LITE_H__

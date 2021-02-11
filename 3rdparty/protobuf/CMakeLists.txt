@@ -139,15 +139,15 @@ append_if_exist(Protobuf_SRCS
   ${PROTOBUF_ROOT}/src/google/protobuf/wrappers.pb.cc
 )
 
-add_library(libprotobuf STATIC ${Protobuf_SRCS})
-target_include_directories(libprotobuf SYSTEM PUBLIC $<BUILD_INTERFACE:${PROTOBUF_ROOT}/src>)
-set_target_properties(libprotobuf
+add_library(libcvprotobuf STATIC ${Protobuf_SRCS})
+target_include_directories(libcvprotobuf SYSTEM PUBLIC $<BUILD_INTERFACE:${PROTOBUF_ROOT}/src>)
+set_target_properties(libcvprotobuf
     PROPERTIES
     FOLDER "3rdparty"
-    OUTPUT_NAME libprotobuf
+    OUTPUT_NAME libcvprotobuf
     DEBUG_POSTFIX "${OPENCV_DEBUG_POSTFIX}"
-    COMPILE_PDB_NAME libprotobuf
-    COMPILE_PDB_NAME_DEBUG "libprotobuf${OPENCV_DEBUG_POSTFIX}"
+    COMPILE_PDB_NAME libcvprotobuf
+    COMPILE_PDB_NAME_DEBUG "libcvprotobuf${OPENCV_DEBUG_POSTFIX}"
     ARCHIVE_OUTPUT_DIRECTORY ${3P_LIBRARY_OUTPUT_PATH}
     )
 
@@ -155,7 +155,7 @@ get_protobuf_version(Protobuf_VERSION "${PROTOBUF_ROOT}/src")
 set(Protobuf_VERSION ${Protobuf_VERSION} CACHE INTERNAL "" FORCE)
 
 if(NOT BUILD_SHARED_LIBS)
-  ocv_install_target(libprotobuf EXPORT OpenCVModules ARCHIVE DESTINATION ${OPENCV_3P_LIB_INSTALL_PATH} COMPONENT dev)
+  ocv_install_target(libcvprotobuf EXPORT OpenCVModules ARCHIVE DESTINATION ${OPENCV_3P_LIB_INSTALL_PATH} COMPONENT dev)
 endif()
 
 ocv_install_3rdparty_licenses(protobuf LICENSE README.md)

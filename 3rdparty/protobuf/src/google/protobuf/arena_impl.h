@@ -44,7 +44,7 @@
 
 #include <google/protobuf/stubs/port.h>
 
-namespace google {
+namespace cv {
 
 namespace protobuf {
 namespace internal {
@@ -168,7 +168,7 @@ class LIBPROTOBUF_EXPORT ArenaImpl {
     int64 last_lifecycle_id_seen;
     Block* last_block_used_;
   };
-  static google::protobuf::internal::SequenceNumber lifecycle_id_generator_;
+  static cv::protobuf::internal::SequenceNumber lifecycle_id_generator_;
 #if defined(GOOGLE_PROTOBUF_NO_THREADLOCAL)
   // Android ndk does not support GOOGLE_THREAD_LOCAL keyword so we use a custom thread
   // local storage class we implemented.
@@ -200,12 +200,12 @@ class LIBPROTOBUF_EXPORT ArenaImpl {
     // TODO(haberman): evaluate whether we would gain efficiency by getting rid
     // of hint_.  It's the only write we do to ArenaImpl in the allocation path,
     // which will dirty the cache line.
-    google::protobuf::internal::Release_Store(&hint_, reinterpret_cast<google::protobuf::internal::AtomicWord>(block));
+    cv::protobuf::internal::Release_Store(&hint_, reinterpret_cast<cv::protobuf::internal::AtomicWord>(block));
   }
 
-  google::protobuf::internal::AtomicWord threads_;          // Pointer to a linked list of ThreadInfo.
-  google::protobuf::internal::AtomicWord hint_;             // Fast thread-local block access
-  google::protobuf::internal::AtomicWord space_allocated_;  // Sum of sizes of all allocated blocks.
+  cv::protobuf::internal::AtomicWord threads_;          // Pointer to a linked list of ThreadInfo.
+  cv::protobuf::internal::AtomicWord hint_;             // Fast thread-local block access
+  cv::protobuf::internal::AtomicWord space_allocated_;  // Sum of sizes of all allocated blocks.
 
   Block *initial_block_;     // If non-NULL, points to the block that came from
                              // user data.
@@ -238,5 +238,5 @@ class LIBPROTOBUF_EXPORT ArenaImpl {
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_ARENA_IMPL_H__

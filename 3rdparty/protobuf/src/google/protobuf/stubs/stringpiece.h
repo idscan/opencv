@@ -151,7 +151,7 @@
 #include <google/protobuf/stubs/common.h>
 #include <google/protobuf/stubs/hash.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 // StringPiece has *two* size types.
 // StringPiece::size_type
@@ -470,7 +470,7 @@ struct StringPiecePod {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 GOOGLE_PROTOBUF_HASH_NAMESPACE_DECLARATION_START
 template<> struct hash<StringPiece> {

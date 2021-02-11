@@ -32,7 +32,7 @@
 
 #include <google/protobuf/stubs/atomicops.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -49,6 +49,6 @@ class SequenceNumber {
 
 }  // namespace internal
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_ATOMIC_SEQUENCE_NUM_H_

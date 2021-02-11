@@ -10,7 +10,7 @@
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/io/zero_copy_stream_impl.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace util {
 
@@ -61,6 +61,6 @@ bool LIBPROTOBUF_EXPORT SerializeDelimitedToCodedStream(const MessageLite& messa
 
 }  // namespace util
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv
 
 #endif  // GOOGLE_PROTOBUF_UTIL_DELIMITED_MESSAGE_UTIL_H__

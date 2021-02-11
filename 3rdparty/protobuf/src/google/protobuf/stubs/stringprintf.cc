@@ -38,7 +38,7 @@
 #include <vector>
 #include <google/protobuf/stubs/common.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 #ifdef _MSC_VER
@@ -171,4 +171,4 @@ string StringPrintfVector(const char* format, const vector<string>& v) {
                       cstr[30], cstr[31]);
 }
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

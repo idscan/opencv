@@ -32,7 +32,7 @@
 // metadata (Unknown-field set, Arena pointer, ...) and allows its
 // representation to be made more space-efficient via various optimizations.
 //
-// Note that this is distinct from google::protobuf::Metadata, which encapsulates
+// Note that this is distinct from cv::protobuf::Metadata, which encapsulates
 // Descriptor and Reflection pointers.
 
 #ifndef GOOGLE_PROTOBUF_METADATA_H__
@@ -41,7 +41,7 @@
 #include <google/protobuf/metadata_lite.h>
 #include <google/protobuf/unknown_field_set.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -74,5 +74,5 @@ class InternalMetadataWithArena
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_METADATA_H__

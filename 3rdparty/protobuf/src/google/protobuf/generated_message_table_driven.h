@@ -56,7 +56,7 @@
 #define PROTOBUF_CONSTEXPR_VAR
 #endif
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -202,18 +202,18 @@ bool MergePartialFromCodedStreamLite(MessageLite* msg, const ParseTable& table,
 template <typename Entry>
 bool ParseMap(io::CodedInputStream* input, void* map_field) {
   typedef typename MapEntryToMapField<Entry>::MapFieldType MapFieldType;
-  typedef google::protobuf::Map<typename Entry::EntryKeyType,
+  typedef cv::protobuf::Map<typename Entry::EntryKeyType,
                       typename Entry::EntryValueType>
       MapType;
   typedef typename Entry::template Parser<MapFieldType, MapType> ParserType;
 
   ParserType parser(static_cast<MapFieldType*>(map_field));
-  return ::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(input,
+  return ::cv::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(input,
                                                                   &parser);
 }
 
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_GENERATED_MESSAGE_TABLE_DRIVEN_H__

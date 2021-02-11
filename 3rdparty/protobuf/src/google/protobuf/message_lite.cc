@@ -46,7 +46,7 @@
 #include <google/protobuf/io/zero_copy_stream_impl_lite.h>
 #include <google/protobuf/stubs/stl_util.h>
 
-namespace google {
+namespace cv {
 namespace protobuf {
 
 string MessageLite::InitializationErrorString() const {
@@ -153,7 +153,7 @@ inline bool InlineParsePartialFromArray(
 }  // namespace
 
 
-MessageLite* MessageLite::New(::google::protobuf::Arena* arena) const {
+MessageLite* MessageLite::New(::cv::protobuf::Arena* arena) const {
   MessageLite* message = New();
   if (arena != NULL) {
     arena->Own(message);
@@ -380,7 +380,7 @@ uint8* MessageLite::InternalSerializeWithCachedSizesToArray(
 namespace internal {
 template<>
 MessageLite* GenericTypeHandler<MessageLite>::NewFromPrototype(
-    const MessageLite* prototype, google::protobuf::Arena* arena) {
+    const MessageLite* prototype, cv::protobuf::Arena* arena) {
   return prototype->New(arena);
 }
 template <>
@@ -404,4 +404,4 @@ void SetProto3PreserveUnknownsDefault(bool preserve) {
 }  // namespace internal
 
 }  // namespace protobuf
-}  // namespace google
+}  // namespace cv

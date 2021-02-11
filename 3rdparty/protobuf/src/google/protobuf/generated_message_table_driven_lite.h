@@ -43,7 +43,7 @@
 #include <google/protobuf/wire_format_lite_inl.h>
 
 
-namespace google {
+namespace cv {
 namespace protobuf {
 namespace internal {
 
@@ -104,15 +104,15 @@ inline Type* AddField(MessageLite* msg, int64 offset) {
                 "Do not assign");
 #endif
 
-  google::protobuf::RepeatedField<Type>* repeated =
-      Raw<google::protobuf::RepeatedField<Type> >(msg, offset);
+  cv::protobuf::RepeatedField<Type>* repeated =
+      Raw<cv::protobuf::RepeatedField<Type> >(msg, offset);
   return repeated->Add();
 }
 
 template <>
 inline string* AddField<string>(MessageLite* msg, int64 offset) {
-  google::protobuf::RepeatedPtrField<string>* repeated =
-      Raw<google::protobuf::RepeatedPtrField<string> >(msg, offset);
+  cv::protobuf::RepeatedPtrField<string>* repeated =
+      Raw<cv::protobuf::RepeatedPtrField<string> >(msg, offset);
   return repeated->Add();
 }
 
@@ -172,7 +172,7 @@ inline void ClearOneofField(const ParseTableField& field, Arena* arena,
     case WireFormatLite::TYPE_STRING:
     case WireFormatLite::TYPE_BYTES:
       Raw<ArenaStringPtr>(msg, field.offset)
-          ->Destroy(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
+          ->Destroy(&::cv::protobuf::internal::GetEmptyStringAlreadyInited(), arena);
       break;
 
     default:
@@ -430,8 +430,8 @@ bool MergePartialFromCodedStreamImpl(MessageLite* msg, const ParseTable& table,
     break;                                                                     \
   }                                                                            \
   case (WireFormatLite::TYPE_##TYPE) | kRepeatedMask: {                        \
-    google::protobuf::RepeatedField<CPPTYPE>* values =                                   \
-        Raw<google::protobuf::RepeatedField<CPPTYPE> >(msg, offset);                     \
+    cv::protobuf::RepeatedField<CPPTYPE>* values =                                   \
+        Raw<cv::protobuf::RepeatedField<CPPTYPE> >(msg, offset);                     \
     if (GOOGLE_PREDICT_FALSE((!WireFormatLite::ReadRepeatedPrimitive<                 \
                        CPPTYPE, WireFormatLite::TYPE_##TYPE>(                  \
             data->tag_size, tag, input, values)))) {                           \
@@ -725,8 +725,8 @@ bool MergePartialFromCodedStreamImpl(MessageLite* msg, const ParseTable& table,
           processing_type ^ kRepeatedMask)) {
 #define HANDLE_PACKED_TYPE(TYPE, CPPTYPE, CPPTYPE_METHOD)                 \
   case WireFormatLite::TYPE_##TYPE: {                                     \
-    google::protobuf::RepeatedField<CPPTYPE>* values =                              \
-        Raw<google::protobuf::RepeatedField<CPPTYPE> >(msg, offset);                \
+    cv::protobuf::RepeatedField<CPPTYPE>* values =                              \
+        Raw<cv::protobuf::RepeatedField<CPPTYPE> >(msg, offset);                \
     if (GOOGLE_PREDICT_FALSE(                                                    \
             (!WireFormatLite::ReadPackedPrimitive<                        \
                 CPPTYPE, WireFormatLite::TYPE_##TYPE>(input, values)))) { \
@@ -764,14 +764,14 @@ bool MergePartialFromCodedStreamImpl(MessageLite* msg, const ParseTable& table,
 
           AuxillaryParseTableField::EnumValidator validator =
               table.aux[field_number].enums.validator;
-          google::protobuf::RepeatedField<int>* values =
-              Raw<google::protobuf::RepeatedField<int> >(msg, offset);
+          cv::protobuf::RepeatedField<int>* values =
+              Raw<cv::protobuf::RepeatedField<int> >(msg, offset);
 
           io::CodedInputStream::Limit limit = input->PushLimit(length);
           while (input->BytesUntilLimit() > 0) {
             int value;
             if (GOOGLE_PREDICT_FALSE(
-                    (!google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                    (!cv::protobuf::internal::WireFormatLite::ReadPrimitive<
                         int, WireFormatLite::TYPE_ENUM>(input, &value)))) {
               return false;
             }
@@ -819,5 +819,5 @@ bool MergePartialFromCodedStreamImpl(MessageLite* msg, const ParseTable& table,
 }  // namespace internal
 }  // namespace protobuf
 
-}  // namespace google
+}  // namespace cv
 #endif  // GOOGLE_PROTOBUF_GENERATED_MESSAGE_TABLE_DRIVEN_LITE_H__
