@@ -140,7 +140,7 @@ Mat getMatFromTensor(opencv_onnx::TensorProto& tensor_proto)
         int32_t* dst = reinterpret_cast<int32_t*>(blob.data);
 
         if (!tensor_proto.int64_data().empty()) {
-            ::PROTOBUF_NAMESPACE::RepeatedField< ::google::protobuf::int64> src = tensor_proto.int64_data();
+            ::PROTOBUF_NAMESPACE::RepeatedField< ::PROTOBUF_NAMESPACE::int64> src = tensor_proto.int64_data();
             convertInt64ToInt32(src, dst, blob.total());
         }
         else
