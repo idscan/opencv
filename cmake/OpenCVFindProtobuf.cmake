@@ -61,6 +61,7 @@ if(BUILD_PROTOBUF)
   add_subdirectory("${OpenCV_SOURCE_DIR}/3rdparty/protobuf")
   set(Protobuf_LIBRARIES "libprotobuf")
   set(HAVE_PROTOBUF TRUE)
+  add_library(libprotobuf ALIAS libcvprotobuf)
 else()
   unset(Protobuf_VERSION CACHE)
 

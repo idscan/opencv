@@ -248,6 +248,21 @@ if(TARGET ocv.3rdparty.openvino AND OPENCV_DNN_OPENVINO)
   endif()
 endif()
 
+# Idscan change - replace "namespace"
+# Just look for files - forget about the above
+if(BUILD_PROTOBUF)
+    file(GLOB_RECURSE _found_files "${CMAKE_CURRENT_LIST_DIR}" "*.h" "*.hpp" "*.cc" "*.cpp")
+
+    foreach(_fl IN LISTS _found_files)
+        file(READ "${_fl}" _content)
+            string(REPLACE "google::protobuf" "cv::protobuf" _new_content "${_content}")
+            if(NOT "${_content}" STREQUAL "${_new_content}")
+                file(WRITE "${_fl}" "${_new_content}")
+            endif()
+    endforeach()
+endif(BUILD_PROTOBUF)
+# end of Idscan change
+
 
 ocv_install_used_external_targets(${libs} ${dnn_runtime_libs})
 
